@@ -1,0 +1,25 @@
+# Ingestion
+arxiv
+pdfplumber
+nltk
+
+# Embedding + Vector Store
+sentence-transformers
+chromadb
+
+# Orchestration
+langchain
+langchain-community
+langchain-groq
+
+# Evaluation
+ragas
+datasets
+
+# UI
+streamlit
+
+# Utilities
+python-dotenv
+pandas
+tqdm

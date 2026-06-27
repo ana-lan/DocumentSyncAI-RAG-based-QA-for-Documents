@@ -1,0 +1,25 @@
+# Environment
+.env
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Data (don't commit raw PDFs or vectorstore)
+data/raw/
+data/processed/
+vectorstore/
+
+# Eval outputs (commit selectively)
+eval/results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
