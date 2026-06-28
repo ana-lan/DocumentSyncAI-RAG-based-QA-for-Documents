@@ -2,6 +2,7 @@
 import arxiv
 import os
 import json
+import urllib.request
 from config import ARXIV_QUERY, MAX_PAPERS, RAW_DIR
 
 def fetch_papers():
@@ -22,7 +23,11 @@ def fetch_papers():
     for paper in client.results(search):
         counter += 1
         filename = f"{counter}.pdf"
-        paper.download_pdf(dirpath=RAW_DIR, filename=filename)
+        try:
+            urllib.request.urlretrieve(paper.pdf_url, os.path.join(RAW_DIR, filename))
+        except Exception as e:
+            print(f"Skipping paper {counter} ({paper.title}) : {e}")
+            continue
         metadata.append(
             {
                 "id" : counter,

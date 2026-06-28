@@ -9,14 +9,6 @@ def retrieve(query: str, strategy_name: str, top_k: int = DEFAULT_TOP_K) -> list
     
     Returns: list of dicts with keys: {text, score, paper_id, chunk_index}
     """
-    # TODO:
-    # 1. load model and client
-    # 2. get the collection for strategy_name
-    # 3. embed the query using model.encode()
-    # 4. query the collection with top_k
-    # 5. convert distances to similarity scores (1 - distance)
-    # 6. filter out results below SIMILARITY_THRESHOLD
-    # 7. return list of result dicts
     model = get_embedding_model()
     client = get_chroma_client()
 

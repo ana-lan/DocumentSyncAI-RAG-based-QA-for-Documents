@@ -21,7 +21,7 @@ VECTORSTORE_DIR = "vectorstore"
 # ── Retrieval ─────────────────────────────────────────────
 TOP_K_VALUES         = [3, 5, 10]      # values to sweep during eval
 DEFAULT_TOP_K        = 5
-SIMILARITY_THRESHOLD = 0.5
+SIMILARITY_THRESHOLD = 0.3
 
 # ── Generation ────────────────────────────────────────────
 GROQ_MODEL  = "llama-3.1-8b-instant"

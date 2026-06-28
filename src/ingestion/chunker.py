@@ -1,6 +1,6 @@
 # src/ingestion/chunker.py
 import nltk
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import CHUNK_STRATEGIES
 
 nltk.download("punkt", quiet=True)
