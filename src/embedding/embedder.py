@@ -18,7 +18,10 @@ def embed_and_store(chunks: list[str], strategy_name: str, paper_id: int, model,
     Embed chunks and store in ChromaDB under the strategy's collection.
     Each chunk stored with metadata: {paper_id, chunk_index}
     """
-    collection = client.get_or_create_collection(name=strategy_name)
+    collection = client.get_or_create_collection(
+        name=strategy_name,
+        metadata={"hnsw:space": "cosine"}
+    )
     embeddings = model.encode(chunks)
 
     for i, chunk in enumerate(chunks):
