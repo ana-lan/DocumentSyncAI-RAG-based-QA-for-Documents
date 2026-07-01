@@ -1,0 +1,1196 @@
+[
+  {
+    "question": "What is the main topic of the text?",
+    "answer": "Changing data sources in the context of machine learning for official statistics",
+    "context": "CHANGING DATA SOURCES IN THE AGE OF\nMACHINE LEARNING\nFOR OFFICIAL STATISTICS\nPRESENTEDATUNECEMACHINELEARNINGFOROFFICIALSTATISTICSWORKSHOP2023\nCedricDeBoom MichaelReusens\nStatisticsFlanders StatisticsFlanders\nBelgium Belgium",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the role of data science in the production of official statistics?",
+    "answer": "Data science enables the production of official statistics by providing essential tools and methods for analyzing and interpreting large datasets.",
+    "context": "Belgium Belgium\ncedric.deboom@vlaanderen.be michael.reusens@vlaanderen.be\nJune6,2023\nABSTRACT\nDatasciencehasbecomeincreasinglyessentialfortheproductionofofficialstatistics,asitenables",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main purpose of data science practices in this context?",
+    "answer": "The main purpose is to enable more timely, insightful, and flexible reporting.",
+    "context": "theautomatedcollection,processing,andanalysisoflargeamountsofdata. Withsuchdatascience\npracticesinplace,itenablesmoretimely,moreinsightfulandmoreflexiblereporting. However,the",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the foundation of data science-driven statistics?",
+    "answer": "The accuracy and reliability of data sources and machine learning techniques that support them.",
+    "context": "qualityandintegrityofdata-science-drivenstatisticsrelyontheaccuracyandreliabilityofthedata\nsourcesandthemachinelearningtechniquesthatsupportthem. Inparticular,changesindatasources",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main purpose of this paper?",
+    "answer": "To give an overview of the main risks, liabilities, and uncertainties associated with changing machine learning for official statistics.",
+    "context": "areinevitabletooccurandposesignificantrisksthatarecrucialtoaddressinthecontextofmachine\nlearningforofficialstatistics.\nThispapergivesanoverviewofthemainrisks,liabilities,anduncertaintiesassociatedwithchanging",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the most prevalent origins and causes of changing data sources in the context of machine learning for official statistics?",
+    "answer": "A checklist of the most prevalent origins and causes of changing data sources is provided, covering both technical and non-technical levels.",
+    "context": "datasourcesinthecontextofmachinelearningforofficialstatistics. Weprovideachecklistofthe\nmostprevalentoriginsandcausesofchangingdatasources;notonlyonatechnicallevelbutalso",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some of the repercussions of changing data sources on statistical reporting?",
+    "answer": "These include technical effects such as concept drift, data quality issues, and changes in sample representativeness.",
+    "context": "regardingownership,ethics,regulation,andpublicperception. Next,wehighlighttherepercussions\nofchangingdatasourcesonstatisticalreporting. Theseincludetechnicaleffectssuchasconcept",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some important precautionary measures offered?",
+    "answer": "such as drift, bias, availability, validity, accuracy and completeness, but also the neutrality and potential discontinuation of the statistical offering.",
+    "context": "drift, bias, availability, validity, accuracy and completeness, but also the neutrality and potential\ndiscontinuationofthestatisticaloffering. Weofferafewimportantprecautionarymeasures,suchas",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the benefits of machine learning-based official statistics?",
+    "answer": "Machine learning-based official statistics can maintain integrity, reliability, consistency, and relevance in policy-making, decision-making, and public discourse.",
+    "context": "enhancingrobustnessinbothdatasourcingandstatisticaltechniques,andthoroughmonitoring. In\ndoingso,machinelearning-basedofficialstatisticscanmaintainintegrity,reliability,consistency,and\nrelevanceinpolicy-making,decision-making,andpublicdiscourse.",
+    "paper_id": 1
+  },
+  {
+    "question": "What role has the field of statistics played in informing policy decisions?",
+    "answer": "Statistics has played a critical role in informing policy decisions.",
+    "context": "1 Introduction\nThefieldofstatisticshaslongplayedacriticalroleininformingpolicydecisions,drivinginnovation,andadvancing\nscientificknowledge. Traditionalstatisticalmethodssuchassurveysandcensuseshaveprovidedvaluableinsightsinto",
+    "paper_id": 1
+  },
+  {
+    "question": "What has opened up new opportunities for statistical analysis?",
+    "answer": "The increasing availability of open and large data sources.",
+    "context": "awiderangeoftopics,frompopulationdemographicstoeconomictrendsandpublicopinion. However,inrecentyears,\ntheincreasingavailabilityofopenandlargedatasourceshasopenedupnewopportunitiesforstatisticalanalysis. In",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some key benefits of machine learning in statistics?",
+    "answer": "The analysis of massive datasets, identification of complex patterns and relationships, and non-linear forecasting.",
+    "context": "particular,theriseofmachinelearninghastransformedthefieldofstatistics,enablingtheanalysisofmassivedatasets,\ntheidentificationofcomplexpatternsandrelationships,non-linearforecasting,etc. [1,2]. Machinelearningalgorithms",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the benefits of using machine learning for official statistics?",
+    "answer": "Machine learning can provide more timely, accurate, and comprehensive insights that traditional survey methods may not capture.",
+    "context": "canbeusedtoanalyzedatafromawiderangeofsources,providinginsightsthattraditionalsurveymethodsmaynot\ncapture.\nTheuseofmachinelearningforofficialstatisticshasthepotentialtoprovidemoretimely,accurateandcomprehensive",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the primary source of data for statistical agencies?",
+    "answer": "Individuals and entities that generate vast amounts of data on a daily basis.",
+    "context": "insightsintoawiderangeofsocietaltopics[3]. Byleveragingthevastamountsofdatathataregeneratedbyindividuals\nandentitiesonadailybasis,statisticalagenciescangainamorenuancedunderstandingoftrendsandpatterns,and\nrespondmorequicklytoemergingissues.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some of the challenges presented by the shift towards machine learning?",
+    "answer": "Data quality, privacy, and security concerns, as well as the need for appropriate technical skills and infrastructure.",
+    "context": "However,thisshifttowardsmachinelearningalsopresentsanumberofchallenges. Inparticular,thereareconcerns\naboutdataquality,privacy,andsecurity,aswellastheneedforappropriatetechnicalskillsandinfrastructure[4,5],as\n3202\nnuJ\n7\n]LM.tats[\n1v83340.6032:viXra",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the key challenges that statistical agencies face when implementing machine learning?",
+    "answer": "explainability, accuracy, reproducibility, timeliness, and cost-effectiveness",
+    "context": "wellaschallengesrelatedtoexplainability,accuracy,reproducibility,timeliness,andcosteffectiveness[6]. Asstatistical\nagencies grapple with these challenges, it is essential to ensure that the benefits of machine learning are balanced",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main issue being explored in this paper?",
+    "answer": "The changing data sources in the age of machine learning for official statistics",
+    "context": "against the risks and that the resulting insights are both accurate and representative. In this paper, we explore the\nchangingdatasourcesintheageofmachinelearningforofficialstatistics,aswebelievethatthispervasiveissuelargely",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some key considerations for statistical agencies looking to incorporate machine learning into their workflows?",
+    "answer": "They are highlighted in Section 3 of the text.",
+    "context": "remainsunderexposed,aswewillexplaininSection2.2. Inthatrespect,wehighlightsomeofthekeyconsiderations\nforstatisticalagencieslookingtoincorporatemachinelearningintotheirworkflowsinSection3,byzoominginonthe",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some causes and risks associated with using external data sources?",
+    "answer": "causes and risks associated with using external data sources",
+    "context": "causesandrisksassociatedwithusingexternaldatasources,theconsequencesonusingsuchsourcesforstatistical\nproduction,and,finally,asetofmitigationsthatshouldideallybeincorporatedinanygenuinedeploymentofmachine\nlearningforofficialstatistics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the context in which data abundance is mentioned?",
+    "answer": "Governmental, corporate, social, and personal contexts",
+    "context": "learningforofficialstatistics.\n2 Machinelearningforofficialstatistics\nThe data abundance in governmental, corporate, social and personal contexts, both online and offline, becomes a",
+    "paper_id": 1
+  },
+  {
+    "question": "How can a nation effectively measure the overall satisfaction with life of its citizens?",
+    "answer": "By organizing periodic surveys and collecting data on various aspects of citizens' lives, such as employment, education, and healthcare.",
+    "context": "tantalizingsourceandopportunityfortheimprovementandexpansionofofficialstatistics. Forexample,toinquire\nabouttheoverallsatisfactionwithlifeofitscitizens,anationcouldorganizeperiodicsurveys. Butwhenthisnationhas",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of data can be used as a proxy to extract new and innovative statistical insights?",
+    "answer": "accesstoitscitizens\u2019socialmediaposts,likes,reader\u2019sletters,mediaconsumption,ticketsales,(online)shoppingcarts, etc.",
+    "context": "accesstoitscitizens\u2019socialmediaposts,likes,reader\u2019sletters,mediaconsumption,ticketsales,(online)shoppingcarts,\netc.itcoulduseallofthesedataasaproxytoextractnovelandinnovativestatisticalinsights[7]. Typically,theend",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the three possible types of a novel statistic?",
+    "answer": "A novel statistic can be either a new statistic, a statistic that complements an existing one, or an ersatz statistic that aims to replace one or more existing statistics.",
+    "context": "resultiseitheranewstatistic,astatisticthatcomplementsanexistingone,oranersatzstatisticthataimstoreplace\noneormoreexistingstatistics. Wewillbrieflyzoominonthedifferentcomponentsofwhichsuchanovelstatisticis\ngenerallycomprised.\n2.1 Machinelearning",
+    "paper_id": 1
+  },
+  {
+    "question": "What is machine learning?",
+    "answer": "Machine learning is a field of study that involves using a wide variety of powerful tools to derive novel insights and innovative statistics from data.",
+    "context": "2.1 Machinelearning\nToderivenovelinsightsandinnovativestatisticsfromdata,datascientistsandstatisticalresearchersoftenuseawide\nvarietyofpowerfultoolsthatareintherealmofmachinelearning1. Inthispaperwewillnotgointotoomuchdetail",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the unwanted effects of using data sources with machine learning models?",
+    "answer": "Statistical production issues, see further in Section 3.",
+    "context": "aboutmachinelearning. However,theuseofdatasourcestogetherwithmachinelearningmodelscancauseunwanted\neffectsregardingstatisticalproduction,seefurtherinSection3. So,wedeemitusefultoprovideahigh-leveloverview",
+    "paper_id": 1
+  },
+  {
+    "question": "What is machine learning?",
+    "answer": "A subdiscipline of artificial intelligence that enables machines to learn from data and improve",
+    "context": "ofthetypicalprocessthatinvolvesmachinelearningforofficialstatistics.\nMachinelearningisasubdisciplineofartificialintelligencethatenablesmachinestolearnfromdataandimprove",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of approach is described in the given text?",
+    "answer": "Machine learning",
+    "context": "theirperformanceovertimewithoutbeingexplicitlyprogrammed. Thisapproachinvolvesbuildingalgorithmsthat\nautomaticallylearnfromdatatoidentifypatterns,relationships,andstructuresthatmaybedifficultorimpossiblefor",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the two main phases of designing a machine learning algorithm?",
+    "answer": "training and inference",
+    "context": "humanstodiscern. Thetypicalprocessofdesigningamachinelearningalgorithmconsistsoftwomainphases: training\nandinference. Duringthetrainingphase,theparametersofamachinelearningmodelaretunedtosolveaspecifictask.",
+    "paper_id": 1
+  },
+  {
+    "question": "What happens to the model's parameters after it is trained?",
+    "answer": "The model's parameters are kept fixed.",
+    "context": "Forthis,awidevarietyofdatasourcescanbeused,orevenoutputsfromexistingorpre-trainedmachinelearning\nmodels. Afterthemodelistrained,itsparametersarekeptfixedsothatthemodelcanbeusedtopredictoutcomesor",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the process of identifying patterns in new or previously unseen data called?",
+    "answer": "inference",
+    "context": "identifypatternsinneworpreviouslyunseendata. Thisprocessiscalledinference. Itisimportanttokeepinmindthe\ndistinctionbetweentrainingandinference. Aftertraining,themodelremainsunchanged,anditremainsunchanged",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of machine learning is commonly used for official statistics?",
+    "answer": "Supervised learning",
+    "context": "untilitisretrainedagain. Later,inSection3,wewillfocusonthedisparitiesthatthiscancausew.r.t.theinference\nphaseand,inconsequence,officialstatisticsproduction.\nSupervisedlearningisoneofthemostcommontypesofmachinelearningusedforofficialstatistics. Thismethod",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of data is used to train a model in this context?",
+    "answer": "A labeled dataset",
+    "context": "involvestrainingamodelonalabeleddataset,whereeachdatapointhasaknownoutcomeortargetvariable. The\nmodellearnstoassociatefeaturesinthedatawiththetargetvariable,enablingittomakepredictionsonnewdatawith",
+    "paper_id": 1
+  },
+  {
+    "question": "What is an example of how supervised learning is used in the context of official statistics?",
+    "answer": "Predicting the happiness of an individual based on their Twitter profile.",
+    "context": "similarfeatures. Inthecontextofofficialstatistics,supervisedlearningcanforexamplebeusedtopredictthehappiness\nofanindividualbasedontheirTwitterprofile[8]. Unsupervisedlearning,ontheotherhand,isusedwhenthetarget",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the primary goal of the machine learning model in this approach?",
+    "answer": "To recognize similarities and differences among input data without explicit guidance from labeled data.",
+    "context": "variableisunknownorthegoalistoidentifypatternsorrelationshipswithinthedata. Inthisapproach,themachine\nlearningmodellearnstorecognizesimilaritiesanddifferencesamonginputdatawithoutexplicitguidancefromlabeled",
+    "paper_id": 1
+  },
+  {
+    "question": "What is an example of how unsupervised learning can be used in official statistics?",
+    "answer": "Identify citizens, companies or events that are similar to each other on one or more aspects that could be hidden from plain sight.",
+    "context": "data. Inthecontextofofficialstatistics,unsupervisedlearningcanforexamplebeusedtoidentifycitizens,companies\noreventsthataresimilartoeachotherononeormoreaspectsthatcouldbehiddenfromplainsight[9].",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the primary advantage of using machine learning in data analysis?",
+    "answer": "Its ability to nowcast and forecast is an extremely valuable addition.",
+    "context": "Machinelearningcanbeusedtocomplementorevenreplaceofficialstatistics,anditsabilitytonowcastandforecastis\nanextremelyvaluableaddition. Modernmachinelearningmodels,toolsandhardwarecananalyzevastamountsofdata",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the main differences between machine learning and data science?",
+    "answer": "Although they imply different methods and techniques, the terms machine learning and data science are often used interchangeably, with machine learning being a subset of data science.",
+    "context": "inreal-timeornear-real-time,providingmoreup-to-dateandpreciseestimatesofe.g.economicandsocialtrends. By\n1Althoughoriginally(andtechnically)theyimplydifferentmethodsandtechniques,thetermsmachinelearning,datascience,",
+    "paper_id": 1
+  },
+  {
+    "question": "What term is used in this paper to denote the scientific discipline concerned with learning the most optimal model parameters based on data?",
+    "answer": "machine learning",
+    "context": "artificialintelligence,deeplearning...arenowadaysconsideredinterchangeable.Inthispaperweconsistentlyusethetermmachine\nlearning to denote the scientific discipline concerned with learning the most optimal model parameters based on data. It is a",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the relationship between machine learning and deep learning?",
+    "answer": "Deep learning is a subdiscipline of machine learning.",
+    "context": "subdisciplineofartificialintelligence,whiledeeplearningisasubdisciplineofmachinelearning.Datascienceencompassesboth\nmachinelearningaswellasdatapreparation,analyticsandvisualization.\n2",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the benefits of incorporating machine learning into official statistical production?",
+    "answer": "One can benefit from the strengths of both approaches and make more informed decisions based on the most current and accurate data.",
+    "context": "incorporatingmachinelearningintoofficialstatisticalproduction,onecanbenefitfromthestrengthsofbothapproaches\nandmakemoreinformeddecisionsbasedonthemostcurrentandaccuratedata[10].\n2.2 Externaldatasources",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the nature of the data sources that power machine learning models?",
+    "answer": "Their nature, size, structure, and frequency can be vastly different.",
+    "context": "2.2 Externaldatasources\nLet\u2019s focus on the data sources that will power such machine learning models. Their nature, size, structure,\nfrequency...canbevastlydifferent,theymusttypicallybegathered\u2018inthewild\u2019andshouldoftenbecombinedwith",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some unique characteristics of non-traditional data sources for official statistics?",
+    "answer": "They may present broad-spectrum coverage of a wide variety of topics.",
+    "context": "eachothertoextractmeaningfulinsights. Comparedtomoretraditionaldatasourcesforofficialstatistics,theymay\npresentuniqueandappealingcharacteristicssuchas:\nBroad-spectrum\u2013Coversawidevarietyoftopics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some characteristics of big data?",
+    "answer": "A large variety of sources to cover different perspectives, a lot of data is freely and easily accessible, datasets can be enormous, and data can come in various structures such as tabular, images, video, text, and audio.",
+    "context": "Diversity\u2013Alargevarietyofsourcestocoverdifferentperspectives.\nAvailability\u2013Lotsofdataisfreelyandeasilyaccessible.\nSize\u2013Somedatasetscanbeenormous,sometimesevencomplete.\nStructure\u2013Notonlytabulardata,butalsoimages,video,text,audio,etc.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the key characteristics of data that can be filtered and covered in various locations and regions?",
+    "answer": "Coverage",
+    "context": "Timeliness\u2013(Near)up-to-dateandreal-timeinformation.\nFrequency\u2013Rawdataonvarious,evenveryfine-grainedtimescales.\nGranularity\u2013Rawdataonvarious,evenfine-grainedlevelsofdetail.\nCoverage\u2013Variouslocationsandregionscanbefilteredandcovered.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some challenges that need to be overcome before the data is ready for machine learning and official statistical production?",
+    "answer": "Data quality issues such as errors, biases, or missing values that need to be addressed to ensure accuracy and reliability.",
+    "context": "Ontheotherhand,beforeallthisdataisreadytobeexertedformachinelearningandofficialstatisticalproduction,a\nfewchallengesneedtobeovercome,suchas:\nDataquality\u2013Datamaycontainerrors,biases,ormissingvaluesthatneedtobeaddressedtoensureaccuracyand\nreliability.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some challenges associated with data analysis?",
+    "answer": "Understanding the context and meaning of data, as well as combining data from different sources with varying structures and formats, can be challenging.",
+    "context": "reliability.\nDatainterpretation\u2013Understandingthecontextandmeaningofdatacanbedifficult,especiallywhendealingwith\nunstructureddatasuchastextorimages.\nDataintegration\u2013Combiningdatafromdifferentsourceswithvaryingstructuresandformatscanbechallengingand",
+    "paper_id": 1
+  },
+  {
+    "question": "What can make it challenging to achieve proper randomization or compile representative population samples?",
+    "answer": "The underlying data origins.",
+    "context": "time-consuming.\nSelection bias \u2013 Proper randomization or compiling representative population samples can be challenging, and it\ngreatlydependsontheunderlyingdataorigins.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some challenges in achieving reproducibility in research?",
+    "answer": "Implicit, hidden, and production-specific design choices can make it difficult to achieve reproducibility.",
+    "context": "Operationalizationbias\u2013Reproducibilitycanbedifficultasitdependsonmanyimplicit,hidden,and/orproductionspecificdesignchoices[11,12].\nComputationalresources\u2013Processingandanalyzinglargeamountsofdatamayrequiresignificantcomputational\nresources.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some key considerations when handling sensitive data?",
+    "answer": "Privacy and security, as well as data ethics, should be prioritized.",
+    "context": "resources.\nPrivacyandsecurity\u2013Sensitivedatamayneedtobeprotectedandanonymizedtoensureprivacyandsecurity.\nDataethics\u2013Datacollectionanduseshouldadheretoethicalprinciples.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the requirements for implementing the end solutions mentioned in the text?",
+    "answer": "Resources, budgets, and a talented workforce are required, as well as a consideration of the cost of the data source itself.",
+    "context": "Fairnessandjustness\u2013Theendsolutionshouldideallybeasneutralaspossibleandshouldnotdiscriminate[13].\nCost\u2013Alloftheaboverequiresresources,budgetsandatalentedworkforce. Inaddition,thedatasourceitselfmight",
+    "paper_id": 1
+  },
+  {
+    "question": "In what year did McKinsey report that many companies have started to specialize in acquiring and selling data?",
+    "answer": "2016",
+    "context": "needtobepurchased. In2016,McKinseyreportedthatmanycompanieshavestartedtospecializeinacquiringand\nsellingdata[14].\n3",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the most challenging piece of the puzzle in managing these challenges?",
+    "answer": "The most challenging piece of the puzzle is the mindset.",
+    "context": "Withtherighttools,workforce,technologicaladvances,mindset,andlegislativesupport,thesechallengescanand\nshouldbemanageable. Themostchallengingpieceofthepuzzle,however\u2013andonethatismorethanoftenignored\u2013",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main issue with data sources that are externally gathered?",
+    "answer": "The lack of control you can exert over the data sources.",
+    "context": "isthelackofcontrolyoucanexertoverthedatasourcesthatareexternallygathered. Asanationalstatisticsagency,\ntraditionally,surveydataandadministrativerecordsthatpowerofficialstatisticsarecompletelyunderyourowncontrol.",
+    "paper_id": 1
+  },
+  {
+    "question": "What happens when you start exploiting external data sources?",
+    "answer": "You lose control of your data.",
+    "context": "Butonceyoustartexploitingexternaldatasourcestopowernovel,innovative,complimentaryorersatzstatistics,this\nlackofcontrolofyourdatashouldneverbeignored,andifpossible,shouldbefrontandcenteronyouragendaearlyon\nintheprocess.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the importance of having control and power over data in a statistics agency?",
+    "answer": "It is essential to fulfilling responsibilities as a statistics agency.",
+    "context": "intheprocess.\nAsthepopularsayinggoes: \u201cWithgreatpowercomesgreatresponsibility\u201d(fromSpider-Man,2002). Havingcontrol\nandpoweroveryourdataisessentialtofulfillingyourresponsibilitiesasastatisticsagency. However,intheworldof",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main concern when incorporating external data sources into official statistics?",
+    "answer": "Data control and powerlessness due to external data.",
+    "context": "data,theoppositeisoftentrue: withgreatamountsofexternaldatacomesgreatpowerlessness. Therefore,itiscrucial\ntoprioritizetheissueofdatacontrolwhenincorporatingexternalsourcesintoofficialstatistics. Takingthetimeto",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the benefits of establishing proper protocols and procedures for external data management?",
+    "answer": "Preventing a multitude of issues down the line and ensuring that the data you rely on remains accurate and trustworthy.",
+    "context": "establishproperprotocolsandproceduresforexternaldatamanagementcanpreventamultitudeofissuesdowntheline\nandensurethatthedatayourelyonremainaccurateandtrustworthy.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main problem being addressed in this paper?",
+    "answer": "The pervasive problem of powerlessness and lack of control",
+    "context": "Thispaperdelvesintothepervasiveproblemofpowerlessnessandlackofcontrol,unravelingthemultifacetedaspects,\nrisks, andpitfallsthatarisefromutilizing externaldatasourcesformachinelearning inofficialstatistics. We will",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some potential consequences of changing data sources in a research or analysis context?",
+    "answer": "Some potential consequences include data loss, inconsistencies in data formatting or structure, and the need for additional time and resources to adapt to the new data source.",
+    "context": "exploretheconceptsof\u2018change\u2019and\u2018consequence\u2019intheirmostexpansiveinterpretationstocomprehensivelytackle\nthisquestion.\n3 Thechallengeofchangingdatasources",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the risks associated with relying heavily on external data sources for machine learning in official statistics?",
+    "answer": "Significant risks, including leaving statistical agencies vulnerable due to limited control over these sources.",
+    "context": "Relyingheavilyonexternaldatasourcesformachinelearninginofficialstatisticscomeswithsignificantrisks. Sucha\ndependencecanleavestatisticalagenciesvulnerablesincetheyhavelimitedcontroloverthesesources. Thissituation",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the prices and availability of precious resources often beyond our control?",
+    "answer": "Countries' control",
+    "context": "issimilartohowourglobaleconomy,mobility,andprosperitywereoncehighlydependentontheavailabilityofoil.\nSincethepricesandavailabilityofthesepreciousresourcesareoftenbeyondourcontrol,countriescandonothingbut",
+    "paper_id": 1
+  },
+  {
+    "question": "What did Clive Humby proclaim in 2006?",
+    "answer": "Data is the new oil",
+    "context": "endurepricefluctuationsandshortages. CliveHumbyproclaimedin2006that\u201cdataisthenewoil\u201d,givenitspowerful\nintrinsicvalue. However,hisstatementkeepsholdingtrueintermsofvulnerability,powerlessness,andlackofcontrol\noverexternalproviders.",
+    "paper_id": 1
+  },
+  {
+    "question": "What will be discussed in the following paragraphs?",
+    "answer": "The various types and causes of data changes, and the ramifications of changing data sources for machine learning in official statistics.",
+    "context": "overexternalproviders.\nInthefollowingparagraphs,wewilldelveintothevarioustypesandcausesofdatachanges. Wewillthendiscussthe\nramificationsofchangingdatasourcesformachinelearninginofficialstatistics. Finally,wewillprovidealistofbest",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main risk associated with incorporating external data?",
+    "answer": "Future changes in the data sources.",
+    "context": "practicesandtips,althoughitisimportanttorememberthatthereisnofreelunch: wheneverweincorporateexternal\ndata,weexposeourselvestotheriskoffuturechangesinthesedatasources.\n3.1 TypesandCausesofChangingDataSources\n3.1.1 Datatypesandschemas",
+    "paper_id": 1
+  },
+  {
+    "question": "What types of changes may be made to data formats or structure?",
+    "answer": "Modifications made to accommodate future use cases or business needs.",
+    "context": "3.1.1 Datatypesandschemas\nAchangeindatatypesorschemasreferstomodificationsmadetothedataformatsorthestructureinwhichthedata\narestoredandoffered. Thesetypesofchangesmayariseduetoaneedtoaccommodatefutureusecasesorbusiness",
+    "paper_id": 1
+  },
+  {
+    "question": "What can cause entire pipelines to break even with seemingly innocent changes?",
+    "answer": "Changes such as integers becoming floats, data columns being added or removed.",
+    "context": "requirements,toeliminatetechnicaldebt,ortoimprovedatastorageandretrievalefficiency. Eventhemostinnocent\nchanges\u2013e.g.integersbecomingfloats,datacolumnsthatareaddedorremoved... \u2013canbreakentirepipelines. In",
+    "paper_id": 1
+  },
+  {
+    "question": "What happens to the data changes in the most fortunate cases?",
+    "answer": "The runtime environment throws errors that reveal the cause of the data changes.",
+    "context": "themostfortunateofcasestheruntimeenvironmentwillthrowerrorsthatrevealthecauseofthesedatachanges. In\nothercases,however,thedatachangesremainundetectedandsecretlywreakhavocinthepipeline. Ifthepipeline",
+    "paper_id": 1
+  },
+  {
+    "question": "What can cause unreliable predictions in machine learning models?",
+    "answer": "Discrepancies between the feature distributions at train and inference time.",
+    "context": "containsmachinelearningcomponents,datatypechangescane.g.inducefeaturemismatches\u2013discrepanciesbetween\nthefeaturedistributionsattrainandinferencetime\u2013thatleadtounreliablepredictions.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential consequences of minor adjustments in data types or schemas?",
+    "answer": "Significant impacts further down the data pipeline.",
+    "context": "Itisimportanttobevigilantaboutchangesindatatypesorschemas,asevenseeminglyminoradjustmentscanhave\nsignificantimpactsfurtherdownthedatapipeline. Tomitigatetheserisks,itisadvisabletostayinformedaboutdata",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the key steps mentioned for improving data ingestion?",
+    "answer": "Change announcements from providers and implement robust data checks, including data type validation, automated feature analysis, and outlier detection.",
+    "context": "changeannouncementsfromprovidersandimplementrobustdatachecksduringdataingestion,rangingfromsimple\ndata(type)validationtofull-blownautomatedfeatureanalysis,outlierdetection,etc. Additionally,thedeploymentof",
+    "paper_id": 1
+  },
+  {
+    "question": "What technologies can be used to share and collect data?",
+    "answer": "APIs, queues, network drives, and external storage",
+    "context": "effectivemonitoringsystemscanhelpcatchmachinelearningfailuresquicklyandpreventpotentiallycostlyerrors.\n3.1.2 Sharingandcollectiontechnology\nDatacanbesharedandcollectedusingmanydifferenttechnologies,suchasAPIs,queues,networkdrives,external",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main reason for updating API endpoints?",
+    "answer": "To improve functionality and performance.",
+    "context": "drives,e-mail...butalsowebscraping,onlineanalyticstools,sensornetworks...Changesinthesetechnologiesinevitably\noccurfromtimetotime.Forexample,APIendpointsoftenneedtobeupdatedtoimprovefunctionalityandperformance.",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of changes may be made to the API?",
+    "answer": "Changes may be made to the API's data structures or methods to provide more efficient or comprehensive data access, or to address security vulnerabilities or ensure compliance with new regulations.",
+    "context": "ChangesmaybemadetotheAPI\u2019sdatastructuresormethods,toprovidemoreefficientorcomprehensivedataaccess.\nInaddition,changesmaybemadetotheAPItoaddresssecurityvulnerabilitiesortoensurecompliancewithnew\n4",
+    "paper_id": 1
+  },
+  {
+    "question": "What can lead to changes in API endpoints?",
+    "answer": "Changes in business requirements or strategy, new products or services, modifying existing offerings, or changing pricing.",
+    "context": "regulationsorstandards. Furthermore,changesinbusinessrequirementsorstrategymayalsoleadtochangesinAPI\nendpoints. Forinstance,acompanymayintroducenewproductsorservices,modifytheirexistingofferings,orchange\ntheirpricing.",
+    "paper_id": 1
+  },
+  {
+    "question": "What changes did Twitter introduce in the version 2 of its popular API?",
+    "answer": "Many changes in endpoints, data fields, and pricing compared to version 1.1.",
+    "context": "theirpricing.\nArecent,tellingexampleistheTwitterAPI.In2021,Twitterlaunchedversion2ofitspopularAPIthatintroduced\nmanychangesinendpoints,datafields,pricing...comparedtoversion1.1. Twitterencourageddeveloperstomigrateto",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential consequences of migrating to a new API?",
+    "answer": "Breaking changes that would impact entire data processing pipelines, statistics production, etc.",
+    "context": "thisnewAPIoffering,butformanyusecasessuchamigrationwouldintroducebreakingchangesthat,intheirturn,\nwouldimpactentiredataprocessingpipelines,statisticsproduction,etc. Forthetimebeing,Twitterofferedbothversion",
+    "paper_id": 1
+  },
+  {
+    "question": "What happened to Twitter's API offerings in 2022?",
+    "answer": "Elon Musk suspended all existing API offerings.",
+    "context": "1.1andversion2oftheirAPIinparallel,whichcausedmanytoburytheirheadsinthesand. Thesituationgoteven\nworsewhenElonMuskacquiredTwitterin2022anddecidedtosuspendallexistingAPIofferings. Instead,in2023a",
+    "paper_id": 1
+  },
+  {
+    "question": "What was the effect of the new enterprise tier on the development and research community?",
+    "answer": "It caused great dissatisfaction and many initiatives were abandoned.",
+    "context": "newenterprisetierwasintroducedthatputapriceofmorethan40thousandUSDpermonthonanyreasonablyeffective\nuseoftheAPI.Thiscausedgreatdissatisfactioninthedevelopmentandresearchcommunityandmanyinitiativeswere\nabandoned.\n3.1.3 Conceptdrift",
+    "paper_id": 1
+  },
+  {
+    "question": "What is concept drift in the context of data distribution?",
+    "answer": "Changes in the data distribution between train and test time, which can have multiple causes.",
+    "context": "abandoned.\n3.1.3 Conceptdrift\nConceptdriftisrelatedtochangesinthedatadistributionbetweentrainandtesttime,whichcanhavemultiplecauses\n[15,16]. Changesinbusinesslogiccaninduceinformationshifts,forexample,whencategoricalvariablesareexpanded",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a pervasive issue in data calculation?",
+    "answer": "The calculation of derived data fields, especially when those calculations are not transparent or proprietary.",
+    "context": "withadditionalcategoriesorwhenthemeaningofcertaindatafieldsisaltered. Aparticularpervasiveissueisthe\ncalculationofderiveddatafields,especiallywhenthosecalculationsarenottransparentorproprietary. Intheageof",
+    "paper_id": 1
+  },
+  {
+    "question": "What should you assume when working with derived data fields in machine learning?",
+    "answer": "You should assume that derived data fields can be the result of a model prediction.",
+    "context": "machinelearning,youshouldalwaysassumethatderiveddatafieldscanbetheresultofamodelprediction;when\nthismodelisupdatedwithoutyourknowing,thederiveddatafieldswillhavea(slightly)differentdatadistribution,",
+    "paper_id": 1
+  },
+  {
+    "question": "What is concept drift and why is it a concern for machine learning models?",
+    "answer": "Concept drift refers to the change in the underlying patterns or relationships in the data over time, which can affect the accuracy and reliability of machine learning models. It is a concern because many sociological and economic processes are naturally prone to concept drift, making it essential to periodically reevaluate and retrain models.",
+    "context": "whichwillcauseissuesindependentmachinelearningmodels. Butevenwhendatafieldsarenottheresultofamodel\u2019s\nprediction,itisimportanttoperiodicallyreevaluateandretrainmodels,sincemanysociologicalandeconomicprocesses\narenaturallypronetoconceptdriftthemselves.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a deliberate change in data frequency?",
+    "answer": "A deliberate change in data frequency is made due to shifts in business requirements or technological advancements.",
+    "context": "3.1.4 Frequencyandinterruptions\nAchangeindatafrequencyreferstomodificationsmadetotherateatwhichdataiscollectedorupdated,whichcan\nhappendeliberatelyorrandomly. Deliberatechangesmayariseduetoshiftsinbusinessrequirementsortechnological",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some common causes of random shifts in data?",
+    "answer": "Noisy factors such as network issues, component failures, downtime, or human errors.",
+    "context": "choices. Randomshiftsaremostoftenattributedtonoisyfactorssuchasnetworkissues,componentfailures,downtime...or(human)errors. Suchchangesinfrequencycanimpactmachinelearningcomponentsdramatically. E.g.when",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the recommended approach to mitigate the risks associated with changes in data distribution?",
+    "answer": "Designing data pipelines to monitor changes in incoming data frequency.",
+    "context": "periodicaldataissampledeveryminuteinsteadofeverysecond,thedatadistributionchangesonwhichthemodelwas\ntrained. Tomitigatetheserisks,datapipelinesshouldbedesignedtomonitorchangesinincomingdatafrequency.\n3.1.5 Ownershipanddiscontinuation",
+    "paper_id": 1
+  },
+  {
+    "question": "What is considered worse than interruptions in data collection?",
+    "answer": "The downright discontinuation of the data source",
+    "context": "Worsethaninterruptionsisdownrightdiscontinuationofthedatasource,whichhasimmediateconsequencesonthe\nfutureexistenceofthestatistic.Also,achangeofownershipofthedatasource\u2013e.g.whenacquiredbyanothercompany",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a useful strategy to avoid single points of failure?",
+    "answer": "Building redundancy by diversifying data sources.",
+    "context": "\u2013isnotafictionalscenario,anditcantriggeranyoftherisksthatarediscussedinthissection. Buildingredundancyby\ndiversifyingdatasourcesisausefulmitigatingstrategytoavoidsinglepointsoffailures.\n3.1.6 Legalproperties",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of changes may be realized due to new privacy laws or contractual obligations?",
+    "answer": "Legal changes",
+    "context": "3.1.6 Legalproperties\nLegalchangesrefertomodificationsmadetothelegallandscapethatgovernsthecollection,storage,anduseofdata.\nThistypeofchangemayariseduetonewprivacylaws,contractualobligations,orchangesinthecostofdataaccessor",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some reasons for the change in data collection and processing rules?",
+    "answer": "The adoption of new regulations, such as GDPR, and changes in the cost of data access or storage.",
+    "context": "storage. Onecauseofthistypeofchangeistheadoptionofnewregulations,suchasGDPR,whichrequirecompanies\ntocomplywithstricterrulesforcollectingandprocessingdata. Additionally,changesinthecostofdataaccessor",
+    "paper_id": 1
+  },
+  {
+    "question": "What should companies consider when modifying their data sources or methods to reduce costs?",
+    "answer": "Contractual consequences and potential impacts on data quality and integrity.",
+    "context": "storagemayrequirecompaniestomodifytheirdatasourcesormethodstoreducecosts,whichcanhavecontractual\nconsequences. Ifpossible,negotiateairtightSLAswiththedataproviderandmakesuretoattributeenoughattentionto\nfuturedatachanges.\n3.1.7 Ethicsandpublicperception",
+    "paper_id": 1
+  },
+  {
+    "question": "Can ethical considerations and public perception influence the choice of data collection methods and sources?",
+    "answer": "Yes, they can lead to a shift towards alternative sources if certain data sources or variables are considered controversial or intrusive.",
+    "context": "3.1.7 Ethicsandpublicperception\nEthicalconsiderationsandpublicperceptionscanaffectdatacollectionmethodsandsources. Ifcertaindatasources\nor variables are considered controversial or intrusive, there may be a shift towards alternative sources, which may",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the potential impact of considering discriminatory or unethical variables on machine learning models?",
+    "answer": "It can lead to a push towards redesigning and retraining the models.",
+    "context": "requirearefreshoftheusedmachinelearningmodels. Itcanalsoimpactthewaymachinelearningmodelsaredesigned\nandtrained. Ifcertainvariablesorfactorsareconsidereddiscriminatoryorunethical,theremaybeapushtowards",
+    "paper_id": 1
+  },
+  {
+    "question": "What can lead to greater accountability and the need for transparency in algorithms?",
+    "answer": "Changes in ethics or public perception",
+    "context": "eliminatingoradjustingthemtoreducealgorithmicbias. Changesinethicsorpublicperceptionscanalsoresultin\ngreateraccountabilityandtheneedfortransparency. Stakeholdersmaydemandmoreopennessandclarityaround",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the key components involved in the use of algorithms, data sources, and decision-making processes?",
+    "answer": "Algorithms, data sources, and decision-making processes are the key components involved.",
+    "context": "theuseofalgorithms,datasources,anddecision-makingprocesses. Thiscanleadtogreaterscrutinyandoversightof\n5",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some potential issues with machine learning models that need to be addressed?",
+    "answer": "Their performance may be impacted if not adequately addressed, especially when black-box models need to be replaced by more interpretative variants.",
+    "context": "machinelearningmodels,whichmayimpacttheirperformanceifnotadequatelyaddressed,especiallywhenblack-box\nmodelsneedtobereplacedbymoreinterpretativevariants[17,18,19]. Finally,publictrustcanbesignificantlyaffected.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential consequences for public policy and decision making if stakeholders lose faith in official statistics?",
+    "answer": "Significant consequences for public policy and decision making.",
+    "context": "Ifstakeholdersperceivethatmachinelearningisbeingusedinappropriatelyorunethically,theymaylosefaithinthe\nintegrityandreliabilityofofficialstatistics. Thiscanhavesignificantconsequencesforpublicpolicyanddecision\nmaking.\n3.2 ConsequencesofChangingDataSources",
+    "paper_id": 1
+  },
+  {
+    "question": "What areas may be impacted when data sources change?",
+    "answer": "A variety of areas, including official statistics production, especially if there are machine learning components involved.",
+    "context": "Whendatasourceschange,therewillbeconsequencesforofficialstatisticsproduction,especiallyiftherearemachine\nlearningcomponentsinvolved. Wewillbroadlybutbrieflycoveravarietyofareasthatcanbeimpacted,someofwhich\nhavealreadybeenmentionedabove.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is concept drift in the context of data analysis?",
+    "answer": "Concept drift means that the underlying patterns and relationships in the data may change over time, leading to model deterioration or loss of accuracy.",
+    "context": "havealreadybeenmentionedabove.\nConceptdrift\u2013Conceptdriftmeansthattheunderlyingpatternsandrelationshipsinthedatamaychangeovertime,\nwhichcanleadtomodeldeteriorationorlossofaccuracy. Thisissuecanbeparticularlyrelevantwhendealingwith",
+    "paper_id": 1
+  },
+  {
+    "question": "What happens to a model when it becomes outdated?",
+    "answer": "It no longer reflects current trends or patterns in the data.",
+    "context": "long-termtrends,aschangesinsocietalnorms,technology,orotherexternalfactorscaninfluencedataovertime[16].\nModelstaleness\u2013Whenamodelbecomesoutdated,itnolongerreflectscurrenttrendsorpatternsinthedata. Thiscan",
+    "paper_id": 1
+  },
+  {
+    "question": "What can happen to a machine learning model if it is not updated frequently enough?",
+    "answer": "The model may not perform as well as it once did, leading to less accurate official statistics.",
+    "context": "occurifthemachinelearningmodelisnotupdatedfrequentlyenoughtokeeppacewithchangingdatasources. Asa\nresult,themodelmaynotperformaswellasitoncedid,leadingtolessaccurateofficialstatistics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can happen when changing data sources introduces bias or incorrect data?",
+    "answer": "It can impact the neutrality of the statistics produced, or lead to the phenomenon 'garbage in, garbage out'.",
+    "context": "Biasandneutrality\u2013Changingdatasourcescanalsointroducebiasorincorrectdata,whichcanimpacttheneutrality\nofthestatisticsproduced,orwhichcanleadtothephenomenon\u201cgarbagein,garbageout\u201d[20,21]. Sinceitisessential",
+    "paper_id": 1
+  },
+  {
+    "question": "What would happen to the accuracy and validity of official statistics if they remain neutral and objective?",
+    "answer": "The accuracy and validity of these statistics would be negatively impacted.",
+    "context": "thatofficialstatisticsremainneutralandobjective,thiswillnegativelyimpacttheaccuracyandvalidityofthesestatistics.\nAvailability\u2013Ifdatabecomeunavailable(foracertainperiodintimeorindefinitely)orarelimitedinscope,thismay",
+    "paper_id": 1
+  },
+  {
+    "question": "What can happen when there is a change in data sources in integration?",
+    "answer": "A domino effect can occur when multiple statistics or models rely on this data.",
+    "context": "impacttheabilitytoproduceaccurateandtimelyofficialstatistics.\nIntegration\u2013Achangeindatasourcescancauseadominoeffectwhenmultiplestatisticsormodelsrelyonthisdata",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the importance of being mindful when using machine learning model outputs as input for other models?",
+    "answer": "It is crucial to be mindful of the potential errors or biases in the output of machine learning models, especially when they are used as input for other models, to prevent the amplification of these issues in the larger pipeline.",
+    "context": "source. Especiallybemindfulwhentheoutputofmachinelearningmodelsisusedasinputforothermachinelearning\nmodels,eitherdirectlyorindirectlyaspartofalargerdatapipeline. Sincethepredictionsofamachinelearningmodel",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main challenge associated with changing data sources in predictive models?",
+    "answer": "The main challenge is that the predictions shift itself becomes a changing data source for other models.",
+    "context": "canbecomeunreliablewhentheinputdatachange,thispredictionshiftitselfisachangingdatasourceforothermodels.\nExtralabor\u2013Theriskofchangingdatasourcesrequiresadditionalresourcesandlabortomitigatetheeffectsofsuch",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the impact of integrating new data into existing machine learning models?",
+    "answer": "It has a tremendous impact on the costs and timeline of the produced statistics.",
+    "context": "changes,monitortheoccurrenceofchanges,andensurethatthenewdataareproperlyintegratedintoexistingmachine\nlearningmodels. Thishastremendousimpactsonthecostsandtimelineoftheproducedstatistics,anditmayalso\nrequireasignificantteamexpansion.",
+    "paper_id": 1
+  },
+  {
+    "question": "What may happen if changing data sources causes the impossibility of producing a statistic?",
+    "answer": "It may be necessary to stop offering the statistical service.",
+    "context": "Breaking changes or discontinuation \u2013 In some cases, changing data sources may cause the impossibility of\nproducingastatisticanyfurther. Ifthisisthecase,itmaybenecessarytostopofferingthestatisticaltogetherorfind",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the typical outcome when alternative data sources are used to produce statistics?",
+    "answer": "There will almost always be a mismatch with the original data source that has an impact on the resulting statistic.",
+    "context": "alternativedatasourcesthatcanproduceaccurateandreliableofficialstatistics. Whenalternativedatasourcesare\nfound,therewillalmostalwaysbeamismatchwiththeoriginaldatasourcethathasanimpactontheresultingstatistic,",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the importance of being transparent about breaking changes in data sources?",
+    "answer": "It is important to be transparent about breaking changes to indicate when exactly the data source was changed, ensuring users are aware of the changes.",
+    "context": "resultinginabreakingchange. Inthatcase,itisimportanttoovercomethemismatchesasbestaspossible\u2013e.g.in\ntermsofstatisticalproperties\u2013and,certainly,tobetransparentaboutthebreakingchange,e.g.byindicatingonagraph\nwhenexactlythedatasourcewaschanged.",
+    "paper_id": 1
+  },
+  {
+    "question": "What changes occur in quality metrics when data sources are changed?",
+    "answer": "Changes in timeliness, validity, accuracy, completeness, consistency, and other quality metrics w.r.t. the produced official statistics.",
+    "context": "Quality metrics \u2013 Finally, changing data sources imply changes in timeliness, validity, accuracy, completeness,\nconsistencyandotherqualitymetricsw.r.t.theproducedofficialstatistics[6]. Ensuringthatresultingstatisticcontinues",
+    "paper_id": 1
+  },
+  {
+    "question": "What can significantly impact the performance of a machine learning model?",
+    "answer": "Changes in data sources",
+    "context": "tomeetthesequalitymetricsremainscritical.\n3.3 MitigatingChangingDataSources\nAshasbeenillustratedabove,changesindatasourcescansignificantlyimpacttheperformanceofamachinelearning",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential implications of using an inaccurate machine learning model?",
+    "answer": "Serious implications, especially when the model is being used for official statistics, where accuracy and reliability are crucial.",
+    "context": "model. Theeffectscanbediverse,rangingfromintroducingbiasesinthedatatoproducingincorrectresults. Thiscan\nhaveseriousimplications,especiallywhenthemodelisbeingusedforofficialstatistics,whereaccuracyandreliability",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main goal of taking measures to prevent and mitigate changes?",
+    "answer": "To prevent and mitigate such changes of paramount importance.",
+    "context": "areofparamountimportance. Therefore,itisessentialtotakemeasurestopreventandmitigatesuchchanges. Thisis\nnotaneasytask,astheconsequencescanbediverse,andtherequiredeffortstomitigatethemareoftentime-consuming",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some key steps to consider when approaching a complex problem?",
+    "answer": "Performing a risk analysis, monitoring, diversifying data sources, and building technical capabilities.",
+    "context": "andnotstraightforward. Wedonotclaimtohavedefiniteanswers. However,wewillproposeseveralrecommendations\nand best practices, including performing a risk analysis, monitoring, diversifying data sources, building technical",
+    "paper_id": 1
+  },
+  {
+    "question": "What techniques can be used to improve the quality of data in a system?",
+    "answer": "Data normalization techniques and data validation processes",
+    "context": "robustness,usingdatanormalizationtechniques,andincorporatingdatavalidationprocesses.\n6",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of performing a risk analysis before incorporating a new data source?",
+    "answer": "To mitigate the impact of changes in data sources",
+    "context": "Riskanalysis\u2013Performingariskanalysisbeforeincorporatinganewdatasourceisanessentialstepinmitigating\ntheimpactofchangesindatasources. Thisanalysisinvolvesidentifyingthepotentialrisksassociatedwiththedata",
+    "paper_id": 1
+  },
+  {
+    "question": "What should the analysis of a data source include?",
+    "answer": "Both technical and non-technical aspects, as well as potential solutions for identified risks.",
+    "context": "source,whichwehavecoveredinSection3.1. Theanalysisshouldbecomprehensive,consideringbothtechnicaland\nnon-technicalaspectsofthedatasource,andshouldideallyincludepotentialsolutionsfortheidentifiedrisks. Thiswill",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main challenge when dealing with candidate data sources?",
+    "answer": "Often forcing you out of a face the hard truth that the candidate data sources are not adequate or reliable enough.",
+    "context": "oftenforceyoutofacethehardtruthandwillleadyoutodecidethatthecandidatedatasourcesarenotadequateor\nreliableenough. Trade-offswillneverthelessneedtobeconsidered,dependingontheusecaseathand.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of monitoring in mitigating the impact of changing data sources?",
+    "answer": "It involves tracking various aspects of the data sources, machine learning models, and their outputs.",
+    "context": "Monitoring\u2013Monitoringeverythingthatisrelevantisanothercrucialstepinmitigatingtheimpactofchangingdata\nsources. Itinvolvestrackingvariousaspectsofthedatasources,themachinelearningmodels,andtheiroutputsto",
+    "paper_id": 1
+  },
+  {
+    "question": "What variables and quantities should be continuously tracked to ensure model reliability and accuracy over time?",
+    "answer": "A list of variables and quantities that must be continuously tracked includes data inputs, model performance metrics, external factors influencing the model, and any other relevant parameters that may impact the model's accuracy and reliability.",
+    "context": "detectandrespondtochangespromptly. Draftalistofvariablesandquantitiesthatmustbecontinuouslytrackedto\nensurethatthemodelsremainreliableandaccurateovertime. Forthis,inspirationcanbedrawnfromthediscussed",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of models can be tested against a reference test set or a historical reference model?",
+    "answer": "Supervised models",
+    "context": "topicsinSection3.1,butitwillvaryfromusecasetousecase,aswellasthenatureofthemodelsthathavebeenused.\nSupervisedmodels,forexample,canbetestedagainstareferencetestsetorahistoricalreferencemodel;iftheaccuracy,",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main difference in monitoring performance between supervised and unsupervised models?",
+    "answer": "There is no clear performance reference set for unsupervised models, making it more challenging to monitor their performance.",
+    "context": "precision or recall starts to deviate significantly from this reference set, it should be flagged. On the other hand,\nmonitoringtheperformanceofunsupervisedmodelscanbemorechallenging,becausethereisnoclearperformance",
+    "paper_id": 1
+  },
+  {
+    "question": "What is one approach to evaluate a model's performance?",
+    "answer": "Monitoring the model's ability to detect patterns and clusters in the data.",
+    "context": "measurethatcanbedirectlycomputed. Oneapproachistomonitorthemodel\u2019sabilitytodetectpatternsandclustersin\nthedata. Itispossibletouseareferencetestsetorreferencemodelforthis,buttheinformativemetrics\u2013e.g.cluster",
+    "paper_id": 1
+  },
+  {
+    "question": "What is another approach to understanding learned latent spaces?",
+    "answer": "Visualizing projections of certain interesting datapoints in the learned latent spaces or a reduction thereof.",
+    "context": "similarity,homogeneity,separation... \u2013aremoreabstractandsomewhathardertointerpret. Anotherapproachisto\nvisualizeprojectionsofcertaininterestingdatapointsinthelearnedlatentspacesorpreferablyareductionthereof,",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the trade-off between interpretability and hard performance metrics in clustering?",
+    "answer": "Interpretability is greatly benefited but makes it harder to convert into hard numbers.",
+    "context": "whichgreatlybenefitsinterpretabilitybutmakesithardertoconvertitintohardnumbers. Asasuggestion,agood\nbalancebetweeninterpretabilityandhardperformancemetricsisfoundwhenclustersaretestedagainstpre-existing",
+    "paper_id": 1
+  },
+  {
+    "question": "What is another effective approach to monitor model and data performance?",
+    "answer": "Create listings similar data points for given queries.",
+    "context": "domainknowledge,e.g.bylistingsimilardatapointsforgivenqueries.Simplymonitoringwhetherexpectedsimilarities\nemergeornotcanprovidepowerfulsignalsaboutmodelanddataperformance. Anothereffectiveapproachistocreate",
+    "paper_id": 1
+  },
+  {
+    "question": "What can monitoring a model's performance on proxy tasks provide?",
+    "answer": "Insights into the quality and usefulness of the unsupervised model's output.",
+    "context": "proxysupervisedtasksthatrelyontheoutputoftheunsupervisedmodel. Monitoringthemodel\u2019sperformanceonsuch\nproxytaskscanprovideinsightsintothequalityandusefulnessoftheunsupervisedmodel\u2019soutput.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is one challenge of using multiple data sources?",
+    "answer": "The potential for conflicts or inconsistencies between the sources.",
+    "context": "Diversification\u2013Diversifyingdatasourcesisanotherimportantmeasure,butiseasiersaidthandone. Onechallengeof\nusingmultipledatasourcesisthepotentialforconflictsorinconsistenciesbetweenthesources. Differentdatasources",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the key to resolving discrepancies in data before it can be used in a model?",
+    "answer": "Data normalization is the key.",
+    "context": "mayhavedifferentformats,schemas,andlevelsofquality,whichcancreatediscrepanciesandinconsistenciesthatmust\nberesolvedbeforethedatacanbeusedinthemodel. Therefore,datanormalizationiskey. Additionally,integrating",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential drawbacks of using multiple data sources in a model?",
+    "answer": "A complex and time-consuming process, additional computational overhead, impact on scalability and portability.",
+    "context": "multiple data sources can be a complex and time-consuming process. It can also create additional computational\noverhead,whichmayimpactthemodel\u2019sscalabilityandportability. Finally,findingrelevantandreliabledatasources",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the challenges of retrieving relevant data for specialized or niche domains?",
+    "answer": "Extensive research and communication with data providers may be required.",
+    "context": "can be a challenging task, particularly for specialized or niche domains. It may require extensive research and\ncommunication with data providers to retrieve relevant data. Again, this story is about economical, technical and",
+    "paper_id": 1
+  },
+  {
+    "question": "What is highly use-case-dependent in software development?",
+    "answer": "practical trade-offs",
+    "context": "practicaltrade-offs,andisofcoursehighlyuse-case-dependent.\nTechnical robustness \u2013 Building technical robustness is paramount and requires significant engineering efforts.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of using data normalization techniques in building an automated, data-driven statistic?",
+    "answer": "To ensure consistency in the statistical offering by reducing the impact of errors, outliers, outages, and time-dependent variability.",
+    "context": "Buildinganautomated,data-drivenstatisticthatisresistanttochangingdatasourcessuchaserrors,outliers,outages,\ntime-dependentvariability,etc.ensuresconsistencyinthestatisticaloffering. Usingdatanormalizationtechniquesand",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some essential measures for robust technical implementations in data pipelines?",
+    "answer": "Incorporating data validation, thorough unit and integration testing, failover and deduplication, scalability solutions, and security measures.",
+    "context": "incorporatingdatavalidationintothepipelineareessentialmeasures,butrobusttechnicalimplementationsalsorequire\nthoroughunitandintegrationtesting,failoveranddeduplication,scalabilitysolutions,securitymeasures,etc. Ofcourse,\nthisisanentirefieldofstudyonitsown.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the best mitigation strategy to counter the risk of changing data sources?",
+    "answer": "Agreeing on clear legal guidelines, such as closing formal data sharing agreements or SLAs with data providers.",
+    "context": "Legalrobustness\u2013Finally,webelievethatagreeingonclearlegalguidelinesisthebestmitigationstrategytocounter\ntheriskofchangingdatasources,forexample,byclosingformaldatasharingagreementsorSLAawithdataproviders.",
+    "paper_id": 1
+  },
+  {
+    "question": "What should agreements specify regarding data sharing?",
+    "answer": "The terms and conditions under which the data can be shared, as well as the legal responsibilities of each party.",
+    "context": "Suchagreementsshouldspecifythetermsandconditionsunderwhichthedatacanbeshared, aswellasthelegal\nresponsibilitiesofeachparty. Inparticular,theagreementsshouldspecifythelegalconsequencesofnon-compliance.\n4 Conclusion",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the risks and consequences of changing data sources when using machine learning for official statistics?",
+    "answer": "The list is long and covers many different aspects, ranging from statistical issues and model performance to data quality and integrity.",
+    "context": "4 Conclusion\nInthispaperwehaveinvestigatedtherisksandconsequencesofchangingdatasourceswhenusingmachinelearning\nfor official statistics. The list is long and covers many different aspects, ranging from statistical issues and model",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some of the potential mitigation strategies that have been looked at?",
+    "answer": "A few potential mitigation strategies have been examined, although they do not provide all the adequate answers.",
+    "context": "inconsistenciestotechnicalproblemsandethicalconsiderations. Wehavealsolookedatafewpotentialmitigation\nstrategies. However,weadmitthatthesestrategiesdonotprovidealltheadequateanswersandmightleavethereader",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main theme of the given text?",
+    "answer": "A story of trade-offs",
+    "context": "unsatisfiedor,worsestill,beguiled,asthesolutionsrequiremanyadditionalresourcesandefforts. Aswehavestressed\nacoupleoftimesinthispaper,thisisastoryoftrade-offs. Dependingontheusecaseathand,sometrade-offsmightbe",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main concern when handling data sources?",
+    "answer": "Losing control over data sources",
+    "context": "easiertohandlethanotherones. However,inthecontextofofficialstatistics,ouradviceistonottreadlightlyonthese\nmattersandtominimizetheriskoflosingcontroloveryourdatasourcesasmuchaspossible. Thistakestime,effort\n7",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the opportunities for official statistics offered by machine learning?",
+    "answer": "Many opportunities for official statistics",
+    "context": "andcarefulplanningwithahorizonofmultipleyears. Toendonapositivenote,despitethechallengesassociatedwith\nchangingdatasources,machinelearningoffersmanyopportunitiesforofficialstatistics. Bybeingawareoftherisks",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of the checklist of risks and mitigation strategies?",
+    "answer": "To provide a list of potential risks and strategies to mitigate them, ensuring the integrity and reliability of data-driven products.",
+    "context": "andtakingnecessaryprecautions,statisticalagenciescanleveragetheseopportunitieswhilemaintainingtheintegrity\nandreliabilityoftheirdata-drivenproducts. Wehopethatourchecklistofrisksandmitigationstrategiesprovidesa",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of the text?",
+    "answer": "To provide a useful starting point for statistical agencies and practitioners to ensure the robustness of their machine learning-based statistical reporting.",
+    "context": "usefulstartingpointforstatisticalagenciesandpractitionerstoensuretherobustnessoftheirmachinelearning-based\nstatisticalreporting.\nReferences\n[1] StuartJ.RussellandPeterNorvig. ArtificialIntelligence. PearsonEducation,2009.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the book 'The Elements of Statistical Learning'?",
+    "answer": "Trevor Hastie, Jerome Friedman, and Robert Tibshirani",
+    "context": "[2] TrevorHastie,JeromeFriedman,andRobertTisbshirani. TheelementsofStatisticalLearning. Springer,2017.\n[3] UNECE. Machinelearningforofficialstatistics. Technicalreport,UNECE,2022.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the paper 'Datamining and official statistics: The past, the present and the future'?",
+    "answer": "Hossein Hassani, Gilbert Saporta, and Emmanuel Sirimal Silva",
+    "context": "[4] HosseinHassani,GilbertSaporta,andEmmanuelSirimalSilva. Dataminingandofficialstatistics: Thepast,the\npresentandthefuture. BigData,2(1):34\u201343,March2014.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the paper 'Machine learning from the perspective of official statistics'?",
+    "answer": "Marco Puts and Piet Daas, and also Wesley Yung, Siu-Ming Tam, Bart Buelens, Hugh Chipman, Florian Dumpert, Gabriele Ascari, and Fabiana Rocci",
+    "context": "[5] MarcoPutsandPietDaas. Machinelearningfromtheperspectiveofofficialstatistic. TheSurveyStatistician,\n84:12\u201317,July2021.\n[6] WesleyYung,Siu-MingTam,BartBuelens,HughChipman,FlorianDumpert,GabrieleAscari,FabianaRocci,",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the article by Wesley Yung?",
+    "answer": "The Evolution of Official Statistics in a Changing World",
+    "context": "JoepBurger,andInKyungChoi. Aqualityframeworkforstatisticalalgorithms. StatisticalJournaloftheIAOS,\n38(1):291\u2013308,March2022.\n[7] WesleyYung. TheEvolutionofOfficialStatisticsinaChangingWorld. HarvardDataScienceReview,3(4),oct\n282021.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the year of the benchmark study for Flemish Twitter sentiment analysis?",
+    "answer": "2022",
+    "context": "282021.\n[8] Manon Reusens, Michael Reusens, Marc Callens, Bart Baesens, et al. Benchmark study for flemish twitter\nsentimentanalysis. SocialScienceResearchNetwork,2022.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the research paper mentioned in the text?",
+    "answer": "Topic modelling applied on innovation studies of Flemish companies",
+    "context": "[9] AnnelienCrijns,VictorVanhullebusch,ManonReusens,MichaelReusens,andBartBaesens. Topicmodelling\nappliedoninnovationstudiesofflemishcompanies. JournalofBusinessAnalytics,pages1\u201312,2023.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the article mentioned in the text?",
+    "answer": "The Use of Data Science in a National Statistical Office",
+    "context": "[10] SevguiErman,EricRancourt,YanickBeaucage,andAndreLoranger. TheUseofDataScienceinaNational\nStatisticalOffice. HarvardDataScienceReview,4(4),oct272022.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the paper 'When numbers fail: do researchers agree on operationalization of published research'?",
+    "answer": "Matthias Haucke, Rink Hoekstra, and Don van Ravenzwaaij",
+    "context": "[11] Matthias Haucke, Rink Hoekstra, and Don van Ravenzwaaij. When numbers fail: do researchers agree on\noperationalizationofpublishedresearch? RoyalSocietyOpenScience,8(9):191354,September2021.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is operationalization bias in psychology?",
+    "answer": "Operationalization bias is a suboptimal research practice in psychology.",
+    "context": "[12] Nagireddy Neelakanteswar Reddy. Operationalization bias: A suboptimal research practice in psychology.\nDecember2022.\n[13] MatthiasKuppler,ChristophKern,RubenL.Bach,andFraukeKreuter. Fromfairpredictionstojustdecisions?",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the context in which algorithmic fairness and distributive justice are being conceptualized?",
+    "answer": "Data-driven decision-making",
+    "context": "conceptualizing algorithmic fairness and distributive justice in the context of data-driven decision-making.\nFrontiersinSociology,2022.\n[14] Nicolaus Henke, Jacques Bughin, Michael Chui, James Manyika, Tamim Saleh, Bill Wiseman, and Guru",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the technical report by McKinsey & Company in 2016?",
+    "answer": "The age of analytics: competing in a data-driven world",
+    "context": "Sethupathy. Theageofanalytics: competinginadata-drivenworld. Technicalreport,McKinsey&Company,\n2016.\n[15] HanqingHu,MehmedKantardzic,andTegjyotSSethi. Nofreelunchtheoremforconceptdriftdetectionin",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the paper by Firas Bayram, Bestoun S. Ahmed, and Andreas Kassler?",
+    "answer": "From concept drift to model degradation: An overview",
+    "context": "streamingdataclassification: Areview. WileyInterdisciplinaryReviews: DataMiningandKnowledgeDiscovery,\n10(2):e1327,2020.\n[16] FirasBayram,BestounS.Ahmed,andAndreasKassler. Fromconceptdrifttomodeldegradation: Anoverview",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the paper 'Simpler is better: Lifting interpretability-performance trade-offs in machine learning'?",
+    "answer": "Alicja Gosiewska, Anna Kozak, and Przemys\u0142aw Biecek",
+    "context": "onperformance-awaredriftdetectors. Knowledge-BasedSystems,245:108632,June2022.\n[17] AlicjaGosiewska,AnnaKozak,andPrzemys\u0142awBiecek. Simplerisbetter: Liftinginterpretability-performance",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main argument made by Cynthia Rudin in her 2019 paper?",
+    "answer": "Cynthia Rudin argues that instead of explaining black box machine learning models, interpretable models should be used for high-stakes decisions.",
+    "context": "trade-offviaautomatedfeatureengineering. DecisionSupportSystems,150:113556,November2021.\n[18] CynthiaRudin. Stopexplainingblackboxmachinelearningmodelsforhighstakesdecisionsanduseinterpretable\nmodelsinstead. NatureMachineIntelligence,1(5):206\u2013215,May2019.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the article by Alex John London?",
+    "answer": "Artificial intelligence and black-box medical decisions: Accuracy versus explainability",
+    "context": "[19] Alex John London. Artificial intelligence and black-box medical decisions: Accuracy versus explainability.\nHastingsCenterReport,49(1):15\u201321,January2019.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the paper by Bertie Vidgen and Leon Derczynski?",
+    "answer": "Directions in abusivelanguagetrainingdata, a systematic review: Garbage in, garbage out.",
+    "context": "[20] BertieVidgenandLeonDerczynski. Directionsinabusivelanguagetrainingdata,asystematicreview: Garbage\nin,garbageout. PLOSONE,15(12):e0243300,December2020.\n[21] R.StuartGeiger,DominiqueCope,JamieIp,MarshaLotosh,AayushShah,JennyWeng,andRebekahTang.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of the DOME recommendations?",
+    "answer": "The purpose of the DOME recommendations is for supervised machine learning validation in biology.",
+    "context": "DOME: Recommendations for supervised machine\nlearning validation in biology\nIan Walsh1,* \u200b, Dmytro Fishman2,* \u200b, Dario Garcia-Gasulla3 \u200b, Tiina Titma4 \u200b, Gianluca Pollastri5 \u200b, The ELIXIR\n\u200b \u200b \u200b \u200b \u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the affiliation of Jennifer Harrow?",
+    "answer": "Bioprocessing Technology Institute, Agency for Science, Technology and Research, Singapore",
+    "context": "\u200b \u200b \u200b \u200b \u200b\nMachine Learning focus group# \u200b, Jennifer Harrow6,+ \u200b, Fotis E. Psomopoulos7,+ \u200b & Silvio C.E. Tosatto8,+\n\u200b \u200b \u200b \u200b\n1Bioprocessing Technology Institute, Agency for Science, Technology and Research, Singapore, 2Institute of\n\u200b \u200b\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the locations of the institutions mentioned in the text?",
+    "answer": "The locations mentioned are Estonia, Barcelona, Spain, and the University of Tartu, Tallinn University of Technology, and Barcelona Supercomputing Center.",
+    "context": "\u200b \u200b\n\u200b\nComputer Science, University of Tartu, Estonia, 3Barcelona Supercomputing Center (BSC), Barcelona, Spain,\n\u200b\n\u200b\n4School of Information Technologies, Tallinn University of Technology, Estonia, 5School of Computer Science,\n\u200b \u200b\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the location of the 6ELIXIR HUB?",
+    "answer": "University College Dublin, Ireland, South building, Wellcome Genome Campus, Hinxton, Cambridge, UK",
+    "context": "\u200b \u200b\n\u200b\nUniversity College Dublin, Ireland, 6ELIXIR HUB, South building, Wellcome Genome Campus, Hinxton, Cambridge,\n\u200b\n\u200b\nUK, 7Institute of Applied Biosciences, Centre for Research and Technology Hellas, Thessaloniki, Greece, 8Dept. of\n\u200b \u200b\n\u200b \u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What institution is the author affiliated with?",
+    "answer": "Biomedical Sciences, University of Padua",
+    "context": "\u200b \u200b\n\u200b \u200b\nBiomedical Sciences, University of Padua, Padua, Italy.\n*contributed equally\n\u200b\n#see list of co-authors at the end of the manuscript\n\u200b\n+corresponding authors\n\u200b\nAbstract",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the current trend in modern biology regarding machine learning?",
+    "answer": "Modern biology frequently relies on machine learning to provide predictions and improve decision processes.",
+    "context": "\u200b\nAbstract\nModern biology frequently relies on machine learning to provide predictions and improve decision\nprocesses. There have been recent calls for more scrutiny on machine learning performance and possible",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the community-wide recommendations for supervised machine learning validation in biology?",
+    "answer": "A set of standards aiming to help establish supervised machine learning validation in biology.",
+    "context": "limitations. Here we present a set of community-wide recommendations aiming to help establish\nstandards of supervised machine learning validation in biology. Adopting a structured methods",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the primary goal of the DOME framework in machine learning?",
+    "answer": "To help reviewers and readers better understand and assess the performance and limitations of a method.",
+    "context": "description for machine learning based on data, optimization, model, evaluation (DOME) will aim to help\nboth reviewers and readers to better understand and assess the performance and limitations of a method",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the key performance metrics to evaluate the effectiveness of a machine learning algorithm?",
+    "answer": "Accuracy, precision, recall, F1 score, and mean squared error are common metrics used to evaluate the performance of a machine learning algorithm.",
+    "context": "or outcome. The recommendations are formulated as questions to anyone wishing to pursue\nimplementation of a machine learning algorithm. Answers to these questions can be easily included in the\nsupplementary material of published papers.\nIntroduction",
+    "paper_id": 2
+  },
+  {
+    "question": "What is driving the increase in biological data generation?",
+    "answer": "The steep decline in the cost of high-throughput technologies.",
+    "context": "Introduction\nWith the steep decline in the cost of high-throughput technologies, large amounts of biological data are\nbeing generated and made accessible to researchers. Machine learning (ML) has been brought into the",
+    "paper_id": 2
+  },
+  {
+    "question": "What are some areas where the spotlight approach can be applied?",
+    "answer": "cellular, genomic, proteomic, post-translational, metabolic, and drug discovery data",
+    "context": "spotlight as a very useful approach to understand cellular1, genomic2, proteomic3, post-translational4,\n\u200b \u200b \u200b \u200b\n\u200b \u200b \u200b \u200b\nmetabolic5 and drug discovery data6 with the potential to result in ground-breaking medical\n\u200b \u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the significance of the growth of ML publications in biology?",
+    "answer": "The growth of ML publications in biology reflects the increasing applications of machine learning in the field.",
+    "context": "\u200b \u200b\napplications7,8. This is clearly reflected in the corresponding growth of ML publications (Figure 1),\n\u200b\n\u200b\nreporting a wide range of modelling techniques in biology. While every novel ML method should be",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the reason for the sharp increase in publications?",
+    "answer": "A corresponding increase in the number and depth of peer-reviews is required.",
+    "context": "validated experimentally, this happens only in a fraction of the publications9. This sharp increase in\n\u200b\n\u200b\npublications inherently requires a corresponding increase in the number and depth of peer-reviews to",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of guidelines or recommendations on how to construct ML algorithms?",
+    "answer": "To ensure the reproducibility and critical assessment of ML algorithms.",
+    "context": "offer critical assessment10 and improve reproducibility11,12.\n\u200b \u200b\n\u200b \u200b\nGuidelines or recommendations on how to appropriately construct ML algorithms can help to ensure",
+    "paper_id": 2
+  },
+  {
+    "question": "What are standard guidelines and best practices for scientific data management in the biomedical research field?",
+    "answer": "Communities have defined standard guidelines and best practices for scientific data management and reproducibility of computational results and predictions.",
+    "context": "correct results and predictions13,14. In the biomedical research field, communities have defined standard\n\u200b\n\u200b\nguidelines and best practices for scientific data management15 and reproducibility of computational\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the demand in the ML community?",
+    "answer": "A cohesive and combined set of tools",
+    "context": "\u200b\ntools16,17. On the other hand, a demand exists in the ML community for a cohesive and combined set of\n\u200b\n\u200b\n1",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the topic of the given text?",
+    "answer": "Machine Learning (ML) in biology",
+    "context": "recommendations with respect to data, the optimization techniques, the final model, and evaluation\nprotocols as a whole.\nFigure 1. Exponential increase of ML publications in biology. The number of ML publications per year is based\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the specific search terms used in combination with 'machine learning' on Web of Science from 1996 onwards?",
+    "answer": "biolog*, medicine, genom*, prote*, cell*, post translational, metabolic, and clinical",
+    "context": "\u200b\non Web of Science from 1996 onwards using the \u201ctopic\u201d category for \u201cmachine learning\u201d in combination with each\nof the following terms: \u201cbiolog*\u201d, \u201cmedicine\u201d, \u201cgenom*\u201d, \u201cprote*\u201d, \u201ccell*\u201d, \u201cpost translational\u201d, \u201cmetabolic\u201d and\n\u201cclinical\u201d.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is being proposed as a first step towards improving publication standards in ML18?",
+    "answer": "The adoption of on-submission checklists",
+    "context": "\u201cclinical\u201d.\nRecently, a comment highlighted the need for standards in ML18, arguing for the adoption of\n\u200b\n\u200b\non-submission checklists10 as a first step towards improving publication standards. Through a\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "Can the model provide explanations or justifications for its predictions?",
+    "answer": "Yes, the model should be able to provide transparent and interpretable explanations for its predictions.",
+    "context": "\u200b\ncommunity-driven consensus, we propose a list of minimal requirements asked as questions to ML\nimplementers (Box 1) that, if followed, will help to assess the quality and reliability of the proposed",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the four main topics that each component of an ML implementation usually falls within?",
+    "answer": "Data, Optimization, Model, and Evaluation (DOME)",
+    "context": "methods more faithfully. We have focused on Data, Optimization, Model and Evaluation (DOME) as\neach component of an ML implementation usually falls within one of these four topics. Importantly, no",
+    "paper_id": 2
+  },
+  {
+    "question": "What type of learning is the recommendations primarily made for?",
+    "answer": "Supervised learning in biology",
+    "context": "specific solutions are discussed, only recommendations (Table 1) and a checklist are provided (Box 1).\nOur recommendations are made primarily for the case of supervised learning in biology in the absence of",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the primary type of ML approach used in the given text?",
+    "answer": "Direct experimental validation",
+    "context": "direct experimental validation, as this is the most common type of ML approach used. We do not discuss\nhow ML can be used in clinical applications19,20. It also remains to be investigated if the DOME\n\u200b\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What fields of machine learning can the recommendations be extended to?",
+    "answer": "unsupervised, semi-supervised, and reinforcement learning",
+    "context": "\u200b\n\u200b\nrecommendations can be extended to other fields of ML, like unsupervised, semi-supervised and\nreinforcement learning.\nDevelopment of the recommendations\nThe recommendations outlined below were initially formulated through the ELIXIR ML focus group",
+    "paper_id": 2
+  },
+  {
+    "question": "When was ELIXIR initially established?",
+    "answer": "2014",
+    "context": "after the publication of a comment calling for the establishment of standards for ML in biology18.\n\u200b\n\u200b\nELIXIR, initially established in 2014, is now a mature intergovernmental European infrastructure for",
+    "paper_id": 2
+  },
+  {
+    "question": "How many countries are represented by the research organizations?",
+    "answer": "22",
+    "context": "biological data and represents over 220 research organizations in 22 countries across many aspects of\nbioinformatics21. Over 700 national experts participate in the development and operation of national\n\u200b\n\u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the ELIXIR ML focus group?",
+    "answer": "A group of over 50 experts involved in the field of Machine Learning (ML) that contributes to data access, integration, training, and analysis for the research community.",
+    "context": "\u200b\n\u200b\nservices that contribute to data access, integration, training and analysis for the research community. Over\n50 of these experts involved in the field of ML have established an ELIXIR ML focus group\n2",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the main consequences of implementing machine learning in the context of the European Union's Horizon 2020 research and innovation program?",
+    "answer": "The main consequences include the potential for increased efficiency, improved decision-making, and enhanced innovation, but also raise concerns around data protection, bias, and accountability.",
+    "context": "(https://elixir-europe.org/focus-groups/machine-learning) which held a number of meetings to develop\n\u200b \u200b\nand refine the recommendations based on a broad consensus among them.\nBroad topic Be on the Consequences Recommendation(s)\nlookout for",
+    "paper_id": 2
+  },
+  {
+    "question": "Why is it important to separate training and testing data sets in machine learning?",
+    "answer": "It is important to separate training and testing data sets in machine learning to ensure the independence of optimization (training) and evaluation, which is a requirement for data quality and representative of the domain application.",
+    "context": "lookout for\nData - Data size & \u25cfData not Independence of optimization (training) and evaluation\nquality representative of (testing) sets. (requirement)\n\u200b\ndomain application. This is especially important for meta algorithms, where",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main requirement for multiple training sets in machine learning?",
+    "answer": "Appropriate independence of multiple training sets must be shown to be partitioning, unreliable or biased independent of the evaluation (testing) sets.",
+    "context": "- Appropriate independence of multiple training sets must be shown to be\npartitioning, \u25cfUnreliable or biased independent of the evaluation (testing) sets.\ndependence performance\nbetween train evaluation. Release data preferably using appropriate long-term",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the primary concern when dealing with class imbalance in data?",
+    "answer": "Class imbalance credibility, ensuring sufficient evidence of data size and distribution being representative of the domain.",
+    "context": "and test data. repositories, including exact splits (requirement)\n\u200b \u200b\n\u25cfCannot check data\n- Class imbalance credibility. Sufficient evidence of data size & distribution being\nrepresentative of the domain. (recommendation)\n\u200b \u200b \u200b\n- No access to\ndata",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main issue with the evaluation process in the given text?",
+    "answer": "The evaluation sets were not used for feature selection, pre-processing steps or parameter tuning.",
+    "context": "\u200b \u200b \u200b\n- No access to\ndata\nOptimization - Overfitting, \u25cfReported Clear statement that evaluation sets were not used for feature\nunderfitting and performance too selection, pre-processing steps or parameter tuning.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the relationship between the model's assessment of under/overfitting and the presence of noise or miss in the data?",
+    "answer": "The model's assessment of under/overfitting may be imprecise due to noise or miss in the data.",
+    "context": "illegal parameter optimistic or too (requirement)\n\u200b \u200b\ntuning pessimistic.\nReporting indicators on training and testing data that can aid\n- Imprecise \u25cfModels noise or miss in assessing the possibility of under/overfitting e.g. train vs.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the requirement for making results reproducible in the given protocols?",
+    "answer": "Release definitions of all algorithmic hyper-parameters and use a reproducible protocol.",
+    "context": "parameters and relevant test error. (requirement)\n\u200b\nprotocols given. relationships.\nRelease definitions of all algorithmic hyper-parameters,\n\u25cfResults are not regularization protocols, parameters and optimization\nreproducible. protocol. (requirement)\n\u200b \u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is N-fold Cross validation and why is it used in model validation?",
+    "answer": "N-fold Cross validation is a technique used to evaluate the performance of a model by splitting the dataset into N subsets, training the model on N-1 subsets, and testing it on the remaining subset. This process is repeated N times, and the results are averaged to get a more accurate estimate of the model's performance. It is used to prevent overfitting and to get a more robust estimate of the model's performance.",
+    "context": "\u200b \u200b\nFor neural networks, release definitions of train and learning\ncurves. (recommendation)\n\u200b \u200b\nInclude explicit model validation techniques, such as N-fold\nCross validation. (recommendation)\n\u200b \u200b",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the difference between an interpretable model and a black box model?",
+    "answer": "An interpretable model is a type of machine learning model that provides clear and understandable explanations for its predictions, whereas a black box model is a type of model that is difficult to understand and interpret, making it challenging to explain its predictions.",
+    "context": "\u200b \u200b\nModel - Unclear if black \u25cfAn interpretable Describe the choice of black box / interpretable model. If\nbox or model shows no interpretable show examples of it doing so. (requirement).\n\u200b \u200b\nexplainable\ninterpretable",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the recommended way to release a model?",
+    "answer": "The recommended way to release a model is through the release of documented source code, models, executable, UI/webserver, and software containers.",
+    "context": "\u200b \u200b\nexplainable\ninterpretable\nbehaviour Release of: documented source code + models + executable\nmodel\n+ UI/webserver + software containers. (recommendation)\n\u200b \u200b\n\u25cfCannot cross\n- No access to:\ncompare methods,",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the key factors to consider when comparing methods?",
+    "answer": "Report execution time averaged across many repeats, source reproducibility, computational toughness compared to similar methods, code, trained models & data credibility.",
+    "context": "compare methods,\nReport execution time averaged across many repeats. If\nresulting source\nreproducibility, &\ncomputationally tough compare to similar methods\ncode, trained check data\n(recommendation)\nmodels & data credibility. \u200b \u200b\n\u25cfModel takes too",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the main issues with the current model?",
+    "answer": "The model takes too much time to produce results and its performance measures are inadequate and biased.",
+    "context": "\u25cfModel takes too\n- Execution time\nmuch time to\nis impractical\nproduce results\nEvaluation - Performance \u25cfBiased performance Compare with public methods & simple models (baselines).\nmeasures measures reported. (requirement)\n\u200b \u200b\ninadequate",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main issue with the method's evaluation approach?",
+    "answer": "The method does not compare itself to baselines or state-of-the-art measures.",
+    "context": "\u200b \u200b\ninadequate\n\u25cfThe method is falsely Adoption of community validated measures and benchmark\n- No comparisons claimed as datasets for evaluation. (requirement)\n\u200b \u200b\nto baselines or state-of-the-art.",
+    "paper_id": 2
+  }
+]

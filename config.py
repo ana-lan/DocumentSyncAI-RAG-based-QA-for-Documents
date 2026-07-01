@@ -25,6 +25,7 @@ SIMILARITY_THRESHOLD = 0.3
 
 # ── Generation ────────────────────────────────────────────
 GROQ_MODEL  = "llama-3.1-8b-instant"
+TOGETHER_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct-Lite"
 MAX_TOKENS  = 512
 TEMPERATURE = 0.2                      # low = more factual
 
@@ -32,4 +33,4 @@ TEMPERATURE = 0.2                      # low = more factual
 QA_PAIRS_DIR    = "eval/qa_pairs"
 RESULTS_DIR     = "eval/results"
 NUM_QA_PAIRS    = 200                  # total to generate
-QA_GEN_MODEL    = "llama-3.1-70b-versatile"   # smarter model for Q&A gen
+QA_GEN_MODEL = "llama-3.1-8b-instant"   # smarter model for Q&A gen

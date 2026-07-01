@@ -1,0 +1,1202 @@
+[
+  {
+    "question": "What are the main risks associated with changing data sources in the context of machine learning for official statistics?",
+    "answer": "The main risks, liabilities, and uncertainties associated with changing data sources in the context of machine learning for official statistics are crucial to address.",
+    "context": "CHANGING DATA SOURCES IN THE AGE OF\nMACHINE LEARNING\nFOR OFFICIAL STATISTICS\nPRESENTEDATUNECEMACHINELEARNINGFOROFFICIALSTATISTICSWORKSHOP2023\nCedricDeBoom MichaelReusens\nStatisticsFlanders StatisticsFlanders\nBelgium Belgium\ncedric.deboom@vlaanderen.be michael.reusens@vlaanderen.be\nJune6,2023\nABSTRACT\nDatasciencehasbecomeincreasinglyessentialfortheproductionofofficialstatistics,asitenables\ntheautomatedcollection,processing,andanalysisoflargeamountsofdata. Withsuchdatascience\npracticesinplace,itenablesmoretimely,moreinsightfulandmoreflexiblereporting. However,the\nqualityandintegrityofdata-science-drivenstatisticsrelyontheaccuracyandreliabilityofthedata\nsourcesandthemachinelearningtechniquesthatsupportthem. Inparticular,changesindatasources\nareinevitabletooccurandposesignificantrisksthatarecrucialtoaddressinthecontextofmachine\nlearningforofficialstatistics. Thispapergivesanoverviewofthemainrisks,liabilities,anduncertaintiesassociatedwithchanging\ndatasourcesinthecontextofmachinelearningforofficialstatistics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some of the repercussions of changing data sources on statistical reporting?",
+    "answer": "These include technical effects such as concept drift, bias, availability, validity, accuracy and completeness, but also the neutrality and potential discontinuation of the statistical offering.",
+    "context": "Thispapergivesanoverviewofthemainrisks,liabilities,anduncertaintiesassociatedwithchanging\ndatasourcesinthecontextofmachinelearningforofficialstatistics. Weprovideachecklistofthe\nmostprevalentoriginsandcausesofchangingdatasources;notonlyonatechnicallevelbutalso\nregardingownership,ethics,regulation,andpublicperception. Next,wehighlighttherepercussions\nofchangingdatasourcesonstatisticalreporting. Theseincludetechnicaleffectssuchasconcept\ndrift, bias, availability, validity, accuracy and completeness, but also the neutrality and potential\ndiscontinuationofthestatisticaloffering. Weofferafewimportantprecautionarymeasures,suchas\nenhancingrobustnessinbothdatasourcingandstatisticaltechniques,andthoroughmonitoring.",
+    "paper_id": 1
+  },
+  {
+    "question": "What role has the field of statistics played in informing policy decisions?",
+    "answer": "It has long played a critical role in informing policy decisions, driving innovation, and advancing scientific knowledge.",
+    "context": "Weofferafewimportantprecautionarymeasures,suchas\nenhancingrobustnessinbothdatasourcingandstatisticaltechniques,andthoroughmonitoring. In\ndoingso,machinelearning-basedofficialstatisticscanmaintainintegrity,reliability,consistency,and\nrelevanceinpolicy-making,decision-making,andpublicdiscourse. 1 Introduction\nThefieldofstatisticshaslongplayedacriticalroleininformingpolicydecisions,drivinginnovation,andadvancing\nscientificknowledge. Traditionalstatisticalmethodssuchassurveysandcensuseshaveprovidedvaluableinsightsinto\nawiderangeoftopics,frompopulationdemographicstoeconomictrendsandpublicopinion. However,inrecentyears,\ntheincreasingavailabilityofopenandlargedatasourceshasopenedupnewopportunitiesforstatisticalanalysis.",
+    "paper_id": 1
+  },
+  {
+    "question": "What has transformed the field of statistics in recent years?",
+    "answer": "The rise of machine learning.",
+    "context": "However,inrecentyears,\ntheincreasingavailabilityofopenandlargedatasourceshasopenedupnewopportunitiesforstatisticalanalysis. In\nparticular,theriseofmachinelearninghastransformedthefieldofstatistics,enablingtheanalysisofmassivedatasets,\ntheidentificationofcomplexpatternsandrelationships,non-linearforecasting,etc. [1,2]. Machinelearningalgorithms\ncanbeusedtoanalyzedatafromawiderangeofsources,providinginsightsthattraditionalsurveymethodsmaynot\ncapture. Theuseofmachinelearningforofficialstatisticshasthepotentialtoprovidemoretimely,accurateandcomprehensive\ninsightsintoawiderangeofsocietaltopics[3].",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some of the challenges associated with the use of machine learning for official statistics?",
+    "answer": "Data quality, privacy, and security, as well as the need for appropriate technical skills and infrastructure, and challenges related to explainability, accuracy, reproducibility, timeliness, and cost-effectiveness.",
+    "context": "Theuseofmachinelearningforofficialstatisticshasthepotentialtoprovidemoretimely,accurateandcomprehensive\ninsightsintoawiderangeofsocietaltopics[3]. Byleveragingthevastamountsofdatathataregeneratedbyindividuals\nandentitiesonadailybasis,statisticalagenciescangainamorenuancedunderstandingoftrendsandpatterns,and\nrespondmorequicklytoemergingissues. However,thisshifttowardsmachinelearningalsopresentsanumberofchallenges. Inparticular,thereareconcerns\naboutdataquality,privacy,andsecurity,aswellastheneedforappropriatetechnicalskillsandinfrastructure[4,5],as\n3202\nnuJ\n7\n]LM.tats[\n1v83340.6032:viXra\n\nwellaschallengesrelatedtoexplainability,accuracy,reproducibility,timeliness,andcosteffectiveness[6]. Asstatistical\nagencies grapple with these challenges, it is essential to ensure that the benefits of machine learning are balanced\nagainst the risks and that the resulting insights are both accurate and representative.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some key considerations for statistical agencies looking to incorporate machine learning into their workflows?",
+    "answer": "The causes and risks associated with using external data sources, the consequences of using such sources for statistical production, and a set of mitigation strategies that should be incorporated in any genuine deployment of machine learning for official statistics.",
+    "context": "Asstatistical\nagencies grapple with these challenges, it is essential to ensure that the benefits of machine learning are balanced\nagainst the risks and that the resulting insights are both accurate and representative. In this paper, we explore the\nchangingdatasourcesintheageofmachinelearningforofficialstatistics,aswebelievethatthispervasiveissuelargely\nremainsunderexposed,aswewillexplaininSection2.2. Inthatrespect,wehighlightsomeofthekeyconsiderations\nforstatisticalagencieslookingtoincorporatemachinelearningintotheirworkflowsinSection3,byzoominginonthe\ncausesandrisksassociatedwithusingexternaldatasources,theconsequencesonusingsuchsourcesforstatistical\nproduction,and,finally,asetofmitigationsthatshouldideallybeincorporatedinanygenuinedeploymentofmachine\nlearningforofficialstatistics. 2 Machinelearningforofficialstatistics\nThe data abundance in governmental, corporate, social and personal contexts, both online and offline, becomes a\ntantalizingsourceandopportunityfortheimprovementandexpansionofofficialstatistics. Forexample,toinquire\nabouttheoverallsatisfactionwithlifeofitscitizens,anationcouldorganizeperiodicsurveys.",
+    "paper_id": 1
+  },
+  {
+    "question": "What tools do data scientists and statistical researchers often use to derive novel insights and innovative statistics from data?",
+    "answer": "Machine learning tools",
+    "context": "Forexample,toinquire\nabouttheoverallsatisfactionwithlifeofitscitizens,anationcouldorganizeperiodicsurveys. Butwhenthisnationhas\naccesstoitscitizens\u2019socialmediaposts,likes,reader\u2019sletters,mediaconsumption,ticketsales,(online)shoppingcarts,\netc.itcoulduseallofthesedataasaproxytoextractnovelandinnovativestatisticalinsights[7]. Typically,theend\nresultiseitheranewstatistic,astatisticthatcomplementsanexistingone,oranersatzstatisticthataimstoreplace\noneormoreexistingstatistics. Wewillbrieflyzoominonthedifferentcomponentsofwhichsuchanovelstatisticis\ngenerallycomprised. 2.1 Machinelearning\nToderivenovelinsightsandinnovativestatisticsfromdata,datascientistsandstatisticalresearchersoftenuseawide\nvarietyofpowerfultoolsthatareintherealmofmachinelearning1.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is machine learning?",
+    "answer": "A subdiscipline of artificial intelligence that enables machines to learn from data and improve their performance over time without being explicitly programmed.",
+    "context": "2.1 Machinelearning\nToderivenovelinsightsandinnovativestatisticsfromdata,datascientistsandstatisticalresearchersoftenuseawide\nvarietyofpowerfultoolsthatareintherealmofmachinelearning1. Inthispaperwewillnotgointotoomuchdetail\naboutmachinelearning. However,theuseofdatasourcestogetherwithmachinelearningmodelscancauseunwanted\neffectsregardingstatisticalproduction,seefurtherinSection3. So,wedeemitusefultoprovideahigh-leveloverview\nofthetypicalprocessthatinvolvesmachinelearningforofficialstatistics. Machinelearningisasubdisciplineofartificialintelligencethatenablesmachinestolearnfromdataandimprove\ntheirperformanceovertimewithoutbeingexplicitlyprogrammed.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the two main phases of designing a machine learning algorithm?",
+    "answer": "Training and inference.",
+    "context": "Machinelearningisasubdisciplineofartificialintelligencethatenablesmachinestolearnfromdataandimprove\ntheirperformanceovertimewithoutbeingexplicitlyprogrammed. Thisapproachinvolvesbuildingalgorithmsthat\nautomaticallylearnfromdatatoidentifypatterns,relationships,andstructuresthatmaybedifficultorimpossiblefor\nhumanstodiscern. Thetypicalprocessofdesigningamachinelearningalgorithmconsistsoftwomainphases: training\nandinference. Duringthetrainingphase,theparametersofamachinelearningmodelaretunedtosolveaspecifictask. Forthis,awidevarietyofdatasourcescanbeused,orevenoutputsfromexistingorpre-trainedmachinelearning\nmodels.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the process called after a machine learning model is trained?",
+    "answer": "inference",
+    "context": "Forthis,awidevarietyofdatasourcescanbeused,orevenoutputsfromexistingorpre-trainedmachinelearning\nmodels. Afterthemodelistrained,itsparametersarekeptfixedsothatthemodelcanbeusedtopredictoutcomesor\nidentifypatternsinneworpreviouslyunseendata. Thisprocessiscalledinference. Itisimportanttokeepinmindthe\ndistinctionbetweentrainingandinference. Aftertraining,themodelremainsunchanged,anditremainsunchanged\nuntilitisretrainedagain.",
+    "paper_id": 1
+  },
+  {
+    "question": "What type of machine learning is commonly used for official statistics?",
+    "answer": "Supervised learning",
+    "context": "Aftertraining,themodelremainsunchanged,anditremainsunchanged\nuntilitisretrainedagain. Later,inSection3,wewillfocusonthedisparitiesthatthiscancausew.r.t.theinference\nphaseand,inconsequence,officialstatisticsproduction. Supervisedlearningisoneofthemostcommontypesofmachinelearningusedforofficialstatistics. Thismethod\ninvolvestrainingamodelonalabeleddataset,whereeachdatapointhasaknownoutcomeortargetvariable. The\nmodellearnstoassociatefeaturesinthedatawiththetargetvariable,enablingittomakepredictionsonnewdatawith\nsimilarfeatures.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main difference between supervised and unsupervised learning?",
+    "answer": "Supervised learning involves making predictions based on labeled data, while unsupervised learning involves identifying patterns or relationships without explicit guidance from labeled data.",
+    "context": "The\nmodellearnstoassociatefeaturesinthedatawiththetargetvariable,enablingittomakepredictionsonnewdatawith\nsimilarfeatures. Inthecontextofofficialstatistics,supervisedlearningcanforexamplebeusedtopredictthehappiness\nofanindividualbasedontheirTwitterprofile[8]. Unsupervisedlearning,ontheotherhand,isusedwhenthetarget\nvariableisunknownorthegoalistoidentifypatternsorrelationshipswithinthedata. Inthisapproach,themachine\nlearningmodellearnstorecognizesimilaritiesanddifferencesamonginputdatawithoutexplicitguidancefromlabeled\ndata. Inthecontextofofficialstatistics,unsupervisedlearningcanforexamplebeusedtoidentifycitizens,companies\noreventsthataresimilartoeachotherononeormoreaspectsthatcouldbehiddenfromplainsight[9].",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main difference between machine learning and artificial intelligence?",
+    "answer": "Machine learning is a subdiscipline of artificial intelligence, while deep learning is a subdiscipline of machine learning.",
+    "context": "Inthecontextofofficialstatistics,unsupervisedlearningcanforexamplebeusedtoidentifycitizens,companies\noreventsthataresimilartoeachotherononeormoreaspectsthatcouldbehiddenfromplainsight[9]. Machinelearningcanbeusedtocomplementorevenreplaceofficialstatistics,anditsabilitytonowcastandforecastis\nanextremelyvaluableaddition. Modernmachinelearningmodels,toolsandhardwarecananalyzevastamountsofdata\ninreal-timeornear-real-time,providingmoreup-to-dateandpreciseestimatesofe.g.economicandsocialtrends. By\n1Althoughoriginally(andtechnically)theyimplydifferentmethodsandtechniques,thetermsmachinelearning,datascience,\nartificialintelligence,deeplearning...arenowadaysconsideredinterchangeable.Inthispaperweconsistentlyusethetermmachine\nlearning to denote the scientific discipline concerned with learning the most optimal model parameters based on data. It is a\nsubdisciplineofartificialintelligence,whiledeeplearningisasubdisciplineofmachinelearning.Datascienceencompassesboth\nmachinelearningaswellasdatapreparation,analyticsandvisualization.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the unique characteristics of external data sources compared to traditional data sources for official statistics?",
+    "answer": "They may present unique and appealing characteristics such as broad-spectrum, covering a wide variety of topics.",
+    "context": "It is a\nsubdisciplineofartificialintelligence,whiledeeplearningisasubdisciplineofmachinelearning.Datascienceencompassesboth\nmachinelearningaswellasdatapreparation,analyticsandvisualization. 2\n\nincorporatingmachinelearningintoofficialstatisticalproduction,onecanbenefitfromthestrengthsofbothapproaches\nandmakemoreinformeddecisionsbasedonthemostcurrentandaccuratedata[10]. 2.2 Externaldatasources\nLet\u2019s focus on the data sources that will power such machine learning models. Their nature, size, structure,\nfrequency...canbevastlydifferent,theymusttypicallybegathered\u2018inthewild\u2019andshouldoftenbecombinedwith\neachothertoextractmeaningfulinsights. Comparedtomoretraditionaldatasourcesforofficialstatistics,theymay\npresentuniqueandappealingcharacteristicssuchas:\nBroad-spectrum\u2013Coversawidevarietyoftopics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some unique characteristics of non-traditional data sources for official statistics?",
+    "answer": "Broad-spectrum, diversity, availability, size, and structure",
+    "context": "Comparedtomoretraditionaldatasourcesforofficialstatistics,theymay\npresentuniqueandappealingcharacteristicssuchas:\nBroad-spectrum\u2013Coversawidevarietyoftopics. Diversity\u2013Alargevarietyofsourcestocoverdifferentperspectives. Availability\u2013Lotsofdataisfreelyandeasilyaccessible. Size\u2013Somedatasetscanbeenormous,sometimesevencomplete. Structure\u2013Notonlytabulardata,butalsoimages,video,text,audio,etc.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the key characteristics of data that can be filtered and covered in various locations and regions?",
+    "answer": "Coverage",
+    "context": "Structure\u2013Notonlytabulardata,butalsoimages,video,text,audio,etc. Timeliness\u2013(Near)up-to-dateandreal-timeinformation. Frequency\u2013Rawdataonvarious,evenveryfine-grainedtimescales. Granularity\u2013Rawdataonvarious,evenfine-grainedlevelsofdetail. Coverage\u2013Variouslocationsandregionscanbefilteredandcovered.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some common challenges that need to be overcome before data is ready for machine learning and official statistical production?",
+    "answer": "Data quality, data interpretation, data integration, and selection bias.",
+    "context": "Coverage\u2013Variouslocationsandregionscanbefilteredandcovered. Ontheotherhand,beforeallthisdataisreadytobeexertedformachinelearningandofficialstatisticalproduction,a\nfewchallengesneedtobeovercome,suchas:\nDataquality\u2013Datamaycontainerrors,biases,ormissingvaluesthatneedtobeaddressedtoensureaccuracyand\nreliability. Datainterpretation\u2013Understandingthecontextandmeaningofdatacanbedifficult,especiallywhendealingwith\nunstructureddatasuchastextorimages. Dataintegration\u2013Combiningdatafromdifferentsourceswithvaryingstructuresandformatscanbechallengingand\ntime-consuming. Selection bias \u2013 Proper randomization or compiling representative population samples can be challenging, and it\ngreatlydependsontheunderlyingdataorigins.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some challenges researchers face when working with data?",
+    "answer": "Selection bias, operationalization bias, computational resources, privacy and security, and data ethics.",
+    "context": "Selection bias \u2013 Proper randomization or compiling representative population samples can be challenging, and it\ngreatlydependsontheunderlyingdataorigins. Operationalizationbias\u2013Reproducibilitycanbedifficultasitdependsonmanyimplicit,hidden,and/orproductionspecificdesignchoices[11,12]. Computationalresources\u2013Processingandanalyzinglargeamountsofdatamayrequiresignificantcomputational\nresources. Privacyandsecurity\u2013Sensitivedatamayneedtobeprotectedandanonymizedtoensureprivacyandsecurity. Dataethics\u2013Datacollectionanduseshouldadheretoethicalprinciples.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the main considerations for data collection and use?",
+    "answer": "Data ethics, fairness and justness, and cost",
+    "context": "Dataethics\u2013Datacollectionanduseshouldadheretoethicalprinciples. Fairnessandjustness\u2013Theendsolutionshouldideallybeasneutralaspossibleandshouldnotdiscriminate[13]. Cost\u2013Alloftheaboverequiresresources,budgetsandatalentedworkforce. Inaddition,thedatasourceitselfmight\nneedtobepurchased. In2016,McKinseyreportedthatmanycompanieshavestartedtospecializeinacquiringand\nsellingdata[14].",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the most challenging piece of the puzzle when it comes to acquiring and selling data?",
+    "answer": "The lack of control you can exert over the data sources that are externally gathered.",
+    "context": "In2016,McKinseyreportedthatmanycompanieshavestartedtospecializeinacquiringand\nsellingdata[14]. 3\n\nWiththerighttools,workforce,technologicaladvances,mindset,andlegislativesupport,thesechallengescanand\nshouldbemanageable. Themostchallengingpieceofthepuzzle,however\u2013andonethatismorethanoftenignored\u2013\nisthelackofcontrolyoucanexertoverthedatasourcesthatareexternallygathered. Asanationalstatisticsagency,\ntraditionally,surveydataandadministrativerecordsthatpowerofficialstatisticsarecompletelyunderyourowncontrol. Butonceyoustartexploitingexternaldatasourcestopowernovel,innovative,complimentaryorersatzstatistics,this\nlackofcontrolofyourdatashouldneverbeignored,andifpossible,shouldbefrontandcenteronyouragendaearlyon\nintheprocess.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main issue with relying on external data sources for statistics?",
+    "answer": "The lack of control over your data, which can lead to powerlessness despite having access to large amounts of external data.",
+    "context": "Butonceyoustartexploitingexternaldatasourcestopowernovel,innovative,complimentaryorersatzstatistics,this\nlackofcontrolofyourdatashouldneverbeignored,andifpossible,shouldbefrontandcenteronyouragendaearlyon\nintheprocess. Asthepopularsayinggoes: \u201cWithgreatpowercomesgreatresponsibility\u201d(fromSpider-Man,2002). Havingcontrol\nandpoweroveryourdataisessentialtofulfillingyourresponsibilitiesasastatisticsagency. However,intheworldof\ndata,theoppositeisoftentrue: withgreatamountsofexternaldatacomesgreatpowerlessness. Therefore,itiscrucial\ntoprioritizetheissueofdatacontrolwhenincorporatingexternalsourcesintoofficialstatistics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential risks of relying heavily on external data sources for machine learning in official statistics?",
+    "answer": "Significant risks arise from utilizing external data sources for machine learning in official statistics.",
+    "context": "Therefore,itiscrucial\ntoprioritizetheissueofdatacontrolwhenincorporatingexternalsourcesintoofficialstatistics. Takingthetimeto\nestablishproperprotocolsandproceduresforexternaldatamanagementcanpreventamultitudeofissuesdowntheline\nandensurethatthedatayourelyonremainaccurateandtrustworthy. Thispaperdelvesintothepervasiveproblemofpowerlessnessandlackofcontrol,unravelingthemultifacetedaspects,\nrisks, andpitfallsthatarisefromutilizing externaldatasourcesformachinelearning inofficialstatistics. We will\nexploretheconceptsof\u2018change\u2019and\u2018consequence\u2019intheirmostexpansiveinterpretationstocomprehensivelytackle\nthisquestion. 3 Thechallengeofchangingdatasources\nRelyingheavilyonexternaldatasourcesformachinelearninginofficialstatisticscomeswithsignificantrisks.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the comparison made in the text between machine learning and the global economy?",
+    "answer": "The comparison is made between the dependence on external data sources for machine learning and the global economy's dependence on the availability of oil.",
+    "context": "3 Thechallengeofchangingdatasources\nRelyingheavilyonexternaldatasourcesformachinelearninginofficialstatisticscomeswithsignificantrisks. Sucha\ndependencecanleavestatisticalagenciesvulnerablesincetheyhavelimitedcontroloverthesesources. Thissituation\nissimilartohowourglobaleconomy,mobility,andprosperitywereoncehighlydependentontheavailabilityofoil. Sincethepricesandavailabilityofthesepreciousresourcesareoftenbeyondourcontrol,countriescandonothingbut\nendurepricefluctuationsandshortages. CliveHumbyproclaimedin2006that\u201cdataisthenewoil\u201d,givenitspowerful\nintrinsicvalue.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the statement made by Clive Humby in 2006?",
+    "answer": "Data is the new oil, given its powerful intrinsic value.",
+    "context": "CliveHumbyproclaimedin2006that\u201cdataisthenewoil\u201d,givenitspowerful\nintrinsicvalue. However,hisstatementkeepsholdingtrueintermsofvulnerability,powerlessness,andlackofcontrol\noverexternalproviders. Inthefollowingparagraphs,wewilldelveintothevarioustypesandcausesofdatachanges. Wewillthendiscussthe\nramificationsofchangingdatasourcesformachinelearninginofficialstatistics. Finally,wewillprovidealistofbest\npracticesandtips,althoughitisimportanttorememberthatthereisnofreelunch: wheneverweincorporateexternal\ndata,weexposeourselvestotheriskoffuturechangesinthesedatasources.",
+    "paper_id": 1
+  },
+  {
+    "question": "What types of changes may arise when modifying data formats or structure?",
+    "answer": "These types of changes may arise due to a need to accommodate future use cases or business requirements, to eliminate technical debt, or to improve data storage and retrieval efficiency.",
+    "context": "Finally,wewillprovidealistofbest\npracticesandtips,althoughitisimportanttorememberthatthereisnofreelunch: wheneverweincorporateexternal\ndata,weexposeourselvestotheriskoffuturechangesinthesedatasources. 3.1 TypesandCausesofChangingDataSources\n3.1.1 Datatypesandschemas\nAchangeindatatypesorschemasreferstomodificationsmadetothedataformatsorthestructureinwhichthedata\narestoredandoffered. Thesetypesofchangesmayariseduetoaneedtoaccommodatefutureusecasesorbusiness\nrequirements,toeliminatetechnicaldebt,ortoimprovedatastorageandretrievalefficiency. Eventhemostinnocent\nchanges\u2013e.g.integersbecomingfloats,datacolumnsthatareaddedorremoved... \u2013canbreakentirepipelines. In\nthemostfortunateofcasestheruntimeenvironmentwillthrowerrorsthatrevealthecauseofthesedatachanges.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can seemingly minor adjustments to data types or schemas cause in a pipeline?",
+    "answer": "significant impacts further down the data pipeline",
+    "context": "In\nthemostfortunateofcasestheruntimeenvironmentwillthrowerrorsthatrevealthecauseofthesedatachanges. In\nothercases,however,thedatachangesremainundetectedandsecretlywreakhavocinthepipeline. Ifthepipeline\ncontainsmachinelearningcomponents,datatypechangescane.g.inducefeaturemismatches\u2013discrepanciesbetween\nthefeaturedistributionsattrainandinferencetime\u2013thatleadtounreliablepredictions. Itisimportanttobevigilantaboutchangesindatatypesorschemas,asevenseeminglyminoradjustmentscanhave\nsignificantimpactsfurtherdownthedatapipeline. Tomitigatetheserisks,itisadvisabletostayinformedaboutdata\nchangeannouncementsfromprovidersandimplementrobustdatachecksduringdataingestion,rangingfromsimple\ndata(type)validationtofull-blownautomatedfeatureanalysis,outlierdetection,etc.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can be done to prevent costly errors in machine learning?",
+    "answer": "Implementing robust data checks during data ingestion and deploying effective monitoring systems can help catch machine learning failures quickly.",
+    "context": "Tomitigatetheserisks,itisadvisabletostayinformedaboutdata\nchangeannouncementsfromprovidersandimplementrobustdatachecksduringdataingestion,rangingfromsimple\ndata(type)validationtofull-blownautomatedfeatureanalysis,outlierdetection,etc. Additionally,thedeploymentof\neffectivemonitoringsystemscanhelpcatchmachinelearningfailuresquicklyandpreventpotentiallycostlyerrors. 3.1.2 Sharingandcollectiontechnology\nDatacanbesharedandcollectedusingmanydifferenttechnologies,suchasAPIs,queues,networkdrives,external\ndrives,e-mail...butalsowebscraping,onlineanalyticstools,sensornetworks...Changesinthesetechnologiesinevitably\noccurfromtimetotime.Forexample,APIendpointsoftenneedtobeupdatedtoimprovefunctionalityandperformance. ChangesmaybemadetotheAPI\u2019sdatastructuresormethods,toprovidemoreefficientorcomprehensivedataaccess. Inaddition,changesmaybemadetotheAPItoaddresssecurityvulnerabilitiesortoensurecompliancewithnew\n4\n\nregulationsorstandards.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some reasons why changes may be made to an API?",
+    "answer": "To address security vulnerabilities, ensure compliance with new regulations or standards, or due to changes in business requirements or strategy.",
+    "context": "Inaddition,changesmaybemadetotheAPItoaddresssecurityvulnerabilitiesortoensurecompliancewithnew\n4\n\nregulationsorstandards. Furthermore,changesinbusinessrequirementsorstrategymayalsoleadtochangesinAPI\nendpoints. Forinstance,acompanymayintroducenewproductsorservices,modifytheirexistingofferings,orchange\ntheirpricing. Arecent,tellingexampleistheTwitterAPI.In2021,Twitterlaunchedversion2ofitspopularAPIthatintroduced\nmanychangesinendpoints,datafields,pricing...comparedtoversion1.1. Twitterencourageddeveloperstomigrateto\nthisnewAPIoffering,butformanyusecasessuchamigrationwouldintroducebreakingchangesthat,intheirturn,\nwouldimpactentiredataprocessingpipelines,statisticsproduction,etc.",
+    "paper_id": 1
+  },
+  {
+    "question": "What was the impact of Elon Musk's acquisition of Twitter on the API offerings?",
+    "answer": "The situation got worse when Elon Musk acquired Twitter in 2022 and decided to suspend all existing API offerings.",
+    "context": "Twitterencourageddeveloperstomigrateto\nthisnewAPIoffering,butformanyusecasessuchamigrationwouldintroducebreakingchangesthat,intheirturn,\nwouldimpactentiredataprocessingpipelines,statisticsproduction,etc. Forthetimebeing,Twitterofferedbothversion\n1.1andversion2oftheirAPIinparallel,whichcausedmanytoburytheirheadsinthesand. Thesituationgoteven\nworsewhenElonMuskacquiredTwitterin2022anddecidedtosuspendallexistingAPIofferings. Instead,in2023a\nnewenterprisetierwasintroducedthatputapriceofmorethan40thousandUSDpermonthonanyreasonablyeffective\nuseoftheAPI.Thiscausedgreatdissatisfactioninthedevelopmentandresearchcommunityandmanyinitiativeswere\nabandoned. 3.1.3 Conceptdrift\nConceptdriftisrelatedtochangesinthedatadistributionbetweentrainandtesttime,whichcanhavemultiplecauses\n[15,16].",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some common causes of concept drift in data distribution?",
+    "answer": "Changes in business logic, calculation of derived data fields, and naturally occurring sociological and economic processes.",
+    "context": "3.1.3 Conceptdrift\nConceptdriftisrelatedtochangesinthedatadistributionbetweentrainandtesttime,whichcanhavemultiplecauses\n[15,16]. Changesinbusinesslogiccaninduceinformationshifts,forexample,whencategoricalvariablesareexpanded\nwithadditionalcategoriesorwhenthemeaningofcertaindatafieldsisaltered. Aparticularpervasiveissueisthe\ncalculationofderiveddatafields,especiallywhenthosecalculationsarenottransparentorproprietary. Intheageof\nmachinelearning,youshouldalwaysassumethatderiveddatafieldscanbetheresultofamodelprediction;when\nthismodelisupdatedwithoutyourknowing,thederiveddatafieldswillhavea(slightly)differentdatadistribution,\nwhichwillcauseissuesindependentmachinelearningmodels. Butevenwhendatafieldsarenottheresultofamodel\u2019s\nprediction,itisimportanttoperiodicallyreevaluateandretrainmodels,sincemanysociologicalandeconomicprocesses\narenaturallypronetoconceptdriftthemselves.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can cause random shifts in data frequency?",
+    "answer": "Noisy factors such as network issues, component failures, downtime, or human errors.",
+    "context": "Butevenwhendatafieldsarenottheresultofamodel\u2019s\nprediction,itisimportanttoperiodicallyreevaluateandretrainmodels,sincemanysociologicalandeconomicprocesses\narenaturallypronetoconceptdriftthemselves. 3.1.4 Frequencyandinterruptions\nAchangeindatafrequencyreferstomodificationsmadetotherateatwhichdataiscollectedorupdated,whichcan\nhappendeliberatelyorrandomly. Deliberatechangesmayariseduetoshiftsinbusinessrequirementsortechnological\nchoices. Randomshiftsaremostoftenattributedtonoisyfactorssuchasnetworkissues,componentfailures,downtime...or(human)errors. Suchchangesinfrequencycanimpactmachinelearningcomponentsdramatically.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a useful strategy to avoid single points of failure in data sourcing?",
+    "answer": "Building redundancy by diversifying data sources",
+    "context": "Suchchangesinfrequencycanimpactmachinelearningcomponentsdramatically. E.g.when\nperiodicaldataissampledeveryminuteinsteadofeverysecond,thedatadistributionchangesonwhichthemodelwas\ntrained. Tomitigatetheserisks,datapipelinesshouldbedesignedtomonitorchangesinincomingdatafrequency. 3.1.5 Ownershipanddiscontinuation\nWorsethaninterruptionsisdownrightdiscontinuationofthedatasource,whichhasimmediateconsequencesonthe\nfutureexistenceofthestatistic.Also,achangeofownershipofthedatasource\u2013e.g.whenacquiredbyanothercompany\n\u2013isnotafictionalscenario,anditcantriggeranyoftherisksthatarediscussedinthissection. Buildingredundancyby\ndiversifyingdatasourcesisausefulmitigatingstrategytoavoidsinglepointsoffailures.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a reason for legal changes in data collection, storage, and use?",
+    "answer": "The adoption of new regulations, such as GDPR, which require companies to comply with stricter rules for collecting and processing data.",
+    "context": "Buildingredundancyby\ndiversifyingdatasourcesisausefulmitigatingstrategytoavoidsinglepointsoffailures. 3.1.6 Legalproperties\nLegalchangesrefertomodificationsmadetothelegallandscapethatgovernsthecollection,storage,anduseofdata. Thistypeofchangemayariseduetonewprivacylaws,contractualobligations,orchangesinthecostofdataaccessor\nstorage. Onecauseofthistypeofchangeistheadoptionofnewregulations,suchasGDPR,whichrequirecompanies\ntocomplywithstricterrulesforcollectingandprocessingdata. Additionally,changesinthecostofdataaccessor\nstoragemayrequirecompaniestomodifytheirdatasourcesormethodstoreducecosts,whichcanhavecontractual\nconsequences.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some potential consequences of changes in data access or storage costs?",
+    "answer": "Companies may need to modify their data sources or methods to reduce costs, which can have contractual consequences.",
+    "context": "Additionally,changesinthecostofdataaccessor\nstoragemayrequirecompaniestomodifytheirdatasourcesormethodstoreducecosts,whichcanhavecontractual\nconsequences. Ifpossible,negotiateairtightSLAswiththedataproviderandmakesuretoattributeenoughattentionto\nfuturedatachanges. 3.1.7 Ethicsandpublicperception\nEthicalconsiderationsandpublicperceptionscanaffectdatacollectionmethodsandsources. Ifcertaindatasources\nor variables are considered controversial or intrusive, there may be a shift towards alternative sources, which may\nrequirearefreshoftheusedmachinelearningmodels. Itcanalsoimpactthewaymachinelearningmodelsaredesigned\nandtrained.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can happen to machine learning models if certain variables or factors are considered discriminatory or unethical?",
+    "answer": "There may be a push to eliminate or adjust them to reduce algorithmic bias.",
+    "context": "Itcanalsoimpactthewaymachinelearningmodelsaredesigned\nandtrained. Ifcertainvariablesorfactorsareconsidereddiscriminatoryorunethical,theremaybeapushtowards\neliminatingoradjustingthemtoreducealgorithmicbias. Changesinethicsorpublicperceptionscanalsoresultin\ngreateraccountabilityandtheneedfortransparency. Stakeholdersmaydemandmoreopennessandclarityaround\ntheuseofalgorithms,datasources,anddecision-makingprocesses. Thiscanleadtogreaterscrutinyandoversightof\n5\n\nmachinelearningmodels,whichmayimpacttheirperformanceifnotadequatelyaddressed,especiallywhenblack-box\nmodelsneedtobereplacedbymoreinterpretativevariants[17,18,19].",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential consequences of changing data sources for official statistics production?",
+    "answer": "There will be consequences for official statistics production, especially if there are machine learning components involved.",
+    "context": "Thiscanleadtogreaterscrutinyandoversightof\n5\n\nmachinelearningmodels,whichmayimpacttheirperformanceifnotadequatelyaddressed,especiallywhenblack-box\nmodelsneedtobereplacedbymoreinterpretativevariants[17,18,19]. Finally,publictrustcanbesignificantlyaffected. Ifstakeholdersperceivethatmachinelearningisbeingusedinappropriatelyorunethically,theymaylosefaithinthe\nintegrityandreliabilityofofficialstatistics. Thiscanhavesignificantconsequencesforpublicpolicyanddecision\nmaking. 3.2 ConsequencesofChangingDataSources\nWhendatasourceschange,therewillbeconsequencesforofficialstatisticsproduction,especiallyiftherearemachine\nlearningcomponentsinvolved.",
+    "paper_id": 1
+  },
+  {
+    "question": "What happens to a model when its underlying patterns and relationships in the data change over time?",
+    "answer": "The model may deteriorate or lose accuracy due to concept drift.",
+    "context": "3.2 ConsequencesofChangingDataSources\nWhendatasourceschange,therewillbeconsequencesforofficialstatisticsproduction,especiallyiftherearemachine\nlearningcomponentsinvolved. Wewillbroadlybutbrieflycoveravarietyofareasthatcanbeimpacted,someofwhich\nhavealreadybeenmentionedabove. Conceptdrift\u2013Conceptdriftmeansthattheunderlyingpatternsandrelationshipsinthedatamaychangeovertime,\nwhichcanleadtomodeldeteriorationorlossofaccuracy. Thisissuecanbeparticularlyrelevantwhendealingwith\nlong-termtrends,aschangesinsocietalnorms,technology,orotherexternalfactorscaninfluencedataovertime[16]. Modelstaleness\u2013Whenamodelbecomesoutdated,itnolongerreflectscurrenttrendsorpatternsinthedata.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can happen to a machine learning model if it is not updated frequently enough?",
+    "answer": "It may no longer reflect current trends or patterns in the data and may not perform as well as it once did.",
+    "context": "Modelstaleness\u2013Whenamodelbecomesoutdated,itnolongerreflectscurrenttrendsorpatternsinthedata. Thiscan\noccurifthemachinelearningmodelisnotupdatedfrequentlyenoughtokeeppacewithchangingdatasources. Asa\nresult,themodelmaynotperformaswellasitoncedid,leadingtolessaccurateofficialstatistics. Biasandneutrality\u2013Changingdatasourcescanalsointroducebiasorincorrectdata,whichcanimpacttheneutrality\nofthestatisticsproduced,orwhichcanleadtothephenomenon\u201cgarbagein,garbageout\u201d[20,21]. Sinceitisessential\nthatofficialstatisticsremainneutralandobjective,thiswillnegativelyimpacttheaccuracyandvalidityofthesestatistics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What can happen to the accuracy and validity of official statistics if they are not neutral and objective?",
+    "answer": "This will negatively impact the accuracy and validity of these statistics.",
+    "context": "Sinceitisessential\nthatofficialstatisticsremainneutralandobjective,thiswillnegativelyimpacttheaccuracyandvalidityofthesestatistics. Availability\u2013Ifdatabecomeunavailable(foracertainperiodintimeorindefinitely)orarelimitedinscope,thismay\nimpacttheabilitytoproduceaccurateandtimelyofficialstatistics. Integration\u2013Achangeindatasourcescancauseadominoeffectwhenmultiplestatisticsormodelsrelyonthisdata\nsource. Especiallybemindfulwhentheoutputofmachinelearningmodelsisusedasinputforothermachinelearning\nmodels,eitherdirectlyorindirectlyaspartofalargerdatapipeline. Sincethepredictionsofamachinelearningmodel\ncanbecomeunreliablewhentheinputdatachange,thispredictionshiftitselfisachangingdatasourceforothermodels.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the impact of changing data sources on the cost and timeline of produced statistics?",
+    "answer": "It has a tremendous impact on the costs and timeline of the produced statistics.",
+    "context": "Sincethepredictionsofamachinelearningmodel\ncanbecomeunreliablewhentheinputdatachange,thispredictionshiftitselfisachangingdatasourceforothermodels. Extralabor\u2013Theriskofchangingdatasourcesrequiresadditionalresourcesandlabortomitigatetheeffectsofsuch\nchanges,monitortheoccurrenceofchanges,andensurethatthenewdataareproperlyintegratedintoexistingmachine\nlearningmodels. Thishastremendousimpactsonthecostsandtimelineoftheproducedstatistics,anditmayalso\nrequireasignificantteamexpansion. Breaking changes or discontinuation \u2013 In some cases, changing data sources may cause the impossibility of\nproducingastatisticanyfurther. Ifthisisthecase,itmaybenecessarytostopofferingthestatisticaltogetherorfind\nalternativedatasourcesthatcanproduceaccurateandreliableofficialstatistics.",
+    "paper_id": 1
+  },
+  {
+    "question": "What happens when there is a mismatch between the original and alternative data sources?",
+    "answer": "It results in a breaking change, which can impact the resulting statistic.",
+    "context": "Ifthisisthecase,itmaybenecessarytostopofferingthestatisticaltogetherorfind\nalternativedatasourcesthatcanproduceaccurateandreliableofficialstatistics. Whenalternativedatasourcesare\nfound,therewillalmostalwaysbeamismatchwiththeoriginaldatasourcethathasanimpactontheresultingstatistic,\nresultinginabreakingchange. Inthatcase,itisimportanttoovercomethemismatchesasbestaspossible\u2013e.g.in\ntermsofstatisticalproperties\u2013and,certainly,tobetransparentaboutthebreakingchange,e.g.byindicatingonagraph\nwhenexactlythedatasourcewaschanged. Quality metrics \u2013 Finally, changing data sources imply changes in timeliness, validity, accuracy, completeness,\nconsistencyandotherqualitymetricsw.r.t.theproducedofficialstatistics[6]. Ensuringthatresultingstatisticcontinues\ntomeetthesequalitymetricsremainscritical.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential effects of changes in data sources on a machine learning model?",
+    "answer": "The effects can be diverse, ranging from introducing biases in the data to producing incorrect results.",
+    "context": "Ensuringthatresultingstatisticcontinues\ntomeetthesequalitymetricsremainscritical. 3.3 MitigatingChangingDataSources\nAshasbeenillustratedabove,changesindatasourcescansignificantlyimpacttheperformanceofamachinelearning\nmodel. Theeffectscanbediverse,rangingfromintroducingbiasesinthedatatoproducingincorrectresults. Thiscan\nhaveseriousimplications,especiallywhenthemodelisbeingusedforofficialstatistics,whereaccuracyandreliability\nareofparamountimportance. Therefore,itisessentialtotakemeasurestopreventandmitigatesuchchanges.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is an essential step in mitigating the impact of changes in data sources?",
+    "answer": "Performing a risk analysis before incorporating a new data source",
+    "context": "Therefore,itisessentialtotakemeasurestopreventandmitigatesuchchanges. Thisis\nnotaneasytask,astheconsequencescanbediverse,andtherequiredeffortstomitigatethemareoftentime-consuming\nandnotstraightforward. Wedonotclaimtohavedefiniteanswers. However,wewillproposeseveralrecommendations\nand best practices, including performing a risk analysis, monitoring, diversifying data sources, building technical\nrobustness,usingdatanormalizationtechniques,andincorporatingdatavalidationprocesses. 6\n\nRiskanalysis\u2013Performingariskanalysisbeforeincorporatinganewdatasourceisanessentialstepinmitigating\ntheimpactofchangesindatasources.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the purpose of performing a risk analysis before incorporating a new data source?",
+    "answer": "To mitigate the impact of changes in data sources",
+    "context": "6\n\nRiskanalysis\u2013Performingariskanalysisbeforeincorporatinganewdatasourceisanessentialstepinmitigating\ntheimpactofchangesindatasources. Thisanalysisinvolvesidentifyingthepotentialrisksassociatedwiththedata\nsource,whichwehavecoveredinSection3.1. Theanalysisshouldbecomprehensive,consideringbothtechnicaland\nnon-technicalaspectsofthedatasource,andshouldideallyincludepotentialsolutionsfortheidentifiedrisks. Thiswill\noftenforceyoutofacethehardtruthandwillleadyoutodecidethatthecandidatedatasourcesarenotadequateor\nreliableenough. Trade-offswillneverthelessneedtobeconsidered,dependingontheusecaseathand.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a crucial step in mitigating the impact of changing data sources?",
+    "answer": "Monitoring everything that is relevant",
+    "context": "Trade-offswillneverthelessneedtobeconsidered,dependingontheusecaseathand. Monitoring\u2013Monitoringeverythingthatisrelevantisanothercrucialstepinmitigatingtheimpactofchangingdata\nsources. Itinvolvestrackingvariousaspectsofthedatasources,themachinelearningmodels,andtheiroutputsto\ndetectandrespondtochangespromptly. Draftalistofvariablesandquantitiesthatmustbecontinuouslytrackedto\nensurethatthemodelsremainreliableandaccurateovertime. Forthis,inspirationcanbedrawnfromthediscussed\ntopicsinSection3.1,butitwillvaryfromusecasetousecase,aswellasthenatureofthemodelsthathavebeenused.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a common challenge when monitoring the performance of unsupervised models?",
+    "answer": "There is no clear performance measure that can be directly computed.",
+    "context": "Forthis,inspirationcanbedrawnfromthediscussed\ntopicsinSection3.1,butitwillvaryfromusecasetousecase,aswellasthenatureofthemodelsthathavebeenused. Supervisedmodels,forexample,canbetestedagainstareferencetestsetorahistoricalreferencemodel;iftheaccuracy,\nprecision or recall starts to deviate significantly from this reference set, it should be flagged. On the other hand,\nmonitoringtheperformanceofunsupervisedmodelscanbemorechallenging,becausethereisnoclearperformance\nmeasurethatcanbedirectlycomputed. Oneapproachistomonitorthemodel\u2019sabilitytodetectpatternsandclustersin\nthedata. Itispossibletouseareferencetestsetorreferencemodelforthis,buttheinformativemetrics\u2013e.g.cluster\nsimilarity,homogeneity,separation... \u2013aremoreabstractandsomewhathardertointerpret.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a suggested approach to balance interpretability and hard performance metrics in unsupervised learning?",
+    "answer": "Testing clusters against pre-existing domain knowledge, e.g., by listing similar datapoints for given queries.",
+    "context": "Itispossibletouseareferencetestsetorreferencemodelforthis,buttheinformativemetrics\u2013e.g.cluster\nsimilarity,homogeneity,separation... \u2013aremoreabstractandsomewhathardertointerpret. Anotherapproachisto\nvisualizeprojectionsofcertaininterestingdatapointsinthelearnedlatentspacesorpreferablyareductionthereof,\nwhichgreatlybenefitsinterpretabilitybutmakesithardertoconvertitintohardnumbers. Asasuggestion,agood\nbalancebetweeninterpretabilityandhardperformancemetricsisfoundwhenclustersaretestedagainstpre-existing\ndomainknowledge,e.g.bylistingsimilardatapointsforgivenqueries.Simplymonitoringwhetherexpectedsimilarities\nemergeornotcanprovidepowerfulsignalsaboutmodelanddataperformance. Anothereffectiveapproachistocreate\nproxysupervisedtasksthatrelyontheoutputoftheunsupervisedmodel. Monitoringthemodel\u2019sperformanceonsuch\nproxytaskscanprovideinsightsintothequalityandusefulnessoftheunsupervisedmodel\u2019soutput.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is a key challenge when using multiple data sources in a model?",
+    "answer": "The potential for conflicts or inconsistencies between the sources.",
+    "context": "Monitoringthemodel\u2019sperformanceonsuch\nproxytaskscanprovideinsightsintothequalityandusefulnessoftheunsupervisedmodel\u2019soutput. Diversification\u2013Diversifyingdatasourcesisanotherimportantmeasure,butiseasiersaidthandone. Onechallengeof\nusingmultipledatasourcesisthepotentialforconflictsorinconsistenciesbetweenthesources. Differentdatasources\nmayhavedifferentformats,schemas,andlevelsofquality,whichcancreatediscrepanciesandinconsistenciesthatmust\nberesolvedbeforethedatacanbeusedinthemodel. Therefore,datanormalizationiskey.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some challenges associated with integrating multiple data sources?",
+    "answer": "It can be a complex and time-consuming process, create additional computational overhead, and impact the model's scalability and portability.",
+    "context": "Therefore,datanormalizationiskey. Additionally,integrating\nmultiple data sources can be a complex and time-consuming process. It can also create additional computational\noverhead,whichmayimpactthemodel\u2019sscalabilityandportability. Finally,findingrelevantandreliabledatasources\ncan be a challenging task, particularly for specialized or niche domains. It may require extensive research and\ncommunication with data providers to retrieve relevant data.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some essential measures to ensure technical robustness in data-driven statistics?",
+    "answer": "Using data normalization techniques and incorporating data validation into the pipeline, as well as thorough unit and integration testing, failover and deduplication, scalability solutions, and security measures.",
+    "context": "It may require extensive research and\ncommunication with data providers to retrieve relevant data. Again, this story is about economical, technical and\npracticaltrade-offs,andisofcoursehighlyuse-case-dependent. Technical robustness \u2013 Building technical robustness is paramount and requires significant engineering efforts. Buildinganautomated,data-drivenstatisticthatisresistanttochangingdatasourcessuchaserrors,outliers,outages,\ntime-dependentvariability,etc.ensuresconsistencyinthestatisticaloffering. Usingdatanormalizationtechniquesand\nincorporatingdatavalidationintothepipelineareessentialmeasures,butrobusttechnicalimplementationsalsorequire\nthoroughunitandintegrationtesting,failoveranddeduplication,scalabilitysolutions,securitymeasures,etc.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the importance of thorough unit and integration testing in robust technical implementations?",
+    "answer": "It is an essential measure to ensure the reliability and accuracy of the implementation.",
+    "context": "Usingdatanormalizationtechniquesand\nincorporatingdatavalidationintothepipelineareessentialmeasures,butrobusttechnicalimplementationsalsorequire\nthoroughunitandintegrationtesting,failoveranddeduplication,scalabilitysolutions,securitymeasures,etc. Ofcourse,\nthisisanentirefieldofstudyonitsown. Legalrobustness\u2013Finally,webelievethatagreeingonclearlegalguidelinesisthebestmitigationstrategytocounter\ntheriskofchangingdatasources,forexample,byclosingformaldatasharingagreementsorSLAawithdataproviders. Suchagreementsshouldspecifythetermsandconditionsunderwhichthedatacanbeshared, aswellasthelegal\nresponsibilitiesofeachparty. Inparticular,theagreementsshouldspecifythelegalconsequencesofnon-compliance.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are some potential mitigation strategies for the risks of changing data sources in machine learning for official statistics?",
+    "answer": "A few potential mitigation strategies have been looked at, but they do not provide all the adequate answers and require many additional resources and efforts.",
+    "context": "Inparticular,theagreementsshouldspecifythelegalconsequencesofnon-compliance. 4 Conclusion\nInthispaperwehaveinvestigatedtherisksandconsequencesofchangingdatasourceswhenusingmachinelearning\nfor official statistics. The list is long and covers many different aspects, ranging from statistical issues and model\ninconsistenciestotechnicalproblemsandethicalconsiderations. Wehavealsolookedatafewpotentialmitigation\nstrategies. However,weadmitthatthesestrategiesdonotprovidealltheadequateanswersandmightleavethereader\nunsatisfiedor,worsestill,beguiled,asthesolutionsrequiremanyadditionalresourcesandefforts.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main concern when implementing the strategies mentioned in the text?",
+    "answer": "The main concern is the risk of losing control over data sources.",
+    "context": "However,weadmitthatthesestrategiesdonotprovidealltheadequateanswersandmightleavethereader\nunsatisfiedor,worsestill,beguiled,asthesolutionsrequiremanyadditionalresourcesandefforts. Aswehavestressed\nacoupleoftimesinthispaper,thisisastoryoftrade-offs. Dependingontheusecaseathand,sometrade-offsmightbe\neasiertohandlethanotherones. However,inthecontextofofficialstatistics,ouradviceistonottreadlightlyonthese\nmattersandtominimizetheriskoflosingcontroloveryourdatasourcesasmuchaspossible. Thistakestime,effort\n7\n\nandcarefulplanningwithahorizonofmultipleyears.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the key elements required for successful machine learning in official statistics?",
+    "answer": "time, effort, and careful planning with a horizon of multiple years",
+    "context": "Thistakestime,effort\n7\n\nandcarefulplanningwithahorizonofmultipleyears. Toendonapositivenote,despitethechallengesassociatedwith\nchangingdatasources,machinelearningoffersmanyopportunitiesforofficialstatistics. Bybeingawareoftherisks\nandtakingnecessaryprecautions,statisticalagenciescanleveragetheseopportunitieswhilemaintainingtheintegrity\nandreliabilityoftheirdata-drivenproducts. Wehopethatourchecklistofrisksandmitigationstrategiesprovidesa\nusefulstartingpointforstatisticalagenciesandpractitionerstoensuretherobustnessoftheirmachinelearning-based\nstatisticalreporting. References\n[1] StuartJ.RussellandPeterNorvig.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the titles of the two books referenced in the given text?",
+    "answer": "Artificial Intelligence and The Elements of Statistical Learning",
+    "context": "References\n[1] StuartJ.RussellandPeterNorvig. ArtificialIntelligence. PearsonEducation,2009. [2] TrevorHastie,JeromeFriedman,andRobertTisbshirani. TheelementsofStatisticalLearning.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the sources of information mentioned in the text?",
+    "answer": "The sources of information mentioned in the text are 'The Elements of Statistical Learning' by Springer (2017) and 'Machine Learning for Official Statistics' by UNECE (2022).",
+    "context": "TheelementsofStatisticalLearning. Springer,2017. [3] UNECE. Machinelearningforofficialstatistics. Technicalreport,UNECE,2022.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the 2014 research paper by Hossein Hassani, Gilbert Saporta, and Emmanuel Sirimal Silva?",
+    "answer": "Datamining and official statistics: The past, the present and the future",
+    "context": "Technicalreport,UNECE,2022. [4] HosseinHassani,GilbertSaporta,andEmmanuelSirimalSilva. Dataminingandofficialstatistics: Thepast,the\npresentandthefuture. BigData,2(1):34\u201343,March2014. [5] MarcoPutsandPietDaas.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the paper by MarcoPutsandPietDaas?",
+    "answer": "Machine learning from the perspective of official statistic",
+    "context": "[5] MarcoPutsandPietDaas. Machinelearningfromtheperspectiveofofficialstatistic. TheSurveyStatistician,\n84:12\u201317,July2021. [6] WesleyYung,Siu-MingTam,BartBuelens,HughChipman,FlorianDumpert,GabrieleAscari,FabianaRocci,\nJoepBurger,andInKyungChoi. Aqualityframeworkforstatisticalalgorithms.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the names of the publications mentioned in the text?",
+    "answer": "Statistical Journal of the IAOS and Harvard Data Science Review",
+    "context": "Aqualityframeworkforstatisticalalgorithms. StatisticalJournaloftheIAOS,\n38(1):291\u2013308,March2022. [7] WesleyYung. TheEvolutionofOfficialStatisticsinaChangingWorld. HarvardDataScienceReview,3(4),oct\n282021.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the paper 'Benchmark study for flemish twitter sentiment analysis'?",
+    "answer": "Manon Reusens, Michael Reusens, Marc Callens, Bart Baesens, et al.",
+    "context": "HarvardDataScienceReview,3(4),oct\n282021. [8] Manon Reusens, Michael Reusens, Marc Callens, Bart Baesens, et al. Benchmark study for flemish twitter\nsentimentanalysis. SocialScienceResearchNetwork,2022. [9] AnnelienCrijns,VictorVanhullebusch,ManonReusens,MichaelReusens,andBartBaesens.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the topics of the research papers mentioned in the text?",
+    "answer": "Topicmodelling applied on innovation studies of Flemish companies and The Use of Data Science in a National Statistical Office.",
+    "context": "[9] AnnelienCrijns,VictorVanhullebusch,ManonReusens,MichaelReusens,andBartBaesens. Topicmodelling\nappliedoninnovationstudiesofflemishcompanies. JournalofBusinessAnalytics,pages1\u201312,2023. [10] SevguiErman,EricRancourt,YanickBeaucage,andAndreLoranger. TheUseofDataScienceinaNational\nStatisticalOffice.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the second research paper mentioned in the text?",
+    "answer": "When numbers fail: do researchers agree on operationalization of published research?",
+    "context": "TheUseofDataScienceinaNational\nStatisticalOffice. HarvardDataScienceReview,4(4),oct272022. [11] Matthias Haucke, Rink Hoekstra, and Don van Ravenzwaaij. When numbers fail: do researchers agree on\noperationalizationofpublishedresearch? RoyalSocietyOpenScience,8(9):191354,September2021.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the name of the journal where the article 'Operationalization bias: A suboptimal research practice in psychology' was published?",
+    "answer": "The journal is not specified in the given text, but the article was published in December 2022.",
+    "context": "RoyalSocietyOpenScience,8(9):191354,September2021. [12] Nagireddy Neelakanteswar Reddy. Operationalization bias: A suboptimal research practice in psychology. December2022. [13] MatthiasKuppler,ChristophKern,RubenL.Bach,andFraukeKreuter.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the paper 'From fair predictions to just decisions? conceptualizing algorithmic fairness and distributive justice in the context of data-driven decision-making'?",
+    "answer": "Matthias Kuppler, Christoph Kern, Ruben L. Bach, and Frauke Kreuter",
+    "context": "[13] MatthiasKuppler,ChristophKern,RubenL.Bach,andFraukeKreuter. Fromfairpredictionstojustdecisions? conceptualizing algorithmic fairness and distributive justice in the context of data-driven decision-making. FrontiersinSociology,2022. [14] Nicolaus Henke, Jacques Bughin, Michael Chui, James Manyika, Tamim Saleh, Bill Wiseman, and Guru\nSethupathy.",
+    "paper_id": 1
+  },
+  {
+    "question": "Who are the authors of the report 'The Age of Analytics: Competing in a Data-Driven World'?",
+    "answer": "Nicolaus Henke, Jacques Bughin, Michael Chui, James Manyika, Tamim Saleh, Bill Wiseman, and Guru Sethupathy",
+    "context": "[14] Nicolaus Henke, Jacques Bughin, Michael Chui, James Manyika, Tamim Saleh, Bill Wiseman, and Guru\nSethupathy. Theageofanalytics: competinginadata-drivenworld. Technicalreport,McKinsey&Company,\n2016. [15] HanqingHu,MehmedKantardzic,andTegjyotSSethi. Nofreelunchtheoremforconceptdriftdetectionin\nstreamingdataclassification: Areview.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the 2020 review article on concept drift detection in streaming data classification?",
+    "answer": "Nofreelunchtheoremforconceptdriftdetectioninstreamingdataclassification: Areview",
+    "context": "Nofreelunchtheoremforconceptdriftdetectionin\nstreamingdataclassification: Areview. WileyInterdisciplinaryReviews: DataMiningandKnowledgeDiscovery,\n10(2):e1327,2020. [16] FirasBayram,BestounS.Ahmed,andAndreasKassler. Fromconceptdrifttomodeldegradation: Anoverview\nonperformance-awaredriftdetectors. Knowledge-BasedSystems,245:108632,June2022.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the paper by Alicja Gosiewska, Anna Kozak, and Przemys\u0142aw Biecek?",
+    "answer": "Simpler is better: Lifting interpretability-performance trade-off via automated feature engineering",
+    "context": "Knowledge-BasedSystems,245:108632,June2022. [17] AlicjaGosiewska,AnnaKozak,andPrzemys\u0142awBiecek. Simplerisbetter: Liftinginterpretability-performance\ntrade-offviaautomatedfeatureengineering. DecisionSupportSystems,150:113556,November2021. [18] CynthiaRudin.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main argument made by Cynthia Rudin in her 2019 paper?",
+    "answer": "The main argument made by Cynthia Rudin is that high-stakes decisions should be made using interpretable models instead of blackbox machine learning models.",
+    "context": "[18] CynthiaRudin. Stopexplainingblackboxmachinelearningmodelsforhighstakesdecisionsanduseinterpretable\nmodelsinstead. NatureMachineIntelligence,1(5):206\u2013215,May2019. [19] Alex John London. Artificial intelligence and black-box medical decisions: Accuracy versus explainability.",
+    "paper_id": 1
+  },
+  {
+    "question": "What are the potential consequences of using black-box medical decisions in healthcare?",
+    "answer": "The potential consequences include a lack of transparency and accountability, which can lead to mistrust among patients and clinicians.",
+    "context": "Artificial intelligence and black-box medical decisions: Accuracy versus explainability. HastingsCenterReport,49(1):15\u201321,January2019. [20] BertieVidgenandLeonDerczynski. Directionsinabusivelanguagetrainingdata,asystematicreview: Garbage\nin,garbageout. PLOSONE,15(12):e0243300,December2020.",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the title of the paper by R. Stuart Geiger et al.?",
+    "answer": "\u2018garbagein,garbageout\u2019 revisited: What do machine learning application papers report about human-labeled training data?",
+    "context": "PLOSONE,15(12):e0243300,December2020. [21] R.StuartGeiger,DominiqueCope,JamieIp,MarshaLotosh,AayushShah,JennyWeng,andRebekahTang. \u201cgarbagein,garbageout\u201drevisited: Whatdomachinelearningapplicationpapersreportabouthuman-labeled\ntrainingdata? QuantitativeScienceStudies,2(3):795\u2013827,2021. 8",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the number 8 in the context of the given text?",
+    "answer": "It appears to be a line number in a code snippet.",
+    "context": "8",
+    "paper_id": 1
+  },
+  {
+    "question": "What is the main focus of the DOME recommendations?",
+    "answer": "Supervised machine learning validation in biology",
+    "context": "DOME: Recommendations for supervised machine\nlearning validation in biology\nIan Walsh1,* \u200b, Dmytro Fishman2,* \u200b, Dario Garcia-Gasulla3 \u200b, Tiina Titma4 \u200b, Gianluca Pollastri5 \u200b, The ELIXIR\n\u200b \u200b \u200b \u200b \u200b\nMachine Learning focus group# \u200b, Jennifer Harrow6,+ \u200b, Fotis E. Psomopoulos7,+ \u200b & Silvio C.E. Tosatto8,+\n\u200b \u200b \u200b \u200b\n1Bioprocessing Technology Institute, Agency for Science, Technology and Research, Singapore, 2Institute of\n\u200b \u200b\n\u200b\nComputer Science, University of Tartu, Estonia, 3Barcelona Supercomputing Center (BSC), Barcelona, Spain,\n\u200b\n\u200b\n4School of Information Technologies, Tallinn University of Technology, Estonia, 5School of Computer Science,\n\u200b \u200b\n\u200b\nUniversity College Dublin, Ireland, 6ELIXIR HUB, South building, Wellcome Genome Campus, Hinxton, Cambridge,\n\u200b\n\u200b\nUK, 7Institute of Applied Biosciences, Centre for Research and Technology Hellas, Thessaloniki, Greece, 8Dept. of\n\u200b \u200b\n\u200b \u200b\nBiomedical Sciences, University of Padua, Padua, Italy. *contributed equally\n\u200b\n#see list of co-authors at the end of the manuscript\n\u200b\n+corresponding authors\n\u200b\nAbstract\nModern biology frequently relies on machine learning to provide predictions and improve decision\nprocesses. There have been recent calls for more scrutiny on machine learning performance and possible\nlimitations.",
+    "paper_id": 2
+  },
+  {
+    "question": "What specific metrics were used to evaluate the performance of the machine learning model?",
+    "answer": "Please provide a clear description of the evaluation metrics used, such as accuracy, precision, recall, F1-score, or others, and explain why these metrics were chosen for the specific task.",
+    "context": "There have been recent calls for more scrutiny on machine learning performance and possible\nlimitations. Here we present a set of community-wide recommendations aiming to help establish\nstandards of supervised machine learning validation in biology. Adopting a structured methods\ndescription for machine learning based on data, optimization, model, evaluation (DOME) will aim to help\nboth reviewers and readers to better understand and assess the performance and limitations of a method\nor outcome. The recommendations are formulated as questions to anyone wishing to pursue\nimplementation of a machine learning algorithm. Answers to these questions can be easily included in the\nsupplementary material of published papers.",
+    "paper_id": 2
+  },
+  {
+    "question": "Why is experimental validation of novel ML methods in biology publications limited?",
+    "answer": "This happens only in a fraction of the publications.",
+    "context": "Answers to these questions can be easily included in the\nsupplementary material of published papers. Introduction\nWith the steep decline in the cost of high-throughput technologies, large amounts of biological data are\nbeing generated and made accessible to researchers. Machine learning (ML) has been brought into the\nspotlight as a very useful approach to understand cellular1, genomic2, proteomic3, post-translational4,\n\u200b \u200b \u200b \u200b\n\u200b \u200b \u200b \u200b\nmetabolic5 and drug discovery data6 with the potential to result in ground-breaking medical\n\u200b \u200b\napplications7,8. This is clearly reflected in the corresponding growth of ML publications (Figure 1),\n\u200b\n\u200b\nreporting a wide range of modelling techniques in biology. While every novel ML method should be\nvalidated experimentally, this happens only in a fraction of the publications9.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the demand in the ML community for?",
+    "answer": "A cohesive and combined set of recommendations with respect to data, the optimization techniques, the final model, and evaluation protocols as a whole.",
+    "context": "While every novel ML method should be\nvalidated experimentally, this happens only in a fraction of the publications9. This sharp increase in\n\u200b\n\u200b\npublications inherently requires a corresponding increase in the number and depth of peer-reviews to\noffer critical assessment10 and improve reproducibility11,12. \u200b \u200b\n\u200b \u200b\nGuidelines or recommendations on how to appropriately construct ML algorithms can help to ensure\ncorrect results and predictions13,14. In the biomedical research field, communities have defined standard\n\u200b\n\u200b\nguidelines and best practices for scientific data management15 and reproducibility of computational\n\u200b\ntools16,17. On the other hand, a demand exists in the ML community for a cohesive and combined set of\n\u200b\n\u200b\n1\n\nrecommendations with respect to data, the optimization techniques, the final model, and evaluation\nprotocols as a whole.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main demand in the ML community?",
+    "answer": "A cohesive and combined set of recommendations with respect to data, optimization techniques, the final model, and evaluation protocols as a whole.",
+    "context": "On the other hand, a demand exists in the ML community for a cohesive and combined set of\n\u200b\n\u200b\n1\n\nrecommendations with respect to data, the optimization techniques, the final model, and evaluation\nprotocols as a whole. Figure 1. Exponential increase of ML publications in biology. The number of ML publications per year is based\n\u200b\non Web of Science from 1996 onwards using the \u201ctopic\u201d category for \u201cmachine learning\u201d in combination with each\nof the following terms: \u201cbiolog*\u201d, \u201cmedicine\u201d, \u201cgenom*\u201d, \u201cprote*\u201d, \u201ccell*\u201d, \u201cpost translational\u201d, \u201cmetabolic\u201d and\n\u201cclinical\u201d. Recently, a comment highlighted the need for standards in ML18, arguing for the adoption of\n\u200b\n\u200b\non-submission checklists10 as a first step towards improving publication standards.",
+    "paper_id": 2
+  },
+  {
+    "question": "What data preprocessing steps should be taken to ensure data quality?",
+    "answer": "Data should be checked for missing values, outliers, and normalization to ensure it is suitable for model training.",
+    "context": "Recently, a comment highlighted the need for standards in ML18, arguing for the adoption of\n\u200b\n\u200b\non-submission checklists10 as a first step towards improving publication standards. Through a\n\u200b\ncommunity-driven consensus, we propose a list of minimal requirements asked as questions to ML\nimplementers (Box 1) that, if followed, will help to assess the quality and reliability of the proposed\nmethods more faithfully. We have focused on Data, Optimization, Model and Evaluation (DOME) as\neach component of an ML implementation usually falls within one of these four topics. Importantly, no\nspecific solutions are discussed, only recommendations (Table 1) and a checklist are provided (Box 1). Our recommendations are made primarily for the case of supervised learning in biology in the absence of\ndirect experimental validation, as this is the most common type of ML approach used.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is ELIXIR and its purpose?",
+    "answer": "ELIXIR is a mature intergovernmental European infrastructure for biological data, representing over 220 research organizations in 22 countries across many aspects of bioinformatics.",
+    "context": "Our recommendations are made primarily for the case of supervised learning in biology in the absence of\ndirect experimental validation, as this is the most common type of ML approach used. We do not discuss\nhow ML can be used in clinical applications19,20. It also remains to be investigated if the DOME\n\u200b\n\u200b\nrecommendations can be extended to other fields of ML, like unsupervised, semi-supervised and\nreinforcement learning. Development of the recommendations\nThe recommendations outlined below were initially formulated through the ELIXIR ML focus group\nafter the publication of a comment calling for the establishment of standards for ML in biology18. \u200b\n\u200b\nELIXIR, initially established in 2014, is now a mature intergovernmental European infrastructure for\nbiological data and represents over 220 research organizations in 22 countries across many aspects of\nbioinformatics21.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main goal of the ELIXIR ML focus group?",
+    "answer": "To develop and refine recommendations for the research community based on a broad consensus among experts in the field of Machine Learning.",
+    "context": "\u200b\n\u200b\nELIXIR, initially established in 2014, is now a mature intergovernmental European infrastructure for\nbiological data and represents over 220 research organizations in 22 countries across many aspects of\nbioinformatics21. Over 700 national experts participate in the development and operation of national\n\u200b\n\u200b\nservices that contribute to data access, integration, training and analysis for the research community. Over\n50 of these experts involved in the field of ML have established an ELIXIR ML focus group\n2\n\n(https://elixir-europe.org/focus-groups/machine-learning) which held a number of meetings to develop\n\u200b \u200b\nand refine the recommendations based on a broad consensus among them. Broad topic Be on the Consequences Recommendation(s)\nlookout for\nData - Data size & \u25cfData not Independence of optimization (training) and evaluation\nquality representative of (testing) sets. (requirement)\n\u200b\ndomain application.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main concern when dealing with meta algorithms and multiple training sets?",
+    "answer": "Appropriate independence of multiple training sets must be shown to be partitioning, and unreliable or biased dependence between train and evaluation sets must be avoided.",
+    "context": "(requirement)\n\u200b\ndomain application. This is especially important for meta algorithms, where\n- Appropriate independence of multiple training sets must be shown to be\npartitioning, \u25cfUnreliable or biased independent of the evaluation (testing) sets. dependence performance\nbetween train evaluation. Release data preferably using appropriate long-term\nand test data. repositories, including exact splits (requirement)\n\u200b \u200b\n\u25cfCannot check data\n- Class imbalance credibility.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the requirement for reporting evaluation sets in a study?",
+    "answer": "A clear statement that evaluation sets were not used for feature selection, pre-processing steps or parameter tuning.",
+    "context": "repositories, including exact splits (requirement)\n\u200b \u200b\n\u25cfCannot check data\n- Class imbalance credibility. Sufficient evidence of data size & distribution being\nrepresentative of the domain. (recommendation)\n\u200b \u200b \u200b\n- No access to\ndata\nOptimization - Overfitting, \u25cfReported Clear statement that evaluation sets were not used for feature\nunderfitting and performance too selection, pre-processing steps or parameter tuning. illegal parameter optimistic or too (requirement)\n\u200b \u200b\ntuning pessimistic. Reporting indicators on training and testing data that can aid\n- Imprecise \u25cfModels noise or miss in assessing the possibility of under/overfitting e.g.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main issue with using imprecise models for assessing under/overfitting?",
+    "answer": "Imprecise models may not accurately assess the possibility of under/overfitting due to noise or missing information in the train vs. test error.",
+    "context": "Reporting indicators on training and testing data that can aid\n- Imprecise \u25cfModels noise or miss in assessing the possibility of under/overfitting e.g. train vs.\nparameters and relevant test error. (requirement)\n\u200b\nprotocols given. relationships. Release definitions of all algorithmic hyper-parameters,\n\u25cfResults are not regularization protocols, parameters and optimization\nreproducible.",
+    "paper_id": 2
+  },
+  {
+    "question": "Why is it recommended to release definitions of train and learning curves for neural networks?",
+    "answer": "To ensure reproducibility of results and allow for better understanding of the model's performance and behavior.",
+    "context": "Release definitions of all algorithmic hyper-parameters,\n\u25cfResults are not regularization protocols, parameters and optimization\nreproducible. protocol. (requirement)\n\u200b \u200b\nFor neural networks, release definitions of train and learning\ncurves. (recommendation)\n\u200b \u200b\nInclude explicit model validation techniques, such as N-fold\nCross validation. (recommendation)\n\u200b \u200b\nModel - Unclear if black \u25cfAn interpretable Describe the choice of black box / interpretable model.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the difference between a black box model and an interpretable model?",
+    "answer": "A black box model is a type of machine learning model that is difficult to understand or interpret, whereas an interpretable model is a type of model that provides clear and transparent explanations of its decision-making process.",
+    "context": "(recommendation)\n\u200b \u200b\nModel - Unclear if black \u25cfAn interpretable Describe the choice of black box / interpretable model. If\nbox or model shows no interpretable show examples of it doing so. (requirement). \u200b \u200b\nexplainable\ninterpretable\nbehaviour Release of: documented source code + models + executable\nmodel\n+ UI/webserver + software containers. (recommendation)\n\u200b \u200b\n\u25cfCannot cross\n- No access to:\ncompare methods,\nReport execution time averaged across many repeats.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are some potential issues with the given method?",
+    "answer": "The method may have issues with reproducibility, computational complexity, biased performance measures, and inadequate evaluation, as well as a lack of comparisons to public methods and simple models.",
+    "context": "(recommendation)\n\u200b \u200b\n\u25cfCannot cross\n- No access to:\ncompare methods,\nReport execution time averaged across many repeats. If\nresulting source\nreproducibility, &\ncomputationally tough compare to similar methods\ncode, trained check data\n(recommendation)\nmodels & data credibility. \u200b \u200b\n\u25cfModel takes too\n- Execution time\nmuch time to\nis impractical\nproduce results\nEvaluation - Performance \u25cfBiased performance Compare with public methods & simple models (baselines). measures measures reported. (requirement)\n\u200b \u200b\ninadequate\n\u25cfThe method is falsely Adoption of community validated measures and benchmark\n- No comparisons claimed as datasets for evaluation.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the requirement for evaluating the performance of a method?",
+    "answer": "Comparison of related methods and alternatives on the same dataset, and evaluation on a final independent hold-out set.",
+    "context": "(requirement)\n\u200b \u200b\ninadequate\n\u25cfThe method is falsely Adoption of community validated measures and benchmark\n- No comparisons claimed as datasets for evaluation. (requirement)\n\u200b \u200b\nto baselines or state-of-the-art. other methods Comparison of related methods and alternatives on the same\ndataset. (recommendation)\n\u200b \u200b\n3\n\n- Highly variable \u25cfUnpredictable Evaluate performance on a final independent hold-out set. performance.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of using confidence intervals and statistical tests in supervised machine learning in biology?",
+    "answer": "To gauge prediction robustness.",
+    "context": "performance. performance in (recommendation)\n\u200b \u200b\nproduction. Confidence intervals/error intervals and statistical tests to\ngauge prediction robustness. (requirement)\n\u200b \u200b\nTable 1. Supervised ML in Biology: concerns, the consequences they impart and recommendations/requirements\n(recommendations in italics and requirements in bold).",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the source of the data (database, publication, direct experiment)?",
+    "answer": "The data was obtained from a publicly available database.",
+    "context": "Supervised ML in Biology: concerns, the consequences they impart and recommendations/requirements\n(recommendations in italics and requirements in bold). Key terms underlined. \u200b \u200b \u200b \u200b\nBox 1: Structuring a Materials and Methods Section for Supervised Machine Learning\nHere we suggest a list of questions that must be asked about each DOME section to ensure high quality\nof ML analysis. \u25cf Data: (this section is to be repeated separately for each dataset)\n\u200b \u200b\n\u25cb Provenance: What is the source of the data (database, publication, direct experiment)? If\n\u200b\ndata is in classes, how many data points are available in each class e.g., total for the\npositive (N ) and negative (N ) cases?",
+    "paper_id": 2
+  },
+  {
+    "question": "Has the dataset been previously used by other papers and/or is it recognized by the community?",
+    "answer": "Yes/No, and if yes, provide references or citations.",
+    "context": "If\n\u200b\ndata is in classes, how many data points are available in each class e.g., total for the\npositive (N ) and negative (N ) cases? If regression, how many real value points are\n\u200bpos \u200bneg\n\u200b \u200b\nthere? Has the dataset been previously used by other papers and/or is it recognized by the\ncommunity? \u25cb Data splits: How many data points are in the training and test sets? Was a separate\n\u200b\nvalidation set used, and if yes, how large was it?",
+    "paper_id": 2
+  },
+  {
+    "question": "Were the training and test sets independent?",
+    "answer": "No, the independence of the training and test sets is unclear.",
+    "context": "Was a separate\n\u200b\nvalidation set used, and if yes, how large was it? Is the distribution of data types in the\ntraining and test sets different? Is the distribution of data types in both training and test\nsets plotted? \u25cb Redundancy between data splits: How were the sets split? Are the training and test sets\n\u200b\nindependent?",
+    "paper_id": 2
+  },
+  {
+    "question": "Is the data, including the data splits used, released in a public forum?",
+    "answer": "No specific information is provided in the given text about the availability of the data in a public forum.",
+    "context": "Are the training and test sets\n\u200b\nindependent? How was this enforced (e.g. redundancy reduction to less than X% pairwise\nidentity)? How does the distribution compare to previously published ML datasets? \u25cb Availability of data: Is the data, including the data splits used, released in a public forum?",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the ML algorithm class used?",
+    "answer": "What is the type of machine learning algorithm employed in the model?",
+    "context": "\u25cb Availability of data: Is the data, including the data splits used, released in a public forum? \u200b\nIf yes, where (e.g. supporting material, URL) and how (license)? \u25cf Optimization: (this section is to be repeated separately for each trained model)\n\u200b \u200b\n\u25cb Algorithm: What is the ML algorithm class used? Is the ML algorithm new?",
+    "paper_id": 2
+  },
+  {
+    "question": "Are the results of the ML algorithm reproducible, and is the code publicly available?",
+    "answer": "No",
+    "context": "Is the ML algorithm new? If yes, why is\n\u200b\nit not published in a ML journal, and why was it chosen over better known alternatives? \u25cb Meta-predictions: Does the model use data from other ML algorithms as input? If yes,\n\u200b\nwhich ones? Is it completely clear that training data of initial predictors and meta-predictor\nis independent of test data for the meta-predictor?",
+    "paper_id": 2
+  },
+  {
+    "question": "Are the hyperparameters of the meta-predictor tuned using a grid search or cross-validation?",
+    "answer": "No, the hyperparameters of the meta-predictor were not tuned using a grid search or cross-validation, as the default values provided by the library were used.",
+    "context": "Is it completely clear that training data of initial predictors and meta-predictor\nis independent of test data for the meta-predictor? \u25cb Data encoding: How was the data encoded and pre-processed for the ML algorithm? \u200b\n\u25cb Parameters: How many parameters (p) are used in the model? How was p selected? \u200b \u200b \u200b \u200b \u200b\n\u25cb Features: How many features (f) are used as input?",
+    "paper_id": 2
+  },
+  {
+    "question": "Is the number of parameters much larger than the number of training points and/or is the number of features large?",
+    "answer": "Yes, if p>>(N + N) and/or f>100",
+    "context": "\u200b \u200b \u200b \u200b \u200b\n\u25cb Features: How many features (f) are used as input? Was feature selection performed? If\n\u200b \u200b\nyes, was it performed using the training set only? \u25cb Fitting: Is the number of parameters (p) much larger than the number of training points\n\u200b \u200b\nand/or is the number of features (f) large (e.g. in classification is p>>(N +N ) and/or\n\u200b \u200bpos \u200bneg\n\u200b \u200b\nf>100)?",
+    "paper_id": 2
+  },
+  {
+    "question": "Was over-fitting ruled out when the number of training points is very much larger than p and/or f is small?",
+    "answer": "No, under-fitting was ruled out, not over-fitting.",
+    "context": "in classification is p>>(N +N ) and/or\n\u200b \u200bpos \u200bneg\n\u200b \u200b\nf>100)? If yes, how was over-fitting ruled out? Conversely, if the number of training\npoints seem very much larger than p and/or f is small (e.g. N +N >>p and/or f<5) how\n\u200b \u200bpos \u200bneg\n\u200b \u200b\nwas under-fitting ruled out? \u25cb Regularization: were any over-fitting prevention techniques performed (e.g.",
+    "paper_id": 2
+  },
+  {
+    "question": "Were any over-fitting prevention techniques performed, such as early stopping using a validation set?",
+    "answer": "Yes",
+    "context": "\u25cb Regularization: were any over-fitting prevention techniques performed (e.g. early stopping\n\u200b\nusing a validation set)? If yes, which ones? 4\n\n\u25cb Availability of configuration: Are the hyper-parameter configurations, optimization\n\u200b\nschedule, model files and optimization parameters reported available? If yes, where (e.g.",
+    "paper_id": 2
+  },
+  {
+    "question": "Is the model black box or transparent?",
+    "answer": "transparent",
+    "context": "If yes, where (e.g. URL) and how (license)? \u25cf Model: (this section is to be repeated separately for each trained model)\n\u200b \u200b\n\u25cb Interpretability: Is the model black box or transparent? If the model is transparent, can you\n\u200b\ngive clear examples for this? \u25cb Output: Is the model classification or regression?",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of the model?",
+    "answer": "Classification or regression",
+    "context": "\u25cb Output: Is the model classification or regression? \u200b\n\u25cb Execution time: How much real-time does a single representative prediction require on a\n\u200b\nstandard machine? (e.g. seconds on a desktop PC or high-performance computing cluster)\n\u25cb Availability of software: Is the source code released? Is a method to run the algorithm such\n\u200b\nas executable, web server, virtual machine or container instance released?",
+    "paper_id": 2
+  },
+  {
+    "question": "Is a method to run the algorithm such as executable, web server, virtual machine or container instance released?",
+    "answer": "Yes",
+    "context": "Is a method to run the algorithm such\n\u200b\nas executable, web server, virtual machine or container instance released? If yes, where\n(e.g. URL) and how (license)? \u25cf Evaluation:\n\u200b\n\u25cb Evaluation method: How was the method evaluated? (E.g.",
+    "paper_id": 2
+  },
+  {
+    "question": "Are performance metrics reported and compared to the literature?",
+    "answer": "No, the text does not provide information about the performance metrics being reported or compared to the literature.",
+    "context": "(E.g. cross-validation, independent\n\u200b\ndataset, novel experiments)\n\u25cb Performance measures: Which performance metrics are reported? Is this set representative\n\u200b\n(e.g. compared to the literature)? \u25cb Comparison: Was a comparison to publicly available methods performed on benchmark\n\u200b\ndatasets?",
+    "paper_id": 2
+  },
+  {
+    "question": "Are the performance metrics in the study accompanied by confidence intervals to support the claims of the method's superiority?",
+    "answer": "No, the text does not explicitly mention the presence of confidence intervals in the performance metrics.",
+    "context": "\u25cb Comparison: Was a comparison to publicly available methods performed on benchmark\n\u200b\ndatasets? Was a comparison to simpler baselines performed? \u25cb Confidence: Do the performance metrics have confidence intervals? Are the results\n\u200b\nstatistically significant to claim that the method is superior to others and baselines? \u25cb Availability of evaluation: Are the raw evaluation files (e.g.",
+    "paper_id": 2
+  },
+  {
+    "question": "Are the raw evaluation files available for comparison and baselines?",
+    "answer": "Yes, they are available in the Supplementary Material with a URL and license information.",
+    "context": "\u25cb Availability of evaluation: Are the raw evaluation files (e.g. assignments for comparison\n\u200b\nand baselines, statistical code, confusion matrices) available? If yes, where (e.g. URL) and\nhow (license)? The above description is shown in table format in the Supplementary Material together with two fully\nworked-out examples.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the four major aspects of supervised ML covered by the recommendations?",
+    "answer": "The four major aspects are data, optimization, model, and evaluation, according to the DOME acronym.",
+    "context": "The above description is shown in table format in the Supplementary Material together with two fully\nworked-out examples. Scope of the recommendations\nThe recommendations cover four major aspects of supervised ML according to the \u201cDOME\u201d acronym:\ndata, optimization, model and evaluation. The key points and rationale for each aspect of DOME is\ndescribed below and summarized in Table 1. More importantly, Box 1 gives an actionable checklist to\nimplement ML methods, with the actual recommendations codified as questions. 1.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main issue with state-of-the-art ML models when they are evaluated on data they were exposed to during training?",
+    "answer": "They create an illusion of mastering the task at hand.",
+    "context": "1. Data\nState-of-the-art ML models are often capable of memorizing all the variation in training data. Such\nmodels when evaluated on data that they were exposed to during training would create an illusion of\nmastering the task at hand. However, when tested on an independent set of data (termed test or validation\nset), the performance would seem less impressive, suggesting low generalization power of the model. In\norder to tackle this problem, initial data should be divided randomly into non-overlapping parts.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is a preferred solution to tackle the problem of overlapping train/test data splits?",
+    "answer": "Cross-validation or bootstrapping techniques are often considered a preferred solution.",
+    "context": "In\norder to tackle this problem, initial data should be divided randomly into non-overlapping parts. The\nsimplest approach is to have independent train and test sets (possibly a third validation set). Alternatively,\n5\n\nthe cross-validation or bootstrapping techniques which choose a new train/test split multiple times from\nthe available data, is often considered a preferred solution22. \u200b\n\u200b\nOverlapping of train/test data splits are particularly troublesome to overcome in biology. For example, in\npredictions on entire gene and protein sequences independence of train-test could be achieved by\nreducing the amount of homologs in the data10,23.",
+    "paper_id": 2
+  },
+  {
+    "question": "How can we minimize homology in protein sequence data to achieve independence between train and test sets?",
+    "answer": "By reducing the amount of homologs in the data.",
+    "context": "For example, in\npredictions on entire gene and protein sequences independence of train-test could be achieved by\nreducing the amount of homologs in the data10,23. Modelling enhancer-promoter contacts require a\n\u200b\n\u200b\ndifferent criterion, e.g., not sharing one endpoint24. Modeling protein domains might require the\n\u200b\n\u200b\nmulti-domain sequence to be split into its constituent domains before homology reduction25. In short,\n\u200b\n\u200b\neach area of biology has its own recommendations for handling overlapping data issues and previous\nliterature is vital to put forward a strategy. In Box 1, we propose a set of questions under the section \u2018data\nsplits\u2019 that should help to evaluate potential overlap between train and test data.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are some potential issues with models trained on one dataset that may not be successful in dealing with data from adjacent but not identical datasets?",
+    "answer": "Covariance shift, a phenomenon where models struggle to adapt to new data due to differences in distribution or characteristics.",
+    "context": "In Box 1, we propose a set of questions under the section \u2018data\nsplits\u2019 that should help to evaluate potential overlap between train and test data. Reporting statistics on the data size and distribution of data types can help show if there is a good domain\nrepresentation in all sets. Simple plots and/or tables showing the number of classes (classification),\nhistogram of real values binned (regression), the different types of biological molecules in the data are\nvital pieces of information for each set. Further, in classification, including methods that address\nimbalanced classes26,27 are also needed if the class frequencies show so. Models trained on one dataset\n\u200b\nmay not be successful in dealing with data coming from adjacent but not identical datasets, a\nphenomenon known as covariance shift.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is covariance shift in machine learning?",
+    "answer": "Covariance shift is a phenomenon where models trained on one dataset may not be successful in dealing with data coming from adjacent but not identical datasets.",
+    "context": "Models trained on one dataset\n\u200b\nmay not be successful in dealing with data coming from adjacent but not identical datasets, a\nphenomenon known as covariance shift. The scale of this effect has been demonstrated in several recent\npublications, e.g. for prediction of disease risk from exome sequencing28. Although up to now the\n\u200b\n\u200b\ncovariance shift remains an open problem, several potential solutions have been proposed in the area of\ntransfer learning29. Moreover, the problem of training ML models that can generalize well on small\n\u200b\n\u200b\ntraining data, usually requires special models and algorithms30.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the importance of making data available for the public in machine learning research?",
+    "answer": "It ensures better reproducibility of published research and improves the overall quality of published ML papers.",
+    "context": "Moreover, the problem of training ML models that can generalize well on small\n\u200b\n\u200b\ntraining data, usually requires special models and algorithms30. \u200b\n\u200b\nLastly, it is important to make as much data available for the public as possible12. Having open access to\n\u200b\n\u200b\nthe data used for experiments including precise data splits would ensure better reproducibility of\npublished research and as a result will improve the overall quality of published ML papers. If datasets are\nnot readily available for example in public repositories, authors should be encouraged to find the most\nappropriate one, e.g. ELIXIR Deposition databases or Zenodo, to guarantee the long-term availability of\nsuch data.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of optimization in machine learning?",
+    "answer": "Optimization, also known as training, refers to the process of changing values that constitute the model (parameters and hyper-parameters), including pre-processing steps, in a way that maximizes the model\u2019s ability to solve a given problem.",
+    "context": "ELIXIR Deposition databases or Zenodo, to guarantee the long-term availability of\nsuch data. 2. Optimization\nOptimization, also known as training, refers to the process of changing values that constitute the model\n(parameters and hyper-parameters), including pre-processing steps, in a way that maximizes the model\u2019s\nability to solve a given problem. A poor choice of optimization strategy may lead to issues such as overor under-fitting31. A model that has suffered severe over-fitting will show an excellent performance on\n\u200b\n\u200b\ntraining data, while performing poorly on unseen data, rendering it useless for real-life applications.",
+    "paper_id": 2
+  },
+  {
+    "question": "What happens when a model suffers from severe over-fitting?",
+    "answer": "It shows an excellent performance on training data, while performing poorly on unseen data.",
+    "context": "A model that has suffered severe over-fitting will show an excellent performance on\n\u200b\n\u200b\ntraining data, while performing poorly on unseen data, rendering it useless for real-life applications. On\nthe other side of the spectrum, under-fitting occurs when very simple models capable of capturing only\n\u200b\nstraightforward dependencies between features are applied to data of a more complex nature. Algorithms\nfor feature selection32 can be employed to reduce the chances of over-fitting. However, feature selection\n\u200b\nand other pre-processing actions come with their own recommendations. The main one being to abstain\n\u200b\nfrom using non-training data for feature selection and pre-processing - a particularly hard issue to spot for\nmeta-predictors, which may lead to an overestimation of performance.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is a particularly hard issue to spot for meta-predictors?",
+    "answer": "Using non-training data for feature selection and pre-processing",
+    "context": "The main one being to abstain\n\u200b\nfrom using non-training data for feature selection and pre-processing - a particularly hard issue to spot for\nmeta-predictors, which may lead to an overestimation of performance. Finally, the release of files showing the exact specification of the optimization protocol and the type of\nparameters/hyper-parameters are a vital characteristic of the final algorithm. Lack of documentation,\nincluding limited accessibility to relevant records for the involved parameters, hyper-parameters and\noptimization protocol may further compound the understanding of the overall model performance. 6\n\nFigure 2. (Top) Classification metrics.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the confusion matrix in binary classification?",
+    "answer": "The confusion matrix in binary classification consists of true positives (tp), false positives (fp), false negatives (fn), and true negatives (tn).",
+    "context": "(Top) Classification metrics. For binary classification, true positives (tp), false positives (fp), false\n\u200b\nnegatives (fn) and true negatives (tn) together form the confusion matrix. As all classification measures can be\ncalculated from combinations of these four basic values, the confusion matrix should be provided as a core metric. Several measures (shown as equations) and plots should be used to evaluate the ML methods. For descriptions on\nhow to adapt these metrics to multi-class problems see 35 \u200b.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the primary goal of ML regression?",
+    "answer": "To produce predicted values (p) matching experimental values (e)",
+    "context": "For descriptions on\nhow to adapt these metrics to multi-class problems see 35 \u200b. (Bottom) Regression metrics. ML regression attempts\n\u200b \u200b \u200b\nto produce predicted values (p) matching experimental values (e). Metrics (shown as equations) attempt to capture\nthe difference in various ways. Alternatively, a plot can provide a visual way to represent the differences.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are two equally important aspects related to ML models?",
+    "answer": "Interpretability and reproducibility.",
+    "context": "Alternatively, a plot can provide a visual way to represent the differences. It is\nadvisable to report all in any ML work. 7\n\n3. Model\nEqually important aspects related to ML models are their interpretability and reproducibility. Interpretable models can infer causal relationships from the data and can output logical reasoning for\neach of its predictions.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the main differences between interpretable and black box models?",
+    "answer": "Interpretable models provide logical reasoning for predictions and are relevant in areas of discovery, while black box models give accurate predictions but lack human-understandable insight.",
+    "context": "Interpretable models can infer causal relationships from the data and can output logical reasoning for\neach of its predictions. They are especially relevant in areas of discovery such as drug design6 and\n\u200b\ndiagnostics33. Conversely, black box models often give accurate predictions but do not provide insight\n\u200b\n\u200b\ninto why they made the predictions in a way humans can understand. Both interpretable and black box\nmodels are discussed in more detail elsewhere34. However, developing recommendations on the choice of\n\u200b\n\u200b\nblack box or interpretability cannot be made as both have their merits given certain situations.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main recommendation for model type in research outcomes?",
+    "answer": "That there is a statement on the model type, i.e. is it black box or interpretable",
+    "context": "However, developing recommendations on the choice of\n\u200b\n\u200b\nblack box or interpretability cannot be made as both have their merits given certain situations. The main\nrecommendation would be that there is a statement on the model type, i.e. is it black box or interpretable\n(see Box 1), and if it is interpretable it should be a requirement to give clear examples of it doing so. Reproducibility is a key component to ensuring research outcomes can be further utilized and validated\nby the wider community. Poor model reproducibility extends beyond the documentation and reporting of\nthe involved parameters, hyper-parameters and optimization protocol.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are some common challenges that can limit or make model reproducibility impossible?",
+    "answer": "Lacking access to model components and steep computational requirements to execute trained models.",
+    "context": "Poor model reproducibility extends beyond the documentation and reporting of\nthe involved parameters, hyper-parameters and optimization protocol. Lacking access to the various\ncomponents of a model (source code, model files, parameter configurations, executables), as well as\nhaving steep computational requirements to execute the trained models in the context of generating\npredictions based on new data, can both make reproducibility of the model either limited or impossible. 4. Evaluation\nThere are two types of evaluation scenarios in biological research. The first is the experimental validation\nof the predictions made by the ML model in the laboratory.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the two main methods for evaluating the performance of a machine learning model?",
+    "answer": "Experimental validation in the laboratory and computational assessment using established metrics.",
+    "context": "The first is the experimental validation\nof the predictions made by the ML model in the laboratory. This is highly desirable but beyond the\npossibilities of many ML studies. The second is a computational assessment of the model performance\nusing established metrics. The following deals with the latter and there are a few possible related risks\nwith computational evaluation. Starting with the performance metrics, i.e.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is recommended when selecting performance metrics for a new ML algorithm?",
+    "answer": "Use performance metrics from the literature and critical assessments.",
+    "context": "Starting with the performance metrics, i.e. the quantifiable indicators of a model's ability to solve the\ngiven task, there are dozens of metrics available35 for assessing different ML classification and regression\n\u200b\nproblems. However, the plethora of options available, combined with the domain-specific expertise that\nmight be required to select the appropriate metrics, can lead to the selection of inadequate performance\nmeasures. Often, there are critical assessment communities advocating certain performance metrics for\nbiological ML models, e.g. CAFA3 and CAGI28, and it is recommended a new algorithm should use ones\n\u200b\n\u200b \u200b\nfrom the literature and critical assessments.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the recommended steps for developing a new algorithm in the given context?",
+    "answer": "Use ones from the literature, cross-compare methods using statistical tests, and compare baselines to the 'sophisticated' method to ensure performance.",
+    "context": "CAFA3 and CAGI28, and it is recommended a new algorithm should use ones\n\u200b\n\u200b \u200b\nfrom the literature and critical assessments. In the absence of literature, the ones shown in Figure 2 could\nbe a starting point. Once performance metrics are decided, methods published in the same biological domain must be\ncross-compared using appropriate statistical tests (e.g. Student's t-test) and confidence intervals. Additionally, to prevent the release of ML methods that appear sophisticated but perform no better than\nsimpler algorithms, baselines should be compared to the \u2018sophisticated\u2019 method and proven to be\nstatistically inferior (e.g.",
+    "paper_id": 2
+  },
+  {
+    "question": "What type of Machine Learning applications is this work focused on?",
+    "answer": "Supervised ML applications",
+    "context": "Additionally, to prevent the release of ML methods that appear sophisticated but perform no better than\nsimpler algorithms, baselines should be compared to the \u2018sophisticated\u2019 method and proven to be\nstatistically inferior (e.g. small vs. deep neural networks). Open areas and limitations of the proposed recommendations\nThe field of Machine Learning in biology is vast. As such, it would be a herculean task to identify\ncross-cutting recommendations that could be applicable to all branches of ML across all possible\ndomains. Therefore, this work focuses exclusively on supervised ML applications, excluding\nunsupervised ML, clinical applications, and individual implementations through pipelines to name a few.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the primary goal of this work?",
+    "answer": "To define requirements and best practices for reviewing and creating ML-related papers.",
+    "context": "Therefore, this work focuses exclusively on supervised ML applications, excluding\nunsupervised ML, clinical applications, and individual implementations through pipelines to name a few. Moreover, the primary goal of this work is to define requirements and best practices that can be of use in\nthe reviewing process and creation of ML-related papers, while remaining agnostic as to the actual\n8\n\nunderlying solutions. The intent is to trigger a discussion in the wider ML community leading to future\nwork addressing possible solutions. Several key issues related to reproducibility (e.g. data is not published, data splits are not reported and\nmodel source code with its final parameters and hyperparameters are not released) can be aided by a\nmultitude of workflow systems that help to ensure and automate multi-step processes are completely\nreproducible by tracking model parameters and exact versions of the source code and libraries.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are some common tools used to ensure reproducibility in multi-step processes?",
+    "answer": "Galaxy, Nextflow, and version control systems like Github",
+    "context": "data is not published, data splits are not reported and\nmodel source code with its final parameters and hyperparameters are not released) can be aided by a\nmultitude of workflow systems that help to ensure and automate multi-step processes are completely\nreproducible by tracking model parameters and exact versions of the source code and libraries. Examples\nof commonly used workflows include Galaxy36 and Nextflow37 . Another de facto standard practice in\n\u200b \u200b \u200b\nsoftware engineering is using version control systems such as Github to create an online copy of the\nsource code, which can also include parameters and documentation. Similar version control systems exist\nfor datasets. Public repositories can store experimental data on demand for significant amounts of time,\nenabling a long-term reproducibility of the experiment.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who is responsible for adapting the DOME recommendations to specific topics and domains?",
+    "answer": "Those particular (sub-)communities",
+    "context": "Public repositories can store experimental data on demand for significant amounts of time,\nenabling a long-term reproducibility of the experiment. Existing software engineering tools can be easily\nused to address many of the DOME recommendations. Although having additional, more topic-specific recommendations in the future will undoubtedly be\nuseful, in this work we aim to provide a first version that could be of general interest. Adapting the\nDOME recommendations to address the unique aspects of specific topics and domains, would be a task of\nthose particular (sub-)communities. For example, having guidelines for data independence is tricky\nbecause each biological domain has its own set of guidelines for this.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of the manuscript in the context of supervised ML in biology?",
+    "answer": "To provide a first iteration of recommendations and kickstart a community discussion on data independence strategies.",
+    "context": "For example, having guidelines for data independence is tricky\nbecause each biological domain has its own set of guidelines for this. Nonetheless, we believe it is\nrelevant to at least have a recommendation that authors describe how they achieved data split\nindependence. Discussions on the correct independence strategies are needed for all of biology. Given\n\u200b\nconstructive consultation processes with ML communities, relying on our own experience, it is our belief\nthat our manuscript can be useful as a first iteration of the recommendations for supervised ML in\nbiology. This will have the additional benefit of kickstarting the community discussion with a coherent\n\u200b\nbut rough set of goals, thus facilitating the overall engagement and involvement of key stakeholders.",
+    "paper_id": 2
+  },
+  {
+    "question": "What types of machine learning are being considered for adaptation to DOME?",
+    "answer": "unsupervised, semi-supervised, reinforcement, and other types of ML",
+    "context": "This will have the additional benefit of kickstarting the community discussion with a coherent\n\u200b\nbut rough set of goals, thus facilitating the overall engagement and involvement of key stakeholders. For\ninstance, topics to be addressed by (sub-)communities is how to adapt DOME to entire pipelines,\nunsupervised, semi-supervised, reinforcement, and other types of ML. E.g. in unsupervised learning, the\nevaluation metrics shown in Figure 2 would not apply and a completely new set of definitions are needed. Another considerable debate, as AI becomes more commonplace in society, is that ML algorithms differ\nin their ability to explain learned patterns back to humans.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the black box vs. interpretability debate in AI?",
+    "answer": "The black box vs. interpretability debate refers to the difference in AI algorithms' ability to explain learned patterns back to humans.",
+    "context": "Another considerable debate, as AI becomes more commonplace in society, is that ML algorithms differ\nin their ability to explain learned patterns back to humans. Humans naturally prefer actions or predictions\nto be made with reasons given. This is the black box vs. interpretability debate and we point those\ninterested to excellent reviews as a starting point for thoughtful discussions38\u201341. \u200b\n\u200b\nFinally, we address the governance structure by suggesting a community-managed governance model\nsimilar to the open-source initiatives42. Community managed governance has been used in initiatives such\n\u200b\n\u200b\nas MIAME43 or the PSI-MI format44.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of the DOME website?",
+    "answer": "To provide a platform for governance and community involvement around the DOME recommendations, where news and upcoming events will be posted.",
+    "context": "Community managed governance has been used in initiatives such\n\u200b\n\u200b\nas MIAME43 or the PSI-MI format44. This sort of structure ensures continuous community consultation\n\u200b\n\u200b \u200b\nand improvement of the recommendations in collaboration with academic (CLAIRE, see:\nhttps://claire-ai.org/) and industrial networks (Pistoia Alliance, see: https://www.pistoiaalliance.org/). More importantly, this can be applied in particular to ML (sub-)communities working with specific\nproblems requiring more detailed guidelines, e.g. imaging or clinical applications. We have set up a\nwebsite (URL: https://www.dome-ml.org/) to provide a platform for governance and community\ninvolvement around the DOME recommendations, where news and upcoming events will be posted.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of the DOME recommendations?",
+    "answer": "To increase the transparency and reproducibility of ML methods for various stakeholders.",
+    "context": "We have set up a\nwebsite (URL: https://www.dome-ml.org/) to provide a platform for governance and community\ninvolvement around the DOME recommendations, where news and upcoming events will be posted. As\nthe recommendations and minimal requirements evolve over time, a version history will be available on\nthe website. The template methods section in human (e.g. DOC) and machine readable format (YAML),\nas well as software for the automatic conversion of a YAML file into a human readable one are available\nfrom a dedicated GitHub repository (URL: https://github.com/MachineLearning-ELIXIR/dome-ml). Conclusion\n9\n\nThe objective of our recommendations is to increase the transparency and reproducibility of ML methods\nfor the reader, the reviewer, the experimentalist, and the wider community.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main objective of the recommendations in the given text?",
+    "answer": "To increase the transparency and reproducibility of ML methods for the reader, the reviewer, the experimentalist, and the wider community.",
+    "context": "Conclusion\n9\n\nThe objective of our recommendations is to increase the transparency and reproducibility of ML methods\nfor the reader, the reviewer, the experimentalist, and the wider community. We recognize that these\nrecommendations are not exhaustive and should be viewed as a consensus-based first iteration of a\ncontinuously evolving system of community self-review. One of the most pressing issues is to agree to a\nstandardized data structure to describe the most relevant features of the ML methods being presented. As\na first step to address this issue, we recommend including an \u201cML summary table\u201d, derived from Box 1,\nin future ML studies (see Supplementary Material). We recommend including the following sentence in\nthe methods section of all papers: \u201cTo increase the reproducibility of the machine learning method of this\nstudy, the machine learning summary table (Table X) is included in the supporting information as per\nconsensus guidelines (with reference to this manuscript).\u201d\nThe development of a standardized approach for reporting ML methods has major advantages in\nincreasing the quality of publishing ML methods.",
+    "paper_id": 2
+  },
+  {
+    "question": "What are the benefits of a standardized approach for reporting machine learning methods?",
+    "answer": "It increases the quality of publishing ML methods, facilitates comparison between methods, and reduces unnecessary repetition of data generation.",
+    "context": "We recommend including the following sentence in\nthe methods section of all papers: \u201cTo increase the reproducibility of the machine learning method of this\nstudy, the machine learning summary table (Table X) is included in the supporting information as per\nconsensus guidelines (with reference to this manuscript).\u201d\nThe development of a standardized approach for reporting ML methods has major advantages in\nincreasing the quality of publishing ML methods. First, the disparity in manuscripts of reporting key\nelements of the ML method can make reviewing and assessing the ML method challenging. Second,\ncertain key statistics and metrics that may affect the validity of the publication\u2019s conclusions are\nsometimes not mentioned at all. Third, there are unexplored opportunities associated with meta-analyses\nof ML datasets. Access to large sets of data can enhance both the comparison between methods and\nfacilitate the development of better-performing methods while reducing unnecessary repetition of data\ngeneration.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the purpose of the ELIXIR Machine Learning focus group?",
+    "answer": "The purpose of the ELIXIR Machine Learning focus group is to improve the standing of the ML community with the intended users of these methods.",
+    "context": "Access to large sets of data can enhance both the comparison between methods and\nfacilitate the development of better-performing methods while reducing unnecessary repetition of data\ngeneration. We believe that our recommendations to include a \u201cmachine learning summary table\u201d and the\navailability of data as described above will greatly benefit the ML community and improve its standing\nwith the intended users of these methods. The ELIXIR Machine Learning focus group\nEmidio Capriotti (ORCID: 0000-0002-2323-0963)\nDepartment of Pharmacy and Biotechnology, University of Bologna, Bologna (Italy)\nRita Casadio (ORCID: 0002-7462-7039)\nBiocomputing Group, University of Bologna, Italy; IBIOM-CNR,Italy\nSalvador Capella-Gutierrez (ORCID: 0000-0002-0309-604X)\nINB Coordination Unit, Life Science Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain\nDavide Cirillo (ORCID: 0000-0003-4982-4716)\nLife Science Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain\nAlexandros C. Dimopoulos (ORCID: 0000-0002-4602-2040)\nInstitute for Fundamental Biomedical Science, Biomedical Sciences Research Center \"Alexander Fleming\",\nAthens, Greece\nVictoria Dominguez Del Angel (ORCID: 0000-0002-5514-6651)\nCentre National de Recherche Scientifique, University Paris-Saclay, IFB, France\nJoaquin Dopazo (ORCID: 0000-0003-3318-120X)\nClinical Bioinformatics Area, Fundaci\u00f3n Progreso y Salud, Sevilla, Spain\nPiero Fariselli (ORCID: 0000-0003-1811-4762)\n10\n\nDepartment of Medical Sciences, University of Turin, Turin, Italy\nJos\u00e9 M\u00aa Fern\u00e1ndez (ORCID: 0000-0002-4806-5140)\nINB Coordination Unit, Life Sciences Department, Barcelona Supercomputing Center (BSC), Barcelona, Spain\nDmytro Fishman (ORCID: 0000-0002-4644-8893)\nInstitute of Computer Science, University of Tartu, Estonia\nDario Garcia-Gasulla (ORCID: 0000-0001-6732-5641)\nBarcelona Supercomputing Center (BSC), Barcelona, Spain\nJen Harrow (ORCID:0000-0003-0338-3070)\nELIXIR HUB, South building, Wellcome Genome Campus, Hinxton, Cambridge, UK.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the affiliation of Pier Luigi Martelli?",
+    "answer": "Biocomputing Group, University of Bologna, Italy",
+    "context": "Barcelona Supercomputing Center (BSC), Barcelona, Spain\nAlexandros C. Dimopoulos (ORCID: 0000-0002-4602-2040)\nInstitute for Fundamental Biomedical Science, Biomedical Sciences Research Center \"Alexander Fleming\",\nAthens, Greece\nVictoria Dominguez Del Angel (ORCID: 0000-0002-5514-6651)\nCentre National de Recherche Scientifique, University Paris-Saclay, IFB, France\nJoaquin Dopazo (ORCID: 0000-0003-3318-120X)\nClinical Bioinformatics Area, Fundaci\u00f3n Progreso y Salud, Sevilla, Spain\nPiero Fariselli (ORCID: 0000-0003-1811-4762)\n10\n\nDepartment of Medical Sciences, University of Turin, Turin, Italy\nJos\u00e9 M\u00aa Fern\u00e1ndez (ORCID: 0000-0002-4806-5140)\nINB Coordination Unit, Life Sciences Department, Barcelona Supercomputing Center (BSC), Barcelona, Spain\nDmytro Fishman (ORCID: 0000-0002-4644-8893)\nInstitute of Computer Science, University of Tartu, Estonia\nDario Garcia-Gasulla (ORCID: 0000-0001-6732-5641)\nBarcelona Supercomputing Center (BSC), Barcelona, Spain\nJen Harrow (ORCID:0000-0003-0338-3070)\nELIXIR HUB, South building, Wellcome Genome Campus, Hinxton, Cambridge, UK. Florian Huber (ORCID: 0000-0002-3535-9406)\nNetherlands eScience Center, Amsterdam, the Netherlands. Anna Kreshuk (ORCID:0000-0003-1334-6388)\nEMBL Heidelberg\nTom Lenaerts (ORCID: 0000-0003-3645-1455)\nMachine Learning Group, Universit\u00e9 Libre de Bruxelles, Artificial Intelligence Lab, Vrije Universiteit Brussel and\nInteruniversity Institute of Bioinformatics in Brussels,Brussels, Belgium. Pier Luigi Martelli (ORCID: 0000-0002-0274-5669)\nBiocomputing Group, University of Bologna, Italy\nArcadi Navarro (ORCID: 0000-0003-2162-8246)\nInstitute of Evolutionary Biology (Department of Experimental and Health Sciences, CSIC-Universitat Pompeu\nFabra), Barcelona, Spain\nCatalan Institution of Research and Advanced Studies (ICREA), Barcelona, Spain\nCRG, Centre for Genomic Regulation, Barcelona Institute of Science and Technology (BIST), Barcelona, Spain\nMarco Necci (ORCID: 0000-0001-9377-482X)\nDept. of Biomedical Sciences, University of Padua, Padua, Italy.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the affiliation of Silvio C. E. Tosatto?",
+    "answer": "Dept. of Biomedical Sciences, University of Padua, Padua, Italy.",
+    "context": "of Biomedical Sciences, University of Padua, Padua, Italy. Pilib \u00d3 Broin (ORCID: 0000-0002-6702-8564)\nSchool of Mathematics, Statistics & Applied Mathematics, National University of Ireland Galway, Ireland\nJanet Pi\u00f1ero (ORCID: 0000-0003-1244-7654)\nResearch Programme on Biomedical Informatics (GRIB), Hospital del Mar Medical Research Institute (IMIM),\nDepartment of Experimental and Health Sciences, Pompeu Fabra University (UPF), Barcelona, Spain\nDamiano Piovesan (ORCID: 0000-0001-8210-2390)\nDept. of Biomedical Sciences, University of Padua, Padua, Italy. Gianluca Pollastri (ORCID: 0000-0002-5825-4949)\nSchool of Computer Science, University College Dublin, Ireland\n11\n\nFotis E. Psomopoulos (ORCID: 0000-0002-0222-4273)\nInstitute of Applied Biosciences, Centre for Research and Technology Hellas, Thessaloniki, Greece\nMartin Reczko (ORCID: 0000-0002-0005-8718)\nInstitute for Fundamental Biomedical Science, Biomedical Sciences Research Center \"Alexander Fleming\",\nAthens, Greece\nFrancesco Ronzano (ORCID: 0000-0001-5037-9061)\nResearch Programme on Biomedical Informatics (GRIB), Hospital del Mar Medical Research Institute (IMIM),\nDepartment of Experimental and Health Sciences, Pompeu Fabra University (UPF), Barcelona, Spain\nVenkata Satagopam (ORCID: 0000-0002-6532-5880)\nLuxembourg Centre For Systems Biomedicine (LCSB), University of Luxembourg and ELIXIR-Luxembourg\nNode\nCastrense Savojardo (ORCID: 0000-0002-7359-0633)\nBiocomputing Group, University of Bologna, Italy\nVojtech Spiwok (ORCID: 0000-0001-8108-2033)\nDepartment of Biochemistry and Microbiology, University of Chemistry and Technology, Prague, ELIXIR-Czech\nRepublic\nMarco Antonio Tangaro (ORCID: 0000-0003-3923-2266)\nInstitute of Biomembranes, Bioenergetics and Molecular Biotechnologies, National Research Council (CNR), Bari,\nItaly\nGiacomo Tartari\nInstitute of Biomembranes, Bioenergetics and Molecular Biotechnologies, National Research Council (CNR), Bari,\nItaly\nDavid Salgado (ORCID: 0000-0002-5905-3591)\nAix Marseille Univ, INSERM, MMG UMR1251, 13005 Marseille, France. Tiina Titma (ORCID: 0000-0002-4935-8914)\nSchool of Information Technologies, Tallinn University of Technology, Estonia\nSilvio C. E. Tosatto (ORCID: 0000-0003-4525-7793)\nDept.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who guided the development, writing, and final edits of the text?",
+    "answer": "IW, DF, JH, FP, and SCET",
+    "context": "Tiina Titma (ORCID: 0000-0002-4935-8914)\nSchool of Information Technologies, Tallinn University of Technology, Estonia\nSilvio C. E. Tosatto (ORCID: 0000-0003-4525-7793)\nDept. of Biomedical Sciences, University of Padua, Padua, Italy. Alfonso Valencia (ORCID:0000-0002-8937-6789)\nCatalan Institution of Research and Advanced Studies (ICREA), Barcelona, Spain\nLife Science Department. Barcelona Supercomputing Center (BSC), Barcelona, Spain\nIan Walsh (ORCID: 0000-0003-3994-5522)\n\u200b \u200b\nBioprocessing Technology Institute, Agency for Science, Technology and Research, Singapore\nFederico Zambelli (ORCID: 0000-0003-3487-4331)\nDept. of Biosciences, University of Milan, Milan, Italy\n12\n\nAuthor contributions\nIW, DF, JH, FP and SCET guided the development, writing and final edits.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who funded the work of the ML focus group?",
+    "answer": "ELIXIR, the Research infrastructure for life-science data",
+    "context": "of Biosciences, University of Milan, Milan, Italy\n12\n\nAuthor contributions\nIW, DF, JH, FP and SCET guided the development, writing and final edits. All members of the ELIXIR\nmachine learning focus group contributed to the discussions leading to the recommendations and writing\nof the manuscript. Competing interests\nThe authors declare no competing interests. Acknowledgements\nThe work of the ML focus group was funded by ELIXIR, the Research infrastructure for life-science\ndata. IW was funded by Core Budget of Singapore Agency for Science Technology and Research\n(A*STAR).",
+    "paper_id": 2
+  },
+  {
+    "question": "What funded the project IW?",
+    "answer": "The Core Budget of Singapore Agency for Science Technology and Research (A*STAR)",
+    "context": "IW was funded by Core Budget of Singapore Agency for Science Technology and Research\n(A*STAR). References\n1. Baron, C. S. \u200bet al. Cell Type Purification by Single-Cell Transcriptome-Trained Sorting. \u200bCell 179,\n\u200b \u200b \u200b\n527-542.e19 (2019).",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'Machine learning applications in genetics and genomics'?",
+    "answer": "Libbrecht, M. W. & Noble, W. S.",
+    "context": "\u200bCell 179,\n\u200b \u200b \u200b\n527-542.e19 (2019). 2. Libbrecht, M. W. & Noble, W. S. Machine learning applications in genetics and genomics. \u200bNat. Rev.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the reference for the paper mentioned in the text?",
+    "answer": "Rev. Genet. 16, 321\u2013332 (2015)",
+    "context": "Rev. Genet. 16, 321\u2013332 (2015). \u200b \u200b\n3. Radivojac, P. \u200bet al.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'A large-scale evaluation of computational protein function prediction'?",
+    "answer": "Radivojac, P. et al.",
+    "context": "Radivojac, P. \u200bet al. A large-scale evaluation of computational protein function prediction. \u200bNat. \u200b\nMethods 10, 221\u2013227 (2013). \u200b \u200b\n4.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'Deciphering the human phosphoproteome'?",
+    "answer": "Franciosa, G., Martinez-Val, A. & Olsen, J. V.",
+    "context": "\u200b \u200b\n4. Franciosa, G., Martinez-Val, A. & Olsen, J. V. Deciphering the human phosphoproteome. \u200bNat. Biotechnol.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the research paper by Yang et al. in Biotechnol. 1\u20132 (2020)?",
+    "answer": "A White-Box Machine Learning Approach for Revealing Antibiotic Mechanisms of Action.",
+    "context": "Biotechnol. 1\u20132 (2020) doi:10.1038/s41587-020-0441-3. \u200b\n5. Yang, J. H. \u200bet al. A White-Box Machine Learning Approach for Revealing Antibiotic Mechanisms of\n\u200b\nAction.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the research paper mentioned?",
+    "answer": "A White-Box Machine Learning Approach for Revealing Antibiotic Mechanisms of Action",
+    "context": "A White-Box Machine Learning Approach for Revealing Antibiotic Mechanisms of\n\u200b\nAction. \u200bCell 177, 1649-1661.e9 (2019). \u200b \u200b\n6. Vamathevan, J. \u200bet al.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the article mentioned in the text?",
+    "answer": "Applications of machine learning in drug discovery and development",
+    "context": "\u200bet al. Applications of machine learning in drug discovery and development. \u200bNat. \u200b\nRev. Drug Discov.",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the research published in Drug Discov.?",
+    "answer": "2019",
+    "context": "Drug Discov. 18, 463\u2013477 (2019). \u200b \u200b\n7. Rajkomar, A., Dean, J. & Kohane, I.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who is the author of the book 'Machine Learning in Medicine'?",
+    "answer": "Kohane, I.",
+    "context": "& Kohane, I. Machine Learning in Medicine. \u200bN. Engl. J. Med.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the article mentioned in the text?",
+    "answer": "Ascent of machine learning in medicine",
+    "context": "J. Med. 380,\n\u200b \u200b\n1347\u20131358 (2019). 8. Ascent of machine learning in medicine. \u200bNat.",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the research published in Nat. Mater.?",
+    "answer": "2019",
+    "context": "\u200bNat. Mater. 18, 407 (2019). \u200b \u200b\n9. Littmann, M. \u200bet al.",
+    "paper_id": 2
+  },
+  {
+    "question": "What journal published the article about the validity of machine learning in biology and medicine?",
+    "answer": "Nat. Mach. Intell.",
+    "context": "Littmann, M. \u200bet al. Validity of machine learning in biology and medicine increased through\n\u200b\ncollaborations across fields of expertise. \u200bNat. Mach. Intell.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the paper discussed in the given text?",
+    "answer": "Correct machine learning on protein sequences: a peer-reviewing perspective.",
+    "context": "Intell. 2, 18\u201324 (2020). \u200b \u200b\n10. Walsh, I., Pollastri, G. & Tosatto, S. C. E. Correct machine learning on protein sequences: a\n13\n\npeer-reviewing perspective. \u200bBrief.",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the paper 'Rein in the four horsemen of irreproducibility' published?",
+    "answer": "2016",
+    "context": "\u200bBrief. Bioinform. 17, 831\u2013840 (2016). \u200b \u200b\n11. Bishop, D. Rein in the four horsemen of irreproducibility.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the issue that artificial intelligence and other fields are facing?",
+    "answer": "A reproducibility crisis",
+    "context": "Bishop, D. Rein in the four horsemen of irreproducibility. \u200bNature 568, 435 (2019). \u200b \u200b\n12. Hutson, M. Artificial intelligence faces reproducibility crisis. \u200bScience 359, 725\u2013726 (2018).",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the article 'Prediction of lysine post-translational modifications using bioinformatic tools' published?",
+    "answer": "2012",
+    "context": "\u200bScience 359, 725\u2013726 (2018). \u200b \u200b\n13. Schwartz, D. Prediction of lysine post-translational modifications using bioinformatic tools. \u200bEssays\nBiochem. 52, 165\u2013177 (2012).",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the year of publication for the article 'Assessing predictors for new post translational modification sites: a case study on hydroxylation'?",
+    "answer": "2020",
+    "context": "52, 165\u2013177 (2012). \u200b \u200b\n14. Piovesan, D. \u200bet al. Assessing predictors for new post translational modification sites: a case study\n\u200b\non hydroxylation. \u200bbioRxiv (2020).",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the FAIR Guiding Principles for scientific data management and stewardship?",
+    "answer": "Wilkinson, M. D. et al.",
+    "context": "\u200bbioRxiv (2020). \u200b\n15. Wilkinson, M. D. \u200bet al. The FAIR Guiding Principles for scientific data management and stewardship. \u200b\nSci.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the article by Sandve et al. in the given reference?",
+    "answer": "Ten Simple Rules for Reproducible Computational Research",
+    "context": "\u200b\nSci. Data 3, 160018 (2016). \u200b \u200b\n16. Sandve, G. K., Nekrutenko, A., Taylor, J. & Hovig, E. Ten Simple Rules for Reproducible\nComputational Research.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the article by Hovig, E.?",
+    "answer": "Ten Simple Rules for Reproducible Computational Research",
+    "context": "& Hovig, E. Ten Simple Rules for Reproducible\nComputational Research. \u200bPLOS Comput. Biol. 9, e1003285 (2013). \u200b \u200b\n17.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the paper by Gr\u00fcning, B. et al.?",
+    "answer": "Practical Computational Reproducibility in the Life Sciences",
+    "context": "\u200b \u200b\n17. Gr\u00fcning, B. \u200bet al. Practical Computational Reproducibility in the Life Sciences. \u200bCell Syst.",
+    "paper_id": 2
+  },
+  {
+    "question": "In what year was the paper 'Setting the standards for machine learning in biology' published?",
+    "answer": "2018",
+    "context": "\u200bCell Syst. 6, 631\u2013635\n\u200b \u200b \u200b\n(2018). 18. Jones, D. T. Setting the standards for machine learning in biology. \u200bNat.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the publication referenced in the given text?",
+    "answer": "Nat. Rev. Mol. Cell Biol. 20, 659\u2013660 (2019)",
+    "context": "\u200bNat. Rev. Mol. Cell Biol. 20,\n\u200b \u200b\n659\u2013660 (2019).",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the MI-CLAIM checklist?",
+    "answer": "The MI-CLAIM checklist is a minimum information about clinical artificial intelligence modeling.",
+    "context": "20,\n\u200b \u200b\n659\u2013660 (2019). 19. Norgeot, B. \u200bet al. Minimum information about clinical artificial intelligence modeling: the MI-CLAIM\n\u200b\nchecklist.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the MI-CLAIM checklist?",
+    "answer": "Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist.",
+    "context": "Minimum information about clinical artificial intelligence modeling: the MI-CLAIM\n\u200b\nchecklist. \u200bNat. Med. 26, 1320\u20131324 (2020). \u200b \u200b\n20.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the guidelines for developing and reporting machine learning predictive models in biomedical research?",
+    "answer": "Luo, W. et al.",
+    "context": "\u200b \u200b\n20. Luo, W. \u200bet al. Guidelines for Developing and Reporting Machine Learning Predictive Models in\n\u200b\nBiomedical Research: A Multidisciplinary View. \u200bJ. Med.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the name of the project discussed in the given text?",
+    "answer": "ELIXIR",
+    "context": "Med. Internet Res. 18, e323 (2016). \u200b \u200b\n21. ELIXIR: Providing a Sustainable Infrastructure for Federated Access to Life Science Data at\nEuropean Scale.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the main focus of the ELIXIR project?",
+    "answer": "Providing a Sustainable Infrastructure for Federated Access to Life Science Data at European Scale.",
+    "context": "ELIXIR: Providing a Sustainable Infrastructure for Federated Access to Life Science Data at\nEuropean Scale. \u200bsubmitted. \u200b\n22. Kohavi, R. A study of cross-validation and bootstrap for accuracy estimation and model selection. in\nvol.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the article mentioned in the text?",
+    "answer": "Selection of representative protein data sets",
+    "context": "in\nvol. 14 1137\u20131145 (Montreal, Canada, 1995). 23. Hobohm, U., Scharf, M., Schneider, R. & Sander, C. Selection of representative protein data sets. Protein Sci.",
+    "paper_id": 2
+  },
+  {
+    "question": "What study found that local epigenomic state cannot accurately discriminate interacting and non-interacting enhancer-promoter pairs?",
+    "answer": "Xi, W. & Beer, M. A. (1992)",
+    "context": "Protein Sci. 1, 409\u2013417 (1992). \u200b \u200b\n24. Xi, W. & Beer, M. A. Local epigenomic state cannot discriminate interacting and non-interacting\nenhancer-promoter pairs with high accuracy.",
+    "paper_id": 2
+  },
+  {
+    "question": "Can local epigenomic state accurately distinguish interacting and non-interacting enhancer-promoter pairs?",
+    "answer": "No",
+    "context": "Local epigenomic state cannot discriminate interacting and non-interacting\nenhancer-promoter pairs with high accuracy. \u200bPLoS Comput. Biol. 14, e1006625 (2018). \u200b \u200b\n25.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the research paper by Zhou et al.?",
+    "answer": "Assembling multidomain protein structures through analogous global structural alignments",
+    "context": "\u200b \u200b\n25. Zhou, X., Hu, J., Zhang, C., Zhang, G. & Zhang, Y. Assembling multidomain protein structures\n14\n\nthrough analogous global structural alignments. \u200bProc. Natl.",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the research published in Natl. Acad. Sci.?",
+    "answer": "2019",
+    "context": "Natl. Acad. Sci. 116, 15930\u201315938 (2019). \u200b \u200b\n26.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is SMOTE, and what does it stand for?",
+    "answer": "SMOTE stands for Synthetic Minority Over-sampling Technique, a method used to handle class imbalance in machine learning by synthesizing new minority class samples.",
+    "context": "\u200b \u200b\n26. Chawla, N. V., Bowyer, K. W., Hall, L. O. & Kegelmeyer, W. P. SMOTE: synthetic minority\nover-sampling technique. \u200bJ. Artif.",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the research published in 'Artif. Intell. Res. 16, 321\u2013357'?",
+    "answer": "2002",
+    "context": "Artif. Intell. Res. 16, 321\u2013357 (2002). \u200b \u200b\n27.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the name of the adaptive synthetic sampling approach for imbalanced learning proposed in the 2008 IEEE paper?",
+    "answer": "ADASYN",
+    "context": "\u200b \u200b\n27. He, H., Bai, Y., Garcia, E. A. & Li, S. ADASYN: Adaptive synthetic sampling approach for\nimbalanced learning. in 1322\u20131328 (IEEE, 2008). 28.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the name of the challenges in which the authors are participating?",
+    "answer": "Critical Assessment of Genome Interpretation (CAGI) challenges",
+    "context": "28. Daneshjou, R. \u200bet al. Working toward precision medicine: Predicting phenotypes from exomes in the\n\u200b\nCritical Assessment of Genome Interpretation (CAGI) challenges. \u200bHum. Mutat.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the publication year of the paper by Pan and Yang?",
+    "answer": "2017",
+    "context": "Mutat. 38, 1182\u20131192\n\u200b \u200b\n(2017). 29. Pan, S. J. & Yang, Q.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who is the author of the paper 'A Survey on Transfer Learning'?",
+    "answer": "Yang, Q.",
+    "context": "& Yang, Q. A Survey on Transfer Learning. \u200bIEEE Trans. Knowl. Data Eng.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the research paper mentioned in the text?",
+    "answer": "Matching networks for one shot learning",
+    "context": "Data Eng. 22, 1345\u20131359\n\u200b \u200b\n(2010). 30. Vinyals, O., Blundell, C., Lillicrap, T. & Wierstra, D. Matching networks for one shot learning. in\n3630\u20133638 (2016).",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the research paper mentioned in the text?",
+    "answer": "A high-bias, low-variance introduction to machine learning for physicists",
+    "context": "in\n3630\u20133638 (2016). 31. Mehta, P. \u200bet al. A high-bias, low-variance introduction to machine learning for physicists. \u200bPhys.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the Phys. Rep. publication from 2019?",
+    "answer": "32. Guyon, I. & Elisseeff, A.",
+    "context": "\u200bPhys. Rep.\n\u200b\n(2019). 32. Guyon, I. & Elisseeff, A.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who is the author of the paper 'An introduction to variable and feature selection'?",
+    "answer": "Elisseeff, A.",
+    "context": "& Elisseeff, A. An introduction to variable and feature selection. \u200bJ. Mach. Learn.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the year of publication for the Learn. Res. 3?",
+    "answer": "2003",
+    "context": "Learn. Res. 3,\n\u200b \u200b\n1157\u20131182 (2003). 33. He, J.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'The practical implementation of artificial intelligence technologies in medicine'?",
+    "answer": "He, J. et al.",
+    "context": "He, J. \u200bet al. The practical implementation of artificial intelligence technologies in medicine. \u200bNat. Med.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who wrote the article 'Stop explaining black box machine learning models for high stakes decisions and use interpretable models instead'?",
+    "answer": "C. Rudin",
+    "context": "Med. \u200b\n25, 30\u201336 (2019). \u200b\n34. Rudin, C. Stop explaining black box machine learning models for high stakes decisions and use\ninterpretable models instead. \u200bNat.",
+    "paper_id": 2
+  },
+  {
+    "question": "What year was the paper published in?",
+    "answer": "2019",
+    "context": "\u200bNat. Mach. Intell. 1, 206\u2013215 (2019). \u200b \u200b\n35.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'Assessing the accuracy of prediction algorithms for classification: an overview'?",
+    "answer": "Baldi, P., Brunak, S., Chauvin, Y., Andersen, C. A. & Nielsen, H.",
+    "context": "\u200b \u200b\n35. Baldi, P., Brunak, S., Chauvin, Y., Andersen, C. A. & Nielsen, H. Assessing the accuracy of\nprediction algorithms for classification: an overview. \u200bBioinforma. Oxf.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the reference for the given text?",
+    "answer": "Oxf. Engl. 16, 412\u2013424 (2000)",
+    "context": "Oxf. Engl. 16, 412\u2013424 (2000). \u200b \u200b\n36. Goecks, J., Nekrutenko, A., Taylor, J., & Galaxy Team.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'Galaxy: a comprehensive approach for supporting accessible, reproducible, and transparent computational research in the life sciences'?",
+    "answer": "Goecks, Nekrutenko, Taylor, and the Galaxy Team",
+    "context": "Goecks, J., Nekrutenko, A., Taylor, J., & Galaxy Team. Galaxy: a comprehensive approach for\nsupporting accessible, reproducible, and transparent computational research in the life sciences. Genome Biol. 11, R86 (2010). \u200b \u200b\n37.",
+    "paper_id": 2
+  },
+  {
+    "question": "What tool enables reproducible computational workflows?",
+    "answer": "Nextflow",
+    "context": "\u200b \u200b\n37. Di Tommaso, P. \u200bet al. Nextflow enables reproducible computational workflows. \u200bNat. Biotechnol.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the year of publication for the Biotechnol. 35 article?",
+    "answer": "2017",
+    "context": "Biotechnol. 35,\n\u200b \u200b \u200b\n316\u2013319 (2017). 38. Arrieta, A. B.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who is the author of the paper 'Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI'?",
+    "answer": "B. et al.",
+    "context": "B. \u200bet al. Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and\n\u200b\n15\n\nchallenges toward responsible AI. \u200bInf. Fusion 58, 82\u2013115 (2020).",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the paper mentioned in the reference?",
+    "answer": "A survey of methods for explaining black box models",
+    "context": "Fusion 58, 82\u2013115 (2020). \u200b \u200b\n39. Guidotti, R. \u200bet al. A survey of methods for explaining black box models. \u200bACM Comput.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the ACM Comput. Surv. CSUR publication from 2018?",
+    "answer": "51, 1\u201342 (2018)",
+    "context": "\u200bACM Comput. Surv. CSUR\n\u200b\n51, 1\u201342 (2018). \u200b\n40. Adadi, A.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the research paper by Adadi and Berrada in 2018?",
+    "answer": "Peeking inside the black-box: A survey on Explainable Artificial Intelligence (XAI)",
+    "context": "Adadi, A. & Berrada, M. Peeking inside the black-box: A survey on Explainable Artificial Intelligence\n(XAI). \u200bIEEE Access 6, 52138\u201352160 (2018). \u200b \u200b\n41. Holm, E. A.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the title of the article by Holm, E. A.?",
+    "answer": "In defense of the black box",
+    "context": "Holm, E. A. In defense of the black box. \u200bScience 364, 26\u201327 (2019). \u200b \u200b\n42. O\u2019Mahony, S. The governance of open source initiatives: what does it mean to be community\nmanaged?",
+    "paper_id": 2
+  },
+  {
+    "question": "What does it mean to be community managed in the context of open source initiatives?",
+    "answer": "According to O'Mahony, it refers to the governance of open source initiatives.",
+    "context": "O\u2019Mahony, S. The governance of open source initiatives: what does it mean to be community\nmanaged? \u200bJ. Manag. Gov. 11, 139\u2013150 (2007).",
+    "paper_id": 2
+  },
+  {
+    "question": "What is the publication year of the MIAME standards for microarray data?",
+    "answer": "2007",
+    "context": "11, 139\u2013150 (2007). \u200b \u200b\n43. Brazma, A. \u200bet al. Minimum information about a microarray experiment (MIAME)\u2014toward standards\n\u200b\nfor microarray data.",
+    "paper_id": 2
+  },
+  {
+    "question": "What is MIAME?",
+    "answer": "Minimum information about a microarray experiment (MIAME) is a set of standards for microarray data.",
+    "context": "Minimum information about a microarray experiment (MIAME)\u2014toward standards\n\u200b\nfor microarray data. \u200bNat. Genet. 29, 365\u2013371 (2001). \u200b \u200b\n44.",
+    "paper_id": 2
+  },
+  {
+    "question": "Who are the authors of the paper 'The HUPO PSI\u2019s Molecular Interaction format\u2014a community standard for the representation of protein interaction data'?",
+    "answer": "Hermjakob, H. et al.",
+    "context": "\u200b \u200b\n44. Hermjakob, H. \u200bet al. The HUPO PSI\u2019s Molecular Interaction format\u2014a community standard for the\n\u200b\nrepresentation of protein interaction data. \u200bNat. Biotechnol.",
+    "paper_id": 2
+  }
+]
