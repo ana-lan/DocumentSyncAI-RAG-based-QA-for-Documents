@@ -1,9 +1,10 @@
 # src/generation/generator.py
 import os
 import time
-from langchain_groq import ChatGroq
-from config import GROQ_MODEL, MAX_TOKENS, TEMPERATURE
+from config import TOGETHER_MODEL, MAX_TOKENS, TEMPERATURE
 from dotenv import load_dotenv
+from langchain_together import ChatTogether
+from openai import RateLimitError
 
 load_dotenv()
 
@@ -27,14 +28,36 @@ def generate(query: str, retrieved_chunks: list[dict]) -> dict:
     """
     prompt = build_prompt(query=query, retrieved_chunks=retrieved_chunks)
 
-    llm = ChatGroq(
-        model_name=GROQ_MODEL,
+    llm = ChatTogether(
+        model=TOGETHER_MODEL,
         max_tokens=MAX_TOKENS,
         temperature=TEMPERATURE
     )
 
     start = time.time()
-    response = llm.invoke(prompt)
+    response = None
+
+    for attempt in range(5):
+        try:
+            response = llm.invoke(prompt)
+            break
+        except RateLimitError as e:
+            if attempt < 4:
+                wait = 90 * (attempt+1)
+                print(f"Rate limit hit, waiting {wait}s before retry {attempt+1}/5...")
+                time.sleep(wait)
+            else:
+                raise e
+        except Exception as e:
+            if "rate" in str(e).lower() and attempt < 4:
+                wait = 90 * (attempt+1)
+                print(f"Rate limit hit, waiting {wait}s before retry {attempt+1}/5...")
+                time.sleep(wait)
+            else:
+                raise e
+    
+    if response is None:
+        raise RuntimeError("Failed to get response after 5 attempts")
     latency = time.time() - start
 
     return {
