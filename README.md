@@ -203,3 +203,11 @@ Running generation and evaluation on the same API account causes token budget co
 
 **Why cosine similarity over L2 distance?**
 ChromaDB defaults to L2 distance. For sentence-transformer embeddings, cosine similarity is the correct metric — it measures angular similarity between vectors, which is what the model was trained to optimize.
+
+---
+
+## Demo
+
+![DocumentSync AI — Answer Generation](assets/demo.png)
+
+Upload any PDF → ask a question → get a grounded answer with source chunks and cosine similarity scores.

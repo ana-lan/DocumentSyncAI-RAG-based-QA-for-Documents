@@ -1,25 +1,22 @@
-# Ingestion
 arxiv
 pdfplumber
 nltk
-
-# Embedding + Vector Store
-sentence-transformers
-chromadb
-
-# Orchestration
-langchain
-langchain-community
-langchain-groq
-
-# Evaluation
-ragas
+langchain==0.2.17
+langchain-core==0.2.43
+langchain-groq==0.1.9
+langchain-community==0.2.19
+langchain-huggingface==0.0.3
+langchain-text-splitters==0.2.4
+langchain-together==0.1.4
+sentence-transformers==3.0.1
+chromadb==1.5.9
+ragas==0.1.21
 datasets
-
-# UI
-streamlit
-
-# Utilities
-python-dotenv
+streamlit==1.58.0
+python-dotenv==1.2.2
 pandas
 tqdm
+torch
+transformers==4.57.6
+groq==0.37.1
+openai==1.109.1
