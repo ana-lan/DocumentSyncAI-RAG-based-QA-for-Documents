@@ -1,10 +1,12 @@
 # src/embedding/embedder.py
+from functools import lru_cache
 from sentence_transformers import SentenceTransformer
 import chromadb
 from config import EMBEDDING_MODEL, VECTORSTORE_DIR
 
+@lru_cache(maxsize=1)
 def get_embedding_model():
-    """Load and return the embedding model."""
+    """Load the embedding model once per process and reuse it."""
     model = SentenceTransformer(EMBEDDING_MODEL)
     return model
 

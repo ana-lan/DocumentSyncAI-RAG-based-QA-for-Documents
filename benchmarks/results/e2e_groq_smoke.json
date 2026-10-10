@@ -1,0 +1,72 @@
+{
+  "summary": {
+    "label": "groq_smoke",
+    "backend": "https://api.groq.com/openai/v1",
+    "model": "qwen/qwen3.8-27b",
+    "retrieval_only": false,
+    "timestamp": "2026-10-10T21:02:53.222749+00:00",
+    "num_questions": 5,
+    "retrieve_s": {
+      "p50": 0.076,
+      "p95": 0.077,
+      "mean": 0.073
+    },
+    "generate_s": {
+      "p50": 0.341,
+      "p95": 0.385,
+      "mean": 0.329
+    },
+    "total_s": {
+      "p50": 0.406,
+      "p95": 0.461,
+      "mean": 0.402
+    }
+  },
+  "rows": [
+    {
+      "question": "What BLEU score does the Transformer achieve on WMT 2014 English-to-German?",
+      "answer": "28.4",
+      "num_chunks": 5,
+      "retrieve_s": 0.06479991698870435,
+      "generate_s": 0.34102820802945644,
+      "total_s": 0.4058281250181608,
+      "expected": "28.4"
+    },
+    {
+      "question": "What BLEU score does the big Transformer achieve on WMT 2014 English-to-French?",
+      "answer": "41.8",
+      "num_chunks": 5,
+      "retrieve_s": 0.07652908301679417,
+      "generate_s": 0.3911952499765903,
+      "total_s": 0.46772433299338445,
+      "expected": "41.8"
+    },
+    {
+      "question": "How many identical layers are in the encoder stack?",
+      "answer": "6",
+      "num_chunks": 5,
+      "retrieve_s": 0.07773875002749264,
+      "generate_s": 0.24679141701199114,
+      "total_s": 0.3245301670394838,
+      "expected": "6"
+    },
+    {
+      "question": "What is the dimensionality of the model outputs, d_model?",
+      "answer": "512",
+      "num_chunks": 5,
+      "retrieve_s": 0.07132275000913069,
+      "generate_s": 0.30457912501879036,
+      "total_s": 0.37590187502792105,
+      "expected": "512"
+    },
+    {
+      "question": "How many attention heads does the base model use?",
+      "answer": "I don't know",
+      "num_chunks": 5,
+      "retrieve_s": 0.07555354200303555,
+      "generate_s": 0.3591950830304995,
+      "total_s": 0.43474862503353506,
+      "expected": "8"
+    }
+  ]
+}
