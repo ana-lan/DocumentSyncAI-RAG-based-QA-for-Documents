@@ -1,0 +1,10 @@
+venv/
+.venv/
+.env
+.git/
+__pycache__/
+*.pyc
+.DS_Store
+vectorstore/
+data/
+eval/results/
