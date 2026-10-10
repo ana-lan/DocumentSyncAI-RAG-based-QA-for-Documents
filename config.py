@@ -1,4 +1,7 @@
 # config.py — all tunable parameters in one place
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # ── Corpus ────────────────────────────────────────────────
 ARXIV_QUERY = "machine learning"       # change to target different domains
@@ -25,7 +28,13 @@ SIMILARITY_THRESHOLD = 0.2
 
 # ── Generation ────────────────────────────────────────────
 GROQ_MODEL  = "llama-3.1-8b-instant"
-TOGETHER_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct-Lite"
+TOGETHER_MODEL = "meta-llama/Meta-Llama-3-8B-Instruct-Lite"  # kept so old imports don't break
+
+# Backend switch: defaults point to Together, override via env vars for vLLM
+LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1")
+LLM_MODEL    = os.getenv("LLM_MODEL", "qwen/qwen3.8-27b")
+LLM_API_KEY  = os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY", "EMPTY")
+
 MAX_TOKENS  = 512
 TEMPERATURE = 0.2                      # low = more factual
 
