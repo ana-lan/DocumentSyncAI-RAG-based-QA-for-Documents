@@ -16,6 +16,8 @@ The LLM is self-hosted with **vLLM on Google Kubernetes Engine (NVIDIA L4 GPU)**
 | FP8 vs bf16 end-to-end RAG latency, p95 | **38% lower** (4.36 s to 2.71 s), same 17/20 accuracy |
 | Retrieval latency after caching the embedding model, p50 | **1.04 s to 9 ms** |
 
+![Output throughput on one NVIDIA L4: bf16 vs FP8 at 1 and 32 concurrent requests](assets/throughput_chart.png)
+
 ---
 
 ## Architecture
