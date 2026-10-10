@@ -1,0 +1,207 @@
+{
+  "summary": {
+    "label": "gke_retrieval",
+    "backend": "http://vllm:8000/v1",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "retrieval_only": true,
+    "timestamp": "2026-10-10T22:23:19.172213+00:00",
+    "num_questions": 20,
+    "retrieve_s": {
+      "p50": 0.02,
+      "p95": 0.022,
+      "mean": 0.02
+    },
+    "generate_s": {
+      "p50": 0.0,
+      "p95": 0.0,
+      "mean": 0.0
+    },
+    "total_s": {
+      "p50": 0.02,
+      "p95": 0.022,
+      "mean": 0.02
+    }
+  },
+  "rows": [
+    {
+      "question": "What BLEU score does the Transformer achieve on WMT 2014 English-to-German?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.019053562999943097,
+      "generate_s": 1.1610000001383014e-06,
+      "total_s": 0.019054723999943235,
+      "expected": "28.4"
+    },
+    {
+      "question": "What BLEU score does the big Transformer achieve on WMT 2014 English-to-French?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.021994361999531975,
+      "generate_s": 8.000006346264854e-07,
+      "total_s": 0.0219951620001666,
+      "expected": "41.8"
+    },
+    {
+      "question": "How many identical layers are in the encoder stack?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.02008479400046781,
+      "generate_s": 6.999998731771484e-07,
+      "total_s": 0.020085494000340987,
+      "expected": "6"
+    },
+    {
+      "question": "What is the dimensionality of the model outputs, d_model?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.01625517399952514,
+      "generate_s": 7.000007826718502e-07,
+      "total_s": 0.016255874000307813,
+      "expected": "512"
+    },
+    {
+      "question": "How many attention heads does the base model use?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.020416603000739997,
+      "generate_s": 7.999997251317836e-07,
+      "total_s": 0.02041740300046513,
+      "expected": "8"
+    },
+    {
+      "question": "What is the inner-layer dimensionality of the feed-forward network?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.02220670299993799,
+      "generate_s": 9.690002116258256e-07,
+      "total_s": 0.022207672000149614,
+      "expected": "2048"
+    },
+    {
+      "question": "Why are the dot products scaled by the square root of d_k?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.019440762999693106,
+      "generate_s": 8.500001058564521e-07,
+      "total_s": 0.019441612999798963,
+      "expected": "large values push softmax into small-gradient regions"
+    },
+    {
+      "question": "Which optimizer was used for training?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.018263643999489432,
+      "generate_s": 9.40000063565094e-07,
+      "total_s": 0.018264583999552997,
+      "expected": "Adam (beta1=0.9, beta2=0.98, eps=1e-9)"
+    },
+    {
+      "question": "How many warmup steps does the learning rate schedule use?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.01927678299944091,
+      "generate_s": 9.300001693191007e-07,
+      "total_s": 0.01927771299961023,
+      "expected": "4000"
+    },
+    {
+      "question": "What value of label smoothing was used?",
+      "answer": "",
+      "num_chunks": 2,
+      "retrieve_s": 0.021271352999974624,
+      "generate_s": 1.4500001270789653e-06,
+      "total_s": 0.021272803000101703,
+      "expected": "0.1"
+    },
+    {
+      "question": "What hardware was used to train the models?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.021713252999688848,
+      "generate_s": 1.1299998732283711e-06,
+      "total_s": 0.021714382999562076,
+      "expected": "8 NVIDIA P100 GPUs"
+    },
+    {
+      "question": "How long did the big model take to train?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.017615943999771844,
+      "generate_s": 6.60000296193175e-07,
+      "total_s": 0.017616604000068037,
+      "expected": "3.5 days / 300,000 steps"
+    },
+    {
+      "question": "What dropout rate was used for the base model?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.0197064229996613,
+      "generate_s": 9.10000380827114e-07,
+      "total_s": 0.019707333000042127,
+      "expected": "0.1"
+    },
+    {
+      "question": "What functions are used for the positional encodings?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.01811414399981004,
+      "generate_s": 1.030000021273736e-06,
+      "total_s": 0.018115173999831313,
+      "expected": "sine and cosine"
+    },
+    {
+      "question": "Why did the authors choose self-attention over recurrent layers?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.01963226299994858,
+      "generate_s": 1.059999704011716e-06,
+      "total_s": 0.01963332299965259,
+      "expected": "complexity, parallelization, path length"
+    },
+    {
+      "question": "Why is masking used in the decoder self-attention?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.019626044000688125,
+      "generate_s": 7.089993232511915e-07,
+      "total_s": 0.019626753000011377,
+      "expected": "prevent attending to subsequent positions"
+    },
+    {
+      "question": "Besides translation, what task was the Transformer evaluated on?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.022871541999847977,
+      "generate_s": 1.3400003808783367e-06,
+      "total_s": 0.022872882000228856,
+      "expected": "English constituency parsing"
+    },
+    {
+      "question": "What vocabulary size was used for English-German byte-pair encoding?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.020405082999786828,
+      "generate_s": 1.0100002327817492e-06,
+      "total_s": 0.02040609300001961,
+      "expected": "about 37000 tokens"
+    },
+    {
+      "question": "What is the per-layer complexity of self-attention?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.02023660299983021,
+      "generate_s": 8.699998943484388e-07,
+      "total_s": 0.02023747299972456,
+      "expected": "O(n^2 * d)"
+    },
+    {
+      "question": "What beam size was used during inference?",
+      "answer": "",
+      "num_chunks": 5,
+      "retrieve_s": 0.019016763999388786,
+      "generate_s": 8.600000001024455e-07,
+      "total_s": 0.01901762399938889,
+      "expected": "4, with length penalty 0.6"
+    }
+  ]
+}
