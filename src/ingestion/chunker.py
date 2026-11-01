@@ -7,7 +7,7 @@ nltk.download("punkt", quiet=True)
 
 def chunk_fixed(text: str, strategy_name: str) -> list[str]:
     """
-    Split text using fixed token size + overlap.
+    Split text using fixed character size + overlap.
     Returns: list of chunk strings
     """
     chunk_size, chunk_overlap = CHUNK_STRATEGIES[strategy_name]["chunk_size"], CHUNK_STRATEGIES[strategy_name]["chunk_overlap"]
