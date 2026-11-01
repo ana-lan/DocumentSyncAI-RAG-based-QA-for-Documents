@@ -31,7 +31,7 @@ PDF Upload
 ┌─────────────────────────────────────────┐
 │           INGESTION LAYER               │
 │  pdfplumber → text cleaning → chunking  │
-│  4 strategies: fixed 256/512/1024       │
+│  4 strategies: fixed 256/512/1024 chars │
 │  + sentence-aware (NLTK)                │
 └──────────────────┬──────────────────────┘
                    │
