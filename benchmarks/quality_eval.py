@@ -116,9 +116,11 @@ def ask(client: OpenAI, model: str, row: dict, layout: str, order: str, pause: f
                     parts.append(event.choices[0].delta.content)
             total = time.perf_counter() - t0
             break
-        except RateLimitError:
+        except RateLimitError as e:
             wait = 20 * (attempt + 1)
-            print(f"    rate limit, waiting {wait}s")
+            if attempt == 0:
+                print(f"    rate limit: {str(e)[:200]}")   # says which limit: per minute or per day
+            print(f"    waiting {wait}s")
             time.sleep(wait)
         except BadRequestError:
             if not _USAGE:
@@ -181,10 +183,16 @@ def main():
           f"order={args.order} concurrency={args.concurrency}")
 
     started = time.perf_counter()
+    failed = None
     if args.concurrency == 1:
         out = []
         for i, row in enumerate(rows, 1):
-            out.append(ask(client, args.model, row, args.layout, args.order, args.pause))
+            try:
+                out.append(ask(client, args.model, row, args.layout, args.order, args.pause))
+            except Exception as e:          # keep the answers collected so far
+                failed = f"{row['id']}: {e}"
+                print(f"STOPPED at question {i}: {failed}")
+                break
             print(f"[{i:03d}/{len(rows)}] ttft {out[-1]['ttft_s']:.3f}s | {out[-1]['model_answer'][:70]!r}")
     else:
         with ThreadPoolExecutor(args.concurrency) as pool:
@@ -199,6 +207,7 @@ def main():
         "concurrency": args.concurrency, "n": len(out), "wall_s": round(wall, 2),
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "ttft_p50_s": pct(ttfts, 50), "ttft_p95_s": pct(ttfts, 95),
+        "complete": failed is None, "stopped_at": failed,
         "prefix_cache_reset": reset_ok,
         "prefix_cache_delta": cache_delta(before, after) if after else None,
     }
@@ -211,6 +220,8 @@ def main():
     if meta["prefix_cache_delta"]:
         print(f"prefix cache during run: {meta['prefix_cache_delta']}")
     print(f"Saved to {path}")
+    if failed:
+        raise SystemExit(f"Partial run saved ({len(out)}/{len(rows)} answers). Not a complete result.")
 
 
 if __name__ == "__main__":
