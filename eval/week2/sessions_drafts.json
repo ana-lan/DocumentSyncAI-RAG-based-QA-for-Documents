@@ -1,0 +1,880 @@
+{
+ "items": [
+  {
+   "id": "attention-session-0",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 0,
+   "question": "What fundamental constraint remains in recent sequence modeling work despite improvements in computational efficiency?",
+   "answer": "The fundamental constraint of sequential computation remains.",
+   "evidence": [
+    [
+     "The fundamental constraint of sequential computation, however, remains."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-1",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 1,
+   "question": "How do attention mechanisms typically model dependencies in sequence modeling tasks?",
+   "answer": "They allow modeling of dependencies without regard to their distance in the input or output sequences.",
+   "evidence": [
+    [
+     "allowing modeling of dependencies without regard to their distance"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-2",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 2,
+   "question": "In most cases, what type of network are attention mechanisms used in conjunction with?",
+   "answer": "Attention mechanisms are used in conjunction with a recurrent network.",
+   "evidence": [
+    [
+     "such attention mechanisms are used in conjunction with a recurrent network."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-3",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 3,
+   "question": "What does the Transformer model architecture eschew in favor of an attention mechanism?",
+   "answer": "The Transformer eschews recurrence.",
+   "evidence": [
+    [
+     "a model architecture eschewing recurrence and instead relying"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-4",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 4,
+   "question": "How many P100 GPUs were used to train the Transformer to reach state-of-the-art translation quality?",
+   "answer": "The Transformer was trained on eight P100 GPUs.",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-5",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 5,
+   "question": "What is the goal of reducing sequential computation also the foundation of for models like ByteNet?",
+   "answer": "It forms the foundation of the Extended Neural GPU, ByteNet, and ConvS2S.",
+   "evidence": [
+    [
+     "forms the foundation of the Extended Neural GPU"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-6",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 6,
+   "question": "How does the number of operations to relate signals grow in ConvS2S as distance increases?",
+   "answer": "The number of operations grows linearly in ConvS2S.",
+   "evidence": [
+    [
+     "linearly for ConvS2S and logarithmically for ByteNet."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-7",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 7,
+   "question": "How does the number of operations to relate signals grow in ByteNet as distance increases?",
+   "answer": "The number of operations grows logarithmically in ByteNet.",
+   "evidence": [
+    [
+     "linearly for ConvS2S and logarithmically for ByteNet."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-8",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 8,
+   "question": "What is reduced to a constant number of operations in the Transformer?",
+   "answer": "The number of operations required to relate signals from two arbitrary positions is reduced to a constant.",
+   "evidence": [
+    [
+     "In the Transformer this is reduced to a constant number"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-9",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 9,
+   "question": "What effect does the Transformer counteract with Multi-Head Attention?",
+   "answer": "It counteracts the reduced effective resolution due to averaging attention-weighted positions.",
+   "evidence": [
+    [
+     "reduced effective resolution due to averaging attention-weighted positions"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-10",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 10,
+   "question": "What is another name for self-attention?",
+   "answer": "Self-attention is sometimes called intra-attention.",
+   "evidence": [
+    [
+     "Self-attention, sometimes called intra-attention is an attention mechanism"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-11",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 11,
+   "question": "What is the primary function of self-attention in a sequence?",
+   "answer": "It relates different positions of a single sequence to compute a representation.",
+   "evidence": [
+    [
+     "relating different positions of a single sequence in order"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-12",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 12,
+   "question": "Which tasks has self-attention been used successfully in, according to the text?",
+   "answer": "It has been used in reading comprehension, abstractive summarization, textual entailment, and learning sentence representations.",
+   "evidence": [
+    [
+     "reading comprehension, abstractive summarization, textual entailment and learning task-independent"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-13",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 13,
+   "question": "What makes the Transformer unique compared to previous transduction models?",
+   "answer": "It is the first transduction model relying entirely on self-attention without using sequence-aligned RNNs or convolution.",
+   "evidence": [
+    [
+     "first transduction model relying entirely on self-attention to compute"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     8
+    ]
+   ]
+  },
+  {
+   "id": "attention-session-14",
+   "paper": "attention",
+   "type": "session",
+   "session": "attention",
+   "turn": 14,
+   "question": "What structure do most competitive neural sequence transduction models have?",
+   "answer": "They have an encoder-decoder structure.",
+   "evidence": [
+    [
+     "Most competitive neural sequence transduction models have an encoder-decoder"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     8
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-0",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 0,
+   "question": "How do the RAG models' generated responses compare to a BART baseline in terms of factuality and diversity?",
+   "answer": "The RAG models generate responses that are more factual, specific, and diverse than a BART baseline.",
+   "evidence": [
+    [
+     "more factual, specific, and diverse than a BART baseline"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-1",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 1,
+   "question": "What is the performance gap between the RAG model and state-of-the-art pipeline models on the FEVER fact verification task?",
+   "answer": "The RAG model achieves results within 4.3% of state-of-the-art pipeline models.",
+   "evidence": [
+    [
+     "achieve results within 4.3% of state-of-the-art pipeline models"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-2",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 2,
+   "question": "What capability does the non-parametric memory provide regarding the model's knowledge?",
+   "answer": "The non-parametric memory can be replaced to update the models\u2019 knowledge as the world changes.",
+   "evidence": [
+    [
+     "update the models\u2019 knowledge as the world changes"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-3",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 3,
+   "question": "What are the two main components leveraged by the RAG models as shown in Figure 1?",
+   "answer": "The two components are a retriever p(z|x) and a generator p(y|x, z, y).",
+   "evidence": [
+    [
+     "a retriever p (z|x) with parameters \u03b7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-4",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 4,
+   "question": "Where can the code to run experiments with RAG be found?",
+   "answer": "The code has been open-sourced as part of the HuggingFace Transformers Library.",
+   "evidence": [
+    [
+     "open-sourced as part of the HuggingFace Transformers Library"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-5",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 5,
+   "question": "How is the retrieved document treated during the end-to-end training of the retriever and generator?",
+   "answer": "The retrieved document is treated as a latent variable.",
+   "evidence": [
+    [
+     "treat the retrieved document as a latent variable"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-6",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 6,
+   "question": "What is the specific behavior of the RAG-Sequence model regarding document usage?",
+   "answer": "The RAG-Sequence model uses the same document to predict each target token.",
+   "evidence": [
+    [
+     "uses the same document to predict each target token"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-7",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 7,
+   "question": "How does the RAG-Token model differ from RAG-Sequence in terms of document selection?",
+   "answer": "The RAG-Token model can predict each target token based on a different document.",
+   "evidence": [
+    [
+     "predict each target token based on a different document"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-8",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 8,
+   "question": "What approximation method is used to get the seq2seq probability in the RAG-Sequence model?",
+   "answer": "A top-K approximation is used to get the seq2seq probability.",
+   "evidence": [
+    [
+     "marginalized to get the seq2seq probability p(y|x) via a top-K approximation"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9,
+     10
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-9",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 9,
+   "question": "What does the generator produce for each document in the RAG-Sequence model?",
+   "answer": "The generator produces the output sequence probability for each document.",
+   "evidence": [
+    [
+     "generator produces the output sequence probability for each document"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     10
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-10",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 10,
+   "question": "What advantage does the RAG-Token model offer to the generator?",
+   "answer": "It allows the generator to choose content from several documents when producing an answer.",
+   "evidence": [
+    [
+     "choose content from several documents when producing an answer"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     10
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-11",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 11,
+   "question": "What does the generator produce for each document in the RAG-Token model before marginalizing?",
+   "answer": "The generator produces a distribution for the next output token for each document.",
+   "evidence": [
+    [
+     "produces a distribution for the next output token for each document"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     10
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-12",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 12,
+   "question": "What is the process repeated with in the RAG-Token model after marginalizing?",
+   "answer": "The process is repeated with the following output token.",
+   "evidence": [
+    [
+     "repeating the process with the following output token"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     10
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-13",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 13,
+   "question": "What parameters are associated with the retriever component in the RAG model?",
+   "answer": "The retriever component is associated with parameters \u03b7.",
+   "evidence": [
+    [
+     "retriever p (z|x) with parameters \u03b7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     7
+    ]
+   ]
+  },
+  {
+   "id": "rag-session-14",
+   "paper": "rag",
+   "type": "session",
+   "session": "rag",
+   "turn": 14,
+   "question": "What is the formal definition of the RAG-Token model's probability approximation?",
+   "answer": "It is defined as the sum over top-k documents of the product of the retriever probability and the generator probability for each token.",
+   "evidence": [
+    [
+     "p (y|x) \u2248 p (z|x)p (y |x, z, y )"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     10,
+     11
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-0",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 0,
+   "question": "What specific hardware was used to measure the inference latency in Table 1?",
+   "answer": "An NVIDIA Quadro RTX8000.",
+   "evidence": [
+    [
+     "We use an NVIDIA Quadro RTX8000."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-1",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 1,
+   "question": "How many trials were averaged to calculate the inference latency values in Table 1?",
+   "answer": "100 trials.",
+   "evidence": [
+    [
+     "averaged over 100 trials"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-2",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 2,
+   "question": "What is the inference latency for Full Fine-Tuning when the batch size is 32 and sequence length is 512?",
+   "answer": "1449.4\u00b10.8 milliseconds.",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-3",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 3,
+   "question": "What is the percentage increase in inference latency for AdapterH compared to Fine-Tune/LoRA at a batch size of 1?",
+   "answer": "30.3%.",
+   "evidence": [
+    [
+     "25.8\u00b12.2 (+30.3%)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-4",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 4,
+   "question": "What does the symbol |\u0398| denote in the context of Table 1?",
+   "answer": "The number of trainable parameters in adapter layers.",
+   "evidence": [
+    [
+     "denotes the number of trainable parameters in adapter layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-5",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 5,
+   "question": "In what scenario is the inference latency introduced by adapter layers described as significant?",
+   "answer": "In an online, short-sequence-length scenario.",
+   "evidence": [
+    [
+     "significant in an online, short-sequence-length scenario"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-6",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 6,
+   "question": "Which specific types of models are the focus of the experiments in the LoRA paper?",
+   "answer": "Transformer language models.",
+   "evidence": [
+    [
+     "focus on certain weights in Transformer language models"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-7",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 7,
+   "question": "According to Aghajanyan et al. (2020), what property do pre-trained language models possess?",
+   "answer": "They have a low \u201cintrinsic dimension\u201d.",
+   "evidence": [
+    [
+     "pre-trained language models have a low \u201cinstrisic dimension\u201d"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     15
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-8",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 8,
+   "question": "How is the weight update \u0394W represented in the LoRA method?",
+   "answer": "As a low-rank decomposition W + BA.",
+   "evidence": [
+    [
+     "representing the latter with a low-rank de0 composition W + \u2206W = W + BA"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     15
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-9",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 9,
+   "question": "What is the dimensionality of matrix B in the LoRA low-rank decomposition?",
+   "answer": "Rd\u00d7r.",
+   "evidence": [
+    [
+     "where B \u2208 Rd\u00d7r"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     15
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-10",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 10,
+   "question": "What constraint is placed on the rank r in the LoRA decomposition?",
+   "answer": "It must be less than or equal to the minimum of d and k.",
+   "evidence": [
+    [
+     "rank r (cid:28) min(d, k)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     15
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-11",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 11,
+   "question": "Which parameters are frozen during LoRA training?",
+   "answer": "The pre-trained weight matrix W.",
+   "evidence": [
+    [
+     "During training, W is frozen"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     15
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-12",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 12,
+   "question": "What initialization is used for matrix A in the LoRA method?",
+   "answer": "A random Gaussian initialization.",
+   "evidence": [
+    [
+     "random Gaussian initialization for A"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-13",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 13,
+   "question": "Why is the scaling factor \u03b1 set to the rank r?",
+   "answer": "To reduce the need to retune hyperparameters when varying r.",
+   "evidence": [
+    [
+     "reduce the need to retune hyperparameters when we vary r"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-14",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 14,
+   "question": "What does LoRA roughly recover when the rank r is set to the rank of pre-trained weight matrices?",
+   "answer": "The expressiveness of full fine-tuning.",
+   "evidence": [
+    [
+     "roughly recover the expressiveness of full fine-tuning"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     17
+    ]
+   ]
+  },
+  {
+   "id": "lora-session-15",
+   "paper": "lora",
+   "type": "session",
+   "session": "lora",
+   "turn": 15,
+   "question": "How can LoRA be deployed in production to avoid additional inference latency?",
+   "answer": "By explicitly computing and storing W = W + BA.",
+   "evidence": [
+    [
+     "explicitly compute and store W = W + BA"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     17
+    ]
+   ]
+  }
+ ]
+}
