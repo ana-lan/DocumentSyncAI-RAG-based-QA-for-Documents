@@ -1,0 +1,615 @@
+{
+  "summary": {
+    "label": "e5_before",
+    "backend": "https://api.groq.com/openai/v1",
+    "model": "qwen/qwen3.8-27b",
+    "retrieval_only": false,
+    "x_tolerance": 3.0,
+    "drop_references": false,
+    "prompt_style": "plain",
+    "temperature": 0.0,
+    "num_chunks_indexed": 45,
+    "timestamp": "2026-11-07T23:51:08.367879+00:00",
+    "num_questions": 20,
+    "quality": {
+      "hit@5": 0.8,
+      "mrr": 0.574,
+      "evidence_missing_from_doc": 0,
+      "correct": 17,
+      "refused": 3,
+      "citation_rate": 0.0,
+      "citation_correct": 0.0
+    },
+    "retrieve_s": {
+      "p50": 0.053,
+      "p95": 0.078,
+      "mean": 0.059
+    },
+    "generate_s": {
+      "p50": 0.462,
+      "p95": 90.776,
+      "mean": 13.987
+    },
+    "total_s": {
+      "p50": 0.528,
+      "p95": 90.82,
+      "mean": 14.046
+    }
+  },
+  "rows": [
+    {
+      "question": "What BLEU score does the Transformer achieve on WMT 2014 English-to-German?",
+      "expected": "28.4",
+      "answer": "28.4",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        26,
+        1,
+        32,
+        25,
+        28
+      ],
+      "retrieved_scores": [
+        0.5145,
+        0.4679,
+        0.4573,
+        0.3914,
+        0.3858
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.07083491700177547,
+      "generate_s": 0.5271599999978207,
+      "total_s": 0.5979949169995962,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What BLEU score does the big Transformer achieve on WMT 2014 English-to-French?",
+      "expected": "41.8",
+      "answer": "41.8",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        26,
+        1,
+        32,
+        25,
+        28
+      ],
+      "retrieved_scores": [
+        0.482,
+        0.4482,
+        0.443,
+        0.3878,
+        0.3594
+      ],
+      "hit_rank": 2,
+      "retrieve_s": 0.07520124999427935,
+      "generate_s": 0.605397167004412,
+      "total_s": 0.6805984169986914,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "How many identical layers are in the encoder stack?",
+      "expected": "6",
+      "answer": "Based on the context provided in section 3.1 under \"Encoder,\" the encoder is composed of a stack of **N = 6** identical layers.",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        8,
+        9,
+        20,
+        17,
+        15
+      ],
+      "retrieved_scores": [
+        0.5788,
+        0.4264,
+        0.4021,
+        0.3569,
+        0.3563
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.07988649999606423,
+      "generate_s": 0.3972328330055461,
+      "total_s": 0.47711933300161036,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What is the dimensionality of the model outputs, d_model?",
+      "expected": "512",
+      "answer": "512",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        15,
+        21,
+        16,
+        12,
+        13
+      ],
+      "retrieved_scores": [
+        0.2789,
+        0.2786,
+        0.2744,
+        0.2555,
+        0.2441
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.07749033399886684,
+      "generate_s": 0.2595326250011567,
+      "total_s": 0.33702295900002355,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "How many attention heads does the base model use?",
+      "expected": "8",
+      "answer": "I don't know",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        5,
+        17,
+        22,
+        14,
+        8
+      ],
+      "retrieved_scores": [
+        0.5472,
+        0.4927,
+        0.4916,
+        0.4731,
+        0.4528
+      ],
+      "hit_rank": null,
+      "retrieve_s": 0.07561066700145602,
+      "generate_s": 90.49005229099566,
+      "total_s": 90.56566295799712,
+      "citations": [],
+      "refused": true,
+      "answer_ok": false,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What is the inner-layer dimensionality of the feed-forward network?",
+      "expected": "2048",
+      "answer": "2048",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        15,
+        8,
+        20,
+        17,
+        9
+      ],
+      "retrieved_scores": [
+        0.5281,
+        0.4417,
+        0.41,
+        0.408,
+        0.3569
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.0671825000026729,
+      "generate_s": 0.28619966599944746,
+      "total_s": 0.35338216600212036,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "Why are the dot products scaled by the square root of d_k?",
+      "expected": "large values push softmax into small-gradient regions",
+      "answer": "The dot products are scaled by the square root of $d_k$ to counteract the effect of large values of $d_k$, where the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients.",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        10,
+        12,
+        18,
+        11,
+        16
+      ],
+      "retrieved_scores": [
+        0.3104,
+        0.2624,
+        0.2483,
+        0.2377,
+        0.2281
+      ],
+      "hit_rank": 4,
+      "retrieve_s": 0.04129583400208503,
+      "generate_s": 0.4133901250024792,
+      "total_s": 0.4546859590045642,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "Which optimizer was used for training?",
+      "expected": "Adam (beta1=0.9, beta2=0.98, eps=1e-9)",
+      "answer": "Adam optimizer",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        23,
+        33,
+        19,
+        39,
+        17
+      ],
+      "retrieved_scores": [
+        0.3965,
+        0.3533,
+        0.3479,
+        0.3241,
+        0.3222
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.07362479099538177,
+      "generate_s": 0.3742339170057676,
+      "total_s": 0.44785870800114935,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "How many warmup steps does the learning rate schedule use?",
+      "expected": "4000",
+      "answer": "4000",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        24,
+        23,
+        1,
+        22,
+        19
+      ],
+      "retrieved_scores": [
+        0.4867,
+        0.4622,
+        0.3488,
+        0.3383,
+        0.3334
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.05242450000514509,
+      "generate_s": 0.2860792499996023,
+      "total_s": 0.3385037500047474,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What value of label smoothing was used?",
+      "expected": "0.1",
+      "answer": "0.1",
+      "num_chunks": 2,
+      "retrieved_chunk_ids": [
+        41,
+        26
+      ],
+      "retrieved_scores": [
+        0.2827,
+        0.254
+      ],
+      "hit_rank": 2,
+      "retrieve_s": 0.05155770800047321,
+      "generate_s": 0.3859936669978197,
+      "total_s": 0.4375513749982929,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What hardware was used to train the models?",
+      "expected": "8 NVIDIA P100 GPUs",
+      "answer": "The models were trained on one machine with 8 NVIDIA P100 GPUs.",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        28,
+        19,
+        25,
+        26,
+        23
+      ],
+      "retrieved_scores": [
+        0.2858,
+        0.282,
+        0.2743,
+        0.2728,
+        0.2458
+      ],
+      "hit_rank": 5,
+      "retrieve_s": 0.046022917005757336,
+      "generate_s": 0.6356695829963428,
+      "total_s": 0.6816925000021001,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "How long did the big model take to train?",
+      "expected": "3.5 days / 300,000 steps",
+      "answer": "Based on the context provided, the big model took **3.5 days** to train. This is mentioned in Section 6.1 (\"Training took 3.5 days on 8 P100 GPUs\") and Section 5.2 (\"The big models were trained for 300,000 steps (3.5 days)\").",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        33,
+        26,
+        23,
+        1,
+        22
+      ],
+      "retrieved_scores": [
+        0.3222,
+        0.3087,
+        0.2946,
+        0.2834,
+        0.2757
+      ],
+      "hit_rank": 2,
+      "retrieve_s": 0.04253016699658474,
+      "generate_s": 90.85302079100074,
+      "total_s": 90.89555095799733,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What dropout rate was used for the base model?",
+      "expected": "0.1",
+      "answer": "0.1",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        27,
+        28,
+        25,
+        26,
+        23
+      ],
+      "retrieved_scores": [
+        0.4539,
+        0.3077,
+        0.2724,
+        0.2704,
+        0.2696
+      ],
+      "hit_rank": 3,
+      "retrieve_s": 0.06766595799854258,
+      "generate_s": 0.5112934999997378,
+      "total_s": 0.5789594579982804,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What functions are used for the positional encodings?",
+      "expected": "sine and cosine",
+      "answer": "I don't know",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        8,
+        9,
+        6,
+        15,
+        40
+      ],
+      "retrieved_scores": [
+        0.4421,
+        0.4369,
+        0.398,
+        0.3617,
+        0.3597
+      ],
+      "hit_rank": null,
+      "retrieve_s": 0.046909458993468434,
+      "generate_s": 0.35017262500332436,
+      "total_s": 0.3970820839967928,
+      "citations": [],
+      "refused": true,
+      "answer_ok": false,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "Why did the authors choose self-attention over recurrent layers?",
+      "expected": "complexity, parallelization, path length",
+      "answer": "Based on the context provided, the authors chose self-attention over recurrent layers for the following reasons:\n\n1.  **Computational Complexity and Speed:** Self-attention layers connect all positions with a constant number of sequentially executed operations ($O(1)$), whereas recurrent layers require $O(n)$ sequential operations. Consequently, self-attention layers are faster than recurrent layers when the sequence length is small.\n2.  **Interpretability:** Self-attention can yield more interpretable models. The authors observed that individual attention heads clearly learned to perform different tasks and exhibited behavior related to the syntactic and semantic structure of sentences.",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        20,
+        22,
+        17,
+        14,
+        8
+      ],
+      "retrieved_scores": [
+        0.6343,
+        0.5765,
+        0.5407,
+        0.4785,
+        0.4541
+      ],
+      "hit_rank": null,
+      "retrieve_s": 0.07822137499897508,
+      "generate_s": 0.679745333000028,
+      "total_s": 0.7579667079990031,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "Why is masking used in the decoder self-attention?",
+      "expected": "prevent attending to subsequent positions",
+      "answer": "Masking is used in the decoder self-attention to prevent positions from attending to subsequent positions. This masking, combined with the fact that the output embeddings are offset by one position, ensures that the predictions for position $i$ can depend only on the known outputs at positions less than $i$.",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        9,
+        8,
+        5,
+        6,
+        17
+      ],
+      "retrieved_scores": [
+        0.5238,
+        0.4813,
+        0.4445,
+        0.4375,
+        0.4146
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.043589250002696645,
+      "generate_s": 0.5357511670008535,
+      "total_s": 0.5793404170035501,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "Besides translation, what task was the Transformer evaluated on?",
+      "expected": "English constituency parsing",
+      "answer": "English constituency parsing",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        32,
+        5,
+        6,
+        26,
+        1
+      ],
+      "retrieved_scores": [
+        0.4715,
+        0.4381,
+        0.4126,
+        0.4119,
+        0.3858
+      ],
+      "hit_rank": 5,
+      "retrieve_s": 0.043942417003563605,
+      "generate_s": 90.7716915830024,
+      "total_s": 90.81563400000596,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What vocabulary size was used for English-German byte-pair encoding?",
+      "expected": "about 37000 tokens",
+      "answer": "I don't know",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        28,
+        1,
+        26,
+        21,
+        40
+      ],
+      "retrieved_scores": [
+        0.385,
+        0.371,
+        0.366,
+        0.3611,
+        0.3382
+      ],
+      "hit_rank": null,
+      "retrieve_s": 0.04415833399980329,
+      "generate_s": 0.3506405000007362,
+      "total_s": 0.3947988340005395,
+      "citations": [],
+      "refused": true,
+      "answer_ok": false,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What is the per-layer complexity of self-attention?",
+      "expected": "O(n^2 * d)",
+      "answer": "O(n2\u00b7d)",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        17,
+        20,
+        22,
+        8,
+        5
+      ],
+      "retrieved_scores": [
+        0.7024,
+        0.6176,
+        0.5804,
+        0.4775,
+        0.4754
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.05361783300031675,
+      "generate_s": 0.6966899590042885,
+      "total_s": 0.7503077920046053,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    },
+    {
+      "question": "What beam size was used during inference?",
+      "expected": "4, with length penalty 0.6",
+      "answer": "4",
+      "num_chunks": 5,
+      "retrieved_chunk_ids": [
+        27,
+        21,
+        18,
+        10,
+        19
+      ],
+      "retrieved_scores": [
+        0.3688,
+        0.2709,
+        0.2448,
+        0.2434,
+        0.2267
+      ],
+      "hit_rank": 1,
+      "retrieve_s": 0.0454505829984555,
+      "generate_s": 0.32549820900021587,
+      "total_s": 0.37094879199867137,
+      "citations": [],
+      "refused": false,
+      "answer_ok": true,
+      "citation_ok": null,
+      "evidence_in_doc": true
+    }
+  ]
+}

@@ -1,20 +1,53 @@
 # src/generation/generator.py
+import re
 import time
 from functools import lru_cache
 from langchain_openai import ChatOpenAI
 from openai import RateLimitError
-from config import LLM_BASE_URL, LLM_MODEL, LLM_API_KEY, MAX_TOKENS, TEMPERATURE
+from config import LLM_BASE_URL, LLM_MODEL, LLM_API_KEY, MAX_TOKENS, TEMPERATURE, PROMPT_STYLE
 
 
-def build_prompt(query: str, retrieved_chunks: list[dict]) -> str:
-    """Format retrieved chunks + query into a grounded prompt."""
-    context_block = "\n\n".join([chunk["text"] for chunk in retrieved_chunks])
-    prompt = f"""Context:
+def build_prompt(query: str, retrieved_chunks: list[dict], style: str = PROMPT_STYLE) -> str:
+    """
+    Format retrieved chunks + query into a grounded prompt.
+
+    style="plain": the week 1 prompt, kept unchanged so before/after runs compare fairly.
+    style="cite":  chunks are numbered [1]..[k] and the model must cite the ones it used.
+    """
+    if style == "plain":
+        context_block = "\n\n".join([chunk["text"] for chunk in retrieved_chunks])
+        prompt = f"""Context:
     {context_block}
     Question: {query}
     Instructions: Answer only from the context above. If the answer is not in the context, say "I don't know".
     Answer:"""
-    return prompt
+        return prompt
+
+    context_block = "\n\n".join(
+        f"[{i}] {chunk['text']}" for i, chunk in enumerate(retrieved_chunks, start=1)
+    )
+    return (
+        f"Context:\n{context_block}\n\n"
+        f"Question: {query}\n\n"
+        "Instructions: Answer only from the numbered context passages above. "
+        "After each fact, cite the passage it came from in square brackets, like [2]. "
+        'If the answer is not in the context, say "I don\'t know" and cite nothing.\n\n'
+        "Answer:"
+    )
+
+
+_CITATION = re.compile(r"\[(\d+(?:\s*,\s*\d+)*)\]")
+
+
+def extract_citations(answer: str) -> list[int]:
+    """Pull cited passage numbers out of an answer: "... [2][4]" or "[2, 4]" -> [2, 4]."""
+    cited = []
+    for group in _CITATION.findall(answer):
+        for n in group.split(","):
+            n = int(n.strip())
+            if n not in cited:
+                cited.append(n)
+    return cited
 
 
 @lru_cache(maxsize=1)
@@ -31,13 +64,13 @@ def get_llm() -> ChatOpenAI:
     )
 
 
-def generate(query: str, retrieved_chunks: list[dict]) -> dict:
+def generate(query: str, retrieved_chunks: list[dict], prompt_style: str = PROMPT_STYLE) -> dict:
     """
     Generate an answer from retrieved chunks using whichever
-    OpenAI-compatible backend LLM_BASE_URL points to (Together or vLLM).
-    Returns: dict with keys {answer, latency_seconds, num_chunks_used, backend}
+    OpenAI-compatible backend LLM_BASE_URL points to (Groq or vLLM).
+    Returns: dict with keys {answer, citations, latency_seconds, num_chunks_used, backend}
     """
-    prompt = build_prompt(query=query, retrieved_chunks=retrieved_chunks)
+    prompt = build_prompt(query=query, retrieved_chunks=retrieved_chunks, style=prompt_style)
     llm = get_llm()
 
     start = time.time()
@@ -61,6 +94,7 @@ def generate(query: str, retrieved_chunks: list[dict]) -> dict:
 
     return {
         "answer": response.content,
+        "citations": extract_citations(response.content) if prompt_style == "cite" else [],
         "latency_seconds": latency,
         "num_chunks_used": len(retrieved_chunks),
         "backend": LLM_BASE_URL,

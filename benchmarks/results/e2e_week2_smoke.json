@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "label": "week2_smoke",
+    "backend": "https://api.groq.com/openai/v1",
+    "model": "qwen/qwen3.8-27b",
+    "retrieval_only": false,
+    "timestamp": "2026-11-07T23:32:16.460898+00:00",
+    "num_questions": 3,
+    "retrieve_s": {
+      "p50": 0.155,
+      "p95": 0.331,
+      "mean": 0.193
+    },
+    "generate_s": {
+      "p50": 0.425,
+      "p95": 0.572,
+      "mean": 0.467
+    },
+    "total_s": {
+      "p50": 0.744,
+      "p95": 0.772,
+      "mean": 0.661
+    }
+  },
+  "rows": [
+    {
+      "question": "What BLEU score does the Transformer achieve on WMT 2014 English-to-German?",
+      "answer": "28.4",
+      "num_chunks": 5,
+      "retrieve_s": 0.15503999999782536,
+      "generate_s": 0.5887500410026405,
+      "total_s": 0.7437900410004659,
+      "expected": "28.4"
+    },
+    {
+      "question": "What BLEU score does the big Transformer achieve on WMT 2014 English-to-French?",
+      "answer": "41.8",
+      "num_chunks": 5,
+      "retrieve_s": 0.07533208299719263,
+      "generate_s": 0.38833175000036135,
+      "total_s": 0.463663832997554,
+      "expected": "41.8"
+    },
+    {
+      "question": "How many identical layers are in the encoder stack?",
+      "answer": "The encoder is composed of a stack of N = 6 identical layers.",
+      "num_chunks": 5,
+      "retrieve_s": 0.3500626670065685,
+      "generate_s": 0.4246886659966549,
+      "total_s": 0.7747513330032234,
+      "expected": "6"
+    }
+  ]
+}
