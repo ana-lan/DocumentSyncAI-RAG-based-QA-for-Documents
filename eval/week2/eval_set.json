@@ -1,0 +1,2381 @@
+{
+ "items": [
+  {
+   "type": "direct",
+   "question": "How many GPUs were used to train the Transformer model for the WMT 2014 English-to-French task?",
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "id": "attention-direct-0",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "type": "direct",
+   "question": "What is the dimension of the outputs produced by all sub-layers in the Transformer model?",
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "id": "attention-direct-4",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "How many parallel attention layers or heads are employed in the work?",
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "id": "attention-direct-5",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "How many steps were the base models trained for?",
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "id": "attention-direct-9",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "What beam size was used for decoding in the translation experiments?",
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "id": "attention-direct-11",
+   "note": "beam 4 is for all translation models, not base EN-FR only",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "paraphrased",
+   "question": "What was the size of the GPU cluster used to train the model on the English-to-French translation benchmark?",
+   "id": "attention-paraphrased-16",
+   "note": "removed 'base model' (8 GPUs applies to all models; the EN-FR model was the big one)",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "paraphrased",
+   "question": "In the architecture described in the seminal 2017 paper, what is the fixed size of the vector that every internal component passes to the next stage?",
+   "id": "attention-paraphrased-24",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "paraphrased",
+   "question": "What is the count of simultaneous sub-mechanisms used to process input sequences in the proposed architecture?",
+   "id": "attention-paraphrased-28",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "paraphrased",
+   "question": "What was the total number of training iterations applied to the standard-sized architectures?",
+   "id": "attention-paraphrased-36",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "paraphrased",
+   "question": "How many candidate translations were kept at each step while decoding in the translation experiments?",
+   "id": "attention-paraphrased-40",
+   "note": "same fix: beam 4 applies to all translation models",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "verbose",
+   "question": "Understanding the computational resources required is crucial for replicating the study or estimating costs for similar projects. The paper details the specific hardware setup used to achieve the reported results. How many graphics processing units were employed in the training process for the English-to-French task?",
+   "id": "attention-verbose-17",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "verbose",
+   "question": "When analyzing the internal mechanics of the Transformer, it is crucial to understand how data flows between the various components like attention heads and feed-forward networks. To ensure compatibility between these stages, the model maintains a consistent vector size throughout. What is this specific dimension used for the outputs of all sub-layers?",
+   "id": "attention-verbose-25",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "verbose",
+   "question": "The architecture relies on a multi-head mechanism to capture different aspects of the data simultaneously. Understanding the specific configuration is crucial for replicating the model's performance. How many such components are active in parallel within the transformer blocks?",
+   "id": "attention-verbose-29",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "verbose",
+   "question": "Understanding the computational budget is crucial for replicating the results or comparing efficiency with other architectures. The paper specifies the exact duration of the training process for their primary configurations. How many steps were the base models trained for?",
+   "id": "attention-verbose-37",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "verbose",
+   "question": "The paper tunes decoding settings on the development set before reporting translation results. What beam size did the authors use for beam search in the translation experiments?",
+   "id": "attention-verbose-41",
+   "note": "same fix",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "keyword",
+   "question": "Transformer WMT 2014 GPU count",
+   "id": "attention-keyword-18",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "keyword",
+   "question": "Transformer sub-layer output dimension",
+   "id": "attention-keyword-26",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "keyword",
+   "question": "transformer attention heads count",
+   "id": "attention-keyword-30",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "keyword",
+   "question": "base model training steps",
+   "id": "attention-keyword-38",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "keyword",
+   "question": "translation beam search beam size",
+   "id": "attention-keyword-42",
+   "note": "same fix; 'translation' separates it from the parsing beam of 21",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "plain_language",
+   "question": "How many computer chips were used to teach the system to translate English into French?",
+   "id": "attention-plain_language-19",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "plain_language",
+   "question": "In the system that processes language by breaking it into parts and reassembling them, what is the number of values in the list that every step of the process hands off to the next step?",
+   "id": "attention-plain_language-27",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "plain_language",
+   "question": "In the system described, how many separate channels are used to listen to different parts of the message at the same time?",
+   "id": "attention-plain_language-31",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "plain_language",
+   "question": "How many rounds of training did the smaller version of the system go through?",
+   "id": "attention-plain_language-39",
+   "note": "'for how long' was ambiguous: the paper also says 12 hours",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "plain_language",
+   "question": "When the system translated sentences, how many possible translations did it keep track of at each step to find the best one?",
+   "id": "attention-plain_language-43",
+   "note": "same fix",
+   "answer_kind": "number"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many layers does the Transformer's encoder stack have, and how many attention heads does each multi-head attention use?",
+   "answer": "6 layers and 8 heads",
+   "base_id": "attention-f0+attention-f3",
+   "paper": "attention",
+   "evidence": [
+    [
+     "composed of a stack of N = 6 identical layers"
+    ],
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9,
+     10
+    ],
+    [
+     14
+    ]
+   ],
+   "id": "attention-multi_hop-52",
+   "note": "rewritten: draft subtracted heads from GPUs",
+   "answer_kind": "number"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many fewer layers did the Transformer used for English constituency parsing have than the translation model's encoder?",
+   "answer": "2 (4 layers vs 6)",
+   "base_id": "attention-f2+attention-f6",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We trained a 4-layer transformer"
+    ],
+    [
+     "composed of a stack of N = 6 identical layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "id": "attention-multi_hop-53",
+   "note": "rewritten: draft subtracted beam size from d_model",
+   "answer_kind": "number"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many times larger was the beam size used for constituency parsing than the beam size used for translation?",
+   "answer": "5.25 (21 vs 4)",
+   "base_id": "attention-f7+attention-f6",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ],
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ],
+    [
+     28
+    ]
+   ],
+   "id": "attention-multi_hop-54",
+   "note": "kept, reworded: beam 4 is for translation generally",
+   "answer_kind": "number"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How much larger was the shared byte-pair vocabulary for English-German translation than the vocabulary used for WSJ-only parsing?",
+   "answer": "about 21,000 tokens (about 37,000 vs 16K)",
+   "base_id": "attention-f1+attention-f3",
+   "paper": "attention",
+   "evidence": [
+    [
+     "vocabulary of about 37000 tokens"
+    ],
+    [
+     "We used a vocabulary of 16K tokens for the WSJ only setting"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ],
+    [
+     32
+    ]
+   ],
+   "id": "attention-multi_hop-55",
+   "note": "rewritten: draft added GPUs to heads",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Did the big Transformer trained for English-to-French use the same dropout rate as the base model?",
+   "answer": "Yes, both used 0.1 (instead of the big model's usual 0.3)",
+   "base_id": "attention-f5+attention-f2",
+   "paper": "attention",
+   "evidence": [
+    [
+     "For the base model, we use a rate of"
+    ],
+    [
+     "dropout rate P = 0.1, instead of 0.3"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26,
+     27
+    ],
+    [
+     28
+    ]
+   ],
+   "id": "attention-multi_hop-56",
+   "note": "rewritten: draft subtracted 512 from 100,000 steps",
+   "answer_kind": "text"
+  },
+  {
+   "type": "near_identical",
+   "question": "What BLEU score did the big Transformer achieve on WMT 2014 English-to-German?",
+   "answer": "28.4",
+   "wrong_answer": "27.3",
+   "paper": "attention",
+   "evidence": [
+    [
+     "achieves 28.4 BLEU on the WMT 2014"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "id": "attention-near_identical-1",
+   "note": "named the big model: the base model scored 27.3, so the question was ambiguous; wrong_answer fixed",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "How does the number of operations to relate signals from two arbitrary positions grow in ConvS2S?",
+   "answer": "linearly",
+   "wrong_answer": "logarithmically",
+   "paper": "attention",
+   "evidence": [
+    [
+     "grows in the distance between positions, linearly for ConvS2S"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "id": "attention-near_identical-3",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the maximum path length for the Self-Attention layer type?",
+   "answer": "O(1)",
+   "wrong_answer": "O(n)",
+   "paper": "attention",
+   "evidence": [
+    [
+     "Self-Attention O(n2 \u00b7 d) O(1) O(1)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     18
+    ]
+   ],
+   "id": "attention-near_identical-6",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "What was the training cost in FLOPs for the Transformer (big) model on the English-to-German task?",
+   "answer": "2.3 \u00b7 10^19",
+   "wrong_answer": "3.3 \u00b7 10^18",
+   "paper": "attention",
+   "evidence": [
+    [
+     "Transformer (big) 28.4 41.8 2.3 \u00b7 1019"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "id": "attention-near_identical-10",
+   "note": "superscript lost in extraction (2.3 \u00b7 1019); scoring should check 2.3 and 19",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "What was the F1 score of the 4-layer Transformer trained on the WSJ only setting?",
+   "answer": "91.3",
+   "wrong_answer": "92.7",
+   "paper": "attention",
+   "evidence": [
+    [
+     "Transformer (4 layers) WSJ only, discriminative 91.3"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "id": "attention-near_identical-14",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How much energy was consumed during the training process of the base and big Transformer models?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-60",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What was the total monetary cost of the GPU hours required to train the models reported in the paper?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-61",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the inference latency of the Transformer model compare to that of the best recurrent models on a single CPU core?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-63",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the impact of using a different random seed on the final BLEU score of the base model?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-64",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors test the robustness of the model against adversarial perturbations in the input sentences?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-65",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "direct",
+   "question": "What is the non-parametric memory in the RAG models described in the paper?",
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "id": "rag-direct-0",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "type": "direct",
+   "question": "Which organization helped the authors open-source the code to run RAG models?",
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "id": "rag-direct-18",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "type": "direct",
+   "question": "What architecture does the retrieval component p_eta(z|x) in RAG follow?",
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "id": "rag-direct-2",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "type": "direct",
+   "question": "How many documents were created from the Wikipedia dump used in the experiments?",
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "id": "rag-direct-5",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "What is the name of the dataset used for the fact verification results shown in Table 2?",
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "id": "rag-direct-11",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "paraphrased",
+   "question": "In the architecture proposed by the authors, what specific data structure serves as the external knowledge base for the retrieval component?",
+   "id": "rag-paraphrased-19",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "paraphrased",
+   "question": "Who collaborated with the researchers to make the implementation publicly available?",
+   "id": "rag-paraphrased-63",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "paraphrased",
+   "question": "What structural design is used for the module that retrieves relevant documents based on the input query in the RAG model?",
+   "id": "rag-paraphrased-27",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "paraphrased",
+   "question": "What was the total count of text segments generated from the Wikipedia corpus for the study?",
+   "id": "rag-paraphrased-35",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "paraphrased",
+   "question": "Which benchmark collection served as the basis for the fact-checking performance metrics presented in the second table of the study?",
+   "id": "rag-paraphrased-47",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "verbose",
+   "question": "The paper introduces a hybrid approach that combines parametric and non-parametric components to handle knowledge-intensive tasks. To understand how the model accesses external information without updating its weights, one must identify the specific storage mechanism used. What is the non-parametric memory in the RAG models described in the paper?",
+   "id": "rag-verbose-20",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "verbose",
+   "question": "The authors of the paper on retrieval-augmented generation wanted to ensure their work was reproducible by the community. To facilitate this, they partnered with a well-known platform to release their tools. Which organization assisted them in open-sourcing the code for these models?",
+   "id": "rag-verbose-64",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "verbose",
+   "question": "The RAG framework combines a parametric memory with a non-parametric memory to handle knowledge-intensive tasks. Understanding the specific design of the retrieval mechanism is crucial for implementing similar systems. What architecture does the retrieval component p_eta(z|x) in RAG follow?",
+   "id": "rag-verbose-28",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "verbose",
+   "question": "The authors utilized a massive dataset derived from Wikipedia to support their retrieval system. Understanding the scale of this data is crucial for evaluating the model's capacity. How many individual documents were produced from this source material?",
+   "id": "rag-verbose-36",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "verbose",
+   "question": "The paper evaluates its model's ability to verify claims against external knowledge sources. To understand the scope of this evaluation, one needs to identify the specific corpus utilized for these tests. What is the name of the dataset used for the fact verification results shown in Table 2?",
+   "id": "rag-verbose-48",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "keyword",
+   "question": "RAG non-parametric memory",
+   "id": "rag-keyword-21",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "keyword",
+   "question": "RAG code open source partner",
+   "id": "rag-keyword-65",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "keyword",
+   "question": "RAG retrieval component architecture",
+   "id": "rag-keyword-29",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "keyword",
+   "question": "Wikipedia document count",
+   "id": "rag-keyword-37",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "keyword",
+   "question": "Table 2 fact verification dataset",
+   "id": "rag-keyword-49",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "plain_language",
+   "question": "What kind of searchable database does the system use to look up facts from Wikipedia?",
+   "id": "rag-plain_language-22",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "plain_language",
+   "question": "Which company worked with the writers to share their computer program freely with the public?",
+   "id": "rag-plain_language-66",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "plain_language",
+   "question": "In the RAG system, what kind of structure is used for the part that looks up information from a database to help answer questions?",
+   "id": "rag-plain_language-30",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "plain_language",
+   "question": "How many separate pieces of writing were made from the Wikipedia data used in the tests?",
+   "id": "rag-plain_language-38",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "plain_language",
+   "question": "What is the name of the collection of claims the researchers used to test whether their system could check facts, as shown in Table 2?",
+   "id": "rag-plain_language-50",
+   "note": "FEVER is claims checked against Wikipedia, not news articles",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What retriever and what generator do the RAG models use, and how many parameters does the generator have?",
+   "answer": "the DPR retriever and a BART-large generator with 400M parameters",
+   "base_id": "rag-f3+rag-f5",
+   "paper": "rag",
+   "evidence": [
+    [
+     "retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ],
+    [
+     "a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4,
+     5
+    ],
+    [
+     12
+    ]
+   ],
+   "id": "rag-multi_hop-67",
+   "note": "rewritten: draft subtracted test examples from parameters",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many world leaders were in RAG's index hot-swapping test, and how often did RAG answer correctly with the 2016 index for 2016 leaders?",
+   "answer": "82 world leaders; 70% correct",
+   "base_id": "rag-f4+rag-f5",
+   "paper": "rag",
+   "evidence": [
+    [
+     "We prepare a list of 82 world leaders"
+    ],
+    [
+     "RAG answers 70% correctly using the 2016 index"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ],
+    [
+     36
+    ]
+   ],
+   "id": "rag-multi_hop-68",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How close does RAG come to the best models on FEVER, for 3-way and for 2-way classification?",
+   "answer": "within 4.3% for 3-way and within 2.7% for 2-way",
+   "base_id": "rag-f8+rag-f6",
+   "paper": "rag",
+   "evidence": [
+    [
+     "RAG scores are within 4.3% of"
+    ],
+    [
+     "RAG achieves an accuracy within 2.7% of this model"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ],
+    [
+     32
+    ]
+   ],
+   "id": "rag-multi_hop-69",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "In the Jeopardy human evaluation, in what share of cases was RAG judged more factual than BART, and in what share more specific?",
+   "answer": "42.7% more factual; 37.4% more specific",
+   "base_id": "rag-f6+rag-f9",
+   "paper": "rag",
+   "evidence": [
+    [
+     "RAG was more factual in 42.7% of cases"
+    ],
+    [
+     "RAG better 42.7% 37.4%"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     27
+    ],
+    [
+     35
+    ]
+   ],
+   "id": "rag-multi_hop-71",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Which organization helped open-source the code, and what is the non-parametric memory used in the RAG models?",
+   "answer": "HuggingFace helped open-source the code, and the non-parametric memory is a dense vector index of Wikipedia.",
+   "base_id": "rag-f11+rag-f0",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ],
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "id": "rag-multi_hop-72",
+   "note": "two separate facts from two chunks; natural enough",
+   "answer_kind": "text"
+  },
+  {
+   "type": "near_identical",
+   "question": "In the RAG-Sequence model, how is the retrieved document treated during generation?",
+   "answer": "the same document to predict each target token",
+   "wrong_answer": "a different document for each target token",
+   "paper": "rag",
+   "evidence": [
+    [
+     "the model uses the same document to predict each target token"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "id": "rag-near_identical-3",
+   "note": "",
+   "answer_kind": "text"
+  },
+  {
+   "type": "near_identical",
+   "question": "Which values of k, the number of retrieved documents, were considered during training?",
+   "answer": "5 and 10",
+   "wrong_answer": "k set at test time from dev data",
+   "paper": "rag",
+   "evidence": [
+    [
+     "We consider k \u2208 {5, 10} for training"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "id": "rag-near_identical-6",
+   "note": "clarified k; wrong_answer was not a real alternative",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "How many training examples are in the SearchQA split used for Jeopardy question generation?",
+   "answer": "100K",
+   "wrong_answer": "14K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "id": "rag-near_identical-8",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "In the dev-set ablations (Table 6), what Exact Match score does RAG-Token get on NQ?",
+   "answer": "43.5",
+   "wrong_answer": "44.1",
+   "paper": "rag",
+   "evidence": [
+    [
+     "RAG-Token 43.5 54.8 46.5 51.9 17.9 22.6 56.2 49.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     35,
+     36
+    ]
+   ],
+   "id": "rag-near_identical-14",
+   "note": "43.5 is the dev-set ablation (Table 6); Table 1 test score is 44.1, so the question now names the table",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "At how many retrieved documents does RAG-Token performance peak in Open-domain QA?",
+   "answer": "10",
+   "wrong_answer": "5",
+   "paper": "rag",
+   "evidence": [
+    [
+     "performance peaks for RAG-Token at 10 retrieved documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "id": "rag-near_identical-16",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the inference latency of RAG compare to a similarly sized dense retrieval model when deployed on a single GPU?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-75",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors evaluate the performance of RAG on multilingual datasets, such as XQuAD or TyDiQA?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-76",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the total computational cost, in GPU-hours, required to train the RAG-Sequence and RAG-Token models from scratch?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-77",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the retrieval accuracy change if the dense retriever is fine-tuned on a domain-specific corpus rather than the general Wikipedia dump?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-78",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What are the carbon emissions or energy consumption metrics associated with the training and inference of the RAG models?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-80",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "direct",
+   "question": "By how many times can LoRA reduce the number of trainable parameters compared to full fine-tuning?",
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "id": "lora-direct-0",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "What is the total number of trainable parameters used in the experiment presented in Table 5?",
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "id": "lora-direct-17",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "What is the inference latency of LoRA for GPT-2 medium with a batch size of 1 and sequence length of 128?",
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "id": "lora-direct-3",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "How many trainable parameters does RoBERTa base use with the LoRA method?",
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "id": "lora-direct-8",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "direct",
+   "question": "In Table 4, what is the smallest number of trainable parameters used for GPT-3 with LoRA?",
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "id": "lora-direct-12",
+   "note": "Table 4 has two GPT-3 (LoRA) rows (4.7M and 37.7M); now asks for the smaller",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "paraphrased",
+   "question": "What is the magnitude of the decrease in adjustable weights when using this method versus training the entire model?",
+   "id": "lora-paraphrased-23",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "paraphrased",
+   "question": "How many adjustable weights were active during the evaluation shown in the fifth table of the study?",
+   "id": "lora-paraphrased-63",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "paraphrased",
+   "question": "How much time does the adapted GPT-2 medium model take to process a single input of 128 tokens during evaluation?",
+   "id": "lora-paraphrased-31",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "paraphrased",
+   "question": "What is the size of the adjustable component when applying the low-rank adaptation technique to the base version of the RoBERTa model?",
+   "id": "lora-paraphrased-43",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "paraphrased",
+   "question": "In the fourth table, what is the lowest count of adjustable weights reported for the GPT-3 variant that uses this method?",
+   "id": "lora-paraphrased-51",
+   "note": "same fix",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "verbose",
+   "question": "Researchers are often concerned about the computational cost and memory requirements of adapting large models to specific tasks. To understand the efficiency gains offered by this specific technique, it is important to quantify the reduction in the size of the parameter space that needs to be updated. By how many times can LoRA reduce the number of trainable parameters compared to full fine-tuning?",
+   "id": "lora-verbose-24",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "verbose",
+   "question": "Researchers often check how many weights a method trains to judge its efficiency. Section 7.1 compares adapting different attention weights under a fixed budget. What is the total number of trainable parameters reported for the experiment in Table 5?",
+   "id": "lora-verbose-64",
+   "note": "removed 'final performance benchmark' (Table 5 is not the final benchmark)",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "verbose",
+   "question": "You are evaluating the efficiency of the LoRA method compared to full fine-tuning. Specifically, you need to know the computational overhead during the prediction phase for a standard configuration. What is the inference latency of LoRA for GPT-2 medium with a batch size of 1 and sequence length of 128?",
+   "id": "lora-verbose-32",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "verbose",
+   "question": "Researchers often look for ways to fine-tune large language models without updating every single weight, which saves significant computational resources. By using a specific adaptation method that only modifies a small subset of the network, one can drastically reduce the memory footprint. In this context, what is the exact count of active parameters for the base RoBERTa model when this technique is applied?",
+   "id": "lora-verbose-44",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "verbose",
+   "question": "Researchers compare adaptation methods by how many weights each one trains. Table 4 reports two LoRA configurations for GPT-3. What is the smaller number of trainable parameters among them?",
+   "id": "lora-verbose-52",
+   "note": "same fix",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "keyword",
+   "question": "LoRA parameter reduction factor",
+   "id": "lora-keyword-25",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "keyword",
+   "question": "Table 5 trainable parameters",
+   "id": "lora-keyword-65",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "keyword",
+   "question": "LoRA GPT-2 medium latency batch size 1",
+   "id": "lora-keyword-33",
+   "note": "added batch size: Table 1 has three latency columns",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "keyword",
+   "question": "RoBERTa base LoRA parameters",
+   "id": "lora-keyword-45",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "keyword",
+   "question": "GPT-3 LoRA smallest trainable parameters Table 4",
+   "id": "lora-keyword-53",
+   "note": "same fix",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "plain_language",
+   "question": "How much smaller is the part of the system that needs to be changed when using this new method compared to changing the whole system?",
+   "id": "lora-plain_language-26",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "plain_language",
+   "question": "In the results shown in the fifth table, how many parts of the system were actually changed or learned during the test?",
+   "id": "lora-plain_language-66",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "plain_language",
+   "question": "How long does the updated GPT-2 medium model take to process one short input of 128 word pieces at a time?",
+   "id": "lora-plain_language-34",
+   "note": "sequence length is in tokens, not words, and it is one forward pass",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "plain_language",
+   "question": "If you use a special shortcut to update the RoBERTa base model instead of changing the whole thing, how many tiny settings actually get changed?",
+   "id": "lora-plain_language-46",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "plain_language",
+   "question": "In the fourth table, what is the smallest number of adjustable settings used when the GPT-3 model is updated with LoRA?",
+   "id": "lora-plain_language-54",
+   "note": "same fix",
+   "answer_kind": "number"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Which GPU did the LoRA paper use for its main experiments, and which GPU was used to measure the adapter latency in Table 1?",
+   "answer": "NVIDIA Tesla V100 for the experiments; NVIDIA Quadro RTX8000 for Table 1",
+   "base_id": "lora-f7+lora-f5",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We use NVIDIA Tesla V100 for all experiments"
+    ],
+    [
+     "We use an NVIDIA Quadro RTX8000"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     22
+    ],
+    [
+     14
+    ]
+   ],
+   "id": "lora-multi_hop-75",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How large is one LoRA checkpoint for GPT-3 175B, and how much storage do 100 adapted models need in total?",
+   "answer": "about 35MB per checkpoint; about 354GB for 100 adapted models (vs about 35TB with full fine-tuning)",
+   "base_id": "lora-f1+lora-f7",
+   "paper": "lora",
+   "evidence": [
+    [
+     "(from 350GB to 35MB)"
+    ],
+    [
+     "storing 100 adapted models only requires"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ],
+    [
+     23
+    ]
+   ],
+   "id": "lora-multi_hop-76",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Which two models in the LoRA paper's results use exactly 4.7M trainable LoRA parameters?",
+   "answer": "DeBERTa XXL and GPT-3 175B",
+   "base_id": "lora-f9+lora-f6",
+   "paper": "lora",
+   "evidence": [
+    [
+     "DeB (LoRA) 4.7M 91.9"
+    ],
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     25
+    ],
+    [
+     33
+    ]
+   ],
+   "id": "lora-multi_hop-77",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "At batch size 1 on GPT-2 medium, how much extra inference latency does AdapterH add, and how much does LoRA add?",
+   "answer": "AdapterH adds about 30.3%; LoRA adds none (same as fine-tuning)",
+   "base_id": "lora-f12+lora-f7",
+   "paper": "lora",
+   "evidence": [
+    [
+     "25.8\u00b12.2 (+30.3%)"
+    ],
+    [
+     "no additional inference latency"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ],
+    [
+     1,
+     17
+    ]
+   ],
+   "id": "lora-multi_hop-78",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Roughly what share of RoBERTa base's parameters does LoRA train?",
+   "answer": "about 0.24% (0.3M of 125M)",
+   "base_id": "lora-f6+lora-f5",
+   "paper": "lora",
+   "evidence": [
+    [
+     "pre-trained RoBERTa base (125M)"
+    ],
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     30
+    ],
+    [
+     24
+    ]
+   ],
+   "id": "lora-multi_hop-79",
+   "note": "rewritten",
+   "answer_kind": "text"
+  },
+  {
+   "type": "near_identical",
+   "question": "By how many times does LoRA reduce the number of trainable parameters?",
+   "answer": "10,000 times",
+   "wrong_answer": "3 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "id": "lora-near_identical-1",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the training throughput per V100 GPU for full fine-tuning of GPT-3 175B?",
+   "answer": "32.5 tokens/s",
+   "wrong_answer": "43.1 tokens/s",
+   "paper": "lora",
+   "evidence": [
+    [
+     "training throughput for full fine-tuning is 32.5 tokens/s per V100 GPU"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     23
+    ]
+   ],
+   "id": "lora-near_identical-7",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the number of trainable parameters for the GPT-2 L (LoRA) model?",
+   "answer": "0.77M",
+   "wrong_answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 L (LoRA) 0.77M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "id": "lora-near_identical-11",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the WikiSQL validation accuracy for GPT-3 (LoRA) with 4.7M trainable parameters?",
+   "answer": "73.4",
+   "wrong_answer": "74.0",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "id": "lora-near_identical-13",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the validation accuracy on WikiSQL for LoRA with rank r=4 when adapting both Wq and Wv?",
+   "answer": "73.7",
+   "wrong_answer": "73.8",
+   "paper": "lora",
+   "evidence": [
+    [
+     "W , W 73.4 73.3 73.7 73.8 73.5"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "id": "lora-near_identical-18",
+   "note": "",
+   "answer_kind": "number"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What was the total dollar cost of running the GPT-3 175B experiments with LoRA?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-81",
+   "note": "rewritten: Table 1 does report batch size 32, so the draft was answerable",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors evaluate the performance of LoRA on multimodal models, such as vision-language transformers, or was the study limited strictly to text-only language models?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-82",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the energy consumption in kilowatt-hours for training the GPT-3 175B model with LoRA compared to full fine-tuning, and how does this impact the carbon footprint of the experiment?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-83",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors test the effectiveness of LoRA on models with different architectural modifications, such as Mixture-of-Experts (MoE) layers, or only on standard dense transformer architectures?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-85",
+   "note": "",
+   "answer_kind": "refusal"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the impact of LoRA on the model's ability to retain knowledge from pre-training (catastrophic forgetting) when fine-tuned on highly specialized domains like medical or legal text?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-86",
+   "note": "",
+   "answer_kind": "refusal"
+  }
+ ]
+}
