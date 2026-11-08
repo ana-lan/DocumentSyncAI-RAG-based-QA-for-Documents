@@ -1,0 +1,98 @@
+{
+  "hardware": {
+    "bandwidth_gb_s": 300,
+    "tflops_dense": {
+      "bf16": 121.0,
+      "fp8": 242.5
+    }
+  },
+  "model": {
+    "layers": 28,
+    "hidden": 3584,
+    "intermediate": 18944,
+    "kv_heads": 4,
+    "head_dim": 128,
+    "vocab": 152064
+  },
+  "params": {
+    "layers": 6525288448,
+    "embed": 544997376,
+    "lm_head": 544997376
+  },
+  "rows": [
+    {
+      "precision": "bf16",
+      "concurrency": 1,
+      "bound": "memory",
+      "pred_step_ms": 47.4,
+      "meas_itl_p50_ms": 57.0,
+      "meas_tpot_p50_ms": 57.1,
+      "eff_vs_itl": 0.83,
+      "eff_vs_tpot": 0.83,
+      "pred_ceiling_tok_s": 21.1,
+      "meas_output_tok_s": 17.2,
+      "pred_prefill_ms": 112.2,
+      "meas_ttft_p50_ms": 303.9
+    },
+    {
+      "precision": "bf16",
+      "concurrency": 8,
+      "bound": "memory",
+      "pred_step_ms": 48.9,
+      "meas_itl_p50_ms": 60.5,
+      "meas_tpot_p50_ms": 65.7,
+      "eff_vs_itl": 0.808,
+      "eff_vs_tpot": 0.744,
+      "pred_ceiling_tok_s": 163.6,
+      "meas_output_tok_s": 115.5,
+      "pred_prefill_ms": 112.2,
+      "meas_ttft_p50_ms": 976.6
+    },
+    {
+      "precision": "bf16",
+      "concurrency": 32,
+      "bound": "memory",
+      "pred_step_ms": 54.2,
+      "meas_itl_p50_ms": 73.0,
+      "meas_tpot_p50_ms": 99.2,
+      "eff_vs_itl": 0.742,
+      "eff_vs_tpot": 0.546,
+      "pred_ceiling_tok_s": 590.6,
+      "meas_output_tok_s": 297.7,
+      "pred_prefill_ms": 112.2,
+      "meas_ttft_p50_ms": 1937.9
+    },
+    {
+      "precision": "fp8",
+      "concurrency": 1,
+      "bound": "memory",
+      "pred_step_ms": 25.6,
+      "meas_itl_p50_ms": 34.8,
+      "meas_tpot_p50_ms": 34.8,
+      "eff_vs_itl": 0.735,
+      "eff_vs_tpot": 0.735,
+      "pred_ceiling_tok_s": 39.1,
+      "meas_output_tok_s": 28.2,
+      "pred_prefill_ms": 56.0,
+      "meas_ttft_p50_ms": 214.6
+    },
+    {
+      "precision": "fp8",
+      "concurrency": 32,
+      "bound": "memory",
+      "pred_step_ms": 32.4,
+      "meas_itl_p50_ms": 46.6,
+      "meas_tpot_p50_ms": 66.1,
+      "eff_vs_itl": 0.696,
+      "eff_vs_tpot": 0.491,
+      "pred_ceiling_tok_s": 986.7,
+      "meas_output_tok_s": 444.8,
+      "pred_prefill_ms": 56.0,
+      "meas_ttft_p50_ms": 1354.2
+    }
+  ],
+  "c1_fit": {
+    "bandwidth_gb_s": 293.9,
+    "overhead_ms": 8.7
+  }
+}
