@@ -1,0 +1,24 @@
+# The app image with the week 2 code and eval set. Benchmarks run inside this pod,
+# next to vLLM, so network latency from the laptop never enters the measurements.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: docsync
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: docsync}
+  template:
+    metadata:
+      labels: {app: docsync}
+    spec:
+      containers:
+        - name: app
+          image: us-central1-docker.pkg.dev/docsync-vllm-anagha/docsync/app:v3
+          env:
+            - {name: LLM_BASE_URL, value: "http://vllm:8000/v1"}
+            - {name: LLM_API_KEY, value: "EMPTY"}
+            - {name: LLM_MODEL, value: "Qwen/Qwen2.5-7B-Instruct"}
+          resources:
+            requests: {cpu: "1", memory: 2Gi}
+            limits: {cpu: "2", memory: 4Gi}
