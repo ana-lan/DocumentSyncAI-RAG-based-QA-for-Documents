@@ -76,6 +76,9 @@ case "$1" in
     # pods first, then the disk claim (so its disk is deleted), then the cluster, then the reservation
     kubectl delete deploy vllm docsync --ignore-not-found || true
     kubectl delete pvc hf-cache --ignore-not-found --wait=true || true
+    # the claim goes first, the disk behind it (its PV) a moment later; deleting the cluster
+    # before that leaves the 60 GB disk orphaned and billing, so wait for it
+    kubectl wait --for=delete pv --all --timeout=180s || true
     kubectl wait --for=delete pv --all --timeout=180s || true
     gcloud container clusters delete "$CLUSTER" --zone "$ZONE" --quiet || true
     gcloud compute reservations delete "$RES" --zone "$ZONE" --quiet || true
