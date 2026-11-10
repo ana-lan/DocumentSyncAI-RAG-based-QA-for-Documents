@@ -1,4 +1,4 @@
-# Config D, stretch: FP8 target + Qwen2.5-0.5B draft, 5 speculative tokens (E7)
+# Config D, stretch: FP8 + n-gram speculative decoding (prompt lookup), 5 tokens (E7)
 # Pinned to the vLLM version week 1 ran. Applying a different config file replaces
 # the running server (strategy Recreate: one GPU, so the old pod stops first).
 apiVersion: apps/v1

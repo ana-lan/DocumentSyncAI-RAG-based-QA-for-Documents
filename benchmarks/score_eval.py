@@ -25,7 +25,7 @@ import re
 import time
 from collections import defaultdict
 
-from openai import OpenAI, RateLimitError
+from openai import OpenAI, RateLimitError, APITimeoutError, APIConnectionError
 
 from config import LLM_BASE_URL, LLM_MODEL
 from benchmarks.metrics import is_refusal, contains_any
@@ -82,7 +82,7 @@ Return a JSON object with two keys:
 Return only the JSON object."""
 
 _keys = [k for k in (os.getenv("GROQ_API_KEY"), os.getenv("GROQ_JUDGE_API_KEY")) if k]
-_clients = [OpenAI(base_url=LLM_BASE_URL, api_key=k, max_retries=0) for k in _keys]
+_clients = [OpenAI(base_url=LLM_BASE_URL, api_key=k, max_retries=0, timeout=90) for k in _keys]
 _turn = 0
 
 
@@ -115,16 +115,23 @@ def judge(row: dict, cache: dict) -> dict:
             reply = client.chat.completions.create(
                 model=JUDGE_MODEL, temperature=0, max_tokens=300,
                 messages=[{"role": "user", "content": prompt}]).choices[0].message.content
-        except RateLimitError:
-            time.sleep(15 * (attempt + 1))
+        except RateLimitError as e:
+            wait = 15 * (attempt + 1)
+            print(f"    {row['id']}: rate limit, waiting {wait}s ({str(e)[:150]})", flush=True)
+            time.sleep(wait)
             continue
-        reply = re.sub(r"<think>.*?</think>", "", reply, flags=re.S)
+        except (APITimeoutError, APIConnectionError) as e:
+            print(f"    {row['id']}: no answer from Groq ({type(e).__name__}), retrying", flush=True)
+            continue
+        reply = re.sub(r"<think>.*?</think>", "", reply or "", flags=re.S)
         try:
             verdict = json.loads(reply[reply.find("{"): reply.rfind("}") + 1])
             out = {"correct": bool(verdict["correct"]), "supported": bool(verdict["supported"])}
             cache[key] = out
+            save_cache(cache)                 # save every verdict, so a crash or Ctrl+C loses nothing
             return out
         except (ValueError, KeyError):
+            print(f"    {row['id']}: judge reply unreadable, retrying: {reply[:120]!r}", flush=True)
             continue
     raise RuntimeError(f"judge failed for {row['id']}")
 
@@ -187,9 +194,9 @@ def score_file(path: str, cache: dict, faithfulness: bool) -> dict:
             if kind == "text":
                 r["correct"] = False          # text answer that refused
             r["supported"] = None
-        if i % 20 == 0:
+        if i % 5 == 0:
             save_cache(cache)
-            print(f"  scored {i}/{len(rows)}")
+            print(f"  scored {i}/{len(rows)}", flush=True)
     save_cache(cache)
 
     out_path = path.replace("quality_", "scored_")
