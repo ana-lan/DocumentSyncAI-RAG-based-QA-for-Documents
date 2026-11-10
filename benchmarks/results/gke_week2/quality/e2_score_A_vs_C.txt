@@ -1,0 +1,81 @@
+Judge: qwen/qwen3.8-27b | cached verdicts: 157
+
+Scoring benchmarks/results/gke_week2/quality/quality_e2_bf16_A_r1.json
+  scored 5/44
+  scored 10/44
+  scored 15/44
+  scored 20/44
+    rag-session-9: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 25/44
+    rag-session-10: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-12: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-13: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-0: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 30/44
+    lora-session-1: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-5: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 35/44
+    lora-session-6: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-7: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-10: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 40/44
+    lora-session-11: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+
+Scoring benchmarks/results/gke_week2/quality/quality_e2_bf16_C_r1.json
+    attention-session-0: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    attention-session-1: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    attention-session-4: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 5/44
+    attention-session-5: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    attention-session-6: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    attention-session-9: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 10/44
+    attention-session-10: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    attention-session-12: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    attention-session-13: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 15/44
+    rag-session-0: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-1: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-2: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 20/44
+    rag-session-5: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-7: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-9: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 25/44
+    rag-session-10: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-11: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-12: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    rag-session-13: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 30/44
+    lora-session-1: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-2: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-3: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-5: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 35/44
+    lora-session-7: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+    lora-session-8: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+  scored 40/44
+    lora-session-14: rate limit, waiting 15s (Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01kwa65n28fxc9em26ha9rfcra` service tier)
+
+=== e2_bf16_A_r1 ===  accuracy 32/44 = 72.7%  (95% CI 58.2% to 83.7%)
+type               n    acc           95% CI
+session           44    73%     58% to  84%
+
+evidence retrieved (29): accuracy 97%
+evidence NOT retrieved (15): refused 33% (honest), answered right anyway 27%, answered WRONG 40% (hallucination risk)
+faithfulness (answers backed by their passages): 100% of 38
+citations: 100% of answers cite a passage; 50% of those cite the right one
+
+=== e2_bf16_C_r1 ===  accuracy 33/44 = 75.0%  (95% CI 60.6% to 85.4%)
+type               n    acc           95% CI
+session           44    75%     61% to  85%
+
+evidence retrieved (29): accuracy 100%
+evidence NOT retrieved (15): refused 47% (honest), answered right anyway 27%, answered WRONG 27% (hallucination risk)
+faithfulness (answers backed by their passages): 100% of 37
+citations: 100% of answers cite a passage; 62% of those cite the right one
+
+=== e2_bf16_A_r1 vs e2_bf16_C_r1 ===
+identical answers, word for word: 5/44
+only e2_bf16_A_r1 right: 1 | only e2_bf16_C_r1 right: 2
+McNemar exact p = 1.0  (above 0.05: no evidence the two differ in accuracy)

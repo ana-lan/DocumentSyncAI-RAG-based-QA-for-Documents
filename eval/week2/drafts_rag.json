@@ -1,0 +1,1482 @@
+{
+ "items": [
+  {
+   "type": "direct",
+   "question": "What is the non-parametric memory in the RAG models described in the paper?",
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "id": "rag-direct-0"
+  },
+  {
+   "type": "direct",
+   "question": "What specific retriever model is used in the RAG architecture described in the paper?",
+   "answer": "Dense Passage Retriever (DPR)",
+   "paper": "rag",
+   "evidence": [
+    [
+     "The retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4
+    ]
+   ],
+   "base_id": "rag-f1",
+   "id": "rag-direct-1"
+  },
+  {
+   "type": "direct",
+   "question": "What architecture does the retrieval component p_eta(z|x) in RAG follow?",
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "id": "rag-direct-2"
+  },
+  {
+   "type": "near_identical",
+   "question": "In the RAG-Sequence model, how is the retrieved document treated during generation?",
+   "answer": "the same document to predict each target token",
+   "wrong_answer": "a different document for each target token",
+   "paper": "rag",
+   "evidence": [
+    [
+     "the model uses the same document to predict each target token"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "id": "rag-near_identical-3"
+  },
+  {
+   "type": "direct",
+   "question": "How many parameters does the BART-large generator used in the paper have?",
+   "answer": "400M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     12
+    ]
+   ],
+   "base_id": "rag-f3",
+   "id": "rag-direct-4"
+  },
+  {
+   "type": "direct",
+   "question": "How many documents were created from the Wikipedia dump used in the experiments?",
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "id": "rag-direct-5"
+  },
+  {
+   "type": "near_identical",
+   "question": "What values of k were considered for training in the RAG experiments?",
+   "answer": "5, 10",
+   "wrong_answer": "10",
+   "paper": "rag",
+   "evidence": [
+    [
+     "We consider k \u2208 {5, 10} for training"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "id": "rag-near_identical-6"
+  },
+  {
+   "type": "direct",
+   "question": "How many test examples are in the SearchQA split used for Jeopardy question generation?",
+   "answer": "27K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "rag-f5",
+   "id": "rag-direct-7"
+  },
+  {
+   "type": "near_identical",
+   "question": "How many training examples are in the SearchQA split used for Jeopardy question generation?",
+   "answer": "100K",
+   "wrong_answer": "14K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "id": "rag-near_identical-8"
+  },
+  {
+   "type": "direct",
+   "question": "What accuracy did RAG achieve on NQ when the correct answer was not in any retrieved document?",
+   "answer": "11.8%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "base_id": "rag-f6",
+   "id": "rag-direct-9"
+  },
+  {
+   "type": "near_identical",
+   "question": "What was the Q-BLEU-1 score for RAG-Token on the Jeopardy dataset?",
+   "answer": "17.3",
+   "wrong_answer": "14.7",
+   "paper": "rag",
+   "evidence": [
+    [
+     "RAG-Tok. 17.3 22.2 40.1 41.5"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     25
+    ]
+   ],
+   "id": "rag-near_identical-10"
+  },
+  {
+   "type": "direct",
+   "question": "What is the name of the dataset used for the fact verification results shown in Table 2?",
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "id": "rag-direct-11"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the currency needed in Scotland according to the RAG-T model?",
+   "answer": "Pound",
+   "wrong_answer": "Pound sterling",
+   "paper": "rag",
+   "evidence": [
+    [
+     "RAG-T Pound is the currency needed in Scotland."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     31
+    ]
+   ],
+   "id": "rag-near_identical-12"
+  },
+  {
+   "type": "direct",
+   "question": "In what percentage of cases is the top retrieved document from a gold article in FEVER?",
+   "answer": "71%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "top retrieved document is from a gold article in 71% of cases"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ]
+   ],
+   "base_id": "rag-f8",
+   "id": "rag-direct-13"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the Exact Match score for RAG-Token on the NQ dataset?",
+   "answer": "43.5",
+   "wrong_answer": "44.0",
+   "paper": "rag",
+   "evidence": [
+    [
+     "RAG-Token 43.5 54.8 46.5 51.9 17.9 22.6 56.2 49.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     35,
+     36
+    ]
+   ],
+   "id": "rag-near_identical-14"
+  },
+  {
+   "type": "direct",
+   "question": "What is the accuracy of RAG when using the 2018 index to answer questions about 2016 world leaders?",
+   "answer": "12%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "12% with the 2018 index and 2016 leaders"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "rag-f9",
+   "id": "rag-direct-15"
+  },
+  {
+   "type": "near_identical",
+   "question": "At how many retrieved documents does RAG-Token performance peak in Open-domain QA?",
+   "answer": "10",
+   "wrong_answer": "5",
+   "paper": "rag",
+   "evidence": [
+    [
+     "performance peaks for RAG-Token at 10 retrieved documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "id": "rag-near_identical-16"
+  },
+  {
+   "type": "direct",
+   "question": "What are the two key features of the RAG memory that distinguish it from distributed representations?",
+   "answer": "human-readable and human-writable",
+   "paper": "rag",
+   "evidence": [
+    [
+     "makes the memory both (i) human-readable"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     41
+    ]
+   ],
+   "base_id": "rag-f10",
+   "id": "rag-direct-17"
+  },
+  {
+   "type": "direct",
+   "question": "Which organization helped the authors open-source the code to run RAG models?",
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "id": "rag-direct-18"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "paraphrased",
+   "question": "In the architecture proposed by the authors, what specific data structure serves as the external knowledge base for the retrieval component?",
+   "id": "rag-paraphrased-19"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "verbose",
+   "question": "The paper introduces a hybrid approach that combines parametric and non-parametric components to handle knowledge-intensive tasks. To understand how the model accesses external information without updating its weights, one must identify the specific storage mechanism used. What is the non-parametric memory in the RAG models described in the paper?",
+   "id": "rag-verbose-20"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "keyword",
+   "question": "RAG non-parametric memory",
+   "id": "rag-keyword-21"
+  },
+  {
+   "answer": "a dense vector index of Wikipedia",
+   "paper": "rag",
+   "evidence": [
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1,
+     4
+    ]
+   ],
+   "base_id": "rag-f0",
+   "type": "plain_language",
+   "question": "What kind of searchable database does the system use to look up facts from Wikipedia?",
+   "id": "rag-plain_language-22"
+  },
+  {
+   "answer": "Dense Passage Retriever (DPR)",
+   "paper": "rag",
+   "evidence": [
+    [
+     "The retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4
+    ]
+   ],
+   "base_id": "rag-f1",
+   "type": "paraphrased",
+   "question": "Which component handles the initial search for relevant documents in the proposed system?",
+   "id": "rag-paraphrased-23"
+  },
+  {
+   "answer": "Dense Passage Retriever (DPR)",
+   "paper": "rag",
+   "evidence": [
+    [
+     "The retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4
+    ]
+   ],
+   "base_id": "rag-f1",
+   "type": "verbose",
+   "question": "Understanding the data flow is crucial for replicating the results. Specifically, I need to know which algorithm is responsible for fetching the context from the knowledge base before the language model generates the final response. What specific retriever model is used in the RAG architecture described in the paper?",
+   "id": "rag-verbose-24"
+  },
+  {
+   "answer": "Dense Passage Retriever (DPR)",
+   "paper": "rag",
+   "evidence": [
+    [
+     "The retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4
+    ]
+   ],
+   "base_id": "rag-f1",
+   "type": "keyword",
+   "question": "RAG paper retriever model",
+   "id": "rag-keyword-25"
+  },
+  {
+   "answer": "Dense Passage Retriever (DPR)",
+   "paper": "rag",
+   "evidence": [
+    [
+     "The retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4
+    ]
+   ],
+   "base_id": "rag-f1",
+   "type": "plain_language",
+   "question": "In the system described in the study, what tool is used to look up the necessary background information before writing the answer?",
+   "id": "rag-plain_language-26"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "paraphrased",
+   "question": "What structural design is used for the module that retrieves relevant documents based on the input query in the RAG model?",
+   "id": "rag-paraphrased-27"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "verbose",
+   "question": "The RAG framework combines a parametric memory with a non-parametric memory to handle knowledge-intensive tasks. Understanding the specific design of the retrieval mechanism is crucial for implementing similar systems. What architecture does the retrieval component p_eta(z|x) in RAG follow?",
+   "id": "rag-verbose-28"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "keyword",
+   "question": "RAG retrieval component architecture",
+   "id": "rag-keyword-29"
+  },
+  {
+   "answer": "bi-encoder architecture",
+   "paper": "rag",
+   "evidence": [
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     11
+    ]
+   ],
+   "base_id": "rag-f2",
+   "type": "plain_language",
+   "question": "In the RAG system, what kind of structure is used for the part that looks up information from a database to help answer questions?",
+   "id": "rag-plain_language-30"
+  },
+  {
+   "answer": "400M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     12
+    ]
+   ],
+   "base_id": "rag-f3",
+   "type": "paraphrased",
+   "question": "What is the total size of the large-scale language model employed as the generator in the study?",
+   "id": "rag-paraphrased-31"
+  },
+  {
+   "answer": "400M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     12
+    ]
+   ],
+   "base_id": "rag-f3",
+   "type": "verbose",
+   "question": "The paper utilizes a specific large-scale transformer architecture for its generation component. Understanding the scale of this model is crucial for assessing its computational requirements and capacity. What is the parameter count of the BART-large model used?",
+   "id": "rag-verbose-32"
+  },
+  {
+   "answer": "400M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     12
+    ]
+   ],
+   "base_id": "rag-f3",
+   "type": "keyword",
+   "question": "BART-large parameter count",
+   "id": "rag-keyword-33"
+  },
+  {
+   "answer": "400M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     12
+    ]
+   ],
+   "base_id": "rag-f3",
+   "type": "plain_language",
+   "question": "How many adjustable settings does the large text-generating computer program used in the research have?",
+   "id": "rag-plain_language-34"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "paraphrased",
+   "question": "What was the total count of text segments generated from the Wikipedia corpus for the study?",
+   "id": "rag-paraphrased-35"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "verbose",
+   "question": "The authors utilized a massive dataset derived from Wikipedia to support their retrieval system. Understanding the scale of this data is crucial for evaluating the model's capacity. How many individual documents were produced from this source material?",
+   "id": "rag-verbose-36"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "keyword",
+   "question": "Wikipedia document count",
+   "id": "rag-keyword-37"
+  },
+  {
+   "answer": "21M",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "rag-f4",
+   "type": "plain_language",
+   "question": "How many separate pieces of writing were made from the Wikipedia data used in the tests?",
+   "id": "rag-plain_language-38"
+  },
+  {
+   "answer": "27K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "rag-f5",
+   "type": "paraphrased",
+   "question": "What is the size of the evaluation set for the trivia-based dataset?",
+   "id": "rag-paraphrased-39"
+  },
+  {
+   "answer": "27K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "rag-f5",
+   "type": "verbose",
+   "question": "The paper evaluates its model on a specific subset of data derived from a popular game show. To understand the scale of this evaluation, one must look at the statistics provided for that particular split. How many test examples are in the SearchQA split used for Jeopardy question generation?",
+   "id": "rag-verbose-40"
+  },
+  {
+   "answer": "27K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "rag-f5",
+   "type": "keyword",
+   "question": "SearchQA Jeopardy test size",
+   "id": "rag-keyword-41"
+  },
+  {
+   "answer": "27K",
+   "paper": "rag",
+   "evidence": [
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "rag-f5",
+   "type": "plain_language",
+   "question": "In the section where the authors test their system using questions from the game show Jeopardy, how many individual questions were used for the final check?",
+   "id": "rag-plain_language-42"
+  },
+  {
+   "answer": "11.8%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "base_id": "rag-f6",
+   "type": "paraphrased",
+   "question": "In the scenario where the relevant information was absent from the retrieved context, what was the performance metric on the Natural Questions dataset?",
+   "id": "rag-paraphrased-43"
+  },
+  {
+   "answer": "11.8%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "base_id": "rag-f6",
+   "type": "verbose",
+   "question": "Researchers often evaluate how robust a model is when its external knowledge source fails to provide the necessary facts. Understanding this failure mode is crucial for assessing the reliability of the system in real-world applications where retrieval can be imperfect. Given this context, what was the specific success rate recorded on the NQ benchmark when the ground truth was missing from the retrieved passages?",
+   "id": "rag-verbose-44"
+  },
+  {
+   "answer": "11.8%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "base_id": "rag-f6",
+   "type": "keyword",
+   "question": "RAG NQ no retrieval accuracy",
+   "id": "rag-keyword-45"
+  },
+  {
+   "answer": "11.8%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "base_id": "rag-f6",
+   "type": "plain_language",
+   "question": "When the system looked up information but didn't find the right answer in the documents it pulled up, how often did it still guess correctly on the Natural Questions test?",
+   "id": "rag-plain_language-46"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "paraphrased",
+   "question": "Which benchmark collection served as the basis for the fact-checking performance metrics presented in the second table of the study?",
+   "id": "rag-paraphrased-47"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "verbose",
+   "question": "The paper evaluates its model's ability to verify claims against external knowledge sources. To understand the scope of this evaluation, one needs to identify the specific corpus utilized for these tests. What is the name of the dataset used for the fact verification results shown in Table 2?",
+   "id": "rag-verbose-48"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "keyword",
+   "question": "Table 2 fact verification dataset",
+   "id": "rag-keyword-49"
+  },
+  {
+   "answer": "FEVER",
+   "paper": "rag",
+   "evidence": [
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "rag-f7",
+   "type": "plain_language",
+   "question": "What is the name of the collection of news articles and claims that the researchers used to test if their system could correctly check facts, as shown in Table 2?",
+   "id": "rag-plain_language-50"
+  },
+  {
+   "answer": "71%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "top retrieved document is from a gold article in 71% of cases"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ]
+   ],
+   "base_id": "rag-f8",
+   "type": "paraphrased",
+   "question": "How frequently does the system identify the correct source material as its primary evidence in the FEVER dataset?",
+   "id": "rag-paraphrased-51"
+  },
+  {
+   "answer": "71%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "top retrieved document is from a gold article in 71% of cases"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ]
+   ],
+   "base_id": "rag-f8",
+   "type": "verbose",
+   "question": "Researchers are interested in understanding the reliability of the retrieval component within the proposed framework. Specifically, they want to know how often the most relevant piece of information found by the system actually comes from the verified correct source in the FEVER benchmark. What is the percentage of instances where the top retrieved document originates from a gold article in FEVER?",
+   "id": "rag-verbose-52"
+  },
+  {
+   "answer": "71%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "top retrieved document is from a gold article in 71% of cases"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ]
+   ],
+   "base_id": "rag-f8",
+   "type": "keyword",
+   "question": "FEVER top retrieval accuracy",
+   "id": "rag-keyword-53"
+  },
+  {
+   "answer": "71%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "top retrieved document is from a gold article in 71% of cases"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ]
+   ],
+   "base_id": "rag-f8",
+   "type": "plain_language",
+   "question": "When the system looks up information to answer a question, how often does it find the correct source as its first result in the FEVER test set?",
+   "id": "rag-plain_language-54"
+  },
+  {
+   "answer": "12%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "12% with the 2018 index and 2016 leaders"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "rag-f9",
+   "type": "paraphrased",
+   "question": "How effective was the system in identifying the correct heads of state from 2016 when relying on the 2018 dataset?",
+   "id": "rag-paraphrased-55"
+  },
+  {
+   "answer": "12%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "12% with the 2018 index and 2016 leaders"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "rag-f9",
+   "type": "verbose",
+   "question": "The paper evaluates the model's ability to handle temporal discrepancies between the training data and the query context. Specifically, it tests how the retrieval mechanism performs when the index is newer than the events being queried. What was the recorded accuracy for this specific scenario involving 2016 world leaders and the 2018 index?",
+   "id": "rag-verbose-56"
+  },
+  {
+   "answer": "12%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "12% with the 2018 index and 2016 leaders"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "rag-f9",
+   "type": "keyword",
+   "question": "RAG 2018 index 2016 leaders accuracy",
+   "id": "rag-keyword-57"
+  },
+  {
+   "answer": "12%",
+   "paper": "rag",
+   "evidence": [
+    [
+     "12% with the 2018 index and 2016 leaders"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "rag-f9",
+   "type": "plain_language",
+   "question": "When the system used its 2018 database to answer questions about who was leading countries in 2016, how often did it get the answer right?",
+   "id": "rag-plain_language-58"
+  },
+  {
+   "answer": "human-readable and human-writable",
+   "paper": "rag",
+   "evidence": [
+    [
+     "makes the memory both (i) human-readable"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     41
+    ]
+   ],
+   "base_id": "rag-f10",
+   "type": "paraphrased",
+   "question": "In what ways does the external storage component of the model allow for direct human interaction, unlike standard vector embeddings?",
+   "id": "rag-paraphrased-59"
+  },
+  {
+   "answer": "human-readable and human-writable",
+   "paper": "rag",
+   "evidence": [
+    [
+     "makes the memory both (i) human-readable"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     41
+    ]
+   ],
+   "base_id": "rag-f10",
+   "type": "verbose",
+   "question": "You are trying to understand the fundamental architectural difference between the proposed system and traditional neural networks. Specifically, you want to know how the external knowledge base allows for manual curation and inspection. What are the two specific properties of this memory that make it accessible to people?",
+   "id": "rag-verbose-60"
+  },
+  {
+   "answer": "human-readable and human-writable",
+   "paper": "rag",
+   "evidence": [
+    [
+     "makes the memory both (i) human-readable"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     41
+    ]
+   ],
+   "base_id": "rag-f10",
+   "type": "keyword",
+   "question": "RAG memory human readable writable",
+   "id": "rag-keyword-61"
+  },
+  {
+   "answer": "human-readable and human-writable",
+   "paper": "rag",
+   "evidence": [
+    [
+     "makes the memory both (i) human-readable"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     41
+    ]
+   ],
+   "base_id": "rag-f10",
+   "type": "plain_language",
+   "question": "What two qualities make the system's external database easy for people to read and edit, unlike the complex internal codes used by computers?",
+   "id": "rag-plain_language-62"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "paraphrased",
+   "question": "Who collaborated with the researchers to make the implementation publicly available?",
+   "id": "rag-paraphrased-63"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "verbose",
+   "question": "The authors of the paper on retrieval-augmented generation wanted to ensure their work was reproducible by the community. To facilitate this, they partnered with a well-known platform to release their tools. Which organization assisted them in open-sourcing the code for these models?",
+   "id": "rag-verbose-64"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "keyword",
+   "question": "RAG code open source partner",
+   "id": "rag-keyword-65"
+  },
+  {
+   "answer": "HuggingFace",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "base_id": "rag-f11",
+   "type": "plain_language",
+   "question": "Which company worked with the writers to share their computer program freely with the public?",
+   "id": "rag-plain_language-66"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many more parameters does the BART-large generator have compared to the number of test examples in the SearchQA split used for Jeopardy question generation?",
+   "answer": "399,973,000 (400M - 27K)",
+   "base_id": "rag-f3+rag-f5",
+   "paper": "rag",
+   "evidence": [
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ],
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     12
+    ],
+    [
+     20
+    ]
+   ],
+   "id": "rag-multi_hop-67"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the difference in the number of documents created from the Wikipedia dump and the number of test examples in the SearchQA split?",
+   "answer": "20,973,000 (21M - 27K)",
+   "base_id": "rag-f4+rag-f5",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ],
+    [
+     "with 100K train, 14K dev, and 27K test examples"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ],
+    [
+     20
+    ]
+   ],
+   "id": "rag-multi_hop-68"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Which is larger: the percentage of cases where the top retrieved document is from a gold article in FEVER, or the accuracy RAG achieved on NQ when the correct answer was not in any retrieved document?",
+   "answer": "The percentage of cases where the top retrieved document is from a gold article in FEVER (71%) is larger than the accuracy on NQ when the answer was missing (11.8%).",
+   "base_id": "rag-f8+rag-f6",
+   "paper": "rag",
+   "evidence": [
+    [
+     "top retrieved document is from a gold article in 71% of cases"
+    ],
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     32
+    ],
+    [
+     26
+    ]
+   ],
+   "id": "rag-multi_hop-69"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many times larger is the number of documents created from the Wikipedia dump than the number of parameters in the BART-large generator (in millions)?",
+   "answer": "52.5 times (21M / 400M is not correct, 21,000,000 / 400,000,000 = 0.0525. Let's rephrase to avoid confusion. Better: What is the ratio of the number of documents to the number of parameters in millions? 21/400 = 0.0525. Or simply compare the magnitudes. Let's try a different combination. How many more documents were created than the number of parameters in thousands? 21,000,000 - 400,000 = 20,600,000. This is a valid combination.",
+   "base_id": "rag-f4+rag-f3",
+   "paper": "rag",
+   "evidence": [
+    [
+     "to make a total of 21M documents"
+    ],
+    [
+     "BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ],
+    [
+     12
+    ]
+   ],
+   "id": "rag-multi_hop-70"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the sum of the accuracy RAG achieved on NQ when the correct answer was not in any retrieved document and the accuracy of RAG when using the 2018 index to answer questions about 2016 world leaders?",
+   "answer": "23.8% (11.8% + 12%)",
+   "base_id": "rag-f6+rag-f9",
+   "paper": "rag",
+   "evidence": [
+    [
+     "achieving 11.8% accuracy in such cases for NQ"
+    ],
+    [
+     "12% with the 2018 index and 2016 leaders"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ],
+    [
+     36
+    ]
+   ],
+   "id": "rag-multi_hop-71"
+  },
+  {
+   "type": "multi_hop",
+   "question": "Which organization helped open-source the code, and what is the non-parametric memory used in the RAG models?",
+   "answer": "HuggingFace helped open-source the code, and the non-parametric memory is a dense vector index of Wikipedia.",
+   "base_id": "rag-f11+rag-f0",
+   "paper": "rag",
+   "evidence": [
+    [
+     "HuggingFace for their help in open-sourcing code"
+    ],
+    [
+     "non-parametric memory is a dense vector index of Wikipedia"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "id": "rag-multi_hop-72"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What specific retriever model is used in the RAG architecture, and what architecture does the retrieval component follow?",
+   "answer": "The Dense Passage Retriever (DPR) is used, and it follows a bi-encoder architecture.",
+   "base_id": "rag-f1+rag-f2",
+   "paper": "rag",
+   "evidence": [
+    [
+     "The retriever (Dense Passage Retriever [26], henceforth DPR)"
+    ],
+    [
+     "DPR follows a bi-encoder architecture"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     4
+    ],
+    [
+     11
+    ]
+   ],
+   "id": "rag-multi_hop-73"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What are the two key features of the RAG memory, and what is the name of the dataset used for the fact verification results?",
+   "answer": "The two key features are human-readable and human-writable, and the dataset is FEVER.",
+   "base_id": "rag-f10+rag-f7",
+   "paper": "rag",
+   "evidence": [
+    [
+     "makes the memory both (i) human-readable"
+    ],
+    [
+     "Table 2 shows our results on FEVER."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     41
+    ],
+    [
+     29
+    ]
+   ],
+   "id": "rag-multi_hop-74"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the inference latency of RAG compare to a similarly sized dense retrieval model when deployed on a single GPU?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-75"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors evaluate the performance of RAG on multilingual datasets, such as XQuAD or TyDiQA?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-76"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the total computational cost, in GPU-hours, required to train the RAG-Sequence and RAG-Token models from scratch?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-77"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the retrieval accuracy change if the dense retriever is fine-tuned on a domain-specific corpus rather than the general Wikipedia dump?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-78"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the paper analyze the impact of the number of retrieved documents (k) on the final generation quality, specifically for k > 5?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-79"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What are the carbon emissions or energy consumption metrics associated with the training and inference of the RAG models?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-80"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does RAG perform on tasks requiring long-form generation, such as summarization, compared to its performance on short-answer QA?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-81"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors test the robustness of the model against adversarial perturbations in the retrieved documents?",
+   "answer": "I don't know",
+   "paper": "rag",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "rag-unanswerable-82"
+  }
+ ],
+ "dropped": []
+}

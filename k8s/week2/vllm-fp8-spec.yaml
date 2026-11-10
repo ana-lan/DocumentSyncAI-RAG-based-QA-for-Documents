@@ -1,0 +1,67 @@
+# Config D, stretch: FP8 + n-gram speculative decoding (prompt lookup), 5 tokens (E7)
+# Pinned to the vLLM version week 1 ran. Applying a different config file replaces
+# the running server (strategy Recreate: one GPU, so the old pod stops first).
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vllm
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels: {app: vllm}
+  template:
+    metadata:
+      labels: {app: vllm, config: fp8-spec}
+    spec:
+      enableServiceLinks: false   # no VLLM_* env vars injected from the Service
+      nodeSelector:
+        cloud.google.com/gke-accelerator: nvidia-l4
+      tolerations:
+        - key: nvidia.com/gpu
+          operator: Exists
+          effect: NoSchedule
+      containers:
+        - name: vllm
+          image: vllm/vllm-openai:v0.31.0
+          args:
+            - --model=Qwen/Qwen2.5-7B-Instruct
+            - --max-model-len=8192
+            - --gpu-memory-utilization=0.90
+            - --enable-prefix-caching
+            - --quantization=fp8
+            - '--speculative-config={"method": "ngram", "num_speculative_tokens": 5, "prompt_lookup_max": 4, "prompt_lookup_min": 2}'
+          env:
+            - name: VLLM_SERVER_DEV_MODE      # enables POST /reset_prefix_cache, used between E2 variants
+              value: "1"
+          ports:
+            - containerPort: 8000
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+          readinessProbe:
+            httpGet: {path: /health, port: 8000}
+            initialDelaySeconds: 60
+            periodSeconds: 10
+          volumeMounts:
+            - {name: shm, mountPath: /dev/shm}
+            - {name: hf-cache, mountPath: /root/.cache/huggingface}   # weights survive restarts
+            - {name: profiles, mountPath: /profiles}
+      volumes:
+        - name: shm
+          emptyDir: {medium: Memory, sizeLimit: 2Gi}
+        - name: hf-cache
+          persistentVolumeClaim: {claimName: hf-cache}
+        - name: profiles
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vllm
+spec:
+  selector: {app: vllm}
+  ports:
+    - port: 8000
+      targetPort: 8000

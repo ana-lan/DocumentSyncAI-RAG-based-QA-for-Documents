@@ -1,0 +1,107 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                 execute_context_0(0)_generation_32(32)         0.00%       0.000us         0.00%       0.000us       0.000us        3.842s        92.82%        3.842s      67.411ms            57  
+ampere_bf16_s16816gemm_bf16_256x128_ldg8_f2f_stages_...         0.00%       0.000us         0.00%       0.000us       0.000us        1.917s        46.31%        1.917s       1.201ms          1596  
+void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_...         0.00%       0.000us         0.00%       0.000us       0.000us        1.073s        25.91%        1.073s     336.052us          3192  
+void flash::flash_fwd_splitkv_kernel<Flash_fwd_kerne...         0.00%       0.000us         0.00%       0.000us       0.000us     551.866ms        13.33%     551.866ms     345.781us          1596  
+                                               aten::mm         0.02%       6.175ms         0.03%       7.969ms     139.798us     271.904ms         6.57%     271.904ms       4.770ms            57  
+ampere_bf16_s16816gemm_bf16_64x128_ldg8_f2f_stages_3...         0.00%       0.000us         0.00%       0.000us       0.000us     271.904ms         6.57%     271.904ms       4.770ms            57  
+void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_...         0.00%       0.000us         0.00%       0.000us       0.000us     238.349ms         5.76%     238.349ms     149.341us          1596  
+                      triton_poi_fused_mul_silu_slice_1         0.00%       0.000us         0.00%       0.000us       0.000us      14.607ms         0.35%      14.607ms       9.152us          1596  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us      11.034ms         0.27%      11.034ms       3.457us          3192  
+void flashinfer::sampling::RadixTopKMaskLogitsKernel...         0.00%       0.000us         0.00%       0.000us       0.000us       8.758ms         0.21%       8.758ms     153.644us            57  
+void cublasLt::splitKreduce_kernel<32, 16, int, __nv...         0.00%       0.000us         0.00%       0.000us       0.000us       7.230ms         0.17%       7.230ms       4.530us          1596  
+                  triton_red_fused_fused_add_rms_norm_2         0.00%       0.000us         0.00%       0.000us       0.000us       6.166ms         0.15%       6.166ms       3.863us          1596  
+                                         aten::_softmax         0.01%       1.830ms         0.01%       2.967ms      52.058us       5.906ms         0.14%       5.906ms     103.605us            57  
+void at::native::(anonymous namespace)::cunn_SoftMax...         0.00%       0.000us         0.00%       0.000us       0.000us       5.906ms         0.14%       5.906ms     103.605us            57  
+                  triton_red_fused_fused_add_rms_norm_0         0.00%       0.000us         0.00%       0.000us       0.000us       5.535ms         0.13%       5.535ms       3.468us          1596  
+                                     triton_poi_fused_3         0.00%       0.000us         0.00%       0.000us       0.000us       5.254ms         0.13%       5.254ms       3.414us          1539  
+void vllm::reshape_and_cache_flash_kernel<__nv_bfloa...         0.00%       0.000us         0.00%       0.000us       0.000us       4.963ms         0.12%       4.963ms       3.110us          1596  
+void flashinfer::sampling::TopPSamplingFromProbKerne...         0.00%       0.000us         0.00%       0.000us       0.000us       4.432ms         0.11%       4.432ms      77.747us            57  
+                                            aten::copy_         0.03%       9.025ms         0.07%      19.997ms      31.893us       3.923ms         0.09%       3.923ms       6.257us           627  
+void at::native::elementwise_kernel<128, 2, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us       3.629ms         0.09%       3.629ms       2.274us          1596  
+void at::native::unrolled_elementwise_kernel<at::nat...         0.00%       0.000us         0.00%       0.000us       0.000us       3.059ms         0.07%       3.059ms      53.675us            57  
+                                    _temperature_kernel         0.00%       0.000us         0.00%       0.000us       0.000us       2.043ms         0.05%       2.043ms      35.838us            57  
+                                            aten::index         0.05%      13.374ms         0.10%      30.774ms     107.978us       1.281ms         0.03%       1.552ms       5.444us           285  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     800.479us         0.02%     800.479us       4.681us           171  
+void at::native::unrolled_elementwise_kernel<at::nat...         0.00%       0.000us         0.00%       0.000us       0.000us     410.781us         0.01%     410.781us       2.402us           171  
+                            _gather_block_tables_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     336.674us         0.01%     336.674us       5.907us            57  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     301.793us         0.01%     301.793us       5.295us            57  
+                   _get_num_sampled_and_rejected_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     296.513us         0.01%     296.513us       5.202us            57  
+               _combine_sampled_and_draft_tokens_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     292.388us         0.01%     292.388us       5.130us            57  
+                                    _post_update_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     284.316us         0.01%     284.316us       4.988us            57  
+                         Memcpy HtoD (Pinned -> Device)         0.00%       0.000us         0.00%       0.000us       0.000us     278.109us         0.01%     278.109us       1.626us           171  
+                                            aten::fill_         0.01%       2.929ms         0.02%       5.784ms      20.293us     275.973us         0.01%     275.973us       0.968us           285  
+                                    _apply_write_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     273.755us         0.01%     273.755us       4.803us            57  
+         triton_red_fused__to_copy_embedding_rms_norm_0         0.00%       0.000us         0.00%       0.000us       0.000us     272.988us         0.01%     272.988us       4.789us            57  
+                          _compute_slot_mappings_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     236.285us         0.01%     236.285us       4.145us            57  
+                                     triton_poi_fused_1         0.00%       0.000us         0.00%       0.000us       0.000us     193.723us         0.00%     193.723us       3.399us            57  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     178.981us         0.00%     178.981us       1.570us           114  
+void at::native::vectorized_gather_kernel<16, long>(...         0.00%       0.000us         0.00%       0.000us       0.000us     178.529us         0.00%     178.529us       3.132us            57  
+                         Memcpy DtoH (Device -> Pinned)         0.00%       0.000us         0.00%       0.000us       0.000us     174.787us         0.00%     174.787us       1.533us           114  
+                           _prepare_pos_seq_lens_kernel         0.00%       0.000us         0.00%       0.000us       0.000us     120.451us         0.00%     120.451us       2.113us            57  
+                                          memcpy32_post         0.00%       0.000us         0.00%       0.000us       0.000us     102.495us         0.00%     102.495us       1.798us            57  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us      96.992us         0.00%      96.992us       1.702us            57  
+                                           aten::arange         0.00%       1.377ms         0.02%       5.721ms      50.188us      89.415us         0.00%     178.830us       1.569us           114  
+void (anonymous namespace)::elementwise_kernel_with_...         0.00%       0.000us         0.00%       0.000us       0.000us      89.415us         0.00%      89.415us       1.569us            57  
+                         threading.py(1030): _bootstrap         0.00%       5.763us       114.29%       33.699s        4.212s       0.000us         0.00%       0.000us       0.000us             8  
+                   threading.py(1073): _bootstrap_inner         0.00%      11.267us       114.29%       33.699s        4.212s       0.000us         0.00%       0.000us       0.000us             8  
+                                threading.py(1010): run         0.00%       6.614us        57.14%       16.849s        4.212s       0.000us         0.00%       0.000us       0.000us             4  
+                     vllm/v1/engine/utils.py(338): _run         0.00%       1.994us        14.29%        4.212s        4.212s       0.000us         0.00%       0.000us       0.000us             1  
+                                threading.py(655): wait         0.00%      35.308us        41.35%       12.194s        2.439s       0.000us         0.00%       0.000us       0.000us             5  
+                                threading.py(355): wait         0.02%       6.065ms        14.31%        4.218s        2.109s       0.000us         0.00%       0.000us       0.000us             2  
+vllm/v1/engine/core.py(1891): process_output_sockets...         0.01%       3.014ms        14.29%        4.212s        4.212s       0.000us         0.00%       0.000us       0.000us             1  
+                                     queue.py(171): get         0.00%      19.498us         0.02%       6.105ms       6.105ms       0.000us         0.00%       0.000us       0.000us             1  
+    vllm/v1/engine/core.py(1811): process_input_sockets         0.00%      60.373us        14.29%        4.212s        4.212s       0.000us         0.00%       0.000us       0.000us             1  
+                           zmq/sugar/poll.py(106): poll        13.97%        4.119s        13.97%        4.119s        4.119s       0.000us         0.00%       0.000us       0.000us             1  
+                              tqdm/_monitor.py(69): run         0.00%      72.336us        57.14%       16.849s        4.212s       0.000us         0.00%       0.000us       0.000us             4  
+                                threading.py(359): wait        12.78%        3.769s        27.07%        7.981s        1.995s       0.000us         0.00%       0.000us       0.000us             4  
+     vllm/usage/usage_lib.py(173): _report_usage_worker         0.00%       1.503us        14.29%        4.212s        4.212s       0.000us         0.00%       0.000us       0.000us             1  
+vllm/usage/usage_lib.py(255): _report_continuous_usa...        14.29%        4.212s        14.29%        4.212s        4.212s       0.000us         0.00%       0.000us       0.000us             1  
+                                  <string>(1): <module>         0.00%       1.727us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+              multiprocessing/spawn.py(122): spawn_main         0.00%       2.396us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+                   multiprocessing/spawn.py(135): _main         0.00%       1.942us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+            multiprocessing/process.py(314): _bootstrap         0.00%       2.426us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+                   multiprocessing/process.py(108): run         0.00%       3.209us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+          vllm/v1/engine/core.py(1419): run_engine_core         0.00%       2.006us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+vllm/v1/fault_tolerance/engine_core_sentinel.py(179)...         0.00%       0.540us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+            vllm/v1/engine/core.py(1474): run_busy_loop         0.00%     529.917us        14.29%        4.212s        4.212s       0.000us         0.00%     283.379ms     283.379ms             1  
+     vllm/v1/engine/core.py(1524): _process_input_queue         0.00%       9.685us         0.00%     828.659us     828.659us       0.000us         0.00%       0.000us       0.000us             1  
+vllm/v1/engine/core.py(1623): _handle_client_request...         0.00%       2.148us         0.00%     811.241us     811.241us       0.000us         0.00%       0.000us       0.000us             1  
+vllm/v1/engine/core.py(1663): _invoke_utility_method...         0.00%       9.702us         0.00%     809.093us     809.093us       0.000us         0.00%       0.000us       0.000us             1  
+                 vllm/v1/engine/core.py(1618): <lambda>         0.00%       2.018us         0.00%     732.107us     732.107us       0.000us         0.00%       0.000us       0.000us             1  
+                   vllm/v1/engine/core.py(814): profile         0.00%       1.200us         0.00%     730.089us     730.089us       0.000us         0.00%       0.000us       0.000us             1  
+             vllm/v1/executor/abstract.py(273): profile         0.00%       1.903us         0.00%     728.889us     728.889us       0.000us         0.00%       0.000us       0.000us             1  
+vllm/v1/executor/uniproc_executor.py(103): collectiv...         0.00%       8.422us         0.00%     726.986us     726.986us       0.000us         0.00%       0.000us       0.000us             1  
+               vllm/v1/serial_utils.py(508): run_method         0.00%       7.001us         0.00%     709.762us     709.762us       0.000us         0.00%       0.000us       0.000us             1  
+            vllm/v1/worker/gpu_worker.py(1353): profile         0.00%       2.731us         0.00%     702.761us     702.761us       0.000us         0.00%       0.000us       0.000us             1  
+                   vllm/profiler/wrapper.py(101): start         0.00%       1.608us         0.00%     700.030us     700.030us       0.000us         0.00%       0.000us       0.000us             1  
+              vllm/profiler/wrapper.py(77): _call_start         0.00%       2.964us         0.00%     698.422us     698.422us       0.000us         0.00%       0.000us       0.000us             1  
+                  vllm/profiler/wrapper.py(335): _start         0.00%       5.958us         0.00%     695.458us     695.458us       0.000us         0.00%       0.000us       0.000us             1  
+                torch/profiler/profiler.py(1128): start         0.00%       3.023us         0.00%     656.467us     656.467us       0.000us         0.00%       0.000us       0.000us             1  
+      torch/profiler/profiler.py(1262): _transit_action         0.00%       3.768us         0.00%     653.444us     653.444us       0.000us         0.00%       0.000us       0.000us             1  
+           torch/profiler/profiler.py(342): start_trace         0.00%      39.189us         0.00%     649.676us     649.676us       0.000us         0.00%       0.000us       0.000us             1  
+          torch/autograd/profiler.py(414): _start_trace         0.00%     126.905us         0.00%     130.393us     130.393us       0.000us         0.00%       0.000us       0.000us             1  
+                    <built-in function perf_counter_ns>         0.00%       5.436us         0.00%       5.436us       2.718us       0.000us         0.00%       0.000us       0.000us             2  
+     torch/profiler/profiler.py(538): add_metadata_json         0.00%      12.945us         0.00%      22.144us       5.536us       0.000us         0.00%       0.000us       0.000us             4  
+<built-in method _add_metadata_json of pybind11_buil...         0.00%       9.199us         0.00%       9.199us       2.300us       0.000us         0.00%       0.000us       0.000us             4  
+<built-in method kineto_available of pybind11_builti...         0.00%       0.718us         0.00%       0.718us       0.718us       0.000us         0.00%       0.000us       0.000us             1  
+torch/profiler/profiler.py(554): _get_distributed_in...         0.00%      38.924us         0.00%     390.313us     390.313us       0.000us         0.00%       0.000us       0.000us             1  
+        torch/distributed/__init__.py(17): is_available         0.00%       3.564us         0.00%       5.238us       5.238us       0.000us         0.00%       0.000us       0.000us             1  
+                            <built-in function hasattr>         0.00%     229.354us         0.00%     229.354us       0.652us       0.000us         0.00%       0.000us       0.000us           352  
+torch/distributed/distributed_c10d.py(1394): is_init...         0.00%       7.359us         0.00%      14.604us       2.921us       0.000us         0.00%       0.000us       0.000us             5  
+      torch/distributed/distributed_c10d.py(817): WORLD         0.00%      15.443us         0.00%      19.847us       0.863us       0.000us         0.00%       0.000us       0.000us            23  
+torch/distributed/distributed_c10d.py(688): default_...         0.00%       4.404us         0.00%       4.404us       0.191us       0.000us         0.00%       0.000us       0.000us            23  
+torch/distributed/distributed_c10d.py(1471): get_bac...         0.00%      19.823us         0.00%      60.771us      60.771us       0.000us         0.00%       0.000us       0.000us             1  
+torch/distributed/distributed_c10d.py(1420): _get_de...         0.00%      25.362us         0.00%      36.099us       9.025us       0.000us         0.00%       0.000us       0.000us             4  
+torch/distributed/distributed_c10d.py(1095): _rank_n...         0.00%       8.138us         0.00%       8.138us       0.509us       0.000us         0.00%       0.000us       0.000us            16  
+     torch/distributed/distributed_c10d.py(702): pg_map         0.00%       0.881us         0.00%       0.881us       0.441us       0.000us         0.00%       0.000us       0.000us             2  
+<built-in method get of dict object at 0x7807141bc90...         0.03%       9.126ms         0.03%       9.128ms       0.454us       0.000us         0.00%       0.000us       0.000us         20096  
+             torch/utils/_typing_utils.py(13): not_none         0.00%       2.020us         0.00%       2.020us       0.144us       0.000us         0.00%       0.000us       0.000us            14  
+    torch/distributed/distributed_c10d.py(330): __new__         0.00%       6.614us         0.00%       9.016us       9.016us       0.000us         0.00%       0.000us       0.000us             1  
+                         <built-in function isinstance>         0.02%       6.427ms         0.03%       9.793ms       0.995us       0.000us         0.00%       0.000us       0.000us          9844  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 29.486s
+Self CUDA time total: 4.139s
+

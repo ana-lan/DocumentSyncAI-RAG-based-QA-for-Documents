@@ -1,0 +1,12 @@
+# Disk for Hugging Face weights, so each vLLM restart reuses the 15 GB download.
+# Deleted in teardown BEFORE the cluster, otherwise the disk is left behind (and billed).
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: hf-cache
+spec:
+  accessModes: [ReadWriteOnce]
+  storageClassName: standard-rwo
+  resources:
+    requests:
+      storage: 60Gi

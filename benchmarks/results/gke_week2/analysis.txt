@@ -1,0 +1,123 @@
+
+======================================================================
+E3  capacity under p95 TTFT <= 2 s and p95 TPOT <= 100 ms
+======================================================================
+
+bf16
+  c    tok/s  TTFT p50  TTFT p95  TPOT p50  TPOT p95  goodput  target
+  1     17.3       295       300      57.0      57.1     100%  yes
+  4     63.0       867      1158      60.2      62.0     100%  yes
+  8    116.2      1189      1994      63.5      67.1      95%  yes
+ 12    160.7      1682      2996      68.2      72.9      78%  NO
+ 16    200.3      1728      3657      73.1      77.8      65%  NO
+ 24    253.9      1759      5389      86.8      91.5      57%  NO
+ 32    302.7      1843      7020      97.8     102.4      41%  NO
+ 48    374.8      2224     10544     119.4     123.7       5%  NO
+-> highest concurrency meeting the target: c=8 at 116.2 tok/s
+
+bf16 repeats (3 runs, fresh seeds): median [min to max]
+  c=1   out_tok_s 17.3 [17.2 to 17.3]  ttft_p95 300 [297 to 301]  tpot_p50 57.0 [57.0 to 57.0]  | week 1 tok/s 17.2
+  c=8   out_tok_s 116.3 [116.2 to 116.3]  ttft_p95 1996 [1989 to 1997]  tpot_p50 63.6 [63.5 to 63.6]
+  c=32  out_tok_s 303.5 [303.3 to 303.9]  ttft_p95 7091 [6954 to 7092]  tpot_p50 97.5 [97.4 to 97.7]  | week 1 tok/s 297.7
+
+fp8
+  c    tok/s  TTFT p50  TTFT p95  TPOT p50  TPOT p95  goodput  target
+  1     28.1       210       215      34.8      34.9     100%  yes
+  4    102.9       609       818      36.5      37.9     100%  yes
+  8    185.1       856      1426      39.4      42.2     100%  yes
+ 12    253.4      1185      2181      42.9      46.1      93%  NO
+ 16    309.5      1255      2555      46.6      50.1      90%  NO
+ 24    392.3      1280      3825      55.6      59.1      87%  NO
+ 32    452.7      1356      4957      65.1      68.5      85%  NO
+ 48    539.8      1652      7590      82.8      85.4      83%  NO
+-> highest concurrency meeting the target: c=8 at 185.1 tok/s
+
+fp8 repeats (3 runs, fresh seeds): median [min to max]
+  c=1   out_tok_s 28.1 [28.1 to 28.1]  ttft_p95 213 [212 to 215]  tpot_p50 34.9 [34.9 to 34.9]  | week 1 tok/s 28.2
+  c=8   out_tok_s 185.2 [185.1 to 185.2]  ttft_p95 1442 [1412 to 1448]  tpot_p50 39.3 [39.3 to 39.4]
+  c=32  out_tok_s 453.3 [451.8 to 453.7]  ttft_p95 4967 [4929 to 5133]  tpot_p50 65.1 [65.0 to 65.4]  | week 1 tok/s 444.8
+
+======================================================================
+E0  hardware ceiling vs measured (decode step = bytes / bandwidth)
+======================================================================
+
+bf16:   c  pred step  ITL p50   eff  TPOT p50   eff  ceiling tok/s    meas
+        1    47.4 ms  57.0 ms   83%   57.0 ms   83%           21.1    17.3
+        4    48.0 ms  59.1 ms   81%   60.2 ms   80%           83.3    63.0
+        8    48.9 ms  60.4 ms   81%   63.5 ms   77%          163.6   116.2
+       12    49.8 ms  62.2 ms   80%   68.2 ms   73%          241.1   160.7
+       16    50.7 ms  63.2 ms   80%   73.1 ms   69%          315.8   200.3
+       24    52.4 ms  69.8 ms   75%   86.8 ms   60%          457.8   253.9
+       32    54.2 ms  72.8 ms   74%   97.8 ms   55%          590.6   302.7
+       48    57.7 ms  77.9 ms   74%  119.4 ms   48%          831.8   374.8
+
+fp8:   c  pred step  ITL p50   eff  TPOT p50   eff  ceiling tok/s    meas
+        1    25.6 ms  34.9 ms   74%   34.8 ms   74%           39.1    28.1
+        4    26.3 ms  35.8 ms   73%   36.5 ms   72%          152.3   102.9
+        8    27.1 ms  37.1 ms   73%   39.4 ms   69%          294.7   185.1
+       12    28.0 ms  38.5 ms   73%   42.9 ms   65%          428.2   253.4
+       16    28.9 ms  39.6 ms   73%   46.6 ms   62%          553.5   309.5
+       24    30.7 ms  43.0 ms   71%   55.6 ms   55%          782.5   392.3
+       32    32.4 ms  46.5 ms   70%   65.1 ms   50%          986.7   452.7
+       48    36.0 ms  51.3 ms   70%   82.8 ms   43%         1335.0   539.8
+
+c=1 refit on week 2 data: effective bandwidth 295.3 GB/s (98% of spec), fixed overhead 8.9 ms per step
+
+======================================================================
+E4  where a bf16 decode step's time goes (torch profiler)
+======================================================================
+
+c=1  (rank0.1794297129425556960.pt.trace.json.gz, 4187.9 ms traced)
+  GPU busy 99% of the time, idle 1%
+  per decode step (ITL 57.0 ms): kernels 56.5 ms, gaps 0.5 ms
+  matmul (weights)                         97% of kernel time
+  attention (KV)                            2% of kernel time
+  other (norms, activations, sampling)      1% of kernel time
+  memory copy                               0% of kernel time
+
+c=32  (rank0.1794297234572922598.pt.trace.json.gz, 4142.0 ms traced)
+  GPU busy 100% of the time, idle 0%
+  per decode step (ITL 72.9 ms): kernels 72.8 ms, gaps 0.1 ms
+  matmul (weights)                         85% of kernel time
+  attention (KV)                           14% of kernel time
+  other (norms, activations, sampling)      2% of kernel time
+  memory copy                               0% of kernel time
+
+======================================================================
+E2  prefix caching on follow-up sessions (44 questions, 3 rounds)
+======================================================================
+      variant                              hit rate  TTFT p50       range    p95    vs A
+bf16  A: context first, score order           11.9%     381 ms     380-383    512        
+bf16  B: instructions first, score order      15.8%     377 ms     374-377    474     -1%
+bf16  C: instructions first, document order    25.6%     350 ms     349-350    473     -8%
+fp8   A: context first, score order           11.9%     258 ms     257-259    344        
+fp8   C: instructions first, document order    25.6%     238 ms     236-238    326     -8%
+
+prompt length 1225 tokens on average; Phase 2 predicted 0.14 (score order) and 0.26 (document order) reusable from chunk IDs alone
+
+======================================================================
+E6  FP8 at 32K context, 8,000-token prompts
+======================================================================
+  CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9000 is equivalent to --gpu-memory-utilization=0.8824 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9176. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+  GPU KV cache size: 184,128 tokens, Maximum concurrency for 32,768 tokens per request: 5.62x
+  c    tok/s  TTFT p50  TTFT p95  TPOT p50
+  1     23.1      1787      1811      36.5
+  4     57.1      3353      6606      56.7
+  8     75.2      3542     13475      91.2
+
+======================================================================
+E7  FP8 + n-gram speculative decoding (prompt lookup, 5 tokens)
+======================================================================
+  c  FP8 tok/s    +spec  speedup  TPOT p50   +spec
+  1       28.1     53.2    1.89x      34.8     9.1
+ 32      452.7    531.9    1.17x      65.1    33.7
+
+acceptance on random-token benchmark: 61% (3.01 extra tokens per draft)
+acceptance on 30 real RAG prompts:    30% (1.52 extra tokens per draft)
+decode speed on real RAG answers, one user: 29.6 tok/s without, 45.1 tok/s with speculation (1.52x)  [different question sets: E2 sessions vs first 30 E1 questions]
+
+Charts
+  saved benchmarks/results/gke_week2/charts/throughput_vs_concurrency.png
+  saved benchmarks/results/gke_week2/charts/p95_ttft_vs_concurrency.png
+
+Saved benchmarks/results/gke_week2/analysis.json

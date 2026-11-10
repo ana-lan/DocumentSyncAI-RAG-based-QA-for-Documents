@@ -2,12 +2,12 @@
 import sys
 import os
 import streamlit as st
-import pdfplumber
 import chromadb
 from sentence_transformers import SentenceTransformer
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from src.ingestion.parser import parse_pdf
 from src.ingestion.cleaner import clean_pages
 from src.ingestion.chunker import chunk_fixed
 from src.retrieval.retriever import retrieve
@@ -42,13 +42,8 @@ def ingest_pdf(uploaded_file) -> int:
         metadata={"hnsw:space": "cosine"}
     )
 
-    # extract pages
-    pages = []
-    with pdfplumber.open(uploaded_file) as pdf:
-        for page in pdf.pages:
-            text = page.extract_text()
-            if text and text.strip():
-                pages.append(text)
+    # extract pages (same extraction settings as the pipeline and benchmarks)
+    pages = parse_pdf(uploaded_file)
 
     # clean and chunk
     cleaned_text = clean_pages(pages)

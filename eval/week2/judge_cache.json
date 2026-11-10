@@ -1,0 +1,842 @@
+{
+"32eabc580406899cfed80d6b0f1c14b0e9bbff471d393cb95bb2e48e0878dbc1": {
+"correct": true,
+"supported": true
+},
+"91917a78cbdc8f114cf1c944fa5674b59cef80e89ded682d6bf6729b2ca63dd5": {
+"correct": true,
+"supported": true
+},
+"d0fe2ad480e06be1149eaf0816412227c4120b5b1d91e9bb714e0743d7d1a89c": {
+"correct": true,
+"supported": true
+},
+"d6c706525af6c7188a7383495c86de3c1b4edbb2c5976d3587bcece44b124439": {
+"correct": true,
+"supported": true
+},
+"29bd376417760a5fe37c0f4c2495ea8c6a9f6b6c2cfa14e9d4cf3678ee720891": {
+"correct": true,
+"supported": true
+},
+"fe2101bfca25f445003b2d07438e56785e52901b09b02f0e91253928e42980e0": {
+"correct": true,
+"supported": true
+},
+"af767b5cbf2464126cb526779f1f91eb00f21156fd0b31524f8197abde09d0d7": {
+"correct": true,
+"supported": true
+},
+"b2675c8444ede7316c406ca01b3cdee655a6d1270894ff5543ae39c960ab1310": {
+"correct": true,
+"supported": true
+},
+"0004d9e631e614541a5f7122d2b7ac84562a1af262b1bbbd5c9bf4d34d4225f5": {
+"correct": true,
+"supported": true
+},
+"e832bae91a2fb1d60ff78c2924a99440bdf59661098538322c2b615e53e33003": {
+"correct": true,
+"supported": true
+},
+"57db031567e320c9e10947bb2f5e15e517c94fd5abd2c26c43c5bc520d2faccc": {
+"correct": true,
+"supported": true
+},
+"c6aa6b816672815391c93e50fd259c205e31212025016dd308e21e7ce0d79e89": {
+"correct": true,
+"supported": true
+},
+"aeae3e6119d0a25e158ab21b3fe089e173fa716fd0f9ed7fc4c45d9b333840cd": {
+"correct": true,
+"supported": true
+},
+"e0e6f04d7fa36a5a77e9f88231575e04d6315d568f6174d8f67057c829baf767": {
+"correct": true,
+"supported": true
+},
+"14855f30899fa6d88e1b4d61f182c0c7bec38cbbd707241918679a8bbe3f25ee": {
+"correct": true,
+"supported": true
+},
+"4152c0de72b9b76649228df4c0238a47f918b0b2e344465ad01357a04b6ddfb7": {
+"correct": true,
+"supported": true
+},
+"6a1738be94b9ee9d5d219f3c2fd489bb0b8951aa2d7b3b57dac863d96414e85b": {
+"correct": true,
+"supported": true
+},
+"7cb1edf20deaa8fa48ccaf272e020eb1fa28eef5089c785eda3daa0990d7b7d4": {
+"correct": true,
+"supported": true
+},
+"003dadf4b1f0995a3d969cdfc803ce8cf6a52e97db6c4cbfb7d5b32b7eedf297": {
+"correct": true,
+"supported": true
+},
+"549e20afaa5efe244128cb0592564f2e70079c4008af30528921ff69da7e53de": {
+"correct": true,
+"supported": true
+},
+"630c980aace48c2a32d0be0de928f1ca3ec45c0e920ded8cfc29cbb126acf56c": {
+"correct": true,
+"supported": true
+},
+"089f3573e221c9f3f948f3d0cd4f5ee4743bbb819279f6becce281ef0024d044": {
+"correct": true,
+"supported": true
+},
+"5383b7e23949f33e2d03b468f7d5e886bd22d6989f8363d5397fd733e476f764": {
+"correct": true,
+"supported": true
+},
+"2d61d2e645a24411b586dfe1a4cf092bf87e6d0a8d88dc2801cf6e562c5da895": {
+"correct": true,
+"supported": true
+},
+"dbd001ce671a52aada4ab8c21914f627076411f546cc02a4ad85050cc50506ad": {
+"correct": true,
+"supported": true
+},
+"ee3b97e241542e29b0775b5868ce607a47da2470707c5bf03667aa68414e11fd": {
+"correct": true,
+"supported": true
+},
+"04dfcc1646c7161b0afc7b4d67c0046917e42829f6b12bf4476e3804e297e619": {
+"correct": true,
+"supported": true
+},
+"67edcc6dd1d3d7c369d766579e51f840cf8501c2a2b76f693b59927b5566f142": {
+"correct": true,
+"supported": false
+},
+"c86467ffeb5e76cd60b35e70fe64fcfff5d1f3e8be278d10b871e5b84d25783b": {
+"correct": true,
+"supported": true
+},
+"7a10a7054ddc8b90b256370d6a5772536629d279d0d119b73e4bf805c3a1b86f": {
+"correct": true,
+"supported": true
+},
+"505d82b1c8b2389e7e3c8650ebee50cd2f0ca6cc8ebb5403d2d725aaba836d4a": {
+"correct": true,
+"supported": true
+},
+"0b2cf56f213682d2c5422948ac829da5b6afb574d55b8dd31d5eb8282d6b6e23": {
+"correct": true,
+"supported": true
+},
+"c03bbb40688fb937577de40a7e3f72a85a9131dc52c584abc67206b5ce98f91c": {
+"correct": true,
+"supported": true
+},
+"1b5eed49b4757ba9e0da10217f0381730ad0f6448ea1ac130a779e0a982d7597": {
+"correct": false,
+"supported": true
+},
+"939c78f14f85e29d702b59a10a52af0119ad002757a5d9c28b75133814f9def4": {
+"correct": true,
+"supported": true
+},
+"2ea14585e6dc4f999971304b638ce3b34da91c69e7131d5987043d90aa4d4c15": {
+"correct": true,
+"supported": true
+},
+"c6558e1f08e0665cb8fd8a327a2ff29f7839c88e3f514a8c25170ebbe9f545d3": {
+"correct": true,
+"supported": true
+},
+"55122600b198763d7496aa79b45b556a3a7a0caf4b8bea5eb3964c786dc4024a": {
+"correct": true,
+"supported": true
+},
+"c75a549d24f184ce3dac53aa049182c9ff92f28df0a03588d26957c7ffe21ef3": {
+"correct": false,
+"supported": true
+},
+"bf8023ebac807e0f58301829eb23d02296828f977325ddeda40d6e8dd18d00a7": {
+"correct": true,
+"supported": true
+},
+"65f83d59d41bcfdd1e941e1f2891904e57e14878d7ba8354253822b71c08791c": {
+"correct": true,
+"supported": true
+},
+"b04d93eaaa88476a26edec3e4b9bbacd9a43fa2bf2dff5dedf95db50e63ed6af": {
+"correct": true,
+"supported": true
+},
+"a327cf89d1978a64fbe8ef26cc8a570121ff18cfe8c3b9353a5fbb51a9dc6e52": {
+"correct": true,
+"supported": true
+},
+"7a648ce717fa531f2e354f013a5f67616eebae0a5f8577a4939a11cbb0935d22": {
+"correct": false,
+"supported": true
+},
+"f628a6a10b84e9570834edc88335f81f547b8267717ceaa6d9ce3fb954da5ad6": {
+"correct": true,
+"supported": true
+},
+"ae4f8f957adc63c27ada4fd5e5328cd4f50bc74ac379a6bef6a663d060e2f5dd": {
+"correct": true,
+"supported": true
+},
+"fb404e2704e86b621ead4d80654eda48e1d846df61bbd2ad58675c3732ad7347": {
+"correct": false,
+"supported": true
+},
+"9e8fb9c2b9d7e4e4816c63f68b83b0e136c03250ad63776cbd6d8046690d2278": {
+"correct": true,
+"supported": true
+},
+"24f652eef4033bf610c493b48c0d932f458d3afdd73e6738fee4fd8f28a61df5": {
+"correct": true,
+"supported": true
+},
+"0a11bd5fa7c53342a639d4e6fc46a31fe8f5d03ada75ac5bdceec85b845bc077": {
+"correct": true,
+"supported": true
+},
+"5c227e94d8cc02bac7ddb16f53953a1ae16edf9553dad77241cca474af370ab4": {
+"correct": true,
+"supported": true
+},
+"885b2cc697d47e46a433991fce8b81baa074bbe3324ed415bc99ab9852956e3d": {
+"correct": false,
+"supported": true
+},
+"387d5f481f1eddbe249c5049ff808acd1a4c3c9dbdbdee3dd62c64aee2e7b301": {
+"correct": true,
+"supported": true
+},
+"e8970d8b6d2daeacef98c9d00d8afc668c48dec2cedb1cec30ef630bc5931976": {
+"correct": true,
+"supported": true
+},
+"61143e8dbed4208e9e783a79a3a3a88787d594ca57926af82df9d24a339a4b78": {
+"correct": true,
+"supported": true
+},
+"ba7fcb5ddc180fd6c491154ecd9638f3a7abf901870825b47abd5aee123fc6b1": {
+"correct": true,
+"supported": true
+},
+"7e33ff70523ed8d54f2d62fe6b9d6fac41a575985576ad86dd0e49a09617abc5": {
+"correct": false,
+"supported": true
+},
+"b48ec466b6618cd94e5bfd88b334e8b5ccf9767c2ff5d53c34e754c41360ce55": {
+"correct": true,
+"supported": true
+},
+"35a93654a9a28fce3bcab81f30051905adf80f3d7d15d7d24bc6d59ceb49ea26": {
+"correct": false,
+"supported": true
+},
+"91852c3126f51468841deac3721bf95017d20ac9e461afc661a5ec95859d78ce": {
+"correct": true,
+"supported": true
+},
+"a072e71cd42c4ad74c4e0a752e50c171d98b4e97baf77943c3eacea76c6b34d5": {
+"correct": false,
+"supported": true
+},
+"c2a1b46d92731695dc3189b298b6b764938b4d9ad0567e75ea73cab1f465ebe9": {
+"correct": true,
+"supported": true
+},
+"f220ae547e3d2d58168e4ca2d5ad28aa0aa1df6160681ae94daaf8a52e33f091": {
+"correct": false,
+"supported": true
+},
+"325e65b54a4443dcfe6f2d89ae71603c333b0ba8151814abbf0c1a2b8ad1d0a3": {
+"correct": true,
+"supported": true
+},
+"741960bf8fd37901866b0bd72ddae74aa11299cc91be5484bd3a9db89555e244": {
+"correct": false,
+"supported": true
+},
+"a9afc321bad47b87e3725b41bf30b840c1c488fc1906abdb7b7be9e69a36e5fd": {
+"correct": true,
+"supported": true
+},
+"1ffb18c1a7d3889418549438ae2389778f2220cafd4b009219eff0e6c00eb333": {
+"correct": true,
+"supported": true
+},
+"1b1b2ecd187fe10dd682812c0196652a3709d4ad9c339eb8f975a9ef1770e120": {
+"correct": false,
+"supported": false
+},
+"9d7b154ae3e3986a8c23dd3c388c41f6f9646203064c9db80eded2905f08864e": {
+"correct": true,
+"supported": true
+},
+"f35430d9fad1737880e6def2272bff09774351e991c336e78ab47c53cb9b1fe2": {
+"correct": true,
+"supported": true
+},
+"2d12ab8005b1096b766c7bda35504761a8d2408190ae7d14b18211534f829afe": {
+"correct": false,
+"supported": true
+},
+"99f8eec419c146e24170245fa45141e1913d134fbd2f3c4984e50bd750e6b24b": {
+"correct": false,
+"supported": false
+},
+"e6478d5e139f9d6d46dc08962f6900c7b9f9800dd0efdfde0601e679611bda06": {
+"correct": false,
+"supported": true
+},
+"0fca875af7ceb315fbb07d5ba2c62219369f04443b4ddda2078d0a152e1c8e50": {
+"correct": false,
+"supported": false
+},
+"9c8fa46090a1478325d666fbb1a757ea3e4fa5d53a8f8f6ff091b30038a023f3": {
+"correct": false,
+"supported": true
+},
+"457bafe7e09a89c041c63e6051ad61f5af6420a457ca4fcd0251f19c80e0b3e7": {
+"correct": true,
+"supported": true
+},
+"2dbebd7084cb5fa777e3fac8d8d871e5447c2b73c19a2dc46f67a2d3e52b21cb": {
+"correct": true,
+"supported": true
+},
+"9ffd7c3cf09535c0237eee808ee0c54259cf355f8250566f99d5e2fcf385d3ce": {
+"correct": false,
+"supported": true
+},
+"99aeb99172dab534ba3f568721aeb275e38e3a545e165dc0859f27be6356244a": {
+"correct": false,
+"supported": true
+},
+"7682b14a7bb92b86f3392dd8d224dcbb29d80f4572da2605d284963d6d564ae8": {
+"correct": true,
+"supported": true
+},
+"5322696c02f2873a89ac0adc7a236ee5c560b3f218305a1aa1e32c3e118ad408": {
+"correct": false,
+"supported": true
+},
+"31607f5205c2e71bfe00402cb78a1add64d3fa664948d754f0eef7cb2bd9471f": {
+"correct": false,
+"supported": false
+},
+"4e1f928e6d88fcb0eb8c4a1d7a0a93a96a9d14e23d44fb0e194db01d804e8540": {
+"correct": false,
+"supported": true
+},
+"8c158a6fdc54d0b09a75eacdded522c9f4764215ce7b0652496836c6a5e6faed": {
+"correct": false,
+"supported": true
+},
+"aa7e2b2b02acf7d82fd1eb29afc5d8c66ae2fd5c52ddb3bbfc43d437ffd49b71": {
+"correct": true,
+"supported": true
+},
+"12c3b9ac8b0ad81dd3f1aacab8165d14971e83f811af4eef913b72623dd30a12": {
+"correct": false,
+"supported": true
+},
+"7b35b4dfb0a0b8020ab388527e4ea48169d4f849e5ffe9bc3a879520b56960e3": {
+"correct": true,
+"supported": true
+},
+"a1e227eb3901d51023259c969b0b16003867bbafe308bab9114706e715dff236": {
+"correct": true,
+"supported": true
+},
+"821177703fbd32069d57b490587f69087a25d873cebe4f2cca7875da888f0d6a": {
+"correct": true,
+"supported": true
+},
+"6f6aa0209300624d88cd1577d2f79e592e9a676d67ed12aa4ec215991211f746": {
+"correct": true,
+"supported": true
+},
+"2a2a34453bb6198f3ff35cde00be47b9bdf6b841b2bd4a992eb19370ce36c990": {
+"correct": true,
+"supported": true
+},
+"52b589f8312b923286237cad16909c5fae74d45d9ef120a1a4c484d715c61569": {
+"correct": true,
+"supported": true
+},
+"ed47d75ee22b1f574608266283916e591b8374b887e7d5ab58f66af1cecaae60": {
+"correct": true,
+"supported": true
+},
+"6bcf312e1ce837c64f8cf3614a5158926483ecf42f4e9b684d2bb291c01eb35d": {
+"correct": true,
+"supported": true
+},
+"f947a4e99226d51ab86964b2d11ab2017d248de79dcb3d3e6eb4a59cb87e6363": {
+"correct": false,
+"supported": true
+},
+"c0962f79903e01c6220f7137199dc91c09d0e7ddb49b47253b82a6cb36d18f09": {
+"correct": true,
+"supported": true
+},
+"4a80c34c6f871df7844d71fbf84aa7ee64feb92a5d82f72f3b07cd190786e330": {
+"correct": true,
+"supported": true
+},
+"deb78e8757e38745280c83618c98b3bdb24117af13d6929f7ce199fd1daa5263": {
+"correct": true,
+"supported": true
+},
+"f3d1e02dc4ed7ee1afcfb36f4fafe2aaf36b60c9136ae4bd2aba08ea38982b10": {
+"correct": true,
+"supported": true
+},
+"f5508dd0f2c2149e99f9c3bc5bcdddc66de413855d5b2f21bf81189a0db95484": {
+"correct": true,
+"supported": true
+},
+"f248d88e865438a2a2d7f4a7610c4b37116b496654aaf1ee25802554c8219e9e": {
+"correct": true,
+"supported": true
+},
+"76a6f3b66dfa342268cacf35fa1f227dcc17d483849fe8481463866b57df2204": {
+"correct": true,
+"supported": true
+},
+"e4819dbefe9d4854bfa3baaf2d5c9d5072a0ee0f3c37f0a413368c827087c4dc": {
+"correct": true,
+"supported": true
+},
+"ed59a896b1df5a62ad2f03c5778fd9ef711ea162ca4cc6b84d413710fd729b24": {
+"correct": true,
+"supported": true
+},
+"763c02204ccb10f41b94ec575f6fe7117ae6b6c27f751eea54ef3793e92fb56b": {
+"correct": true,
+"supported": true
+},
+"62d086068e60eb806cad0ec4d6baf4b4db2b3772411306d7c355f18255169ef1": {
+"correct": true,
+"supported": true
+},
+"b8ef4a07e0f9adccf19f786dfe136c8b0f7bb172f82f95562486387d31989730": {
+"correct": true,
+"supported": true
+},
+"e87435443c091205ca19c578b08d24476aaaf9fd7c29eb90502e898223e6c699": {
+"correct": false,
+"supported": true
+},
+"913ca40e495160d94e81dedbbd24be0939cdc72db36f318f6d27019739a9c026": {
+"correct": true,
+"supported": true
+},
+"f55b2c51bd1f5ef389a4e4546713bd379f4c527b35ae568b8c32fd4a11f61a10": {
+"correct": true,
+"supported": true
+},
+"43f1e1e5e2350f6d15132f157ce810385c3f02f33dddd59c53cf36e31d3a4e78": {
+"correct": false,
+"supported": true
+},
+"bde459c84db205d054c62e1877c598892ed904492942f72fdd7e703ff4cad0dc": {
+"correct": true,
+"supported": true
+},
+"bf181797ac59596bda569a8cbdf78898018507f254926ce71fe7c5b69f879971": {
+"correct": false,
+"supported": true
+},
+"bfe712c7cd93121b3e7f7c43a95706a85c0a9db93d50d72e015d9bd09fb62cc7": {
+"correct": true,
+"supported": true
+},
+"d336309eb4d82d3d098d10eadb256541c4694e371a096a8a5597f7f217e8417e": {
+"correct": true,
+"supported": true
+},
+"025e7169e699123f8c9da2bf27a9b84cc08d9b00be2090f3ee3a036f01fd47b5": {
+"correct": true,
+"supported": true
+},
+"a58e79ed505467c7f1a87a256c4745bd1223f04f3d3b727d31624f9bb53f1d11": {
+"correct": false,
+"supported": true
+},
+"fff7f005c0d728da18a64d786157dd48302b92c0a2f3738bf72e9b5ee64e5464": {
+"correct": true,
+"supported": true
+},
+"7b07046b91b7248550f2a86b2d6d12a7f8a105cf5b86dbe757da5d024d71b1bd": {
+"correct": true,
+"supported": true
+},
+"e78534100f61415e35a803e69c592b476d6d8fcd6b8aab3497f6048dd4132ec9": {
+"correct": false,
+"supported": true
+},
+"fb354d4dbfafcd132ad71c03e1140d63df0add8afa9347df3e2463e983f46dd8": {
+"correct": true,
+"supported": true
+},
+"2a44afe0f1dd1d30b44face182da39d23ec153290b18227b1084db964938a525": {
+"correct": false,
+"supported": true
+},
+"33c99717c4f87478af934893813d7a3b3b695f64c559e32cd29cd54934ed7245": {
+"correct": true,
+"supported": true
+},
+"95b5ea6c2b2336dabff38d081f2cb77957d7408d7033f70e52f74ae6786e2bdb": {
+"correct": true,
+"supported": true
+},
+"6be6647d470ec55df22e4cad9d6c7081ee2ec13fb7c3ccb159fb841675f17390": {
+"correct": true,
+"supported": true
+},
+"22839544531b9d3585c8f54b4f111e404172eb063e0ef347bbda5ab5f43e03f8": {
+"correct": true,
+"supported": true
+},
+"888aa84a946588800c7f0a998c8d6df19a61d00940d4a45dd71584372c038d1b": {
+"correct": false,
+"supported": true
+},
+"5fe56c6d18cbf416d37aecba220ac53559a7c2884b44bc62866b094071e1833c": {
+"correct": false,
+"supported": false
+},
+"6b5f9bb72a87d6b9416affafeddcd74424f67d9801b46c9d042e048dbab28c3f": {
+"correct": false,
+"supported": false
+},
+"ba72d4570d20fa20fc8bd974f98e0727dcb0ec410a0f1c98702bb8ecd7776749": {
+"correct": false,
+"supported": true
+},
+"90bab2f49cb755e7aafe3796ee1af850a420e35311ed07b1a7d3446cdf869b10": {
+"correct": false,
+"supported": true
+},
+"c40a882e40ce2d64423a2bc8640068e9fcc1c8f75a1a259f0d8e00faf7511627": {
+"correct": false,
+"supported": true
+},
+"e6393603bfb6dc518d834e6649d35b611277a40c11ee47e500ce4238632dc2ae": {
+"correct": false,
+"supported": false
+},
+"c7c568f9d2528b9858456330110b669551a29986b5a36019789abc929b0502d5": {
+"correct": false,
+"supported": true
+},
+"9eec1167db1929410788bd1dfc942ed8f5b89c6a987bd010c694ff2433d7f822": {
+"correct": false,
+"supported": true
+},
+"1729f5d09cb36b99405cf93c878df36f9e90ed427ea1a6adc87bd2de0b154209": {
+"correct": false,
+"supported": true
+},
+"592d548f7cc9359b5b9af76fb636ca9161d9c29b90db002cd375f4e7ac8262d0": {
+"correct": true,
+"supported": true
+},
+"008dd18e0ca5e7bab6d04c62e9d0b0a677657d4f884e606839de6b2c5604b121": {
+"correct": false,
+"supported": true
+},
+"2f8409cb61bb0996c2bfc3ca2004211622bab100595170411c5325f5a7dbb523": {
+"correct": true,
+"supported": true
+},
+"55d44bf27d1be562ac1671d7afddec6397e32c776e414bdf7e6be8c889c288b2": {
+"correct": true,
+"supported": true
+},
+"8f826f17197abc088be028b916ab25d06c406356387833efd11e9911c3ce40f8": {
+"correct": false,
+"supported": true
+},
+"ce3e1a19ba77853ab6380739fad52aa458fcc712b7069d82a76acb224b50d3f8": {
+"correct": true,
+"supported": true
+},
+"a73aaa213d06b8ff7119f1d770637e5eb19c6702033f4a3a389c3e0d92928180": {
+"correct": true,
+"supported": true
+},
+"e8d4759a32e710c1bc9bdcf1f69930f1577073d47e56ec2c882ccd5e16581e19": {
+"correct": false,
+"supported": true
+},
+"f00a835283015156bb75ba4808ab379bea2134c677d527d4048160df18889943": {
+"correct": true,
+"supported": true
+},
+"65dca83573ae5e86c6ff29a043df1cf843ab43c1741a01292c9e402dc92f1510": {
+"correct": true,
+"supported": true
+},
+"962ced0c6679255906465b0c428c4b2bcdb6505a894c2ed377d33988ec06ff11": {
+"correct": true,
+"supported": true
+},
+"d012f0d5659bf4f9987c9c7e8686d9010c8dca53068fa732a9fd040b1468c430": {
+"correct": true,
+"supported": true
+},
+"be3d5a534e9bfacdc941691b8e0534b7f4e239bddb8eaba4962b425d45d75228": {
+"correct": true,
+"supported": true
+},
+"34365d7b648a94f7681391809bc9d087f0dcd954cada44b1dab076959db4c8a9": {
+"correct": true,
+"supported": true
+},
+"afbbffa058670ed157e23d5b0916fd9ce41eee20896d4ec771d19d8ad4325766": {
+"correct": true,
+"supported": true
+},
+"772e249721175c2980447bb3b98d97df17af62374b724f8db48281c416417329": {
+"correct": true,
+"supported": true
+},
+"46433b76c4546083b8cff3e3301bc604b34185774b397f21f69ded7ae6348517": {
+"correct": true,
+"supported": true
+},
+"fb8fe46d7d18845778ff7dbaae9b7dbd8e99a9141cf7b8b0f68579b37e6997e3": {
+"correct": true,
+"supported": true
+},
+"ba19de146481310d5aaaeb462e62df98c4f0ae6edd345789ec2981583172968b": {
+"correct": true,
+"supported": true
+},
+"9914f20845a443d0babcf7a1b32a837161fd4237cc863d41257fe65220d99350": {
+"correct": true,
+"supported": true
+},
+"d14880a422c908f7a03a066e3649dbff6cc55408e778fa1688952392f59d71c7": {
+"correct": false,
+"supported": true
+},
+"ff9f24915903c5e11a2aca2a441a3a31293f85440f24ca543df9af15962218f2": {
+"correct": true,
+"supported": true
+},
+"8c99dfc4cceafd2aa8d398e9bf34580d4cecf9c3273d4290e447b4718a19b4a7": {
+"correct": true,
+"supported": true
+},
+"e1e8ad710d7709dcc5260e33a135a60cb31a91dd22c1fc2392beedb17c72b6dc": {
+"correct": true,
+"supported": true
+},
+"0ec68d15e0c1e204d7fccfcf84cb0b4f7b92dd97917478e9927141b5c183c7d1": {
+"correct": true,
+"supported": true
+},
+"90532a48ec61c2c758be949b3aba3172bcdd551c2c23fd5882188e653884c80f": {
+"correct": false,
+"supported": true
+},
+"9bf7bfeb6bbdc051c39cbd974c077827402ad33d77e099ac1dba6255a33f0a71": {
+"correct": true,
+"supported": true
+},
+"0c9d2256347757b5e04e064531e78eef33650f1768b480c04dab95f6fbd6184e": {
+"correct": true,
+"supported": true
+},
+"e300a0d45b049bd7dd7f9da53cf3129330d188ae16fa62bf25f98781a23562ed": {
+"correct": true,
+"supported": true
+},
+"af04c107180c21a5ebf082c41339813d8619528d7d47ee8ce1009cac4010b3cb": {
+"correct": false,
+"supported": true
+},
+"0951b0820f9b6f9cfdf93080e6bddb522a1eb3683a5ae397708872e8a004e6e9": {
+"correct": true,
+"supported": true
+},
+"8c024145f308be265a8db98dda8ffae569ab16ef8f3f78c82b8a90c9aec5781b": {
+"correct": true,
+"supported": true
+},
+"a7cbdc74df4abe9067b7f971f985eec62a54c49731148c877ca6df745efdaccb": {
+"correct": true,
+"supported": true
+},
+"6c30a71ecef21b9be4a8a6886078df6369e8db0c58587bbe2e51d582475d9759": {
+"correct": true,
+"supported": true
+},
+"399f15c47e4508c896fdd43dc2b57e2caf5f1930c77b3bc0c4d50f3069e1dfa0": {
+"correct": true,
+"supported": true
+},
+"33997a47bf53f31d95d8aab4ad45d6c403c2a0fe88a63e04208ef428e7758cfd": {
+"correct": true,
+"supported": true
+},
+"5438da7a6e5ee1ee2928144ddf523facb710f391674a9a66b27eba77d51d3d84": {
+"correct": true,
+"supported": true
+},
+"dd7c41af5d00b9ee312ce86995724e14c4efd874022b479a5899190a09a44415": {
+"correct": false,
+"supported": true
+},
+"9fbb0f340294fd090214471110fe01e2ff259990f9c22c4320a9e52115057b63": {
+"correct": true,
+"supported": true
+},
+"409f13c105548a4f4ca4f59879c3a54d834d172eaf2c3eb764307fdca205d3b5": {
+"correct": true,
+"supported": true
+},
+"8f12e6244645c5c5548a46558e9812c3bf6f85696055df3c74f3946559983e76": {
+"correct": true,
+"supported": true
+},
+"bb8dcd4c3a3fb8ae956a9e587323bff6a7445372896bb58ee3d795fb8b955ca7": {
+"correct": true,
+"supported": true
+},
+"d5c354296d79ebc36e19516abd3d6dec3557c50bb62972c5cd3894880b0384df": {
+"correct": true,
+"supported": true
+},
+"72ff6f77da47aa23d78e88688c2636947f157ea3ecdf510ec2ce7b157261780f": {
+"correct": true,
+"supported": true
+},
+"7c325afa2f9464812ac6115df9263101834efa3aefff3700a135c26df1af0a69": {
+"correct": false,
+"supported": true
+},
+"3c2fc6153d64329585e057b82291c616a6e0fc6f502bf13b55a16f3b339b1566": {
+"correct": true,
+"supported": true
+},
+"903b460d95d6862f770333eba3599c05ba9ded2ad1e732e4c1be7f85f4898860": {
+"correct": true,
+"supported": true
+},
+"afe1f4384739e6f33da96cb6404d911b325146073c624f01935ccd45656d36c2": {
+"correct": true,
+"supported": true
+},
+"21cf9858268377305936f5f595a6c347c2121cb1e669db2f1c13327cfc4fe8fb": {
+"correct": true,
+"supported": true
+},
+"59bdd57d4aa45f267ac6689cce7f7d5d682643b5ea58d616aaa4cb8df3e870c1": {
+"correct": true,
+"supported": true
+},
+"e0b2fb7d0ad6e4943c96f79900f5f184c9dd65bcd2c7890f824f2b990a213a3a": {
+"correct": true,
+"supported": true
+},
+"cb702ef4342af932043855e05b2e6b7ee3324410ba949ca102336854906ded62": {
+"correct": true,
+"supported": true
+},
+"904ac8c30541133640d6780ff9f3cf3726393d2c634408517dc3e6d3b318ac40": {
+"correct": false,
+"supported": true
+},
+"d05a4bc4ea73f90cb3a6fec2530abdfd35b5081f3d7304cca8875b4716836c8c": {
+"correct": true,
+"supported": true
+},
+"7ef6f3284a608be25f5000168f9839cdcabbdb3fc8f0629295ddcf5a910af699": {
+"correct": true,
+"supported": true
+},
+"8bd79b3e3bf6baa129360182f6f5959e140737794950a884f93e406f72cdeddc": {
+"correct": false,
+"supported": true
+},
+"9a2b15ccbb9513c603475cb3207698081d042c949c06b8f26476363b22a6a01c": {
+"correct": true,
+"supported": true
+},
+"95030051a22b9879d695767f7127c9905479a7796ad3f8576e241c219339c451": {
+"correct": true,
+"supported": true
+},
+"91cde81adb1f791d1bbc378a8576134f376b1bb15e38c3ebf9c8be6362665632": {
+"correct": true,
+"supported": true
+},
+"8fc01a36edb66344f51e5cde55f336fafdfb5f156515d8c05726bc6c60edc89e": {
+"correct": true,
+"supported": true
+},
+"c333429fe8fd758b114f7ad9f5f056f7d284a4d971a0ed5a76a02aa66fba1ec2": {
+"correct": true,
+"supported": true
+},
+"16a7adff01ede637e04261f34e9808f8df59b617124f60611b46dae8eb5e0c2b": {
+"correct": true,
+"supported": true
+},
+"8cd07c5a96109f0e1bceaceaf75fc2788af26435e8910d4a233d4dc65e57973f": {
+"correct": true,
+"supported": true
+},
+"17bb7cf85cee953777da64388f8f1057dd048204eca91954b01defec5655969d": {
+"correct": false,
+"supported": true
+},
+"bf426052cd7d6cf2c03ed59b7c6e632ae00ad9d8c71617b846a4092a059d66ae": {
+"correct": true,
+"supported": true
+},
+"0e40a07c48ed988189ceb2d88f5e1277f7575c2a1f068704b790bc7be0fa52b9": {
+"correct": true,
+"supported": true
+},
+"bee38b9deaf3113955c23b97f8e12f1da595aa2db9ebe7ac3132af86285004bd": {
+"correct": true,
+"supported": true
+},
+"f7894e07a0f90eb95a2e2f7a230ed1a66858ca91cfc82a25c2dbbaeccbf59da9": {
+"correct": true,
+"supported": true
+},
+"d6a166a4b0354aca440c8e646a5cbbd3f623b7fe38230d76a7c9bf4b60353d2e": {
+"correct": true,
+"supported": true
+},
+"251ce051d610ffa3aff47ee3c562443e6757d35ae6508b6c5c881b2389e75bc4": {
+"correct": true,
+"supported": true
+},
+"5b379bb2ebdcf7c24a615722fa480b9028fcc45131c9d23c29db6c22ba03a64c": {
+"correct": true,
+"supported": true
+},
+"0194f53a09c3729589dab3f6c0dd6c22cfb4d67dd3aa701e2aa5d72e44d1916e": {
+"correct": true,
+"supported": true
+},
+"ead2d35e536e616627a57daa0839ed7d826a3b4162b29dce6712f8408bd8d6b4": {
+"correct": true,
+"supported": true
+},
+"db93f67b3b01578991f6bab74b7232c5b3ab70afe71b06070f74405e075cf759": {
+"correct": true,
+"supported": true
+}
+}

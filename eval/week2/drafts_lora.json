@@ -1,0 +1,1614 @@
+{
+ "items": [
+  {
+   "type": "direct",
+   "question": "By how many times can LoRA reduce the number of trainable parameters compared to full fine-tuning?",
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "id": "lora-direct-0"
+  },
+  {
+   "type": "near_identical",
+   "question": "By how many times does LoRA reduce the number of trainable parameters?",
+   "answer": "10,000 times",
+   "wrong_answer": "3 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "id": "lora-near_identical-1"
+  },
+  {
+   "type": "direct",
+   "question": "What is the full rank value (d) for GPT-3 175B mentioned in the paper?",
+   "answer": "12,288",
+   "paper": "lora",
+   "evidence": [
+    [
+     "full rank (i.e., d) is as high as 12,288"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ],
+   "base_id": "lora-f1",
+   "id": "lora-direct-2"
+  },
+  {
+   "type": "direct",
+   "question": "What is the inference latency of LoRA for GPT-2 medium with a batch size of 1 and sequence length of 128?",
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "id": "lora-direct-3"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the inference latency increase percentage for AdapterH with a batch size of 1?",
+   "answer": "+30.3%",
+   "wrong_answer": "+20.7%",
+   "paper": "lora",
+   "evidence": [
+    [
+     "AdapterH 1492.2\u00b11.0 (+3.0%) 366.3\u00b10.5 (+8.4%) 25.8\u00b12.2 (+30.3%)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "id": "lora-near_identical-4"
+  },
+  {
+   "type": "direct",
+   "question": "What initialization values are used for matrices A and B in LoRA?",
+   "answer": "Random Gaussian for A and zero for B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "random Gaussian initialization for A and zero for B"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "lora-f3",
+   "id": "lora-direct-5"
+  },
+  {
+   "type": "direct",
+   "question": "What is the reduction in VRAM consumption during training for GPT-3 175B when using LoRA?",
+   "answer": "from 1.2TB to 350GB",
+   "paper": "lora",
+   "evidence": [
+    [
+     "reduce the VRAM consumption during training from 1.2TB to 350GB"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "lora-f4",
+   "id": "lora-direct-6"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the training throughput per V100 GPU for full fine-tuning of GPT-3 175B?",
+   "answer": "32.5 tokens/s",
+   "wrong_answer": "43.1 tokens/s",
+   "paper": "lora",
+   "evidence": [
+    [
+     "training throughput for full fine-tuning is 32.5 tokens/s per V100 GPU"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     23
+    ]
+   ],
+   "id": "lora-near_identical-7"
+  },
+  {
+   "type": "direct",
+   "question": "How many trainable parameters does RoBERTa base use with the LoRA method?",
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "id": "lora-direct-8"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the average GLUE score for RoBERTa large with the LoRA method?",
+   "answer": "89.0",
+   "wrong_answer": "87.2",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.8M 90.6 96.2 90.9 68.2 94.9 91.6 87.4 92.6 89.0"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "id": "lora-near_identical-9"
+  },
+  {
+   "type": "direct",
+   "question": "How many trainable parameters does the GPT-2 M (LoRA) model have in the E2E NLG Challenge?",
+   "answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "lora-f6",
+   "id": "lora-direct-10"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the number of trainable parameters for the GPT-2 L (LoRA) model?",
+   "answer": "0.77M",
+   "wrong_answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 L (LoRA) 0.77M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "id": "lora-near_identical-11"
+  },
+  {
+   "type": "direct",
+   "question": "How many trainable parameters does the GPT-3 (LoRA) model use in Table 4?",
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "id": "lora-direct-12"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the WikiSQL validation accuracy for GPT-3 (LoRA) with 4.7M trainable parameters?",
+   "answer": "73.4",
+   "wrong_answer": "74.0",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "id": "lora-near_identical-13"
+  },
+  {
+   "type": "direct",
+   "question": "How many parameters does the GPT-3 model have?",
+   "answer": "175B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (Brown et al., 2020) is the largest single Transformer language model trained to-date with 175B parameters."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "base_id": "lora-f8",
+   "id": "lora-direct-14"
+  },
+  {
+   "type": "direct",
+   "question": "What parameter budget was set for the GPT-3 175B experiments in Section 7.1?",
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We set a parameter budget of 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ]
+   ],
+   "base_id": "lora-f9",
+   "id": "lora-direct-15"
+  },
+  {
+   "type": "near_identical",
+   "question": "What rank r corresponds to adapting one type of attention weights with an 18M parameter budget?",
+   "answer": "8",
+   "wrong_answer": "4",
+   "paper": "lora",
+   "evidence": [
+    [
+     "r = 8 if we adapt one type"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ]
+   ],
+   "id": "lora-near_identical-16"
+  },
+  {
+   "type": "direct",
+   "question": "What is the total number of trainable parameters used in the experiment presented in Table 5?",
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "id": "lora-direct-17"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the validation accuracy on WikiSQL for LoRA with rank r=4 when adapting both Wq and Wv?",
+   "answer": "73.7",
+   "wrong_answer": "73.8",
+   "paper": "lora",
+   "evidence": [
+    [
+     "W , W 73.4 73.3 73.7 73.8 73.5"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     45
+    ]
+   ],
+   "id": "lora-near_identical-18"
+  },
+  {
+   "type": "direct",
+   "question": "Which layer of the model was analyzed in Figure 3 due to space constraints?",
+   "answer": "48th layer",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We only look at the 48th layer"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     47,
+     48
+    ]
+   ],
+   "base_id": "lora-f11",
+   "id": "lora-direct-19"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the normalized subspace similarity threshold for the top singular vector directions between A_r=8 and A_r=64?",
+   "answer": "> 0.5",
+   "wrong_answer": "0.0",
+   "paper": "lora",
+   "evidence": [
+    [
+     "similarity > 0.5, providing an explanation"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     48,
+     49
+    ]
+   ],
+   "id": "lora-near_identical-20"
+  },
+  {
+   "type": "direct",
+   "question": "What is the Frobenius norm of \u0394W for the 48th layer of GPT-3?",
+   "answer": "6.91",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||\u2206W || = 6.91"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ]
+   ],
+   "base_id": "lora-f12",
+   "id": "lora-direct-21"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the Frobenius norm of U^T W V^T when U and V are the top 4 singular vectors of W?",
+   "answer": "21.67",
+   "wrong_answer": "0.32",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||U(cid:62)W V (cid:62)|| = 0.32 21.67"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ]
+   ],
+   "id": "lora-near_identical-22"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "paraphrased",
+   "question": "What is the magnitude of the decrease in adjustable weights when using this method versus training the entire model?",
+   "id": "lora-paraphrased-23"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "verbose",
+   "question": "Researchers are often concerned about the computational cost and memory requirements of adapting large models to specific tasks. To understand the efficiency gains offered by this specific technique, it is important to quantify the reduction in the size of the parameter space that needs to be updated. By how many times can LoRA reduce the number of trainable parameters compared to full fine-tuning?",
+   "id": "lora-verbose-24"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "keyword",
+   "question": "LoRA parameter reduction factor",
+   "id": "lora-keyword-25"
+  },
+  {
+   "answer": "10,000 times",
+   "paper": "lora",
+   "evidence": [
+    [
+     "LoRA can reduce the number of trainable parameters by 10,000 times"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "lora-f0",
+   "type": "plain_language",
+   "question": "How much smaller is the part of the system that needs to be changed when using this new method compared to changing the whole system?",
+   "id": "lora-plain_language-26"
+  },
+  {
+   "answer": "12,288",
+   "paper": "lora",
+   "evidence": [
+    [
+     "full rank (i.e., d) is as high as 12,288"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ],
+   "base_id": "lora-f1",
+   "type": "paraphrased",
+   "question": "According to the study, what is the dimensionality of the weight matrices for the largest model tested?",
+   "id": "lora-paraphrased-27"
+  },
+  {
+   "answer": "12,288",
+   "paper": "lora",
+   "evidence": [
+    [
+     "full rank (i.e., d) is as high as 12,288"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ],
+   "base_id": "lora-f1",
+   "type": "verbose",
+   "question": "The paper compares the computational cost of full fine-tuning against the proposed method by detailing the size of the original model weights. Specifically, what is the total number of parameters in the weight matrix (d) for the GPT-3 175B model as cited in the text?",
+   "id": "lora-verbose-28"
+  },
+  {
+   "answer": "12,288",
+   "paper": "lora",
+   "evidence": [
+    [
+     "full rank (i.e., d) is as high as 12,288"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ],
+   "base_id": "lora-f1",
+   "type": "keyword",
+   "question": "GPT-3 175B rank d",
+   "id": "lora-keyword-29"
+  },
+  {
+   "answer": "12,288",
+   "paper": "lora",
+   "evidence": [
+    [
+     "full rank (i.e., d) is as high as 12,288"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ]
+   ],
+   "base_id": "lora-f1",
+   "type": "plain_language",
+   "question": "In the document, how many total numbers make up the main data structure for the biggest AI model they tested?",
+   "id": "lora-plain_language-30"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "paraphrased",
+   "question": "How much time does the adapted GPT-2 medium model take to process a single input of 128 tokens during evaluation?",
+   "id": "lora-paraphrased-31"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "verbose",
+   "question": "You are evaluating the efficiency of the LoRA method compared to full fine-tuning. Specifically, you need to know the computational overhead during the prediction phase for a standard configuration. What is the inference latency of LoRA for GPT-2 medium with a batch size of 1 and sequence length of 128?",
+   "id": "lora-verbose-32"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "keyword",
+   "question": "LoRA GPT-2 medium latency",
+   "id": "lora-keyword-33"
+  },
+  {
+   "answer": "19.8\u00b12.7 ms",
+   "paper": "lora",
+   "evidence": [
+    [
+     "Fine-Tune/LoRA 1449.4\u00b10.8 338.0\u00b10.6 19.8\u00b12.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "lora-f2",
+   "type": "plain_language",
+   "question": "How long does it take for the updated GPT-2 medium model to generate a response when processing a short text of 128 words at a time?",
+   "id": "lora-plain_language-34"
+  },
+  {
+   "answer": "Random Gaussian for A and zero for B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "random Gaussian initialization for A and zero for B"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "lora-f3",
+   "type": "paraphrased",
+   "question": "How are the weights of the two new sub-matrices set up before training begins?",
+   "id": "lora-paraphrased-35"
+  },
+  {
+   "answer": "Random Gaussian for A and zero for B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "random Gaussian initialization for A and zero for B"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "lora-f3",
+   "type": "verbose",
+   "question": "Understanding the starting point of the training process is crucial for reproducibility and debugging. Specifically, knowing how the low-rank components are seeded helps explain why the model starts as an identity mapping. What are the specific initialization strategies applied to the two constituent matrices in this method?",
+   "id": "lora-verbose-36"
+  },
+  {
+   "answer": "Random Gaussian for A and zero for B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "random Gaussian initialization for A and zero for B"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "lora-f3",
+   "type": "keyword",
+   "question": "LoRA matrix initialization values",
+   "id": "lora-keyword-37"
+  },
+  {
+   "answer": "Random Gaussian for A and zero for B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "random Gaussian initialization for A and zero for B"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     16
+    ]
+   ],
+   "base_id": "lora-f3",
+   "type": "plain_language",
+   "question": "When the system adds new parts to the model, how are the numbers in those new parts chosen at the very beginning?",
+   "id": "lora-plain_language-38"
+  },
+  {
+   "answer": "from 1.2TB to 350GB",
+   "paper": "lora",
+   "evidence": [
+    [
+     "reduce the VRAM consumption during training from 1.2TB to 350GB"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "lora-f4",
+   "type": "paraphrased",
+   "question": "How much memory was saved on the graphics cards when fine-tuning the massive 175-billion parameter model with this specific parameter-efficient method?",
+   "id": "lora-paraphrased-39"
+  },
+  {
+   "answer": "from 1.2TB to 350GB",
+   "paper": "lora",
+   "evidence": [
+    [
+     "reduce the VRAM consumption during training from 1.2TB to 350GB"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "lora-f4",
+   "type": "verbose",
+   "question": "Researchers often worry about the prohibitive cost of training large models on standard hardware. To understand the practical benefits of this adaptation technique, it is important to know the specific hardware savings achieved. What was the drop in video memory usage for the GPT-3 175B model when applying LoRA?",
+   "id": "lora-verbose-40"
+  },
+  {
+   "answer": "from 1.2TB to 350GB",
+   "paper": "lora",
+   "evidence": [
+    [
+     "reduce the VRAM consumption during training from 1.2TB to 350GB"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "lora-f4",
+   "type": "keyword",
+   "question": "LoRA GPT-3 175B VRAM",
+   "id": "lora-keyword-41"
+  },
+  {
+   "answer": "from 1.2TB to 350GB",
+   "paper": "lora",
+   "evidence": [
+    [
+     "reduce the VRAM consumption during training from 1.2TB to 350GB"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "lora-f4",
+   "type": "plain_language",
+   "question": "How much less computer memory was needed to teach the huge GPT-3 175B program when using the LoRA shortcut?",
+   "id": "lora-plain_language-42"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "paraphrased",
+   "question": "What is the size of the adjustable component when applying the low-rank adaptation technique to the base version of the RoBERTa model?",
+   "id": "lora-paraphrased-43"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "verbose",
+   "question": "Researchers often look for ways to fine-tune large language models without updating every single weight, which saves significant computational resources. By using a specific adaptation method that only modifies a small subset of the network, one can drastically reduce the memory footprint. In this context, what is the exact count of active parameters for the base RoBERTa model when this technique is applied?",
+   "id": "lora-verbose-44"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "keyword",
+   "question": "RoBERTa base LoRA parameters",
+   "id": "lora-keyword-45"
+  },
+  {
+   "answer": "0.3M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24
+    ]
+   ],
+   "base_id": "lora-f5",
+   "type": "plain_language",
+   "question": "If you use a special shortcut to update the RoBERTa base model instead of changing the whole thing, how many tiny settings actually get changed?",
+   "id": "lora-plain_language-46"
+  },
+  {
+   "answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "lora-f6",
+   "type": "paraphrased",
+   "question": "What is the size of the adjustable component for the medium-sized GPT-2 variant in the end-to-end natural language generation task?",
+   "id": "lora-paraphrased-47"
+  },
+  {
+   "answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "lora-f6",
+   "type": "verbose",
+   "question": "Researchers often look at the efficiency of fine-tuning methods to understand how much computational power is required. Specifically, they want to know the scale of the added weights compared to the full model. Given this, what is the count of learnable weights for the GPT-2 M model using LoRA in the E2E NLG Challenge?",
+   "id": "lora-verbose-48"
+  },
+  {
+   "answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "lora-f6",
+   "type": "keyword",
+   "question": "GPT-2 M LoRA E2E params",
+   "id": "lora-keyword-49"
+  },
+  {
+   "answer": "0.35M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ]
+   ],
+   "base_id": "lora-f6",
+   "type": "plain_language",
+   "question": "When the team used a specific shortcut method to update the medium-sized GPT-2 AI for the text generation test, how many small parts of the system were actually changed?",
+   "id": "lora-plain_language-50"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "paraphrased",
+   "question": "What is the size of the adjustable component for the GPT-3 variant in the fourth table?",
+   "id": "lora-paraphrased-51"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "verbose",
+   "question": "Researchers often compare the efficiency of different adaptation methods by looking at the computational cost. Specifically, they want to know how much memory is required for the updated weights in the GPT-3 experiments. How many trainable parameters does the GPT-3 (LoRA) model use in Table 4?",
+   "id": "lora-verbose-52"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "keyword",
+   "question": "GPT-3 LoRA Table 4 parameters",
+   "id": "lora-keyword-53"
+  },
+  {
+   "answer": "4.7M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ]
+   ],
+   "base_id": "lora-f7",
+   "type": "plain_language",
+   "question": "In the fourth table of the study, how many adjustable numbers does the GPT-3 version of the LoRA method have?",
+   "id": "lora-plain_language-54"
+  },
+  {
+   "answer": "175B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (Brown et al., 2020) is the largest single Transformer language model trained to-date with 175B parameters."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "base_id": "lora-f8",
+   "type": "paraphrased",
+   "question": "What is the total count of trainable weights in the largest language model discussed in the study?",
+   "id": "lora-paraphrased-55"
+  },
+  {
+   "answer": "175B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (Brown et al., 2020) is the largest single Transformer language model trained to-date with 175B parameters."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "base_id": "lora-f8",
+   "type": "verbose",
+   "question": "The paper compares the efficiency of their proposed method against a massive baseline model. To understand the scale of the comparison, one needs to know the size of that specific baseline. How many parameters does the GPT-3 model have?",
+   "id": "lora-verbose-56"
+  },
+  {
+   "answer": "175B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (Brown et al., 2020) is the largest single Transformer language model trained to-date with 175B parameters."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "base_id": "lora-f8",
+   "type": "keyword",
+   "question": "GPT-3 parameter count",
+   "id": "lora-keyword-57"
+  },
+  {
+   "answer": "175B",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (Brown et al., 2020) is the largest single Transformer language model trained to-date with 175B parameters."
+    ]
+   ],
+   "gold_chunks": [
+    [
+     37
+    ]
+   ],
+   "base_id": "lora-f8",
+   "type": "plain_language",
+   "question": "How many individual numbers does the GPT-3 computer program use to make its decisions?",
+   "id": "lora-plain_language-58"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We set a parameter budget of 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ]
+   ],
+   "base_id": "lora-f9",
+   "type": "paraphrased",
+   "question": "In the study of the largest model variant discussed in the final experimental section, how many trainable variables were allocated for the adaptation layer?",
+   "id": "lora-paraphrased-59"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We set a parameter budget of 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ]
+   ],
+   "base_id": "lora-f9",
+   "type": "verbose",
+   "question": "Researchers often need to know the scale of the modifications made to massive models to understand the efficiency of the method. Specifically, regarding the largest architecture tested in the paper's main results, what was the size of the additional parameters introduced by the technique?",
+   "id": "lora-verbose-60"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We set a parameter budget of 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ]
+   ],
+   "base_id": "lora-f9",
+   "type": "keyword",
+   "question": "GPT-3 175B LoRA parameters",
+   "id": "lora-keyword-61"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We set a parameter budget of 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ]
+   ],
+   "base_id": "lora-f9",
+   "type": "plain_language",
+   "question": "For the biggest computer program tested in the study, how many new adjustable settings were added to customize it without changing the original code?",
+   "id": "lora-plain_language-62"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "paraphrased",
+   "question": "How many adjustable weights were active during the evaluation shown in the fifth table of the study?",
+   "id": "lora-paraphrased-63"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "verbose",
+   "question": "Researchers often need to verify the computational efficiency of the proposed method by checking the resource requirements. Specifically, they want to know the scale of the model that was actually updated during the final performance benchmark. What is the total count of learnable variables reported in Table 5?",
+   "id": "lora-verbose-64"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "keyword",
+   "question": "Table 5 trainable parameters",
+   "id": "lora-keyword-65"
+  },
+  {
+   "answer": "18M",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ]
+   ],
+   "base_id": "lora-f10",
+   "type": "plain_language",
+   "question": "In the results shown in the fifth table, how many parts of the system were actually changed or learned during the test?",
+   "id": "lora-plain_language-66"
+  },
+  {
+   "answer": "48th layer",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We only look at the 48th layer"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     47,
+     48
+    ]
+   ],
+   "base_id": "lora-f11",
+   "type": "paraphrased",
+   "question": "Which specific depth in the network architecture was selected for the visualization in Figure 3 because the authors could not include all of them?",
+   "id": "lora-paraphrased-67"
+  },
+  {
+   "answer": "48th layer",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We only look at the 48th layer"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     47,
+     48
+    ]
+   ],
+   "base_id": "lora-f11",
+   "type": "verbose",
+   "question": "The paper discusses the internal mechanisms of the model but limits the visual evidence to a single instance to keep the document concise. Given this limitation, which specific layer index was chosen for the detailed analysis presented in Figure 3?",
+   "id": "lora-verbose-68"
+  },
+  {
+   "answer": "48th layer",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We only look at the 48th layer"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     47,
+     48
+    ]
+   ],
+   "base_id": "lora-f11",
+   "type": "keyword",
+   "question": "Figure 3 layer index",
+   "id": "lora-keyword-69"
+  },
+  {
+   "answer": "48th layer",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We only look at the 48th layer"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     47,
+     48
+    ]
+   ],
+   "base_id": "lora-f11",
+   "type": "plain_language",
+   "question": "Because there was not enough room to show every part of the system, which specific numbered section did the researchers pick to display in the third picture?",
+   "id": "lora-plain_language-70"
+  },
+  {
+   "answer": "6.91",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||\u2206W || = 6.91"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ]
+   ],
+   "base_id": "lora-f12",
+   "type": "paraphrased",
+   "question": "What is the magnitude of the weight adjustment applied to the 48th layer of the GPT-3 model?",
+   "id": "lora-paraphrased-71"
+  },
+  {
+   "answer": "6.91",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||\u2206W || = 6.91"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ]
+   ],
+   "base_id": "lora-f12",
+   "type": "verbose",
+   "question": "Researchers often need to quantify the size of the changes made to a neural network's parameters to understand the efficiency of the adaptation method. In the context of the LoRA paper, this involves looking at the specific numerical value associated with the final layer of the GPT-3 architecture. What is the Frobenius norm of \u0394W for the 48th layer of GPT-3?",
+   "id": "lora-verbose-72"
+  },
+  {
+   "answer": "6.91",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||\u2206W || = 6.91"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ]
+   ],
+   "base_id": "lora-f12",
+   "type": "keyword",
+   "question": "GPT-3 48th layer Frobenius norm",
+   "id": "lora-keyword-73"
+  },
+  {
+   "answer": "6.91",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||\u2206W || = 6.91"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ]
+   ],
+   "base_id": "lora-f12",
+   "type": "plain_language",
+   "question": "How large is the change made to the 48th part of the GPT-3 system, measured by a specific mathematical standard?",
+   "id": "lora-plain_language-74"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the difference in the number of trainable parameters between the GPT-3 (LoRA) model in Table 4 and the RoBERTa base model using LoRA?",
+   "answer": "4.4M",
+   "base_id": "lora-f7+lora-f5",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ],
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     33
+    ],
+    [
+     24
+    ]
+   ],
+   "id": "lora-multi_hop-75"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many times larger is the full rank value (d) for GPT-3 175B compared to the number of trainable parameters (in millions) used in the GPT-3 (LoRA) model in Table 4?",
+   "answer": "2614.46",
+   "base_id": "lora-f1+lora-f7",
+   "paper": "lora",
+   "evidence": [
+    [
+     "full rank (i.e., d) is as high as 12,288"
+    ],
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     5
+    ],
+    [
+     33
+    ]
+   ],
+   "id": "lora-multi_hop-76"
+  },
+  {
+   "type": "multi_hop",
+   "question": "If the parameter budget for GPT-3 175B experiments in Section 7.1 is 18M, how many more trainable parameters does this budget represent compared to the GPT-2 M (LoRA) model in the E2E NLG Challenge?",
+   "answer": "17.65M",
+   "base_id": "lora-f9+lora-f6",
+   "paper": "lora",
+   "evidence": [
+    [
+     "We set a parameter budget of 18M"
+    ],
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43
+    ],
+    [
+     29
+    ]
+   ],
+   "id": "lora-multi_hop-77"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the ratio of the Frobenius norm of \u0394W for the 48th layer of GPT-3 to the number of trainable parameters (in millions) for the GPT-3 (LoRA) model in Table 4?",
+   "answer": "1.47",
+   "base_id": "lora-f12+lora-f7",
+   "paper": "lora",
+   "evidence": [
+    [
+     "||\u2206W || = 6.91"
+    ],
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     52
+    ],
+    [
+     33
+    ]
+   ],
+   "id": "lora-multi_hop-78"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the sum of the trainable parameters (in millions) for the GPT-2 M (LoRA) model in the E2E NLG Challenge and the RoBERTa base model using LoRA?",
+   "answer": "0.65M",
+   "base_id": "lora-f6+lora-f5",
+   "paper": "lora",
+   "evidence": [
+    [
+     "GPT-2 M (LoRA) 0.35M 70.4"
+    ],
+    [
+     "RoB (LoRA) 0.3M 87.5 95.1"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     29
+    ],
+    [
+     24
+    ]
+   ],
+   "id": "lora-multi_hop-79"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the difference between the total number of trainable parameters used in the experiment in Table 5 and the number of trainable parameters for the GPT-3 (LoRA) model in Table 4?",
+   "answer": "13.3M",
+   "base_id": "lora-f10+lora-f7",
+   "paper": "lora",
+   "evidence": [
+    [
+     "# of Trainable Parameters = 18M"
+    ],
+    [
+     "GPT-3 (LoRA) 4.7M 73.4 91.7"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     43,
+     44
+    ],
+    [
+     33
+    ]
+   ],
+   "id": "lora-multi_hop-80"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the inference latency of LoRA compare to full fine-tuning when using larger batch sizes, such as 32 or 64, rather than the batch size of 1 reported in the paper?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-81"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors evaluate the performance of LoRA on multimodal models, such as vision-language transformers, or was the study limited strictly to text-only language models?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-82"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the energy consumption in kilowatt-hours for training the GPT-3 175B model with LoRA compared to full fine-tuning, and how does this impact the carbon footprint of the experiment?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-83"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the choice of rank (r) affect the convergence speed and final performance on datasets with very low resource constraints, such as those with fewer than 1,000 training examples?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-84"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors test the effectiveness of LoRA on models with different architectural modifications, such as Mixture-of-Experts (MoE) layers, or only on standard dense transformer architectures?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-85"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the impact of LoRA on the model's ability to retain knowledge from pre-training (catastrophic forgetting) when fine-tuned on highly specialized domains like medical or legal text?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-86"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the quality of the LoRA adaptation change if the initialization of matrix A is done with a different distribution, such as a uniform distribution, instead of the Gaussian distribution used in the paper?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-87"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors compare the computational cost of LoRA against other parameter-efficient methods like Adapter Layers or Prefix Tuning on the same hardware setup to provide a direct efficiency benchmark?",
+   "answer": "I don't know",
+   "paper": "lora",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "lora-unanswerable-88"
+  }
+ ],
+ "dropped": [
+  {
+   "type": "direct",
+   "question": "What is the approximate number of parameters in GPT-3?",
+   "answer": "175 Billion",
+   "reason": "evidence not found",
+   "quotes": [
+    "such as GPT-3 with |\u03a6 0 | \u2248 175 Billion"
+   ]
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the maximum percentage of trainable parameters |\u0398| relative to |\u03a6 0 | when using LoRA with GPT-3 175B?",
+   "answer": "0.01%",
+   "wrong_answer": "1%",
+   "reason": "evidence not found",
+   "quotes": [
+    "number of trainable parameters |\u0398| can be as small as 0.01% of |\u03a6 0 |"
+   ]
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many times more trainable parameters does the GPT-3 (LoRA) model in Table 4 have compared to the RoBERTa base model using LoRA?",
+   "answer": "15.67",
+   "base_id": "lora-f7+lora-f5",
+   "reason": "duplicate",
+   "quotes": [
+    "GPT-3 (LoRA) 4.7M 73.4 91.7",
+    "RoB (LoRA) 0.3M 87.5 95.1"
+   ]
+  }
+ ]
+}

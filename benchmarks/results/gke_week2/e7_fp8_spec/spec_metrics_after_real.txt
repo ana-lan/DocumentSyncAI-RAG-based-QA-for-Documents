@@ -1,0 +1,6 @@
+# vLLM /metrics speculative-decoding counters, read with kubectl exec on Nov 10, 2026,
+# right after the 30 real RAG prompts (quality_e7_fp8_spec_real_c1.json). The cluster has since
+# been deleted, so these three lines were transcribed from the terminal output at the time.
+vllm:spec_decode_num_drafts_total{engine="0"} 8377.0
+vllm:spec_decode_num_draft_tokens_total{engine="0"} 41166.0
+vllm:spec_decode_num_accepted_tokens_total{engine="0"} 24769.0

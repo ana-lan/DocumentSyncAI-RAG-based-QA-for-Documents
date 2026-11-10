@@ -1,0 +1,1222 @@
+{
+ "items": [
+  {
+   "type": "direct",
+   "question": "How many GPUs were used to train the Transformer model for the WMT 2014 English-to-French task?",
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "id": "attention-direct-0"
+  },
+  {
+   "type": "near_identical",
+   "question": "What BLEU score did the Transformer achieve on the WMT 2014 English-to-German translation task?",
+   "answer": "28.4",
+   "wrong_answer": "41.8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "achieves 28.4 BLEU on the WMT 2014"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "id": "attention-near_identical-1"
+  },
+  {
+   "type": "direct",
+   "question": "How many P100 GPUs were used to train the Transformer for twelve hours?",
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "base_id": "attention-f1",
+   "id": "attention-direct-2"
+  },
+  {
+   "type": "near_identical",
+   "question": "How does the number of operations to relate signals from two arbitrary positions grow in ConvS2S?",
+   "answer": "linearly",
+   "wrong_answer": "logarithmically",
+   "paper": "attention",
+   "evidence": [
+    [
+     "grows in the distance between positions, linearly for ConvS2S"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "id": "attention-near_identical-3"
+  },
+  {
+   "type": "direct",
+   "question": "What is the dimension of the outputs produced by all sub-layers in the Transformer model?",
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "id": "attention-direct-4"
+  },
+  {
+   "type": "direct",
+   "question": "How many parallel attention layers or heads are employed in the work?",
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "id": "attention-direct-5"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the maximum path length for the Self-Attention layer type?",
+   "answer": "O(1)",
+   "wrong_answer": "O(n)",
+   "paper": "attention",
+   "evidence": [
+    [
+     "Self-Attention O(n2 \u00b7 d) O(1) O(1)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     18
+    ]
+   ],
+   "id": "attention-near_identical-6"
+  },
+  {
+   "type": "direct",
+   "question": "Why did the authors choose the sinusoidal version of positional encoding?",
+   "answer": "It may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+   "paper": "attention",
+   "evidence": [
+    [
+     "allow the model to extrapolate to sequence lengths"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "attention-f4",
+   "id": "attention-direct-7"
+  },
+  {
+   "type": "near_identical",
+   "question": "What is the computational complexity of a separable convolution layer?",
+   "answer": "O(k \u00b7 n \u00b7 d + n \u00b7 d2)",
+   "wrong_answer": "O(n)",
+   "paper": "attention",
+   "evidence": [
+    [
+     "decrease the complexity considerably, to O(k \u00b7 n \u00b7 d + n \u00b7 d2)"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     23
+    ]
+   ],
+   "id": "attention-near_identical-8"
+  },
+  {
+   "type": "direct",
+   "question": "How many steps were the base models trained for?",
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "id": "attention-direct-9"
+  },
+  {
+   "type": "near_identical",
+   "question": "What was the training cost in FLOPs for the Transformer (big) model on the English-to-German task?",
+   "answer": "2.3 \u00b7 10^19",
+   "wrong_answer": "3.3 \u00b7 10^18",
+   "paper": "attention",
+   "evidence": [
+    [
+     "Transformer (big) 28.4 41.8 2.3 \u00b7 1019"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     26
+    ]
+   ],
+   "id": "attention-near_identical-10"
+  },
+  {
+   "type": "direct",
+   "question": "What beam size was used for the base models in the English-to-French translation task?",
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "id": "attention-direct-11"
+  },
+  {
+   "type": "near_identical",
+   "question": "What was the BLEU score of the big model on the WMT 2014 English-to-French translation task?",
+   "answer": "41.0",
+   "wrong_answer": "25.8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "our big model achieves a BLEU score of 41.0"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     27,
+     28
+    ]
+   ],
+   "id": "attention-near_identical-12"
+  },
+  {
+   "type": "direct",
+   "question": "What was the beam size used during inference for the Transformer in the constituency parsing experiments?",
+   "answer": "21",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "base_id": "attention-f7",
+   "id": "attention-direct-13"
+  },
+  {
+   "type": "near_identical",
+   "question": "What was the F1 score of the 4-layer Transformer trained on the WSJ only setting?",
+   "answer": "91.3",
+   "wrong_answer": "92.7",
+   "paper": "attention",
+   "evidence": [
+    [
+     "Transformer (4 layers) WSJ only, discriminative 91.3"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "id": "attention-near_identical-14"
+  },
+  {
+   "type": "direct",
+   "question": "Where is the code for training and evaluating the models available?",
+   "answer": "https://github.com/tensorflow/tensor2tensor",
+   "paper": "attention",
+   "evidence": [
+    [
+     "available at https://github.com/tensorflow/tensor2tensor"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "attention-f8",
+   "id": "attention-direct-15"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "paraphrased",
+   "question": "What was the size of the GPU cluster utilized for the base model's training on the English-to-French translation benchmark?",
+   "id": "attention-paraphrased-16"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "verbose",
+   "question": "Understanding the computational resources required is crucial for replicating the study or estimating costs for similar projects. The paper details the specific hardware setup used to achieve the reported results. How many graphics processing units were employed in the training process for the English-to-French task?",
+   "id": "attention-verbose-17"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "keyword",
+   "question": "Transformer WMT 2014 GPU count",
+   "id": "attention-keyword-18"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ]
+   ],
+   "base_id": "attention-f0",
+   "type": "plain_language",
+   "question": "How many computer chips were used to teach the system to translate English into French?",
+   "id": "attention-plain_language-19"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "base_id": "attention-f1",
+   "type": "paraphrased",
+   "question": "What was the size of the GPU cluster required to complete the model's training in half a day?",
+   "id": "attention-paraphrased-20"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "base_id": "attention-f1",
+   "type": "verbose",
+   "question": "Researchers often wonder about the computational resources required to replicate state-of-the-art results. Specifically, the paper details the hardware setup used for the primary training runs. How many P100 GPUs were used to train the Transformer for twelve hours?",
+   "id": "attention-verbose-21"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "base_id": "attention-f1",
+   "type": "keyword",
+   "question": "Transformer training GPU count",
+   "id": "attention-keyword-22"
+  },
+  {
+   "answer": "eight",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ]
+   ],
+   "base_id": "attention-f1",
+   "type": "plain_language",
+   "question": "How many high-performance computer chips did the team use to teach the new language system in just twelve hours?",
+   "id": "attention-plain_language-23"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "paraphrased",
+   "question": "In the architecture described in the seminal 2017 paper, what is the fixed size of the vector that every internal component passes to the next stage?",
+   "id": "attention-paraphrased-24"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "verbose",
+   "question": "When analyzing the internal mechanics of the Transformer, it is crucial to understand how data flows between the various components like attention heads and feed-forward networks. To ensure compatibility between these stages, the model maintains a consistent vector size throughout. What is this specific dimension used for the outputs of all sub-layers?",
+   "id": "attention-verbose-25"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "keyword",
+   "question": "Transformer sub-layer output dimension",
+   "id": "attention-keyword-26"
+  },
+  {
+   "answer": "512",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ]
+   ],
+   "base_id": "attention-f2",
+   "type": "plain_language",
+   "question": "In the system that processes language by breaking it into parts and reassembling them, what is the number of values in the list that every step of the process hands off to the next step?",
+   "id": "attention-plain_language-27"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "paraphrased",
+   "question": "What is the count of simultaneous sub-mechanisms used to process input sequences in the proposed architecture?",
+   "id": "attention-paraphrased-28"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "verbose",
+   "question": "The architecture relies on a multi-head mechanism to capture different aspects of the data simultaneously. Understanding the specific configuration is crucial for replicating the model's performance. How many such components are active in parallel within the transformer blocks?",
+   "id": "attention-verbose-29"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "keyword",
+   "question": "transformer attention heads count",
+   "id": "attention-keyword-30"
+  },
+  {
+   "answer": "8",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ]
+   ],
+   "base_id": "attention-f3",
+   "type": "plain_language",
+   "question": "In the system described, how many separate channels are used to listen to different parts of the message at the same time?",
+   "id": "attention-plain_language-31"
+  },
+  {
+   "answer": "It may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+   "paper": "attention",
+   "evidence": [
+    [
+     "allow the model to extrapolate to sequence lengths"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "attention-f4",
+   "type": "paraphrased",
+   "question": "What specific advantage regarding unseen data lengths did the researchers cite for selecting the sine-based position representation?",
+   "id": "attention-paraphrased-32"
+  },
+  {
+   "answer": "It may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+   "paper": "attention",
+   "evidence": [
+    [
+     "allow the model to extrapolate to sequence lengths"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "attention-f4",
+   "type": "verbose",
+   "question": "The paper discusses different methods for injecting order information into the network. Readers often wonder why the authors settled on a specific mathematical function rather than a learned one. What was the stated benefit of using the sinusoidal formulation for handling variable input sizes?",
+   "id": "attention-verbose-33"
+  },
+  {
+   "answer": "It may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+   "paper": "attention",
+   "evidence": [
+    [
+     "allow the model to extrapolate to sequence lengths"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "attention-f4",
+   "type": "keyword",
+   "question": "sinusoidal positional encoding extrapolation",
+   "id": "attention-keyword-34"
+  },
+  {
+   "answer": "It may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+   "paper": "attention",
+   "evidence": [
+    [
+     "allow the model to extrapolate to sequence lengths"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     20
+    ]
+   ],
+   "base_id": "attention-f4",
+   "type": "plain_language",
+   "question": "Why did the creators pick the wave-like pattern to mark the order of words, and what benefit does it offer for predicting longer texts?",
+   "id": "attention-plain_language-35"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "paraphrased",
+   "question": "What was the total number of training iterations applied to the standard-sized architectures?",
+   "id": "attention-paraphrased-36"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "verbose",
+   "question": "Understanding the computational budget is crucial for replicating the results or comparing efficiency with other architectures. The paper specifies the exact duration of the training process for their primary configurations. How many steps were the base models trained for?",
+   "id": "attention-verbose-37"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "keyword",
+   "question": "base model training steps",
+   "id": "attention-keyword-38"
+  },
+  {
+   "answer": "100,000 steps",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ]
+   ],
+   "base_id": "attention-f5",
+   "type": "plain_language",
+   "question": "For how long did the computer run the learning process for the smaller version of the system?",
+   "id": "attention-plain_language-39"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "paraphrased",
+   "question": "What was the number of candidate sequences retained during the decoding process for the smaller architecture in the EN-FR experiment?",
+   "id": "attention-paraphrased-40"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "verbose",
+   "question": "The paper details the specific hyperparameters chosen for the different model scales. For the smaller variant tested on translating English to French, what specific value was selected for the beam search width?",
+   "id": "attention-verbose-41"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "keyword",
+   "question": "base model beam size",
+   "id": "attention-keyword-42"
+  },
+  {
+   "answer": "4",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     28
+    ]
+   ],
+   "base_id": "attention-f6",
+   "type": "plain_language",
+   "question": "When the researchers tested their smaller model on translating English sentences into French, how many different possible translations did they keep track of at each step to find the best one?",
+   "id": "attention-plain_language-43"
+  },
+  {
+   "answer": "21",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "base_id": "attention-f7",
+   "type": "paraphrased",
+   "question": "In the constituency parsing task, how many candidate sequences were retained at each step during the decoding phase?",
+   "id": "attention-paraphrased-44"
+  },
+  {
+   "answer": "21",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "base_id": "attention-f7",
+   "type": "verbose",
+   "question": "The paper details various experimental setups to demonstrate the model's versatility beyond translation. Specifically, the authors evaluated the architecture on a grammatical structure task. What specific width was set for the search beam during the inference stage of this particular experiment?",
+   "id": "attention-verbose-45"
+  },
+  {
+   "answer": "21",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "base_id": "attention-f7",
+   "type": "keyword",
+   "question": "Transformer parsing beam size",
+   "id": "attention-keyword-46"
+  },
+  {
+   "answer": "21",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ]
+   ],
+   "base_id": "attention-f7",
+   "type": "plain_language",
+   "question": "When the researchers tested the system on breaking sentences into their grammatical parts, how many possible paths did they keep track of at once while generating the output?",
+   "id": "attention-plain_language-47"
+  },
+  {
+   "answer": "https://github.com/tensorflow/tensor2tensor",
+   "paper": "attention",
+   "evidence": [
+    [
+     "available at https://github.com/tensorflow/tensor2tensor"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "attention-f8",
+   "type": "paraphrased",
+   "question": "In which online repository can one find the implementation used to build and test the system?",
+   "id": "attention-paraphrased-48"
+  },
+  {
+   "answer": "https://github.com/tensorflow/tensor2tensor",
+   "paper": "attention",
+   "evidence": [
+    [
+     "available at https://github.com/tensorflow/tensor2tensor"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "attention-f8",
+   "type": "verbose",
+   "question": "Researchers often need to verify the results or reproduce the experiments described in the paper. To do this, they require access to the source code that powers the model's learning and assessment processes. Where can this software be found?",
+   "id": "attention-verbose-49"
+  },
+  {
+   "answer": "https://github.com/tensorflow/tensor2tensor",
+   "paper": "attention",
+   "evidence": [
+    [
+     "available at https://github.com/tensorflow/tensor2tensor"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "attention-f8",
+   "type": "keyword",
+   "question": "attention is all you need code",
+   "id": "attention-keyword-50"
+  },
+  {
+   "answer": "https://github.com/tensorflow/tensor2tensor",
+   "paper": "attention",
+   "evidence": [
+    [
+     "available at https://github.com/tensorflow/tensor2tensor"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     36
+    ]
+   ],
+   "base_id": "attention-f8",
+   "type": "plain_language",
+   "question": "Where can I find the computer program used to create and check the system described in the article?",
+   "id": "attention-plain_language-51"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many more GPUs were used to train the Transformer model for the WMT 2014 English-to-French task than the number of parallel attention layers employed?",
+   "answer": "0",
+   "base_id": "attention-f0+attention-f3",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ],
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ],
+    [
+     14
+    ]
+   ],
+   "id": "attention-multi_hop-52"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the difference between the dimension of the outputs produced by all sub-layers and the beam size used for the base models in the English-to-French translation task?",
+   "answer": "508",
+   "base_id": "attention-f2+attention-f6",
+   "paper": "attention",
+   "evidence": [
+    [
+     "produce outputs of dimension d = 512"
+    ],
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     9
+    ],
+    [
+     28
+    ]
+   ],
+   "id": "attention-multi_hop-53"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many times larger is the beam size used during inference for the Transformer in the constituency parsing experiments compared to the beam size used for the base models in the English-to-French translation task?",
+   "answer": "5.25",
+   "base_id": "attention-f7+attention-f6",
+   "paper": "attention",
+   "evidence": [
+    [
+     "We used a beam size of 21"
+    ],
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     34
+    ],
+    [
+     28
+    ]
+   ],
+   "id": "attention-multi_hop-54"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the sum of the number of P100 GPUs used to train the Transformer for twelve hours and the number of parallel attention layers or heads employed in the work?",
+   "answer": "16",
+   "base_id": "attention-f1+attention-f3",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ],
+    [
+     "we employ h = 8 parallel attention layers"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ],
+    [
+     14
+    ]
+   ],
+   "id": "attention-multi_hop-55"
+  },
+  {
+   "type": "multi_hop",
+   "question": "If the base models were trained for 100,000 steps, how many more steps would that be than the dimension of the outputs produced by all sub-layers?",
+   "answer": "99,488",
+   "base_id": "attention-f5+attention-f2",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained the base models for a total of 100,000 steps"
+    ],
+    [
+     "produce outputs of dimension d = 512"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     24,
+     25
+    ],
+    [
+     9
+    ]
+   ],
+   "id": "attention-multi_hop-56"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the ratio of the number of GPUs used to train the Transformer model for the WMT 2014 English-to-French task to the beam size used for the base models in the English-to-French translation task?",
+   "answer": "2",
+   "base_id": "attention-f0+attention-f6",
+   "paper": "attention",
+   "evidence": [
+    [
+     "training for 3.5 days on eight GPUs"
+    ],
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     1
+    ],
+    [
+     28
+    ]
+   ],
+   "id": "attention-multi_hop-57"
+  },
+  {
+   "type": "multi_hop",
+   "question": "How many fewer parallel attention layers are there than the beam size used during inference for the Transformer in the constituency parsing experiments?",
+   "answer": "13",
+   "base_id": "attention-f3+attention-f7",
+   "paper": "attention",
+   "evidence": [
+    [
+     "we employ h = 8 parallel attention layers"
+    ],
+    [
+     "We used a beam size of 21"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     14
+    ],
+    [
+     34
+    ]
+   ],
+   "id": "attention-multi_hop-58"
+  },
+  {
+   "type": "multi_hop",
+   "question": "What is the total count when adding the number of P100 GPUs used to train the Transformer for twelve hours to the beam size used for the base models in the English-to-French translation task?",
+   "answer": "12",
+   "base_id": "attention-f1+attention-f6",
+   "paper": "attention",
+   "evidence": [
+    [
+     "trained for as little as twelve hours on eight P100 GPUs"
+    ],
+    [
+     "We used beam search with a beam size of 4"
+    ]
+   ],
+   "gold_chunks": [
+    [
+     6
+    ],
+    [
+     28
+    ]
+   ],
+   "id": "attention-multi_hop-59"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How much energy was consumed during the training process of the base and big Transformer models?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-60"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What was the total monetary cost of the GPU hours required to train the models reported in the paper?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-61"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors evaluate the performance of the Transformer model on the WMT 2014 English-to-German translation task?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-62"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the inference latency of the Transformer model compare to that of the best recurrent models on a single CPU core?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-63"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What is the impact of using a different random seed on the final BLEU score of the base model?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-64"
+  },
+  {
+   "type": "unanswerable",
+   "question": "Did the authors test the robustness of the model against adversarial perturbations in the input sentences?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-65"
+  },
+  {
+   "type": "unanswerable",
+   "question": "How does the memory footprint of the Transformer model change when the sequence length is increased beyond 512 tokens?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-66"
+  },
+  {
+   "type": "unanswerable",
+   "question": "What specific hardware configuration (e.g., CPU model, RAM size) was used alongside the P100 GPUs for data preprocessing?",
+   "answer": "I don't know",
+   "paper": "attention",
+   "evidence": [],
+   "gold_chunks": [],
+   "id": "attention-unanswerable-67"
+  }
+ ],
+ "dropped": [
+  {
+   "type": "direct",
+   "question": "What is the dimensionality of the inner-layer in the position-wise feed-forward networks?",
+   "answer": "2048",
+   "reason": "evidence not found",
+   "quotes": [
+    "the inner-layer has dimensionality dff = 2048"
+   ]
+  }
+ ]
+}
