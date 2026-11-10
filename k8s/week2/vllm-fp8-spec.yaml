@@ -31,7 +31,7 @@ spec:
             - --gpu-memory-utilization=0.90
             - --enable-prefix-caching
             - --quantization=fp8
-            - '--speculative-config={"model": "Qwen/Qwen2.5-0.5B-Instruct", "num_speculative_tokens": 5}'
+            - '--speculative-config={"method": "ngram", "num_speculative_tokens": 5, "prompt_lookup_max": 4, "prompt_lookup_min": 2}'
           env:
             - name: VLLM_SERVER_DEV_MODE      # enables POST /reset_prefix_cache, used between E2 variants
               value: "1"
