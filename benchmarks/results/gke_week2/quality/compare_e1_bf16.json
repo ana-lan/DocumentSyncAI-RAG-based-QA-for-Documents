@@ -1,0 +1,9 @@
+{
+ "a": "e1_bf16",
+ "b": "e1_fp8",
+ "paired": 120,
+ "a_only_correct": 1,
+ "b_only_correct": 0,
+ "p_value": 1.0,
+ "identical_answers": 49
+}

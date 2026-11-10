@@ -40,6 +40,8 @@ _NUM = re.compile(r"\d+(?:\.\d+)?")
 def numbers(text: str) -> set[float]:
     """All numbers in a text: '100,000 steps' -> {100000}; '2.3 · 10^19' -> {2.3, 10, 19}."""
     text = re.sub(r"(?<=\d),(?=\d{3})", "", text)     # 100,000 -> 100000
+    # powers of ten: "10^19", and "1019" where PDF extraction dropped the superscript -> "10 19"
+    text = re.sub(r"([·×]\s*)10\^?(\d{1,2})\b", r"\g<1>10 \2", text)
     return {float(n) for n in _NUM.findall(text)}
 
 
