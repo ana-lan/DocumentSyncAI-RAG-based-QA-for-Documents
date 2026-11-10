@@ -30,9 +30,8 @@ TTFT_TARGET_MS, TPOT_TARGET_MS = 2000, 100
 # Week 1 baseline (benchmarks/RESULTS.md, Oct 10, same vLLM 0.31.0, same L4)
 WEEK1 = {"bf16": {1: 17.2, 32: 297.7}, "fp8": {1: 28.2, 32: 444.8}}
 
-# E7 counters read with kubectl exec on Nov 10, right after the 30 real RAG prompts.
-# The "after benchmark" values are in e7_fp8_spec/spec_metrics_after.txt.
-E7_AFTER_REAL = {"drafts": 8377, "draft_tokens": 41166, "accepted": 24769}
+# E7 counters right after the 30 real RAG prompts are saved in e7_fp8_spec/spec_metrics_after_real.txt
+# (the "after benchmark" values are in spec_metrics_after.txt). Real-prompt counts = the difference.
 
 
 def load(path):
@@ -279,16 +278,20 @@ def e7(e3res):
     before = counters(os.path.join(R, "e7_fp8_spec", "spec_metrics_before.txt"))
     after = counters(os.path.join(R, "e7_fp8_spec", "spec_metrics_after.txt"))
     bench = {k: after.get(k, 0) - before.get(k, 0) for k in ("drafts", "draft_tokens", "accepted")}
-    real = {k: E7_AFTER_REAL[k] - after.get(k, 0) for k in bench}
+    after_real = counters(os.path.join(R, "e7_fp8_spec", "spec_metrics_after_real.txt"))
+    real = {k: after_real.get(k, 0) - after.get(k, 0) for k in bench}
 
     def acc(d):
         return {"acceptance": round(d["accepted"] / d["draft_tokens"], 3) if d["draft_tokens"] else None,
                 "accepted_per_draft": round(d["accepted"] / d["drafts"], 2) if d["drafts"] else None, **d}
-    bench, real = acc(bench), acc(real)
+    bench, real = acc(bench), acc(real) if after_real else None
     print(f"\nacceptance on random-token benchmark: {bench['acceptance']:.0%} "
           f"({bench['accepted_per_draft']} extra tokens per draft)")
-    print(f"acceptance on 30 real RAG prompts:    {real['acceptance']:.0%} "
-          f"({real['accepted_per_draft']} extra tokens per draft)")
+    if real:
+        print(f"acceptance on 30 real RAG prompts:    {real['acceptance']:.0%} "
+              f"({real['accepted_per_draft']} extra tokens per draft)")
+    else:
+        print("acceptance on real RAG prompts: no spec_metrics_after_real.txt, skipped")
 
     # decode speed on real prompts, one user: with spec (E7) vs without (E2 FP8 variant A, round 1)
     def decode_rate(path):

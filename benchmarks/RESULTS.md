@@ -223,8 +223,8 @@ Measured in November 2026 on the same setup (vLLM 0.31.0, Qwen2.5-7B-Instruct, o
 ## Key results
 
 - **Capacity:** both bf16 and FP8 meet a p95 TTFT target of 2 s up to **8 concurrent users** per L4. FP8 delivers **59% more throughput** there (185 vs 116 tok/s), and at 48 users it still serves **83%** of requests within target versus **5%** for bf16.
-- **Hardware model:** decode runs at **98% of the L4's memory bandwidth** plus a fixed 8.9 ms per step. The profiler confirms it: the GPU is busy **99 to 100%** of the time, and weight matmuls take **97%** of kernel time for one user.
-- **FP8 accuracy, tested properly:** **72/120 (bf16) vs 71/120 (FP8)**. They disagree on 1 question out of 120 (McNemar p = 1.0); the 95% bound on FP8's loss is about 4.6 points.
+- **Hardware model:** decode runs at **98% of the L4's memory bandwidth** plus about 8.9 ms per step that bandwidth doesn't explain. The profiler is consistent with it: the GPU is busy **99 to 100%** of the time, and weight matmuls take **97%** of kernel time for one user.
+- **FP8 accuracy, tested properly:** **72/120 (bf16) vs 71/120 (FP8)**. They disagree on 1 question out of 120 (McNemar p = 1.0); FP8's accuracy loss is at most about 4.6 points (95% upper bound on the share of questions only bf16 gets right).
 - **Prompt layout for prefix caching:** putting instructions first and chunks in document order raises the cache hit rate from **12% to 26%** (matching the 26% predicted from chunk IDs alone), cuts TTFT p50 by **8%**, and keeps accuracy (**32/44 vs 33/44**, p = 1.0).
 - **Speculative decoding (n-gram):** **1.89x** throughput for one user and **1.17x** at 32 on the synthetic benchmark; **1.52x** decode speed on real RAG answers.
 
@@ -249,6 +249,7 @@ Measured in November 2026 on the same setup (vLLM 0.31.0, Qwen2.5-7B-Instruct, o
   - Text answers are graded by an LLM judge (qwen/qwen3.8-27b on Groq), which also grades faithfulness (every claim backed by the passages shown).
   - Unanswerable questions count as correct only if the model refuses.
   - A citation counts as correct if the cited passage contains the gold evidence.
+  - Judge verdicts are cached by question, answer and the set of passages shown. In E2, 3 answers were word for word the same in A and C and reused a verdict across passage orders; re-judging them in their real order gave the same verdicts (`benchmarks/check_judge_order.py`).
 - **Statistics:** Wilson 95% intervals for accuracy; exact McNemar test for paired comparisons (same questions, two configs).
 - **E2 sessions:** 44 follow-up questions grouped into sessions on the same paper, run in order as one user. Each variant ran 3 times in interleaved rounds (TTFT spread under 1%), with the prefix cache reset before every run. TTFT is measured client-side from streaming. Accuracy was scored on round 1.
 
@@ -283,8 +284,8 @@ Decode is memory-bound: each step reads all the weights once, whatever the batch
 
 **Findings**
 
-- **Fitting both precisions at c=1 separates bandwidth from overhead:** effective bandwidth **295.3 GB/s (98% of the 300 GB/s spec)** plus **8.9 ms fixed per step**. The weights stream at nearly full speed; the gap to the ceiling is a fixed cost per step (kernel launches, sampling, scheduling).
-- **That fixed cost is why FP8 is 1.63x faster, not 1.86x.** Halving the bytes halves only the bandwidth part of the step. FP8's efficiency is lower (74% vs 83%) for the same reason: the same 8.9 ms is a bigger share of a shorter step.
+- **Fitting the model to both precisions at c=1 gives an effective bandwidth of 295.3 GB/s (98% of the 300 GB/s spec) plus 8.9 ms per step that bandwidth doesn't explain.** Two measurements and two unknowns make this fit exact, so it describes the data under the model's assumptions rather than proving the 8.9 ms is a constant cost; E4 below is an independent check on part of it.
+- **Under this model, the extra 8.9 ms is why FP8 is 1.63x faster, not 1.86x.** Halving the bytes halves only the bandwidth part of the step. It also explains FP8's lower efficiency (74% vs 83%): the same 8.9 ms is a bigger share of a shorter step.
 - **TPOT efficiency falls with load (to 50 to 55% at c=32) while ITL efficiency barely moves.** TPOT includes the stalls when prefills of new requests interrupt decoding. Those stalls are the throughput lost to the TTFT problem in E3.
 - **FP8's measured throughput reaches bf16's theoretical ceiling at c=16** (309.5 vs 315.8 tok/s). No bf16 tuning can do what quantization does.
 
@@ -300,8 +301,8 @@ Decode is memory-bound: each step reads all the weights once, whatever the batch
 
 **Findings**
 
-- **The GPU is never waiting on the CPU.** With CUDA graphs, gaps between kernels are under 1% of a step, so the 8.9 ms overhead from E0 lives inside the kernels (small, inefficient ones), not between them.
-- **Attention's 14% at c=32 matches the E0 model,** which put KV reads at about 13% of bytes at that batch size. This confirms the bandwidth model from an independent measurement.
+- **The GPU is never waiting on the CPU.** With CUDA graphs, gaps between kernels are under 1% of a step, so the extra 8.9 ms from E0 is spent inside kernel execution, not idle time between kernels. The profile shows where that time goes, not why; kernels running below full memory bandwidth is the likely cause, but this measurement doesn't prove it.
+- **Attention's 14% at c=32 matches the E0 model,** which put KV reads at about 13% of bytes at that batch size. This supports the bandwidth model from an independent measurement.
 - **Weights dominate even at 32 users,** so shrinking them (FP8) is the right lever on this GPU; attention optimizations would matter only at much longer contexts.
 
 ## E1. FP8 vs bf16 on 120 questions
@@ -313,9 +314,9 @@ Decode is memory-bound: each step reads all the weights once, whatever the batch
 | Unanswerable questions correctly refused | 100% | 100% |
 | Faithfulness (claims backed by passages) | 94% | 95% |
 
-- **Paired test:** bf16 alone right on 1 question, FP8 alone right on 0, McNemar p = 1.0. 49 of 120 answers are identical word for word. FP8's accuracy loss is at most about 4.6 points (95% bound).
+- **Paired test:** bf16 alone right on 1 question, FP8 alone right on 0, McNemar p = 1.0. 49 of 120 answers are identical word for word. FP8's accuracy loss is at most about 4.6 points: that is the 95% upper bound (Wilson) on the share of questions where bf16 is right and FP8 is wrong, which caps the loss.
 - **When the evidence was not retrieved (43 questions),** the model refused 51 to 53% of the time, answered right anyway 12 to 14%, and answered wrong 35%. Of the 15 wrong answers, 13 (bf16) and 14 (FP8) were backed by a real but wrong passage; only 2 and 1 were invented.
-- **Citations:** at least 60 to 68% of correct answers with retrieved evidence cite the right passage. This is a lower bound: the check only accepts citations to the chunk holding the exact evidence phrase.
+- **Citations:** at least 61 to 67% of correct answers with retrieved evidence cite the right passage (31 and 34 of 51). This is a lower bound: the check only accepts citations to the chunk holding the exact evidence phrase.
 
 **Findings**
 

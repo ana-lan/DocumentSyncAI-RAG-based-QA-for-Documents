@@ -183,7 +183,7 @@ def main():
           f"order={args.order} concurrency={args.concurrency}")
 
     started = time.perf_counter()
-    failed = None
+    failed, errors = None, []
     if args.concurrency == 1:
         out = []
         for i, row in enumerate(rows, 1):
@@ -194,9 +194,19 @@ def main():
                 print(f"STOPPED at question {i}: {failed}")
                 break
             print(f"[{i:03d}/{len(rows)}] ttft {out[-1]['ttft_s']:.3f}s | {out[-1]['model_answer'][:70]!r}")
-    else:
-        with ThreadPoolExecutor(args.concurrency) as pool:
-            out = list(pool.map(lambda r: ask(client, args.model, r, args.layout, args.order, args.pause), rows))
+        else:
+            def safe_ask(r):      # one failed question must not throw away the others' answers
+                try:
+                    return ask(client, args.model, r, args.layout, args.order, args.pause), None
+                except Exception as e:
+                    return None, f"{r['id']}: {e}"
+            with ThreadPoolExecutor(args.concurrency) as pool:
+                results = list(pool.map(safe_ask, rows))
+            out = [res for res, _ in results if res is not None]
+            errors = [err for _, err in results if err]
+            if errors:
+                failed = f"{len(errors)} of {len(rows)} questions failed, first: {errors[0]}"
+                print(f"FAILED {len(errors)}/{len(rows)} questions; saving the {len(out)} answers that worked")
     wall = time.perf_counter() - started
     after = scrape_prefix_metrics(args.base_url)
 
@@ -207,7 +217,7 @@ def main():
         "concurrency": args.concurrency, "n": len(out), "wall_s": round(wall, 2),
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "ttft_p50_s": pct(ttfts, 50), "ttft_p95_s": pct(ttfts, 95),
-        "complete": failed is None, "stopped_at": failed,
+        "complete": failed is None, "stopped_at": failed, "errors": errors,
         "prefix_cache_reset": reset_ok,
         "prefix_cache_delta": cache_delta(before, after) if after else None,
     }

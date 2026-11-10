@@ -101,6 +101,9 @@ def save_cache(cache: dict):
 def judge(row: dict, cache: dict) -> dict:
     """One judge call per unique (question, gold, answer, passages); verdicts are cached."""
     global _turn
+    # The key uses the SET of passages (sorted): whether an answer is correct and supported doesn't
+    # depend on passage order. Checked with benchmarks/check_judge_order.py: the 3 E2 answers that
+    # reused a verdict across passage orders got the same verdict when re-judged in their real order.
     key = hashlib.sha256(json.dumps([row["question"], row["gold_answer"], row["model_answer"],
                                      sorted(row["shown_texts"]), JUDGE_MODEL]).encode()).hexdigest()
     if key in cache:
