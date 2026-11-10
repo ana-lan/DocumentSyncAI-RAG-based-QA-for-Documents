@@ -46,8 +46,8 @@ MAX_TOKENS  = 512
 TEMPERATURE = float(os.getenv("LLM_TEMPERATURE", "0.2"))   # low = more factual; evals use 0
 PROMPT_STYLE = os.getenv("PROMPT_STYLE", "cite")   # "cite" numbers the chunks and asks for [n]; "plain" is week 1
 # E2 prompt variants (prefix caching). The defaults are variant A, the app as it ships.
-PROMPT_LAYOUT = os.getenv("PROMPT_LAYOUT", "context_first")   # or "instructions_first"
-CHUNK_ORDER   = os.getenv("CHUNK_ORDER", "score")             # or "position": chunks in document order
+PROMPT_LAYOUT = os.getenv("PROMPT_LAYOUT", "instructions_first")   # E2: best for prefix caching; "context_first" is week 1
+CHUNK_ORDER   = os.getenv("CHUNK_ORDER", "position")               # E2: chunks in document order; "score" is week 1
 
 # ── Evaluation ────────────────────────────────────────────
 QA_PAIRS_DIR    = "eval/qa_pairs"
