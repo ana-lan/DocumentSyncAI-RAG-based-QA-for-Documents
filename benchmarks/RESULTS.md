@@ -322,6 +322,7 @@ Decode is memory-bound: each step reads all the weights once, whatever the batch
 
 - **FP8 is safe to serve for this workload.** Week 1's "no accuracy loss" was a 20-question check; this is a paired test on 120 questions with a bound on the loss.
 - **Retrieval is the accuracy limit, not the model.** With the right passage, both precisions answer 82% correctly. Without it, wrong answers are almost always the model trusting a misleading passage, not inventing facts.
+- **A second analysis tool agrees.** Run through [memory-agreement-check](https://github.com/vadimchernets/memory-agreement-check)'s compare mode, the two runs give essentially the same answer on 109 of 120 questions (token overlap), and on the 48 questions both got wrong they gave the same wrong answer 42 times. The errors come from the passages both models see, not from quantization. The weakest question types are multi-hop (33%) and paraphrased or plain-language wording (40%), both retrieval problems.
 
 ## E2. Prompt layout for prefix caching
 
@@ -423,3 +424,4 @@ python -m benchmarks.analyze_week2
 | `eval/week2/frozen_eval.json`, `frozen_sessions.json` | the 120 questions and 44 session questions, with frozen contexts |
 | `eval/week2/judge_cache.json` | every judge verdict |
 | `benchmarks/results/e2e_e5_{before,after}.json` | E5 retrieval runs, before and after the fix |
+| `benchmarks/results/gke_week2/quality/e1_{bf16,fp8}.jsonl`, `memcheck_e1_bf16_vs_fp8.md` | E1 answers exported for memory-agreement-check, and its compare report (`python -m benchmarks.export_jsonl`) |
